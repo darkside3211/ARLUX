@@ -45,7 +45,7 @@ Project Manager: Baldo, Dominic Gerard - gerarddominic.baldo@gmail.com
 
 Programmer: Nuñez, Clifford O. - nunezclifford28@gmail.com
 
-System Analyst: Martinez, Dan Erick - 
+System Analyst: Martinez, Dan Erick - danerick19martinez@gmail.com
 
 Quality Assurance: Capistrano, Calvin - 
 
