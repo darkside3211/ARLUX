@@ -36,7 +36,7 @@ Users can try different jewelry items from Rings, Bracelets, Necklaces, and Earr
 
 Also, they can inspect the jewelry product using a 3D inspection feature powered by Three JS.
 
-The first Early Adopter of this application will be used by the JZ Silverworld Store chosen by the researchers.
+The first Early Adopter of this application will be used by the Jewelry Store chosen by the researchers.
 
 This project serves as a Partial Fulfilment of the Requirements for the Degree Bachelor of Science in Information Technology.
  ## Contact
