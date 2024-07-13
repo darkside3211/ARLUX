@@ -1,0 +1,246 @@
+- !<AssetImportMetadata/276178e6-ed16-4a3c-8163-58d68e217295>
+  ImportedAssetIds:
+    .hidden/Unlit: !<reference> f4adceb3-5eb2-4b05-b195-ec2a6fc70c3c
+    .hidden/button: !<reference> 3588aeab-4b6d-4f05-acb9-e4a08cc55225
+    2dAligner Roulette: !<reference> 686b3b9d-f181-4959-aa22-701d98f62b5b
+    2dAligner Roulette|_2dAligner Roulette_0|: !<reference> 99fe128f-908d-45df-83c7-59edda114cf4
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|: !<reference> 2a2db2f6-3605-4144-aa3d-204966bddf6b
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_Roulette_0|: !<reference> 0ef6e29d-4efc-466e-bf64-144b6db8469e
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_Roulette_0|_btn0 offset-rot_0|: !<reference> 0618b649-2d5a-4923-a401-425052bbcb15
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_Roulette_0|_btn0 offset-rot_0|_btn0 offset-pos_0|: !<reference> 3360ccc4-12aa-4e39-982f-da5ea138bb7d
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_Roulette_0|_btn0 offset-rot_0|_btn0 offset-pos_0|_btn0 sprite_0|: !<reference> 517b9636-2269-4f9d-89b2-f73fcd1e0ede
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_Roulette_0|_btn0 offset-rot_0|_btn0 offset-pos_0|_btn0 sprite_0|_Image_0|: !<reference> fcae7816-afb9-43ee-b3ae-4f825ec1927e
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_tap_1|: !<reference> 11804512-b538-41bf-ba37-7504f03ccee4
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_tap_1|_Image_0|: !<reference> aa1e6644-6331-4d63-89d9-f4cd3d2aa6a0
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_touch_2|: !<reference> f6ad94a2-56c1-4d5c-903e-ad33cce60a14
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_touch_2|_Image_0|: !<reference> 69b1b1a9-337a-4969-b999-e05850709a6b
+    2dAligner Roulette|_2dAligner Roulette_0|_RouletteParent_0|_touch_2|_InteractionComponent_1|: !<reference> 7b4426ef-3290-4d8b-8640-9e1e622fe40e
+    2dAligner Roulette|_2dAligner Roulette_0|_ScriptComponent_0|: !<reference> b1e4b4a2-dec3-4839-afd1-e5d20e6a3dd4
+    Resources/Textures/Animated/Hint_Tap_No_Dot: !<reference> 9f3f7cac-0cbf-4bd1-bfad-00885765f75a
+    Resources/button: !<reference> 26197fe2-b24e-41be-91ff-10884f9639e5
+    Resources/button|button|GraphPassInfo: !<reference> f33c768c-7d75-462c-b3c4-b43b46764b00
+    Roulette/Roulette: !<reference> b622325f-0bac-44f3-a294-d6631bbbf4f9
+    Scripts/2dAligner: !<reference> 5f52146c-ec30-40c7-a6cd-1cc278c5fad7
+    Unlit: !<reference> 05520ccc-8bdb-4958-84ee-2b77b5fc8902
+    Unlit 2: !<reference> 6f40bf81-095a-4262-b37f-bacdcb4dd7c8
+    Unlit 2|Unlit 2|GraphPassInfo: !<reference> 77fb2525-5cac-4bbf-a9ba-278ed24468d9
+    Unlit|Unlit|GraphPassInfo: !<reference> 1026c06d-3e6b-4dc5-bb6b-626ec2c9f76f
+    off: !<reference> 31f0273b-cf32-470d-91f5-236a64c8c17e
+    on: !<reference> 02c8beff-c7c2-4459-8dc2-0164f0af1a81
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> b622325f-0bac-44f3-a294-d6631bbbf4f9
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    2dAligner Roulette: !<own> d5eb26e5-6e01-4009-9082-44ec3d2614f2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/04184fe8-d8c9-494f-8983-7333864b0dd2>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0db2ca32-aa7b-4db3-aab9-92cf3c6392d4>
+  PrefabRemaps:
+    []
+  Name: RouletteParent
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.720000, y: 0.720000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4f7fc422-ab3f-4eba-8508-c2a2dd9e3890
+    - !<own> 4685c5e2-f4fc-493c-8373-07219ff01033
+    - !<own> ae62a23d-9c41-4e48-b4cb-a26e040201eb
+  Components:
+    []
+- !<SceneObject/4685c5e2-f4fc-493c-8373-07219ff01033>
+  PrefabRemaps:
+    []
+  Name: tap
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.507630, y: 0.846050, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.895151, y: 1.895151, z: 1.692100}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 98d5072d-acc2-4aa2-8995-9e4e90c88b4e
+- !<SceneObject/4f7fc422-ab3f-4eba-8508-c2a2dd9e3890>
+  PrefabRemaps:
+    []
+  Name: Roulette
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 3.384200, y: 3.384200, z: 3.384200}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d1bc7b53-4ec7-44fb-8125-ef47d49f7145
+  Components:
+    []
+- !<SceneObject/773f2d7c-ac5e-48d6-a8db-b008506e67a2>
+  PrefabRemaps:
+    []
+  Name: btn0 offset-pos
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.350000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.800000, y: 0.800000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 94e1ac19-9f95-41ce-8303-a4ac99c7264e
+  Components:
+    []
+- !<Image/8c491623-69ee-47b2-a2a9-893fbbf6e089>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 10
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6f40bf81-095a-4262-b37f-bacdcb4dd7c8
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/94e1ac19-9f95-41ce-8303-a4ac99c7264e>
+  PrefabRemaps:
+    []
+  Name: btn0 sprite
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ce525b74-da68-4cda-aefd-3e704d44c5de
+- !<Image/98d5072d-acc2-4aa2-8995-9e4e90c88b4e>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 9
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 05520ccc-8bdb-4958-84ee-2b77b5fc8902
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/ae62a23d-9c41-4e48-b4cb-a26e040201eb>
+  PrefabRemaps:
+    []
+  Name: touch
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 3.784200, y: 3.784200, z: 3.784200}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8c491623-69ee-47b2-a2a9-893fbbf6e089
+    - !<own> f30e46dc-a729-43f7-892f-7b2b362564a5
+- !<Image/ce525b74-da68-4cda-aefd-3e704d44c5de>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 8
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 26197fe2-b24e-41be-91ff-10884f9639e5
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/d1bc7b53-4ec7-44fb-8125-ef47d49f7145>
+  PrefabRemaps:
+    []
+  Name: btn0 offset-rot
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 773f2d7c-ac5e-48d6-a8db-b008506e67a2
+  Components:
+    []
+- !<ObjectPrefabAssetData/d5eb26e5-6e01-4009-9082-44ec3d2614f2>
+  SourceRemaps:
+    - 0618b649-2d5a-4923-a401-425052bbcb15: d1bc7b53-4ec7-44fb-8125-ef47d49f7145
+    - 0ef6e29d-4efc-466e-bf64-144b6db8469e: 4f7fc422-ab3f-4eba-8508-c2a2dd9e3890
+    - 11804512-b538-41bf-ba37-7504f03ccee4: 4685c5e2-f4fc-493c-8373-07219ff01033
+    - 2a2db2f6-3605-4144-aa3d-204966bddf6b: 0db2ca32-aa7b-4db3-aab9-92cf3c6392d4
+    - 3360ccc4-12aa-4e39-982f-da5ea138bb7d: 773f2d7c-ac5e-48d6-a8db-b008506e67a2
+    - 517b9636-2269-4f9d-89b2-f73fcd1e0ede: 94e1ac19-9f95-41ce-8303-a4ac99c7264e
+    - 69b1b1a9-337a-4969-b999-e05850709a6b: 8c491623-69ee-47b2-a2a9-893fbbf6e089
+    - 7b4426ef-3290-4d8b-8640-9e1e622fe40e: f30e46dc-a729-43f7-892f-7b2b362564a5
+    - 99fe128f-908d-45df-83c7-59edda114cf4: fce86d99-04d1-4fff-9630-9564d934ea54
+    - aa1e6644-6331-4d63-89d9-f4cd3d2aa6a0: 98d5072d-acc2-4aa2-8995-9e4e90c88b4e
+    - b1e4b4a2-dec3-4839-afd1-e5d20e6a3dd4: 479bf14b-02ce-46f9-a215-3bfe0c2af738
+    - f6ad94a2-56c1-4d5c-903e-ad33cce60a14: ae62a23d-9c41-4e48-b4cb-a26e040201eb
+    - fcae7816-afb9-43ee-b3ae-4f825ec1927e: ce525b74-da68-4cda-aefd-3e704d44c5de
+  SourceState: !<own> fd8c5c8d-d7db-43b8-8e7a-9ca07e7528d8
+- !<InteractionComponent/f30e46dc-a729-43f7-892f-7b2b362564a5>
+  PrefabRemaps:
+    []
+  Name: Interaction
+  Enabled: true
+  Camera: !<reference> 00000000-0000-0000-0000-000000000000
+  MinimumTouchSize: 0.000000
+  DepthFilter: true
+  MeshVisuals:
+    - !<reference> 8c491623-69ee-47b2-a2a9-893fbbf6e089
+- !<SceneObject/fce86d99-04d1-4fff-9630-9564d934ea54>
+  PrefabRemaps:
+    []
+  Name: 2dAligner Roulette
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -10.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0db2ca32-aa7b-4db3-aab9-92cf3c6392d4
+  Components:
+    []
+- !<ObjectPrefab/fd8c5c8d-d7db-43b8-8e7a-9ca07e7528d8>
+  PackagePath: 2dAligner Roulette
+  objects:
+    - !<own> fce86d99-04d1-4fff-9630-9564d934ea54
+  LazyLoading: false
+  RetainAssets: true

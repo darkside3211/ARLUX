@@ -1,0 +1,170 @@
+- !<AssetImportMetadata/242583a0-5313-43c3-b054-450219a00547>
+  ImportedAssetIds:
+    Meshes/Cube.001: !<reference> 2d5f57d9-51b7-4ab2-97f5-cfda80add97e
+    Meshes/Cube1.001: !<reference> 20027f2b-d998-48ed-b383-be2b1ae1b979
+    Scene: !<reference> 88295c4f-4d8d-41c6-b872-8900b88223dd
+    _3DSceneImportRoot_0|: !<reference> 93e3b96d-cf6d-4378-ab9d-638f598e9d2b
+    _3DSceneImportRoot_0|_Scenes_0|: !<reference> 824a597c-d4be-43a5-a28e-63e11a87224c
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|: !<reference> d86662e3-36a4-4e8b-973f-3edf854cbce6
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_AnimationPlayer_0|: !<reference> a0adb396-63fb-4c41-b453-b049426e452e
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_MoissaniteDiamondRing_0|: !<reference> 1b5ac0bb-96c3-43cd-8a6f-cc1249d267dd
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_MoissaniteDiamondRing_0|_RenderMeshVisual_0|: !<reference> 575699bc-bccf-45ae-9503-52e024bc0cca
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_MoissaniteDiamondRing_0|_RenderMeshVisual_1|: !<reference> edb732a3-1d5a-4958-a514-c464bfecac82
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> 88295c4f-4d8d-41c6-b872-8900b88223dd
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpacked
+  AssetDataMap:
+    Scene: !<own> b9438ee1-6df0-41e9-b960-e35abdfbddab
+  DependentFiles:
+    []
+  ImporterSettings: !<GltfImporterSettings/75afb279-bc1b-458d-9be1-a0a3bc02e40a>
+    UseLegacyImporter: false
+    WithMaterials: false
+    NamingConvention: ByCategory
+    AnimationCurveOptimization: false
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangents: true
+    ImportMorphTargetAnimation: true
+    ConvertMetersToCentimeters: false
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings/22c7cd90-1b34-40e0-8d17-aa0b687a8958>
+    Presets:
+      None Compression: !<SingleCompressionSettings/c0071e3e-e874-4219-9132-0ebddd2e7bf7>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      mesh: None Compression
+    Overrides:
+      {}
+- !<SceneObject/2e64cbe4-fd98-4298-a7a8-04a5407a62d5>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f57c1288-de93-41eb-b2c9-64ba514be1dc
+  Components:
+    - !<own> da043f49-3236-4b55-a23b-76fcddbad098
+- !<SceneObject/303584a4-964a-4f71-9cc6-8730f1177ef1>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2e64cbe4-fd98-4298-a7a8-04a5407a62d5
+  Components:
+    []
+- !<RenderMeshVisual/5cd5cc2d-fd87-43f7-821a-0b672f0d2441>
+  PrefabRemaps:
+    []
+  Name: Cube.001
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b9c9efda-6eb6-4cf9-9463-8f0062d7f15f
+  Mesh: !<reference> 20027f2b-d998-48ed-b383-be2b1ae1b979
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/6ba11458-1b1d-4e85-85c1-6de6f897a9e4>
+  PrefabRemaps:
+    []
+  Name: Cube.001
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ba7200ce-1d7c-4799-bfa9-68c58dd79276
+  Mesh: !<reference> 2d5f57d9-51b7-4ab2-97f5-cfda80add97e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/71b89fff-d67e-40eb-876c-639fd4544861>
+  PackagePath: ""
+  objects:
+    - !<own> f7bdbb6a-4f95-4f76-a5d8-66804ef139c4
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/b9438ee1-6df0-41e9-b960-e35abdfbddab>
+  SourceRemaps:
+    - 1b1610b7-da30-4886-8645-1ed4edfddaf7: 6b1c679f-7de5-40a6-8034-6d9d0ed1bd31
+    - 1b5ac0bb-96c3-43cd-8a6f-cc1249d267dd: f57c1288-de93-41eb-b2c9-64ba514be1dc
+    - 575699bc-bccf-45ae-9503-52e024bc0cca: 6ba11458-1b1d-4e85-85c1-6de6f897a9e4
+    - 824a597c-d4be-43a5-a28e-63e11a87224c: 303584a4-964a-4f71-9cc6-8730f1177ef1
+    - 93e3b96d-cf6d-4378-ab9d-638f598e9d2b: f7bdbb6a-4f95-4f76-a5d8-66804ef139c4
+    - a0adb396-63fb-4c41-b453-b049426e452e: da043f49-3236-4b55-a23b-76fcddbad098
+    - a203ee1b-3e67-4bfc-9604-53c6fa15c040: 4a0a5728-a218-4989-b4ff-c21ad292bdae
+    - d86662e3-36a4-4e8b-973f-3edf854cbce6: 2e64cbe4-fd98-4298-a7a8-04a5407a62d5
+    - edb732a3-1d5a-4958-a514-c464bfecac82: 5cd5cc2d-fd87-43f7-821a-0b672f0d2441
+  SourceState: !<own> 71b89fff-d67e-40eb-876c-639fd4544861
+- !<AnimationPlayer/da043f49-3236-4b55-a23b-76fcddbad098>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    []
+- !<SceneObject/f57c1288-de93-41eb-b2c9-64ba514be1dc>
+  PrefabRemaps:
+    []
+  Name: MoissaniteDiamondRing
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.296881, y: 0.899550, z: 0.899550}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6ba11458-1b1d-4e85-85c1-6de6f897a9e4
+    - !<own> 5cd5cc2d-fd87-43f7-821a-0b672f0d2441
+- !<SceneObject/f7bdbb6a-4f95-4f76-a5d8-66804ef139c4>
+  PrefabRemaps:
+    []
+  Name: Moissanite Ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 303584a4-964a-4f71-9cc6-8730f1177ef1
+  Components:
+    []

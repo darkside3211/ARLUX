@@ -1,0 +1,942 @@
+{
+
+"images": [
+    "HINT_Try_on_ring_v1.png"
+],
+
+"frames": [
+{
+    "name": "LPD_388_Ring_v01_0.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 214,
+        "height": 220
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 1,
+        "top": 0,
+        "right": 215,
+        "bottom": 220
+    }
+},{
+    "name": "LPD_388_Ring_v01_1.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 221,
+        "y": 3,
+        "width": 191,
+        "height": 210
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 24,
+        "top": 0,
+        "right": 215,
+        "bottom": 210
+    }
+},{
+    "name": "LPD_388_Ring_v01_2.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 416,
+        "y": 3,
+        "width": 166,
+        "height": 197
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 49,
+        "top": 0,
+        "right": 215,
+        "bottom": 197
+    }
+},{
+    "name": "LPD_388_Ring_v01_3.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 586,
+        "y": 3,
+        "width": 145,
+        "height": 186
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 70,
+        "top": 0,
+        "right": 215,
+        "bottom": 186
+    }
+},{
+    "name": "LPD_388_Ring_v01_4.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 735,
+        "y": 3,
+        "width": 127,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 88,
+        "top": 0,
+        "right": 215,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_5.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 227,
+        "width": 113,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 102,
+        "top": 0,
+        "right": 215,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_6.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 120,
+        "y": 227,
+        "width": 108,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 215,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_7.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 232,
+        "y": 227,
+        "width": 108,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 215,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_8.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 344,
+        "y": 227,
+        "width": 117,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 224,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_9.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 465,
+        "y": 227,
+        "width": 122,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 108,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_10.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 591,
+        "y": 227,
+        "width": 122,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 108,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_11.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 717,
+        "y": 227,
+        "width": 122,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 108,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_12.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_13.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 130,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_14.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 257,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_15.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 384,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_16.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 384,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_26.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 384,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_17.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 511,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_18.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 638,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_19.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 765,
+        "y": 410,
+        "width": 123,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 107,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_20.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 593,
+        "width": 122,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 108,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_21.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 129,
+        "y": 593,
+        "width": 121,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 109,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_22.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 254,
+        "y": 593,
+        "width": 121,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 109,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_23.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 379,
+        "y": 593,
+        "width": 120,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 110,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_24.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 503,
+        "y": 593,
+        "width": 120,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 110,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_25.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 627,
+        "y": 593,
+        "width": 121,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 109,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_27.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 752,
+        "y": 593,
+        "width": 124,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 106,
+        "top": 0,
+        "right": 230,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_28.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 776,
+        "width": 127,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 101,
+        "top": 0,
+        "right": 228,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_29.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 134,
+        "y": 776,
+        "width": 128,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 95,
+        "top": 0,
+        "right": 223,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_30.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 266,
+        "y": 776,
+        "width": 128,
+        "height": 179
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 87,
+        "top": 0,
+        "right": 215,
+        "bottom": 179
+    }
+},{
+    "name": "LPD_388_Ring_v01_31.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 398,
+        "y": 776,
+        "width": 139,
+        "height": 184
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 76,
+        "top": 0,
+        "right": 215,
+        "bottom": 184
+    }
+},{
+    "name": "LPD_388_Ring_v01_32.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 541,
+        "y": 776,
+        "width": 150,
+        "height": 191
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 65,
+        "top": 0,
+        "right": 215,
+        "bottom": 191
+    }
+},{
+    "name": "LPD_388_Ring_v01_33.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 695,
+        "y": 776,
+        "width": 163,
+        "height": 198
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 52,
+        "top": 0,
+        "right": 215,
+        "bottom": 198
+    }
+},{
+    "name": "LPD_388_Ring_v01_34.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 978,
+        "width": 177,
+        "height": 204
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 38,
+        "top": 0,
+        "right": 215,
+        "bottom": 204
+    }
+},{
+    "name": "LPD_388_Ring_v01_35.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 184,
+        "y": 978,
+        "width": 191,
+        "height": 211
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 24,
+        "top": 0,
+        "right": 215,
+        "bottom": 211
+    }
+},{
+    "name": "LPD_388_Ring_v01_36.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 379,
+        "y": 978,
+        "width": 205,
+        "height": 216
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 10,
+        "top": 0,
+        "right": 215,
+        "bottom": 216
+    }
+},{
+    "name": "LPD_388_Ring_v01_37.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 588,
+        "y": 978,
+        "width": 215,
+        "height": 220
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 215,
+        "bottom": 220
+    }
+},{
+    "name": "LPD_388_Ring_v01_38.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 588,
+        "y": 978,
+        "width": 215,
+        "height": 220
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 215,
+        "bottom": 220
+    }
+},{
+    "name": "LPD_388_Ring_v01_39.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 588,
+        "y": 978,
+        "width": 215,
+        "height": 220
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 230,
+        "height": 220
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 215,
+        "bottom": 220
+    }
+}
+],
+
+"animations": {
+    "LPD_388_Ring_v01": { "frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] }
+},
+
+"meta": {
+        "app": "http://www.codeandweb.com/texturepacker",
+        "description": "Json file for Lens Studio Framework",
+        "version": "1.0",
+        "smartupdate": "$TexturePacker:SmartUpdate:34eb07e11a305d88fdc5094bda99a8b4:b9e1f3fb4e7a21297676654b8c632c81:db5563a58a486953e4f99bf8d6dec0a4$"
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for Lens Studio"
+    }
+}

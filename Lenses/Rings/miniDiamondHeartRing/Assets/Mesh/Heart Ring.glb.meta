@@ -1,0 +1,144 @@
+- !<AssetImportMetadata/090ed585-e3cd-4f47-b349-979bced23a9c>
+  ImportedAssetIds:
+    Meshes/Plane.001: !<reference> 78e46f4a-890f-492d-b782-33a76b11388a
+    Scene: !<reference> 721a9546-692b-4897-90bb-be11afd4d02d
+    _3DSceneImportRoot_0|: !<reference> 55d9d684-591f-41cb-97e2-481d2dbfe39d
+    _3DSceneImportRoot_0|_Scenes_0|: !<reference> 532d6b99-dde7-452f-b476-20c12820621d
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|: !<reference> c4c18967-7ba9-4673-aedf-841b9367bfa7
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_AnimationPlayer_0|: !<reference> d42a9635-ed4c-43bb-8257-b42e7a05d243
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_HeartRing_0|: !<reference> 50414380-00a9-4260-aec6-d179ed8bebc0
+    _3DSceneImportRoot_0|_Scenes_0|_Scene_0|_HeartRing_0|_RenderMeshVisual_0|: !<reference> 2ce2c5a2-01f9-4367-97ad-ca714c81eeec
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> 721a9546-692b-4897-90bb-be11afd4d02d
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpacked
+  AssetDataMap:
+    Scene: !<own> a603cd8a-a24c-46ea-81b7-2ea0e67a4a41
+  DependentFiles:
+    []
+  ImporterSettings: !<GltfImporterSettings/8e2374da-cc0c-4382-bb0a-fc4e40f3074f>
+    UseLegacyImporter: false
+    WithMaterials: false
+    NamingConvention: ByCategory
+    AnimationCurveOptimization: false
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: false
+    ImportTangents: false
+    ImportMorphTargetAnimation: false
+    ConvertMetersToCentimeters: true
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings/b62d5a12-d13d-46be-b775-643dc7e55263>
+    Presets:
+      None Compression: !<SingleCompressionSettings/990b8dc6-03b4-4334-9cdf-f46ee33d0c4f>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      mesh: None Compression
+    Overrides:
+      {}
+- !<SceneObject/0e175076-c8f0-470e-9cd9-9a0f6d3267dc>
+  PrefabRemaps:
+    []
+  Name: HeartRing
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b3bb385d-711b-4b81-8866-274957f6c3bb
+- !<SceneObject/3a35b68b-359f-48e0-8a7c-25efa820ef6d>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9ca124f5-6af8-45ef-b3df-ccfa83e7145e
+  Components:
+    []
+- !<ObjectPrefab/444dcf74-dfc3-4b3c-8440-4ffcccca4b6f>
+  PackagePath: ""
+  objects:
+    - !<own> 8be7b491-833b-4eaf-9e70-36546181d2d7
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/8be7b491-833b-4eaf-9e70-36546181d2d7>
+  PrefabRemaps:
+    []
+  Name: Heart Ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3a35b68b-359f-48e0-8a7c-25efa820ef6d
+  Components:
+    []
+- !<SceneObject/9ca124f5-6af8-45ef-b3df-ccfa83e7145e>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0e175076-c8f0-470e-9cd9-9a0f6d3267dc
+  Components:
+    - !<own> cbf89053-a50e-46ba-9d82-d1026ebd56b3
+- !<ObjectPrefabAssetData/a603cd8a-a24c-46ea-81b7-2ea0e67a4a41>
+  SourceRemaps:
+    - 19207e41-bb05-408f-a593-4b80a6163c1c: 1b52fed1-4693-43cc-8d8f-d8b511069685
+    - 2ce2c5a2-01f9-4367-97ad-ca714c81eeec: b3bb385d-711b-4b81-8866-274957f6c3bb
+    - 50414380-00a9-4260-aec6-d179ed8bebc0: 0e175076-c8f0-470e-9cd9-9a0f6d3267dc
+    - 532d6b99-dde7-452f-b476-20c12820621d: 3a35b68b-359f-48e0-8a7c-25efa820ef6d
+    - 55d9d684-591f-41cb-97e2-481d2dbfe39d: 8be7b491-833b-4eaf-9e70-36546181d2d7
+    - c4c18967-7ba9-4673-aedf-841b9367bfa7: 9ca124f5-6af8-45ef-b3df-ccfa83e7145e
+    - d42a9635-ed4c-43bb-8257-b42e7a05d243: cbf89053-a50e-46ba-9d82-d1026ebd56b3
+  SourceState: !<own> 444dcf74-dfc3-4b3c-8440-4ffcccca4b6f
+- !<RenderMeshVisual/b3bb385d-711b-4b81-8866-274957f6c3bb>
+  PrefabRemaps:
+    []
+  Name: Plane.001
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 61299d81-b481-43e9-ae44-48e30d1eadcb
+  Mesh: !<reference> 78e46f4a-890f-492d-b782-33a76b11388a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+- !<AnimationPlayer/cbf89053-a50e-46ba-9d82-d1026ebd56b3>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    []

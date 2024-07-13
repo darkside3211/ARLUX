@@ -1,5 +1,5 @@
-import 'camerakit/lens_list_screen.dart';
-import 'camerakit/media_result_screen.dart';
+import 'media_result_screen.dart';
+import 'lens_list_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';

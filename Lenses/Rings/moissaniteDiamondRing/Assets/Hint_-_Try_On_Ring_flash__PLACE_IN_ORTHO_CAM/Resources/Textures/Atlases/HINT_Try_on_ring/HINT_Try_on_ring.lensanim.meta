@@ -1,0 +1,35 @@
+- !<AssetImportMetadata/cb84c713-3ead-4f79-87ac-6a6417775a67>
+  ImportedAssetIds:
+    AnimatedTexture: !<reference> 15548983-9bf1-4aa3-88d7-89513570bb0d
+    HINT_Try_on_ring_v1.png: !<reference> 6f9a98ab-1ff8-407d-a8a7-d80b83d1d2c3
+  ImporterName: LensAnimationImporter
+  PrimaryAsset: !<reference> 15548983-9bf1-4aa3-88d7-89513570bb0d
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpackedTransparent
+  AssetDataMap:
+    AnimatedTexture: !<own> 48a55083-217c-42de-854a-52aabf43907d
+  DependentFiles:
+    - HINT_Try_on_ring_v1.png
+  ImporterSettings: !<AssetImporterSettings/ad031fe0-6527-417c-a87c-925a6f96d841>
+    {}
+  CompressionSettings: !<ComplexCompressionSettings/a25b124a-9cc7-472d-8de2-597ac2b35269>
+    Presets:
+      Performance Compression: !<SingleCompressionSettings/47d92610-2b93-4e21-a3e6-211ca2000d12>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionSettings/be7496b9-7dde-4917-86d3-33e3f3eb6ff6>
+          Level: Medium
+    ExtensionMappings:
+      png: Performance Compression
+    Overrides:
+      {}
+- !<AnimatedTextureData/48a55083-217c-42de-854a-52aabf43907d>
+  AutoPlay: false
+  Reversed: false
+  PingPong: false
+  CurrentSequence: LPD_388_Ring_v01
+  KeyFramesData:
+    LPD_388_Ring_v01:
+      - time: 0.000000
+        value: 0
+      - time: 3.333333
+        value: 40
