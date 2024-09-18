@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "66b1b5bbe0c121ef91228fbd"
+  },
+  "username": "testuser",
+  "cartItems": [
+    "45b9c89e-27a7-4d76-b2b2-87ea82a65fe7",
+    "740a2747-0d87-4550-95cb-ae0670f751a0",
+    "234",
+    "567",
+    "678"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d98766f94d7a7564c42a93"
+  },
+  "firebaseUid": "G54uaUt7FabMKfZHTURsfrGOny62",
+  "username": "gerarddominic.baldo@gmail.com",
+  "cartItems": [
+    "e3e0d96d-9cb8-4232-bdb4-56148cc8e93c",
+    "234",
+    "678",
+    "567"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d98a41f94d7a7564c42a94"
+  },
+  "firebaseUid": "lAxqXDnCTxNQFmp5KfnmydZ1GMJ2",
+  "username": "miraldolest@gmail.com",
+  "cartItems": [
+    "345",
+    "e3e0d96d-9cb8-4232-bdb4-56148cc8e93c",
+    "901",
+    "740a2747-0d87-4550-95cb-ae0670f751a0",
+    "890",
+    "567"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66e02adfb1ccd38372bd7c15"
+  },
+  "firebaseUid": "3aG1i5jg09ZeE8dGZGkC4oJMrAC2",
+  "username": "cosmic.revelation12@gmail.com",
+  "cartItems": [
+    "740a2747-0d87-4550-95cb-ae0670f751a0",
+    "789"
+  ]
+}]

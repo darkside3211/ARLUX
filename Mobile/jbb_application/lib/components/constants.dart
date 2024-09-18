@@ -7,4 +7,19 @@ class Constants {
     'cbada347-ba3b-408d-a39f-fcab662b25ad',
     '4092dd3f-c421-4030-bbe2-bc789d4ffb82'
   ];
+
+  static const List<String> productNames = [
+    '18k Mini Diamond Heart Ring',
+    '18k Moissanite Engagement Ring',
+    '18k Flat Bracelet',
+    '18k Palay Bracelet',
+    '18k B1T1 Hardware Heart',
+    'Double Heart Ring',
+    '18k Hardware Clip',
+    '18k Running Ball with Heart Necklace',
+    '18k Rosary Necklace',
+    'B1T1 INRI Krus Pendant',
+    'Medium Krus Fox',
+    '18k Mother and Child Pendant',
+  ];
 }

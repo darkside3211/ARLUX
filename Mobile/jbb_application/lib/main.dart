@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jbb_application/pages/product_details_page.dart';
 
+
 void main(List<String> args) {
   runApp(const MyApp());
 }
@@ -28,6 +29,15 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.dmSansTextTheme(),
           primarySwatch: Colors.amber,
           iconTheme: const IconThemeData(color: Colors.amber),
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+            selectedItemColor: Colors.amber,
+            unselectedItemColor: Color(0xff292929)
+          ),
+          tabBarTheme: const TabBarTheme(
+            labelColor: Colors.amber,
+            unselectedLabelColor: Color(0xff292929),
+            indicatorColor: Colors.blue,
+          ),
           iconButtonTheme: const IconButtonThemeData(
               style: ButtonStyle(
                   iconColor: WidgetStatePropertyAll(Colors.amber)))),
