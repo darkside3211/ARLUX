@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/providers/theme_notifier.dart';
 
 enum ButtonType { custom, cart, wishlist, theme, buy }
@@ -9,14 +11,25 @@ abstract class CustomButtons {
   final ButtonType type = ButtonType.custom;
 }
 
-class BuyElevatedButton extends StatelessWidget implements CustomButtons {
+class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
   const BuyElevatedButton({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authStateProvider);
     return ElevatedButton(
       onPressed: () {
-        // Handle Buy Now button press
+        authState.when(
+            data: (user) {
+              if (user != null) {
+                //TODO buy now
+              } else {
+                ref.read(bottomNavIndexProvider.notifier).state = 3;
+                Navigator.pop(context);
+              }
+            },
+            error: (err, stack) {},
+            loading: () => null);
       },
       style: ElevatedButton.styleFrom(
           backgroundColor: Colors.amber,
@@ -49,7 +62,7 @@ class CheckoutElevatedButton extends StatelessWidget implements CustomButtons {
   ButtonType get type => ButtonType.buy;
 }
 
-class CartElevatedButton extends StatelessWidget implements CustomButtons {
+class CartElevatedButton extends ConsumerWidget implements CustomButtons {
   final bool isConfirm;
   final VoidCallback? customFunction;
 
@@ -57,10 +70,21 @@ class CartElevatedButton extends StatelessWidget implements CustomButtons {
       {super.key, required this.isConfirm, this.customFunction});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authStateProvider);
     return ElevatedButton(
       onPressed: () {
-        isConfirm ? customFunction?.call() : _showCartSheet(context);
+        authState.when(
+            data: (user) {
+              if (user != null) {
+                isConfirm ? customFunction?.call() : _showCartSheet(context);
+              } else {
+                ref.read(bottomNavIndexProvider.notifier).state = 3;
+                Navigator.pop(context);
+              }
+            },
+            error: (err, stack) {},
+            loading: () => null);
       },
       style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xff292929),
