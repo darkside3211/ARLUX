@@ -3,11 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 
-class Home extends ConsumerWidget {
-  const Home({super.key});
+class AccountPage extends ConsumerStatefulWidget {
+  const AccountPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<ConsumerStatefulWidget> createState() => _AccountPageState();
+}
+
+class _AccountPageState extends ConsumerState<AccountPage> {
+  @override
+  Widget build(BuildContext context) {
     final authService = ref.read(authServiceProvider);
 
     return Scaffold(
@@ -41,7 +46,7 @@ class Home extends ConsumerWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xff0D6EFD),
+                  backgroundColor: Colors.amber,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
                   ),

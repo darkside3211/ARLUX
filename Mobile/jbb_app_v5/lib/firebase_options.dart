@@ -64,6 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '645685892432',
     projectId: 'jbb-gold',
     storageBucket: 'jbb-gold.appspot.com',
+    androidClientId: '645685892432-q8mdimdvb7umdh995m8slqlutbuu83rj.apps.googleusercontent.com',
     iosClientId: '645685892432-omq04kc2pfme9vk2u2bucp4ms5vbsl3i.apps.googleusercontent.com',
     iosBundleId: 'com.example.jbbAppV5',
   );
@@ -74,6 +75,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '645685892432',
     projectId: 'jbb-gold',
     storageBucket: 'jbb-gold.appspot.com',
+    androidClientId: '645685892432-q8mdimdvb7umdh995m8slqlutbuu83rj.apps.googleusercontent.com',
     iosClientId: '645685892432-omq04kc2pfme9vk2u2bucp4ms5vbsl3i.apps.googleusercontent.com',
     iosBundleId: 'com.example.jbbAppV5',
   );
