@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/core/utils/failure.dart';
+import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
@@ -201,13 +202,15 @@ class AuthService {
         final List<ProductModel> jewelries =
             json.map((item) => ProductModel.fromJson(item)).toList();
 
+        await ProductLocalRepository().cacheBag(jewelries);
+
         return jewelries;
       } else {
-        return List.empty();
+        return ProductLocalRepository().getCachedBag();
       }
     } catch (e) {
       //ToastFailure(message: e.toString());
-      return List.empty();
+      return ProductLocalRepository().getCachedBag();
     }
   }
 
@@ -283,7 +286,7 @@ Future<bool> addProductToBag(
 Future<List<ProductModel>> getBagItems(GetBagItemsRef ref) async {
   final AuthService authService = ref.watch(authServiceProvider);
   final items = await authService.getBagItems();
-  
+
   ref.read(bagItemCountProvider.notifier).state = items.length;
 
   return items;

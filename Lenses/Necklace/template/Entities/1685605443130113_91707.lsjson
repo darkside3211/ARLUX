@@ -1,0 +1,29 @@
+{
+    "1685605443128713:91706": {
+        "IFileManager": {
+            "path": "Files/File_1685605443128713_91706.js"
+        }
+    },
+    "1685605443130113:91707": {
+        "IResourceController": {
+            "name": "Gem Rendering",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1685605443130122:91708",
+            "fileId": "1685605443128713:91706",
+            "expected_hash": "5481a188d7b9bd8294b95cbb6760117d"
+        },
+        "IResourceManager": {
+            "uid": "1685605443130122:91708",
+            "name": "Files/File_1685605443128713_91706.js",
+            "flags": 1
+        }
+    },
+    "1685605443130122:91708": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

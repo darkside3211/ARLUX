@@ -1,0 +1,39 @@
+{
+    "1685518322343491:95906": {
+        "IFileManager": {
+            "path": "Files/File_1685518322343491_95906"
+        }
+    },
+    "1685518322344537:95907": {
+        "IResourceController": {
+            "name": "metal",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685518322344543:95908",
+            "fileId": "1685518322343491:95906",
+            "originalId": "1685518322364298:95914",
+            "publicId": "1686647826310441:706347",
+            "expected_hash": "9533b8900c0103e7a81962e90e5d8be2"
+        },
+        "IResourceManager": {
+            "uid": "1685518322344543:95908",
+            "name": "Files/File_1685518322343491_95906",
+            "flags": 1
+        }
+    },
+    "1685518322364298:95914": {
+        "IFileManager": {
+            "path": "Files/File_1685518322364298_95914.lsmat"
+        }
+    },
+    "1686647826310441:706347": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/Models/Necklace 2/Rigged Gem Rendering/Materials1/metal.lsmat",
+                "hash": "26a0756aa1fd1922ee7a5dcc895bf28e"
+            }
+        }
+    }
+}

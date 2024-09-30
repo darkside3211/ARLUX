@@ -14,8 +14,7 @@
   PackagePolicy: CanBeUnpacked
   AssetDataMap:
     Scene: !<own> a603cd8a-a24c-46ea-81b7-2ea0e67a4a41
-  DependentFiles:
-    []
+  DependentFiles: []
   ImporterSettings: !<GltfImporterSettings/8e2374da-cc0c-4382-bb0a-fc4e40f3074f>
     UseLegacyImporter: false
     WithMaterials: false
@@ -27,6 +26,7 @@
     ImportMorphTargetAnimation: false
     ConvertMetersToCentimeters: true
     RegenerateTangents: false
+    PersistentIdGenerationAlgorithm: Legacy
   CompressionSettings: !<ComplexCompressionSettings/b62d5a12-d13d-46be-b775-643dc7e55263>
     Presets:
       None Compression: !<SingleCompressionSettings/990b8dc6-03b4-4334-9cdf-f46ee33d0c4f>
@@ -34,11 +34,9 @@
         CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
     ExtensionMappings:
       mesh: None Compression
-    Overrides:
-      {}
+    Overrides: {}
 - !<SceneObject/0e175076-c8f0-470e-9cd9-9a0f6d3267dc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: HeartRing
   Enabled: true
   Layers: 1
@@ -47,13 +45,11 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> b3bb385d-711b-4b81-8866-274957f6c3bb
 - !<SceneObject/3a35b68b-359f-48e0-8a7c-25efa820ef6d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Scenes
   Enabled: true
   Layers: 1
@@ -64,8 +60,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 9ca124f5-6af8-45ef-b3df-ccfa83e7145e
-  Components:
-    []
+  Components: []
 - !<ObjectPrefab/444dcf74-dfc3-4b3c-8440-4ffcccca4b6f>
   PackagePath: ""
   objects:
@@ -73,8 +68,7 @@
   LazyLoading: false
   RetainAssets: true
 - !<SceneObject/8be7b491-833b-4eaf-9e70-36546181d2d7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Heart Ring
   Enabled: true
   Layers: 1
@@ -85,11 +79,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 3a35b68b-359f-48e0-8a7c-25efa820ef6d
-  Components:
-    []
+  Components: []
 - !<SceneObject/9ca124f5-6af8-45ef-b3df-ccfa83e7145e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Scene
   Enabled: true
   Layers: 1
@@ -113,8 +105,7 @@
     - d42a9635-ed4c-43bb-8257-b42e7a05d243: cbf89053-a50e-46ba-9d82-d1026ebd56b3
   SourceState: !<own> 444dcf74-dfc3-4b3c-8440-4ffcccca4b6f
 - !<RenderMeshVisual/b3bb385d-711b-4b81-8866-274957f6c3bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Plane.001
   Enabled: true
   RenderOrder: 0
@@ -130,15 +121,11 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<AnimationPlayer/cbf89053-a50e-46ba-9d82-d1026ebd56b3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_1
   Enabled: true
   Autoplay: true
   ClipRangeType: Frames
-  AnimationClips:
-    []
+  AnimationClips: []

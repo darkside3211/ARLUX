@@ -5,10 +5,8 @@
   PrimaryAsset: !<reference> 91be4a33-baf4-48ca-9779-5be99b1ea882
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
-  AssetDataMap:
+  AssetDataMap: {}
+  DependentFiles: []
+  ImporterSettings: !<AssetImporterSettings/bbd72b40-9a07-4495-b9de-739e0a6f7f52>
     {}
-  DependentFiles:
-    []
-  ImporterSettings: !<GraphImporterSettings/bbd72b40-9a07-4495-b9de-739e0a6f7f52>
-    NGSSystemHash: 9090547b79c53984a0a60da0e89379a3
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

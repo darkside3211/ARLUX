@@ -420,14 +420,11 @@
     Ring Binding/Reference Points: !<own> 2a95313b-836a-4aae-b6b6-4395ed17c89f
     Ring Binding/LeftHandModel: !<own> 5e9ba197-03cf-4e44-8992-94b3710c2e3e
     Ring Binding/RightHandModel: !<own> 4e297dfe-6c7b-42ab-b4e2-eeaedfb34713
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings/7330ca6f-8393-43f4-89c3-174c6ba84792>
-    {}
+  DependentFiles: []
+  ImporterSettings: !<LensCoreImporterSettings/7330ca6f-8393-43f4-89c3-174c6ba84792> {PersistentIdGenerationAlgorithm: Legacy}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/0080e6a4-bf07-4843-b130-4c61c9dd9b23>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Middle P3
   Enabled: true
   Layers: 1
@@ -436,14 +433,12 @@
     rotation: {x: -115.943962, y: -9.399348, z: -21.109514}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 2a244175-99d8-4899-9dae-fae72333a0a9
     - !<own> 133abdd0-81ac-4958-b7e4-8a0aa34b1f4c
 - !<RenderMeshVisual/01647c57-219c-4ace-b937-d1ab6347d508>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -459,12 +454,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/0195bbc9-310f-4a66-8e77-a001d3e9f487>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Proximal P3
   Enabled: true
   Layers: 1
@@ -473,14 +465,12 @@
     rotation: {x: -84.209480, y: -69.579063, z: 83.458893}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 7037e4d9-2257-4440-a6a8-0f4942675d79
     - !<own> 0f8dd5db-334f-40b7-8f96-6c30789c98d7
 - !<SceneObject/02e8608e-bb0c-4324-a9a8-5ccdfec37fb3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Distal P1
   Enabled: true
   Layers: 1
@@ -489,14 +479,12 @@
     rotation: {x: -103.237335, y: -29.724308, z: 149.181900}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c8119bfc-c78e-434b-afb7-7936a940ca96
     - !<own> 365e907d-c3c6-423c-902f-dc85a75195ce
 - !<SceneObject/02fdc395-de16-4dbb-9353-fb6dfc7ec735>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring
   Enabled: true
   Layers: 1
@@ -509,11 +497,9 @@
     - !<own> 82b2db7e-55fd-4031-a84d-751082bea4cb
     - !<own> 8c7dfe81-f12b-4d9d-be28-01345f9a5208
     - !<own> af60a56c-1312-427c-a39b-072d1dbf0c60
-  Components:
-    []
+  Components: []
 - !<SceneObject/03da5569-d57a-4612-a964-c6d030ee1dfb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist
   Enabled: true
   Layers: 1
@@ -528,11 +514,9 @@
     - !<own> 5f12ea91-ecc8-472b-9b42-269807b6094c
     - !<own> 5084960c-b9fe-4191-94c3-3c7e8e8e36e2
     - !<own> 39252cf3-fc84-4985-8863-cd9fd8812aff
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/054145db-5ac5-4ab3-aaa8-dfeb1204b8a9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -542,8 +526,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/05528e6d-be17-497b-a34b-7baf166a3433>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -553,8 +536,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/057602fa-cddf-4c47-a323-94323fcba187>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-1
   Enabled: true
   Layers: 1
@@ -565,11 +547,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f81907c8-c8b3-4b8b-91dc-98217961a6f5
-  Components:
-    []
+  Components: []
 - !<SceneObject/05808ff3-feee-44e2-a66a-e5f6596d2972>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Proximal P3
   Enabled: true
   Layers: 1
@@ -578,14 +558,12 @@
     rotation: {x: -169.342377, y: -1.551447, z: -178.251465}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 7e5fb82f-076d-4fcf-b202-3b8d080514e1
     - !<own> df4ec1b1-df90-4ddc-9067-6d5d6af1e381
 - !<SceneObject/064999ca-1f12-4e69-82e5-080ab597d4b1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-0
   Enabled: true
   Layers: 1
@@ -596,11 +574,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> aadf0230-fe4f-46f8-b082-e540146b0f87
-  Components:
-    []
+  Components: []
 - !<SceneObject/06eb6e1a-88e7-4911-9921-e00e004f1ac7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Distal P2
   Enabled: true
   Layers: 1
@@ -609,14 +585,12 @@
     rotation: {x: 83.631119, y: 1.087139, z: -1.039220}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 74938ee7-a08a-4b31-92c0-c531ad6f6cdd
     - !<own> c5a58a48-fe85-42c8-b274-a5f3f0f58023
 - !<SceneObject/07ecec1d-832f-4775-976a-e0fecaa1e379>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Distal
   Enabled: true
   Layers: 1
@@ -629,11 +603,9 @@
     - !<own> f378b002-1a8b-4d60-b0ab-d6862331e708
     - !<own> f63fab40-ac7a-42d7-8eab-ee0589ee8b7e
     - !<own> 67bd7f29-2302-42b6-8826-7aa17d6108b6
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/084b885a-35a5-495d-80eb-51413f4731e1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -643,8 +615,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/087a91a3-9203-421a-8622-83a1946328b9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky
   Enabled: true
   Layers: 1
@@ -657,11 +628,9 @@
     - !<own> ac53ed7a-41e7-4bf0-8fa9-89c8b9dcae36
     - !<own> 83caca27-06e0-4a06-80b7-18bf59fbdee1
     - !<own> 6994c613-535b-4a96-a36c-be70c42e4e39
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/08881d7f-2b4c-4083-9d24-52fb9eb32d06>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -677,12 +646,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/0896f6e2-9cc7-4c30-b30f-f5ab1c8ece7d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Reference Points
   Enabled: true
   Layers: 1
@@ -694,11 +660,9 @@
   Children:
     - !<own> eea9d777-5347-4c73-beb4-e0880529f524
     - !<own> 7a6cef46-7367-4c4e-b4e6-1e4f274a83a6
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/0935f342-53c6-448c-95a7-1d892f627d42>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -714,12 +678,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/0a754fe8-24c9-40a0-9e56-4072800e5eea>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -729,8 +690,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/0aca6763-6d88-484d-91f4-ed4b1f3090d0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-2
   Enabled: true
   Layers: 1
@@ -741,11 +701,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 541469b0-6176-420f-a5a0-ede92d2c698a
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/0b33321e-1b02-4aad-9da1-92ac5f2da6d8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -755,8 +713,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/0b4d4e4e-c2b2-454e-8f04-26cc2fb381fc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Proximal P1
   Enabled: true
   Layers: 1
@@ -765,14 +722,12 @@
     rotation: {x: 42.111462, y: -15.017027, z: 174.830643}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8afad894-613c-477e-b9bf-82d1024cabea
     - !<own> a040c76a-d180-429f-abf0-fade147fab96
 - !<SceneObject/0b791160-d068-436f-96af-e8a4df63ed19>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index
   Enabled: true
   Layers: 1
@@ -785,11 +740,9 @@
     - !<own> 7f83f667-2143-416a-91a6-94dad5e9bcf7
     - !<own> aeddec65-2632-454f-a3d0-0a9d397df434
     - !<own> 07ecec1d-832f-4775-976a-e0fecaa1e379
-  Components:
-    []
+  Components: []
 - !<SceneObject/0e1f25e0-5951-4e32-b6ed-760c40e5958d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end
   Enabled: true
   Layers: 1
@@ -800,11 +753,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> c34bc9e2-bf8b-42e4-bfa2-f20fc30b2f42
-  Components:
-    []
+  Components: []
 - !<SceneObject/0e6a49ac-791c-4ba4-a8d1-3fe575b14788>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Proximal P1
   Enabled: true
   Layers: 1
@@ -813,14 +764,12 @@
     rotation: {x: -101.192924, y: 68.604317, z: 81.637360}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 56f72c7e-6a19-4c5d-94cf-a66381482977
     - !<own> 0b33321e-1b02-4aad-9da1-92ac5f2da6d8
 - !<RenderMeshVisual/0e75a4c4-90b2-48b6-831d-a0b2aa3e4499>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -836,12 +785,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/0f485c85-bf8e-4f67-a44a-f7957d1aa362>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -857,12 +803,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/0f6fb9eb-6f25-45e9-985d-10313e18628a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -872,8 +815,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/0f8dd5db-334f-40b7-8f96-6c30789c98d7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -883,8 +825,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/1024354c-4f87-428d-9cae-d9029b748faa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Proximal P1
   Enabled: true
   Layers: 1
@@ -893,14 +834,12 @@
     rotation: {x: 89.771713, y: -36.299408, z: 87.025772}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> b881d524-8623-4528-9654-cd2251b15966
     - !<own> 1999b3ef-b353-4005-a767-90050dd0bade
 - !<PinToMeshComponent/108eaa66-0a10-47dd-99fb-9e7fe0f8db27>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -910,8 +849,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/116d04cf-a5d1-4f23-967f-9862bf8af981>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -921,8 +859,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/121d1bcc-aeef-40f3-bd4a-a3a4268f6a93>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -932,8 +869,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/12479644-3c58-44da-b8e5-7c1866c8ecdc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -949,12 +885,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/12a8ba8a-ca52-40c2-8536-610fffbf2dd5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -970,12 +903,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/12d6aac4-5815-451d-b58f-63894b65fbfc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Distal P2
   Enabled: true
   Layers: 1
@@ -984,14 +914,12 @@
     rotation: {x: 93.303482, y: 3.864967, z: -1.037310}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 7f5d0e77-f4c9-4e7a-9033-1c291fd2479d
     - !<own> 432d7a6c-8b05-4dec-a9b9-29b5a378ce0f
 - !<PinToMeshComponent/133abdd0-81ac-4958-b7e4-8a0aa34b1f4c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1001,8 +929,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/139df77b-ba20-4303-91b0-aafb965b4539>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1018,12 +945,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/1457585b-0cf5-499e-8a5f-9a0d7616ebc8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1039,12 +963,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/171b802b-dba8-468d-85bb-f169ac062b80>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1054,8 +975,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/172f6d82-f99d-40a2-b974-aaeb17edea48>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Distal P1
   Enabled: true
   Layers: 1
@@ -1064,14 +984,12 @@
     rotation: {x: -97.717110, y: 73.690346, z: 84.299309}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8db1fd04-d6d4-4c20-bcf4-9dcd457094d5
     - !<own> dd6c3c2b-b549-4a21-929f-24ef57f7bf1c
 - !<RenderMeshVisual/17a272a2-180a-49bc-801c-724043ea527c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1087,12 +1005,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/185f5e29-528b-4f86-bd96-0a40b383c329>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Distal P3
   Enabled: true
   Layers: 1
@@ -1101,14 +1016,12 @@
     rotation: {x: -106.394394, y: -58.992138, z: 104.980118}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 1457585b-0cf5-499e-8a5f-9a0d7616ebc8
     - !<own> 84ea4135-c347-4f11-8b69-12fe00daf34d
 - !<SceneObject/18df1d16-2bb4-4f8a-ae19-7cfb09769050>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Distal P1
   Enabled: true
   Layers: 1
@@ -1117,14 +1030,12 @@
     rotation: {x: 102.281197, y: -3.824333, z: 4.929293}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 9ef23f5e-b4d4-476f-bfa9-3a6e8d69d0ce
     - !<own> b0acbd6e-9d63-42f3-86d8-7f5b54f50eb9
 - !<SceneObject/1941193c-770f-47af-bcfd-41622cf7421d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Middle P1
   Enabled: true
   Layers: 1
@@ -1133,14 +1044,12 @@
     rotation: {x: 94.008537, y: -1.952173, z: 9.465548}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> a6343a86-4353-450d-8f66-df8dbc9ce2cb
     - !<own> d6af45d7-089f-4e77-9bda-c60ad41611fc
 - !<PinToMeshComponent/1999b3ef-b353-4005-a767-90050dd0bade>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1150,8 +1059,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/1acda68d-f62f-46c6-bcb1-8a1565f30151>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Distal P3
   Enabled: true
   Layers: 1
@@ -1160,14 +1068,12 @@
     rotation: {x: -76.999725, y: -27.117287, z: -123.797318}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c8af3179-6225-4269-a754-5e8108b84583
     - !<own> d3c14f6a-72a1-4409-a8a4-d67cb9bfe91d
 - !<SceneObject/1afc0525-965e-4ba1-a889-155aa5d4561d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Middle P1
   Enabled: true
   Layers: 1
@@ -1176,14 +1082,12 @@
     rotation: {x: -132.377472, y: 84.208237, z: 48.741718}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c52bede5-d75b-4f0b-a4f6-b3e0ff47f210
     - !<own> 44210714-a6a7-4590-bcfe-4a4410570a42
 - !<SceneObject/1b0274dc-e154-4614-b5cb-ba7f6bc8b63c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Proximal P2
   Enabled: true
   Layers: 1
@@ -1192,14 +1096,12 @@
     rotation: {x: 148.388000, y: 33.813046, z: -30.959913}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 3a08431b-69f8-4c5e-86da-5b2b9371a44a
     - !<own> 28ed2c4a-9349-406d-a8da-3cfcc3365665
 - !<RenderMeshVisual/1be2153b-3e73-4bcc-9bd2-f257e1483057>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1215,12 +1117,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/1c2f696b-9aa4-452a-9966-6be7737f6b77>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1236,12 +1135,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/1c39417b-07de-4b3b-86f7-94ebf49cb0ac>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Distal
   Enabled: true
   Layers: 1
@@ -1254,11 +1150,9 @@
     - !<own> 7f3d15d7-2330-4545-89b5-6774365293bf
     - !<own> d2e553a9-c0e2-4c5f-b50d-8039f6b9f238
     - !<own> c1716d7a-a825-411f-b665-e92d2550459a
-  Components:
-    []
+  Components: []
 - !<SceneObject/1c490834-27d7-4b88-a8be-a370be0e419f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end
   Enabled: true
   Layers: 1
@@ -1269,11 +1163,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 36e26ae7-8241-4255-ab60-f0a677fedff4
-  Components:
-    []
+  Components: []
 - !<SceneObject/1d93ba6d-e058-415f-867c-15cd13c3dc8f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-0
   Enabled: true
   Layers: 1
@@ -1284,11 +1176,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b6166e5b-28c9-4db6-bb83-aa66b7c05bc1
-  Components:
-    []
+  Components: []
 - !<SceneObject/1ddd8492-b25e-4717-ba62-041b4277bcf6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-1
   Enabled: true
   Layers: 1
@@ -1299,11 +1189,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 0aca6763-6d88-484d-91f4-ed4b1f3090d0
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/1e0ec949-44da-4647-8745-95f9c37995d6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1313,8 +1201,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/1e48960c-d809-46a2-a918-724ff881115c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Distal P1
   Enabled: true
   Layers: 1
@@ -1323,14 +1210,12 @@
     rotation: {x: 121.545952, y: -5.399438, z: 3.398153}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 12479644-3c58-44da-b8e5-7c1866c8ecdc
     - !<own> da380cc9-25fa-4d09-9d0e-d627057b08b5
 - !<SceneObject/1f0517f7-ef2e-4f66-ae42-61c874c93ae7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end_end
   Enabled: true
   Layers: 1
@@ -1341,11 +1226,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f56a174e-7774-435d-b42c-200aaa0410eb
-  Components:
-    []
+  Components: []
 - !<SceneObject/1f861d16-87e3-4567-82b7-0a0923256081>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Proximal P2
   Enabled: true
   Layers: 1
@@ -1354,14 +1237,12 @@
     rotation: {x: 91.444260, y: 9.163885, z: 0.418045}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 4ea92e58-a11e-4677-bb63-bb4438753ca6
     - !<own> 0a754fe8-24c9-40a0-9e56-4072800e5eea
 - !<PinToMeshComponent/1ff1dd7f-108c-48ce-88bc-465f68168195>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1371,8 +1252,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/2105c809-95c1-4f8b-905c-55164f00a81b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Middle
   Enabled: true
   Layers: 1
@@ -1385,11 +1265,9 @@
     - !<own> 8c944815-64ca-487f-a648-6e72214e0926
     - !<own> ca3827ff-9095-404f-a275-c78431c0d3ab
     - !<own> 9f18b49c-5c01-4034-98b1-6e140955684e
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/22f112a7-4a44-4e47-8bed-db062c769c2b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1405,12 +1283,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/238e9d2b-6bf9-4265-8618-d340cc2f0ce0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1420,8 +1295,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/25a16f9e-31d1-47fd-80f7-3be886d1ed9d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1437,12 +1311,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/25a64837-294f-4230-93bb-b8ae44b65849>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1452,8 +1323,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/263319c5-e759-444e-83c8-c92041a7b0d5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end
   Enabled: true
   Layers: 1
@@ -1464,11 +1334,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> bbdd1f9b-9776-4e6b-8761-4551d0cfb832
-  Components:
-    []
+  Components: []
 - !<SceneObject/287e10a2-6c54-4160-a2ee-ab1362eab52f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -1477,13 +1345,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<PinToMeshComponent/28ed2c4a-9349-406d-a8da-3cfcc3365665>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -1493,8 +1358,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/29ea6b85-b798-4bfd-b7c1-43c39ff3b181>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Proximal P3
   Enabled: true
   Layers: 1
@@ -1503,14 +1367,12 @@
     rotation: {x: -75.999161, y: -13.019774, z: -140.046463}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c0494b00-1e70-4700-bac0-03414c075ca0
     - !<own> 6f6d9d78-9682-4967-b268-0bc79e28c382
 - !<RenderMeshVisual/2a244175-99d8-4899-9dae-fae72333a0a9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1526,9 +1388,7 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ObjectPrefabAssetData/2a95313b-836a-4aae-b6b6-4395ed17c89f>
   SourceRemaps:
     - 00b64f47-6957-418e-b8e2-60128e342ab0: c5a58a48-fe85-42c8-b274-a5f3f0f58023
@@ -1910,8 +1770,7 @@
     - ffc31498-73df-49c2-bb7f-625679629b8d: 7bdcdb90-a299-4298-a798-1c4cfb9cad2c
   SourceState: !<own> 93e8b2f1-0106-44c8-8ca6-adda25ec563d
 - !<SceneObject/2b4dd133-4643-4f2b-b732-d3ed787af840>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end
   Enabled: true
   Layers: 1
@@ -1922,11 +1781,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> fa186f6d-df67-467a-98f5-7a3fd45e027e
-  Components:
-    []
+  Components: []
 - !<SceneObject/2b9f6fc8-8aff-42ce-834c-1ca985abc02e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Distal
   Enabled: true
   Layers: 1
@@ -1939,11 +1796,9 @@
     - !<own> 1e48960c-d809-46a2-a918-724ff881115c
     - !<own> 762238aa-edbc-4649-bc57-5ab00b126b97
     - !<own> 2ec7f3be-fe5f-4017-9715-a143fddd562f
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/2c792f29-682e-49b6-9af2-36b6c34b16df>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1959,12 +1814,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/2dcc33bc-dcd6-4dda-b94f-89e03ef35778>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -1980,12 +1832,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/2eb70331-0bb2-4527-ac46-ced44c077686>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Middle
   Enabled: true
   Layers: 1
@@ -1998,11 +1847,9 @@
     - !<own> bd7030b2-fcb9-41e8-b109-673127028023
     - !<own> ed98c4e9-d4c8-4309-bbf0-ad3c27cbc5a1
     - !<own> 2ef443bf-f429-4c0c-b31c-0fd599e4b50c
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/2eb7604c-ade7-43ba-8de8-8ef49c61feed>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2018,12 +1865,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/2ec7f3be-fe5f-4017-9715-a143fddd562f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Distal P3
   Enabled: true
   Layers: 1
@@ -2032,14 +1876,12 @@
     rotation: {x: -67.659187, y: -0.137916, z: 177.003662}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 01647c57-219c-4ace-b937-d1ab6347d508
     - !<own> 64bfc42a-69fc-4833-be46-fcc8c9293df5
 - !<SceneObject/2ef443bf-f429-4c0c-b31c-0fd599e4b50c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Middle P3
   Enabled: true
   Layers: 1
@@ -2048,14 +1890,12 @@
     rotation: {x: -59.811012, y: 5.338970, z: 163.798828}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 2eb7604c-ade7-43ba-8de8-8ef49c61feed
     - !<own> a0ba436c-7ffa-4f8c-b993-8f90ab25e30a
 - !<SceneObject/2f09212f-bf9c-4673-bf32-54c1ff5d97ca>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3
   Enabled: true
   Layers: 1
@@ -2066,11 +1906,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1c490834-27d7-4b88-a8be-a370be0e419f
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/2f1c1ac0-9099-4cf8-9041-b8e9bf7a72e6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2086,12 +1924,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/309681ee-845a-4fac-bb22-99e834c6acaa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist
   Enabled: true
   Layers: 1
@@ -2106,11 +1941,9 @@
     - !<own> af62fffd-52e1-4a5b-a1f3-5f2b3d4f46d6
     - !<own> d0723d25-18b6-4c84-be7c-6bed32f8aec5
     - !<own> 5e853402-2f1b-40c3-b6a6-203d6347f7d8
-  Components:
-    []
+  Components: []
 - !<SceneObject/309a8432-d806-4265-96b4-fe30eb7548cb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Distal P1
   Enabled: true
   Layers: 1
@@ -2119,14 +1952,12 @@
     rotation: {x: 73.852921, y: 2.411824, z: -179.737366}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 22f112a7-4a44-4e47-8bed-db062c769c2b
     - !<own> 8e4555ed-00d8-4678-80c0-c4223fb625a1
 - !<RenderMeshVisual/31a6a076-c16f-4552-8ed5-fdf9c7d4e535>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2142,12 +1973,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/3509ce83-138c-47fc-8ea3-ff57c18377fa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2157,8 +1985,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/3619579c-f890-4faf-ad96-b092b3d15978>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky
   Enabled: true
   Layers: 1
@@ -2171,11 +1998,9 @@
     - !<own> b3860702-2391-4849-8968-b5a00d5cf6db
     - !<own> 7df1f6ce-d935-4d20-9f76-adaff92a55e5
     - !<own> ff0cb6a5-60d5-4d8c-9702-8f0746ee63d5
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/365e907d-c3c6-423c-902f-dc85a75195ce>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2185,8 +2010,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/369ae753-1abf-46c2-b05f-f5b64e398fd5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3
   Enabled: true
   Layers: 1
@@ -2197,11 +2021,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 49092c57-febd-4dea-aa0d-bb5f8c3e251c
-  Components:
-    []
+  Components: []
 - !<SceneObject/36d6b26a-3ebf-4fe7-98ee-1bf41e2f752e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-2
   Enabled: true
   Layers: 1
@@ -2212,11 +2034,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> c48a4d7f-64df-434e-9989-1a1fec74b601
-  Components:
-    []
+  Components: []
 - !<SceneObject/36e26ae7-8241-4255-ab60-f0a677fedff4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end
   Enabled: true
   Layers: 1
@@ -2227,11 +2047,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> d8141843-65d5-4dc5-abe8-4e80e443055e
-  Components:
-    []
+  Components: []
 - !<SceneObject/3701c5b6-8c06-4b84-b57c-39616275100b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Distal
   Enabled: true
   Layers: 1
@@ -2244,11 +2062,9 @@
     - !<own> 02e8608e-bb0c-4324-a9a8-5ccdfec37fb3
     - !<own> 9751aa5d-7e7e-4b8d-bf53-31ccd654d0bb
     - !<own> e08ff83d-9e0f-48cf-b19e-e45a73110971
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/37068b13-e2e4-4e14-85e5-853276663c36>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2258,8 +2074,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/3729f053-b068-4d10-b848-6b9be9c5a73f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end
   Enabled: true
   Layers: 1
@@ -2270,11 +2085,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f910c754-1f59-403a-88d8-522fd3b56695
-  Components:
-    []
+  Components: []
 - !<SceneObject/39252cf3-fc84-4985-8863-cd9fd8812aff>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_pinky
   Enabled: true
   Layers: 1
@@ -2285,11 +2098,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 064999ca-1f12-4e69-82e5-080ab597d4b1
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/3a08431b-69f8-4c5e-86da-5b2b9371a44a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2305,12 +2116,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/3a81d2b9-2da6-4bfe-af89-0b1459fb6634>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end
   Enabled: true
   Layers: 1
@@ -2321,11 +2129,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 0e1f25e0-5951-4e32-b6ed-760c40e5958d
-  Components:
-    []
+  Components: []
 - !<SceneObject/3b1a6897-e59b-4355-91fb-bfcf1a2a626d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-1
   Enabled: true
   Layers: 1
@@ -2336,11 +2142,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 74ced8fb-d2d2-4a0a-9a68-2f5c4dde3b8e
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/3b3b7ded-c31a-4c31-889f-a66b65329a64>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2350,8 +2154,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/3cb4304a-192e-403f-b822-be7e579d5766>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index
   Enabled: true
   Layers: 1
@@ -2364,11 +2167,9 @@
     - !<own> 5f3fb8b7-dd6f-4354-a441-4e37fecdb3f7
     - !<own> 2105c809-95c1-4f8b-905c-55164f00a81b
     - !<own> 2b9f6fc8-8aff-42ce-834c-1ca985abc02e
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/3e40e160-978f-4ac0-ad08-642d93b221c8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2378,8 +2179,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/3eaeeebf-a027-439a-bd43-b8b5d75fc9b0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end_end
   Enabled: true
   Layers: 1
@@ -2390,11 +2190,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 4b7f07ee-a203-42a1-b165-c2f65e6ef0d4
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/3f0367b9-5898-4164-aa6e-0ceb40f0b23c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2410,12 +2208,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/3f6806e0-003d-4740-9255-495bd6235800>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Distal
   Enabled: true
   Layers: 1
@@ -2428,11 +2223,9 @@
     - !<own> 309a8432-d806-4265-96b4-fe30eb7548cb
     - !<own> c34f1d0e-334a-4127-a236-550cbfe890c3
     - !<own> dc4a6525-5d1b-424e-b204-cf992b55ae2d
-  Components:
-    []
+  Components: []
 - !<SceneObject/3fadb7fd-0c79-47f2-b7da-3e7e09f51d6e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_index
   Enabled: true
   Layers: 1
@@ -2443,11 +2236,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> bcd7548f-9b4e-4625-81f9-646cd0a06979
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/3fbfcb5e-5993-45fd-b942-405868c621df>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2457,8 +2248,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/40667131-e255-4af4-beed-ea65467839a6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -2467,13 +2257,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<SceneObject/40bdbde4-5ef0-4387-86bf-210d36e17c3e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end_end
   Enabled: true
   Layers: 1
@@ -2484,11 +2271,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 94e1be8e-7b36-4330-8a12-60be13cac4d8
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/432d7a6c-8b05-4dec-a9b9-29b5a378ce0f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2498,8 +2283,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/43d33459-bfc2-491e-a3ef-8cd08792706e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Proximal
   Enabled: true
   Layers: 1
@@ -2512,11 +2296,9 @@
     - !<own> 0b4d4e4e-c2b2-454e-8f04-26cc2fb381fc
     - !<own> e1bf8875-78bb-49fa-bedb-1cce8f6a598f
     - !<own> 48b43f95-8cfa-4756-bc75-ab783dd92d90
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/44210714-a6a7-4590-bcfe-4a4410570a42>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2526,8 +2308,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/45adf63f-0b24-40c0-98d9-a82f5fcb0eac>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2537,8 +2318,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/46a03bbe-7036-46e5-ac95-26207198d2aa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Proximal
   Enabled: true
   Layers: 1
@@ -2551,11 +2331,9 @@
     - !<own> 93f15772-6a64-44d9-bc18-bca99fe1923d
     - !<own> 1f861d16-87e3-4567-82b7-0a0923256081
     - !<own> 0195bbc9-310f-4a66-8e77-a001d3e9f487
-  Components:
-    []
+  Components: []
 - !<SceneObject/48986a46-6b19-434f-a430-bb2edd839748>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-0
   Enabled: true
   Layers: 1
@@ -2566,11 +2344,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> ac56bb6d-aad4-4bee-a3a1-696125fa34f2
-  Components:
-    []
+  Components: []
 - !<SceneObject/48b43f95-8cfa-4756-bc75-ab783dd92d90>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Proximal P3
   Enabled: true
   Layers: 1
@@ -2579,14 +2355,12 @@
     rotation: {x: -70.512596, y: 5.855133, z: 162.933395}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 78088118-707b-4539-9381-5aa196d8a0be
     - !<own> 61a1c06f-c93a-4255-88d5-2b945d6b74ba
 - !<SceneObject/48e5bdfd-2e89-4d00-9722-70cb120b6177>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -2595,13 +2369,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<SceneObject/49092c57-febd-4dea-aa0d-bb5f8c3e251c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end
   Enabled: true
   Layers: 1
@@ -2612,11 +2383,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 3729f053-b068-4d10-b848-6b9be9c5a73f
-  Components:
-    []
+  Components: []
 - !<SceneObject/4b7f07ee-a203-42a1-b165-c2f65e6ef0d4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -2625,13 +2394,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<RenderMeshVisual/4b8e801e-afe9-408a-aa31-5538ca1afddb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2647,12 +2413,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/4ce3a2e6-6fea-4a8b-bac7-b741601e89ac>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_0
   Enabled: true
   RenderOrder: 0
@@ -2668,9 +2431,7 @@
   Skin: !<reference> 668bb180-276c-44cc-966a-2d9931ef3a4b
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ObjectPrefabAssetData/4e297dfe-6c7b-42ab-b4e2-eeaedfb34713>
   SourceRemaps:
     - 01318bc2-caaa-4962-b47f-d53f6446c36b: f910c754-1f59-403a-88d8-522fd3b56695
@@ -2727,8 +2488,7 @@
     - fc4eebfd-66d2-4042-b846-28cee52b7c45: db41d725-ce5c-42cf-8dab-b7fb96552ffe
   SourceState: !<own> cabd0b33-4605-499f-84fc-5d3716c23d40
 - !<RenderMeshVisual/4ea92e58-a11e-4677-bb63-bb4438753ca6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2744,12 +2504,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/4f8d977e-f9fd-4257-97bd-ba9bb1790ccb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-0
   Enabled: true
   Layers: 1
@@ -2760,11 +2517,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e96b5aac-7d9e-4630-ae00-7b0f2c85045f
-  Components:
-    []
+  Components: []
 - !<SceneObject/5084960c-b9fe-4191-94c3-3c7e8e8e36e2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_ring
   Enabled: true
   Layers: 1
@@ -2775,11 +2530,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 552bef57-0ad7-40ab-ab34-78e963fcff47
-  Components:
-    []
+  Components: []
 - !<SceneObject/50886b3d-8330-45cb-9a80-638eb806befe>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle
   Enabled: true
   Layers: 1
@@ -2792,11 +2545,9 @@
     - !<own> 43d33459-bfc2-491e-a3ef-8cd08792706e
     - !<own> 2eb70331-0bb2-4527-ac46-ced44c077686
     - !<own> 3f6806e0-003d-4740-9255-495bd6235800
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/51bdbffa-16f0-4c4b-b612-67585c9ef95c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2806,8 +2557,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/541469b0-6176-420f-a5a0-ede92d2c698a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3
   Enabled: true
   Layers: 1
@@ -2818,11 +2568,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 6b9f29f2-1c1a-4e63-897e-c84582ccad81
-  Components:
-    []
+  Components: []
 - !<SceneObject/543a5e16-c9e5-40c1-bbfa-82b5ecce4026>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Distal P3
   Enabled: true
   Layers: 1
@@ -2831,14 +2579,12 @@
     rotation: {x: -83.303848, y: -60.853947, z: 82.555000}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 9521744d-645c-481c-b042-3608ea3d5160
     - !<own> e0ba5b1c-1ab4-4128-bf1a-c7d5fc04c984
 - !<SceneObject/552bef57-0ad7-40ab-ab34-78e963fcff47>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-0
   Enabled: true
   Layers: 1
@@ -2849,11 +2595,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> cb0c7961-8454-496c-a3e7-314d78d85752
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/559e76fc-d222-44b6-9aa5-88c316a7041a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2863,8 +2607,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/55a1c6bc-79c0-4b38-8435-6cc6f6bea0ad>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: RightHandMesh
   Enabled: true
   Layers: 1
@@ -2873,13 +2616,11 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 4ce3a2e6-6fea-4a8b-bac7-b741601e89ac
 - !<RenderMeshVisual/55daa299-b13c-47ad-b949-65c46f2ffa9e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2895,12 +2636,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/56f72c7e-6a19-4c5d-94cf-a66381482977>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -2916,12 +2654,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/575ae3a4-db20-44f3-9f7a-9da3e0e9a18b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end_end
   Enabled: true
   Layers: 1
@@ -2932,11 +2667,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e1e8ed07-2dad-4ccf-b06e-929360664c3a
-  Components:
-    []
+  Components: []
 - !<SceneObject/5794d853-5f80-461c-a6fa-d65c4919c105>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Distal P2
   Enabled: true
   Layers: 1
@@ -2945,14 +2678,12 @@
     rotation: {x: -6.366675, y: -4.370042, z: 1.689302}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 1c2f696b-9aa4-452a-9966-6be7737f6b77
     - !<own> ddeeecae-770b-4228-a2ba-b855a12528a3
 - !<SceneObject/5799ff81-f1fb-4fef-bfd0-1a1012ffbb31>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Middle P2
   Enabled: true
   Layers: 1
@@ -2961,14 +2692,12 @@
     rotation: {x: 92.856140, y: -2.808042, z: 96.979355}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 3f0367b9-5898-4164-aa6e-0ceb40f0b23c
     - !<own> 84ab18fc-a20b-429f-a066-a824b359de6e
 - !<SceneObject/585583f2-022c-4fa7-85c6-1f2322e04913>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Proximal
   Enabled: true
   Layers: 1
@@ -2981,11 +2710,9 @@
     - !<own> 7ae61d16-79ad-48f9-883f-e66d4dbab64f
     - !<own> 1b0274dc-e154-4614-b5cb-ba7f6bc8b63c
     - !<own> f980e32a-e0da-48bd-8fc8-ddceb67a8d7f
-  Components:
-    []
+  Components: []
 - !<SceneObject/5939de4d-7828-48cc-b247-4d7515632227>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Proximal P1
   Enabled: true
   Layers: 1
@@ -2994,14 +2721,12 @@
     rotation: {x: -88.792389, y: -38.114704, z: -89.466438}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 84d364e0-0360-423f-a369-f80259e7d5e6
     - !<own> f937b219-522b-4ea2-a76c-38264dc72c81
 - !<RenderMeshVisual/5a13883e-0068-4ed8-b833-b7c7f0506566>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3017,12 +2742,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/5a161848-1164-44d3-94fe-dbababfb9f05>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3038,12 +2760,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/5b5d9e00-8593-4427-8e69-2b630c2583d1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -3052,13 +2771,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<SceneObject/5c238c21-577c-4124-bf86-1104822f20ac>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Proximal P2
   Enabled: true
   Layers: 1
@@ -3067,14 +2783,12 @@
     rotation: {x: 24.173998, y: -25.194403, z: -4.212303}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 31a6a076-c16f-4552-8ed5-fdf9c7d4e535
     - !<own> 8c36aa59-9f05-438a-9516-aabc88e88c54
 - !<SceneObject/5cb0dc00-505d-45fc-a866-158f6b0ffebf>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Middle P1
   Enabled: true
   Layers: 1
@@ -3083,14 +2797,12 @@
     rotation: {x: 76.696953, y: -44.304096, z: 106.173012}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> d4bc946e-6f62-46b6-896e-7d0ee24fa6cd
     - !<own> 6f558e57-d446-4021-a69f-45b3ddb2281c
 - !<SceneObject/5e0f8008-5b48-453c-a2b2-4a4fd9e058db>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Middle P3
   Enabled: true
   Layers: 1
@@ -3099,14 +2811,12 @@
     rotation: {x: -87.422676, y: -59.612923, z: 82.821999}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 139df77b-ba20-4303-91b0-aafb965b4539
     - !<own> fbf3d8a2-bfb2-4cbf-bd44-6be29ccc40c3
 - !<SceneObject/5e853402-2f1b-40c3-b6a6-203d6347f7d8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_pinky
   Enabled: true
   Layers: 1
@@ -3117,8 +2827,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 87584b36-7fa4-459b-b7a2-6c9707d23e4e
-  Components:
-    []
+  Components: []
 - !<ObjectPrefabAssetData/5e9ba197-03cf-4e44-8992-94b3710c2e3e>
   SourceRemaps:
     - 016ab866-c885-42be-8ca2-f421f53f7af4: 48986a46-6b19-434f-a430-bb2edd839748
@@ -3175,8 +2884,7 @@
     - f77d9cf5-b9a0-4f39-8186-96ffc7e2b7f3: d99a3d4f-991f-4b88-a9ca-511d3cc0ed33
   SourceState: !<own> bfc22c5c-d122-4468-82f1-d3c9ceb02b20
 - !<SceneObject/5f12ea91-ecc8-472b-9b42-269807b6094c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_mid
   Enabled: true
   Layers: 1
@@ -3187,11 +2895,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 48986a46-6b19-434f-a430-bb2edd839748
-  Components:
-    []
+  Components: []
 - !<SceneObject/5f3fb8b7-dd6f-4354-a441-4e37fecdb3f7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Proximal
   Enabled: true
   Layers: 1
@@ -3204,11 +2910,9 @@
     - !<own> a4be32e2-e197-4cdf-859a-b7ba1e3675c2
     - !<own> ec376092-cb92-4d07-a53a-27ad685a928f
     - !<own> aca03042-905b-494d-80b0-1f030760fb11
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/604007fe-f1df-412a-8fdc-e382a377ab57>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3218,8 +2922,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/60e08a52-6311-4359-9e5d-72469b82b0e1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3229,8 +2932,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/61a1c06f-c93a-4255-88d5-2b945d6b74ba>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3240,8 +2942,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/62e56014-f263-4fa7-9edb-6a7d2a4e12da>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3257,12 +2958,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/646dce7a-4353-4153-9c40-3f1f0562c540>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Distal P3
   Enabled: true
   Layers: 1
@@ -3271,14 +2969,12 @@
     rotation: {x: -120.498688, y: -9.087314, z: -24.506477}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> f71ced63-4804-4e76-bac7-b87fe66e5476
     - !<own> 37068b13-e2e4-4e14-85e5-853276663c36
 - !<SceneObject/64944a51-16dc-4058-9531-4e5ca1c835f6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -3287,13 +2983,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<PinToMeshComponent/64bfc42a-69fc-4833-be46-fcc8c9293df5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3303,8 +2996,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/66295150-d9e2-4fbc-ac47-db9be44b8d7d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Middle P2
   Enabled: true
   Layers: 1
@@ -3313,14 +3005,12 @@
     rotation: {x: -7.393425, y: -3.641712, z: 3.641950}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> a1037ff4-87e4-4b0d-b185-2c713e56e9b4
     - !<own> 8186a6b6-516d-449e-abcc-f5ff00090ad9
 - !<Skin/668bb180-276c-44cc-966a-2d9931ef3a4b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_2
   Enabled: true
   skinBones:
@@ -3374,8 +3064,7 @@
     wrist: !<reference> 309681ee-845a-4fac-bb22-99e834c6acaa
     wrist_to_pinky: !<reference> 5e853402-2f1b-40c3-b6a6-203d6347f7d8
 - !<SceneObject/67bd7f29-2302-42b6-8826-7aa17d6108b6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Distal P3
   Enabled: true
   Layers: 1
@@ -3384,14 +3073,12 @@
     rotation: {x: -157.666199, y: 2.996096, z: 179.861618}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 2f1c1ac0-9099-4cf8-9041-b8e9bf7a72e6
     - !<own> 108eaa66-0a10-47dd-99fb-9e7fe0f8db27
 - !<PinToMeshComponent/6838074d-b1bb-4b4c-9813-3b2ec0166e6f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3401,8 +3088,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/68b3139d-69d9-47e4-88f6-3829b5367c32>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Distal
   Enabled: true
   Layers: 1
@@ -3415,11 +3101,9 @@
     - !<own> 172f6d82-f99d-40a2-b974-aaeb17edea48
     - !<own> 12d6aac4-5815-451d-b58f-63894b65fbfc
     - !<own> 543a5e16-c9e5-40c1-bbfa-82b5ecce4026
-  Components:
-    []
+  Components: []
 - !<SceneObject/6994c613-535b-4a96-a36c-be70c42e4e39>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Distal
   Enabled: true
   Layers: 1
@@ -3432,11 +3116,9 @@
     - !<own> f87c8b83-7666-445e-a95c-4c53c99e7aa1
     - !<own> c43cc6a8-7e20-4ea5-885e-52d7f912e745
     - !<own> e42179b9-9da8-4f3c-aada-83644751e2ad
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/6a1346fb-3c22-48ac-bc71-c93cfa0d1cbd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3446,8 +3128,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/6aacd062-6d1a-4965-b8c0-7f08935deeed>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Proximal P3
   Enabled: true
   Layers: 1
@@ -3456,14 +3137,12 @@
     rotation: {x: -111.552895, y: -66.947929, z: 107.206345}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8c8adee6-18df-4021-a194-c22d7217c9d3
     - !<own> d21f5f89-10b3-47be-a684-343f31dd90d6
 - !<SceneObject/6abb3915-baf7-496a-a255-7cddcd689213>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Proximal P2
   Enabled: true
   Layers: 1
@@ -3472,14 +3151,12 @@
     rotation: {x: 88.686996, y: 25.166895, z: -91.969719}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 9ee9d667-edf9-4ace-a0de-bfe3c4da06dd
     - !<own> fad69724-14b5-4fb3-9924-a70e8de71c4d
 - !<SceneObject/6b9f29f2-1c1a-4e63-897e-c84582ccad81>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end
   Enabled: true
   Layers: 1
@@ -3490,11 +3167,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> c59aa6c5-ce2c-46f0-aa1b-331c497ec375
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/6bbfe499-93b1-4f21-a806-dbe34068aff9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3510,12 +3185,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/6d721d64-a50e-4d71-aa59-8c6732a8a69a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end
   Enabled: true
   Layers: 1
@@ -3526,11 +3198,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 263319c5-e759-444e-83c8-c92041a7b0d5
-  Components:
-    []
+  Components: []
 - !<SceneObject/6ddaa965-19da-4a15-8bad-50318d95e6d6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_thumb
   Enabled: true
   Layers: 1
@@ -3541,11 +3211,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b5588ea5-f884-4beb-9f29-7fdab1fe3ef5
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/6efbd243-70c2-4233-8bfe-9b95268dbaa8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3561,12 +3229,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/6f558e57-d446-4021-a69f-45b3ddb2281c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3576,8 +3241,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/6f5dde9c-530f-4bb9-ab26-fcdf0adc2317>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3593,12 +3257,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/6f6d9d78-9682-4967-b268-0bc79e28c382>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3608,8 +3269,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/7037e4d9-2257-4440-a6a8-0f4942675d79>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3625,12 +3285,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/705fdced-af5e-4f4f-a60f-e3704c1cdf97>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Middle P1
   Enabled: true
   Layers: 1
@@ -3639,14 +3296,12 @@
     rotation: {x: -74.600548, y: -62.324112, z: -107.650986}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 6efbd243-70c2-4233-8bfe-9b95268dbaa8
     - !<own> 7d4e95de-c3dc-4b97-9c8f-64084e19ef77
 - !<SceneObject/70bc30f8-8b72-4035-a36b-a8831a00b9ab>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Middle P1
   Enabled: true
   Layers: 1
@@ -3655,14 +3310,12 @@
     rotation: {x: -89.068848, y: 44.191978, z: 93.938301}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 78b52328-e2f2-4879-850d-b823748ef8c7
     - !<own> dfd3aa05-5942-4832-b87a-a0cc49c946b0
 - !<PinToMeshComponent/72f76e6c-a88c-44b4-98ff-e87b577496bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3672,8 +3325,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/74938ee7-a08a-4b31-92c0-c531ad6f6cdd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3689,12 +3341,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/74958e00-5842-4a0b-83b9-854db0d5e66f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-2
   Enabled: true
   Layers: 1
@@ -3705,11 +3354,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 873e243b-7bac-441f-b674-9b8311af6446
-  Components:
-    []
+  Components: []
 - !<SceneObject/74ced8fb-d2d2-4a0a-9a68-2f5c4dde3b8e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-2
   Enabled: true
   Layers: 1
@@ -3720,11 +3367,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f3437f03-9f8c-4372-abe4-879bd199d369
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/75002fa1-70de-41a4-8e54-e07db9667487>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3734,8 +3379,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/762238aa-edbc-4649-bc57-5ab00b126b97>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Distal P2
   Enabled: true
   Layers: 1
@@ -3744,14 +3388,12 @@
     rotation: {x: 91.569740, y: -2.779507, z: 97.596878}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 25a16f9e-31d1-47fd-80f7-3be886d1ed9d
     - !<own> 93bde5e5-a98a-4994-9bb9-832a71d12978
 - !<RenderMeshVisual/78088118-707b-4539-9381-5aa196d8a0be>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3767,12 +3409,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/78b52328-e2f2-4879-850d-b823748ef8c7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3788,12 +3427,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/78e977e9-0538-42e0-ab3d-0ef4436fc473>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3809,12 +3445,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/7907ddc5-ff4f-42e7-98e6-ef36fbcd9ffd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Proximal P1
   Enabled: true
   Layers: 1
@@ -3823,14 +3456,12 @@
     rotation: {x: 110.192352, y: -6.822338, z: 8.504893}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 0e75a4c4-90b2-48b6-831d-a0b2aa3e4499
     - !<own> 3509ce83-138c-47fc-8ea3-ff57c18377fa
 - !<SceneObject/7a6cef46-7367-4c4e-b4e6-1e4f274a83a6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Hand
   Enabled: true
   Layers: 1
@@ -3845,11 +3476,9 @@
     - !<own> 50886b3d-8330-45cb-9a80-638eb806befe
     - !<own> 02fdc395-de16-4dbb-9353-fb6dfc7ec735
     - !<own> 3619579c-f890-4faf-ad96-b092b3d15978
-  Components:
-    []
+  Components: []
 - !<SceneObject/7a82d243-1d42-4734-8a21-c63ff5904d3c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Proximal P2
   Enabled: true
   Layers: 1
@@ -3858,14 +3487,12 @@
     rotation: {x: 107.951454, y: -22.272301, z: -153.870926}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> e7f7c5e7-d8fc-43d7-b5ee-c2b2ce68e175
     - !<own> cdff4373-e4e8-4bfc-9eb7-f867d8c6cfca
 - !<SceneObject/7ae61d16-79ad-48f9-883f-e66d4dbab64f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Proximal  P1
   Enabled: true
   Layers: 1
@@ -3874,14 +3501,12 @@
     rotation: {x: -98.004272, y: -30.551498, z: 141.343414}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 963aef09-210f-40c1-95b9-683cc223c1aa
     - !<own> 87cab6e3-ca13-4583-b3ca-cbc935984129
 - !<RenderMeshVisual/7b1dc005-7adb-44cb-93af-df1c9621a1a9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3897,12 +3522,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/7bb75f3e-0bb8-498c-bedb-15910627a853>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3912,8 +3534,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/7bdcdb90-a299-4298-a798-1c4cfb9cad2c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Proximal
   Enabled: true
   Layers: 1
@@ -3926,11 +3547,9 @@
     - !<own> d06265e3-a0be-41cc-addf-80990f8d543d
     - !<own> 7a82d243-1d42-4734-8a21-c63ff5904d3c
     - !<own> bcfc7eac-e007-482d-a6a2-aa1becfb028c
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/7d4e95de-c3dc-4b97-9c8f-64084e19ef77>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3940,8 +3559,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/7df1f6ce-d935-4d20-9f76-adaff92a55e5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Middle
   Enabled: true
   Layers: 1
@@ -3954,11 +3572,9 @@
     - !<own> 1941193c-770f-47af-bcfd-41622cf7421d
     - !<own> be7c33d2-f7b8-4778-a789-8446a92295b4
     - !<own> 0080e6a4-bf07-4843-b130-4c61c9dd9b23
-  Components:
-    []
+  Components: []
 - !<SceneObject/7e19f321-7df6-48ed-8b1f-d045fbd47ee8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-0
   Enabled: true
   Layers: 1
@@ -3969,11 +3585,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 3b1a6897-e59b-4355-91fb-bfcf1a2a626d
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/7e5fb82f-076d-4fcf-b202-3b8d080514e1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -3989,12 +3603,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/7f3d15d7-2330-4545-89b5-6774365293bf>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Distal P1
   Enabled: true
   Layers: 1
@@ -4003,14 +3614,12 @@
     rotation: {x: -27.910084, y: -18.490908, z: -151.094620}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8c404be9-6929-4ffd-92a4-fbb02302f1fd
     - !<own> d23fbcbe-ab35-485f-8f6d-5973b4ec4cd3
 - !<RenderMeshVisual/7f5d0e77-f4c9-4e7a-9033-1c291fd2479d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4026,12 +3635,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/7f83f667-2143-416a-91a6-94dad5e9bcf7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Proximal
   Enabled: true
   Layers: 1
@@ -4044,11 +3650,9 @@
     - !<own> 5939de4d-7828-48cc-b247-4d7515632227
     - !<own> bc7eec11-e566-4afb-8799-144f82674f34
     - !<own> 05808ff3-feee-44e2-a66a-e5f6596d2972
-  Components:
-    []
+  Components: []
 - !<Skin/81538c65-248e-4d0d-a373-63b614337f00>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_2
   Enabled: true
   skinBones:
@@ -4102,8 +3706,7 @@
     wrist: !<reference> 03da5569-d57a-4612-a964-c6d030ee1dfb
     wrist_to_pinky: !<reference> 39252cf3-fc84-4985-8863-cd9fd8812aff
 - !<PinToMeshComponent/8186a6b6-516d-449e-abcc-f5ff00090ad9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4113,8 +3716,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/82b2db7e-55fd-4031-a84d-751082bea4cb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Proximal
   Enabled: true
   Layers: 1
@@ -4127,11 +3729,9 @@
     - !<own> 1024354c-4f87-428d-9cae-d9029b748faa
     - !<own> ff055413-a0c9-47d0-80b2-ff90f4a43f2f
     - !<own> 29ea6b85-b798-4bfd-b7c1-43c39ff3b181
-  Components:
-    []
+  Components: []
 - !<SceneObject/83caca27-06e0-4a06-80b7-18bf59fbdee1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Middle
   Enabled: true
   Layers: 1
@@ -4144,11 +3744,9 @@
     - !<own> 1afc0525-965e-4ba1-a889-155aa5d4561d
     - !<own> da5414ae-b2e2-4f0d-8401-b9e899f390b4
     - !<own> cbb55342-ecdb-4f77-a573-058ecb524055
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/84ab18fc-a20b-429f-a066-a824b359de6e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4158,8 +3756,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/84d364e0-0360-423f-a369-f80259e7d5e6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4175,12 +3772,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/84ea4135-c347-4f11-8b69-12fe00daf34d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4190,8 +3784,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/873e243b-7bac-441f-b674-9b8311af6446>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3
   Enabled: true
   Layers: 1
@@ -4202,11 +3795,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 2b4dd133-4643-4f2b-b732-d3ed787af840
-  Components:
-    []
+  Components: []
 - !<SceneObject/87584b36-7fa4-459b-b7a2-6c9707d23e4e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-0
   Enabled: true
   Layers: 1
@@ -4217,11 +3808,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 057602fa-cddf-4c47-a323-94323fcba187
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/877c3924-fd19-49fb-bbaf-56b5b78c9c51>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4237,12 +3826,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/87cab6e3-ca13-4583-b3ca-cbc935984129>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4252,8 +3838,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/88430d4d-b326-448f-bf46-117ffbb4770d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3
   Enabled: true
   Layers: 1
@@ -4264,11 +3849,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e15d9418-3f53-4ca0-8f6f-3ece9e91b465
-  Components:
-    []
+  Components: []
 - !<SceneObject/8864339d-038e-4635-8658-ee13572ad53d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring
   Enabled: true
   Layers: 1
@@ -4281,11 +3864,9 @@
     - !<own> f8f880ee-f2c3-4a13-8bf8-470569454e83
     - !<own> ab3c6c83-580a-436d-89d2-88ca0eb17da5
     - !<own> ec6f3666-7203-46bd-b319-52efee8007d3
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/8930f192-bb1c-4052-bf9e-a24afd57ee61>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4301,12 +3882,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/8953123b-d21d-440b-ae9b-dbda1fd2453f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4322,12 +3900,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/8987bf94-098b-42b6-830f-9fb8bc7222e1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end_end
   Enabled: true
   Layers: 1
@@ -4338,11 +3913,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> d99a3d4f-991f-4b88-a9ca-511d3cc0ed33
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/8afad894-613c-477e-b9bf-82d1024cabea>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4358,12 +3931,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/8c36aa59-9f05-438a-9516-aabc88e88c54>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4373,8 +3943,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/8c404be9-6929-4ffd-92a4-fbb02302f1fd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4390,12 +3959,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/8c7dfe81-f12b-4d9d-be28-01345f9a5208>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Middle
   Enabled: true
   Layers: 1
@@ -4408,11 +3974,9 @@
     - !<own> 5cb0dc00-505d-45fc-a866-158f6b0ffebf
     - !<own> 66295150-d9e2-4fbc-ac47-db9be44b8d7d
     - !<own> 90c6c5b5-a651-4eaf-8638-03af8947dcff
-  Components:
-    []
+  Components: []
 - !<SceneObject/8c83a71c-84ae-487f-98ae-30ee662c5676>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb
   Enabled: true
   Layers: 1
@@ -4424,11 +3988,9 @@
   Children:
     - !<own> 585583f2-022c-4fa7-85c6-1f2322e04913
     - !<own> 3701c5b6-8c06-4b84-b57c-39616275100b
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/8c8adee6-18df-4021-a194-c22d7217c9d3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4444,12 +4006,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/8c944815-64ca-487f-a648-6e72214e0926>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Middle P1
   Enabled: true
   Layers: 1
@@ -4458,14 +4017,12 @@
     rotation: {x: 116.599800, y: -0.553546, z: 1.851018}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> ece83f85-f00d-470b-a8ea-53305b5a41ca
     - !<own> 559e76fc-d222-44b6-9aa5-88c316a7041a
 - !<SceneObject/8d41c80e-5abd-424b-bf26-cc8b754c2233>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Proximal P1
   Enabled: true
   Layers: 1
@@ -4474,14 +4031,12 @@
     rotation: {x: -93.773590, y: 53.680874, z: 87.784981}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> d2fced36-b4ba-4e29-a5c9-275f35f3ad4e
     - !<own> 05528e6d-be17-497b-a34b-7baf166a3433
 - !<RenderMeshVisual/8db1fd04-d6d4-4c20-bcf4-9dcd457094d5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4497,12 +4052,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/8e0ed554-5ee5-497a-8c4c-fdf7a8e70988>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_0
   Enabled: true
   RenderOrder: 0
@@ -4518,12 +4070,9 @@
   Skin: !<reference> 81538c65-248e-4d0d-a373-63b614337f00
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/8e20a998-cfd8-4917-9538-22f5d519434e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle
   Enabled: true
   Layers: 1
@@ -4536,11 +4085,9 @@
     - !<own> 46a03bbe-7036-46e5-ac95-26207198d2aa
     - !<own> e4ec52c2-25ba-4aec-8294-ea3eff611b79
     - !<own> 68b3139d-69d9-47e4-88f6-3829b5367c32
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/8e4555ed-00d8-4678-80c0-c4223fb625a1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4550,8 +4097,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/90c6c5b5-a651-4eaf-8638-03af8947dcff>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Middle P3
   Enabled: true
   Layers: 1
@@ -4560,14 +4106,12 @@
     rotation: {x: -79.004372, y: -22.547468, z: -115.790726}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 877c3924-fd19-49fb-bbaf-56b5b78c9c51
     - !<own> 238e9d2b-6bf9-4265-8618-d340cc2f0ce0
 - !<SceneObject/9138192b-9cac-4b49-b55c-8a3948788398>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Distal P1
   Enabled: true
   Layers: 1
@@ -4576,14 +4120,12 @@
     rotation: {x: -95.723656, y: 48.471333, z: 88.053711}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8953123b-d21d-440b-ae9b-dbda1fd2453f
     - !<own> 3fbfcb5e-5993-45fd-b942-405868c621df
 - !<PinToMeshComponent/93bde5e5-a98a-4994-9bb9-832a71d12978>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4599,8 +4141,7 @@
   LazyLoading: false
   RetainAssets: true
 - !<SceneObject/93f15772-6a64-44d9-bc18-bca99fe1923d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Proximal P1
   Enabled: true
   Layers: 1
@@ -4609,14 +4150,12 @@
     rotation: {x: -82.366570, y: 40.427780, z: 92.363655}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> cd4e3014-b0ff-42ef-a940-d3ba48695ddd
     - !<own> 1ff1dd7f-108c-48ce-88bc-465f68168195
 - !<SceneObject/94acc944-3c11-4062-b4f6-873d38421be0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: LeftHandMesh
   Enabled: true
   Layers: 1
@@ -4625,13 +4164,11 @@
     rotation: {x: -90.000000, y: -0.000000, z: -0.000000}
     scale: {x: 0.999999, y: 0.999999, z: 0.999999}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8e0ed554-5ee5-497a-8c4c-fdf7a8e70988
 - !<RenderMeshVisual/94b59a77-2f47-4749-8694-f9dfb76e33bf>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4647,12 +4184,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/94e1be8e-7b36-4330-8a12-60be13cac4d8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -4661,13 +4195,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<RenderMeshVisual/9521744d-645c-481c-b042-3608ea3d5160>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4683,12 +4214,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/963aef09-210f-40c1-95b9-683cc223c1aa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4704,12 +4232,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/96f45815-e4a9-4d55-98c9-b925e5137aca>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4719,8 +4244,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/9751aa5d-7e7e-4b8d-bf53-31ccd654d0bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Distal P2
   Enabled: true
   Layers: 1
@@ -4729,14 +4253,12 @@
     rotation: {x: 156.513687, y: 30.696121, z: -30.765396}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c49664ba-1142-4ab0-b46e-1fd02c71e8bc
     - !<own> 45adf63f-0b24-40c0-98d9-a82f5fcb0eac
 - !<PinToMeshComponent/99512552-1b09-4f75-adf9-d31b7a910a33>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4746,8 +4268,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/9e40575b-f993-4582-bf7e-e94d095146d4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3
   Enabled: true
   Layers: 1
@@ -4758,11 +4279,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> a9830faf-92bb-487b-b2c4-4eacb7fb4e57
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/9ee9d667-edf9-4ace-a0de-bfe3c4da06dd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4778,12 +4297,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/9ef23f5e-b4d4-476f-bfa9-3a6e8d69d0ce>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4799,12 +4315,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/9f18b49c-5c01-4034-98b1-6e140955684e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Middle P3
   Enabled: true
   Layers: 1
@@ -4813,14 +4326,12 @@
     rotation: {x: -68.674080, y: -0.032172, z: 177.146591}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 5a161848-1164-44d3-94fe-dbababfb9f05
     - !<own> 116d04cf-a5d1-4f23-967f-9862bf8af981
 - !<PinToMeshComponent/9f7f8a4d-f756-45d3-8bda-09d1787e082b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4830,8 +4341,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/a040c76a-d180-429f-abf0-fade147fab96>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4841,8 +4351,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/a0ba436c-7ffa-4f8c-b993-8f90ab25e30a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4852,8 +4361,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/a1037ff4-87e4-4b0d-b185-2c713e56e9b4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4869,12 +4377,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/a323c29d-8604-4134-a63a-b83314f75c2c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Proximal P2
   Enabled: true
   Layers: 1
@@ -4883,14 +4388,12 @@
     rotation: {x: 81.417007, y: 10.172236, z: -3.245884}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c88ca773-7df0-485d-956c-65f448eb3a0b
     - !<own> ce9b82b6-315d-4563-80f3-b4256ebe8be3
 - !<SceneObject/a4be32e2-e197-4cdf-859a-b7ba1e3675c2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Proximal P1
   Enabled: true
   Layers: 1
@@ -4899,14 +4402,12 @@
     rotation: {x: 141.333710, y: -9.125715, z: 5.278639}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 0f485c85-bf8e-4f67-a44a-f7957d1aa362
     - !<own> 1e0ec949-44da-4647-8745-95f9c37995d6
 - !<RenderMeshVisual/a6343a86-4353-450d-8f66-df8dbc9ce2cb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -4922,12 +4423,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/a690f0ec-0ed0-4d5a-8e25-171f3e4cb3bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-0
   Enabled: true
   Layers: 1
@@ -4938,11 +4436,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1ddd8492-b25e-4717-ba62-041b4277bcf6
-  Components:
-    []
+  Components: []
 - !<SceneObject/a9830faf-92bb-487b-b2c4-4eacb7fb4e57>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end
   Enabled: true
   Layers: 1
@@ -4953,11 +4449,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> de052d74-fd04-48b8-99f4-9f4bf45c9a8b
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/a9eb3543-effa-44c1-bfe6-bd536e71942d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -4967,8 +4461,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/aadf0230-fe4f-46f8-b082-e540146b0f87>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-1
   Enabled: true
   Layers: 1
@@ -4979,11 +4472,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 36d6b26a-3ebf-4fe7-98ee-1bf41e2f752e
-  Components:
-    []
+  Components: []
 - !<SceneObject/ab3c6c83-580a-436d-89d2-88ca0eb17da5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Middle
   Enabled: true
   Layers: 1
@@ -4996,11 +4487,9 @@
     - !<own> 70bc30f8-8b72-4035-a36b-a8831a00b9ab
     - !<own> e243e5e7-53a9-4a48-bbc5-1ab8dca0ac6c
     - !<own> d64f6763-becf-418d-81c6-6d9fb77afa4c
-  Components:
-    []
+  Components: []
 - !<SceneObject/ab91e0e3-3a4c-4baa-aa4c-67504c64364f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Proximal P3
   Enabled: true
   Layers: 1
@@ -5009,14 +4498,12 @@
     rotation: {x: -95.864128, y: -70.880020, z: 95.464554}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 94b59a77-2f47-4749-8694-f9dfb76e33bf
     - !<own> e051d737-f056-4688-b27a-e6c1276c49db
 - !<SceneObject/ac53ed7a-41e7-4bf0-8fa9-89c8b9dcae36>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Proximal
   Enabled: true
   Layers: 1
@@ -5029,11 +4516,9 @@
     - !<own> 0e6a49ac-791c-4ba4-a8d1-3fe575b14788
     - !<own> 6abb3915-baf7-496a-a255-7cddcd689213
     - !<own> 6aacd062-6d1a-4965-b8c0-7f08935deeed
-  Components:
-    []
+  Components: []
 - !<SceneObject/ac56bb6d-aad4-4bee-a3a1-696125fa34f2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-1
   Enabled: true
   Layers: 1
@@ -5044,11 +4529,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e595c6a8-7b16-483d-9de6-8a7f8d0db9a9
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/ac8aa16e-9803-4d39-8cea-666c38c2af53>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5058,8 +4541,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/aca03042-905b-494d-80b0-1f030760fb11>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Proximal P3
   Enabled: true
   Layers: 1
@@ -5068,14 +4550,12 @@
     rotation: {x: -79.295113, y: 1.747764, z: -178.448318}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 08881d7f-2b4c-4083-9d24-52fb9eb32d06
     - !<own> 9f7f8a4d-f756-45d3-8bda-09d1787e082b
 - !<PinToMeshComponent/ad011247-e86a-4b22-aed2-440f90aa31fa>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5085,8 +4565,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/ad39a060-161f-4669-852e-0fa713e22981>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end
   Enabled: true
   Layers: 1
@@ -5097,11 +4576,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b3190333-dc06-4126-b5e7-13363371f455
-  Components:
-    []
+  Components: []
 - !<SceneObject/aeddec65-2632-454f-a3d0-0a9d397df434>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Middle
   Enabled: true
   Layers: 1
@@ -5114,11 +4591,9 @@
     - !<own> 705fdced-af5e-4f4f-a60f-e3704c1cdf97
     - !<own> 5799ff81-f1fb-4fef-bfd0-1a1012ffbb31
     - !<own> ff12c74e-24b2-458e-a9ef-bd4a88522a74
-  Components:
-    []
+  Components: []
 - !<SceneObject/af60a56c-1312-427c-a39b-072d1dbf0c60>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Distal
   Enabled: true
   Layers: 1
@@ -5131,11 +4606,9 @@
     - !<own> bae0b790-1e94-418f-9b20-06861794a98e
     - !<own> 5794d853-5f80-461c-a6fa-d65c4919c105
     - !<own> 1acda68d-f62f-46c6-bcb1-8a1565f30151
-  Components:
-    []
+  Components: []
 - !<SceneObject/af62fffd-52e1-4a5b-a1f3-5f2b3d4f46d6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_mid
   Enabled: true
   Layers: 1
@@ -5146,11 +4619,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 7e19f321-7df6-48ed-8b1f-d045fbd47ee8
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/b0acbd6e-9d63-42f3-86d8-7f5b54f50eb9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5160,8 +4631,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/b3190333-dc06-4126-b5e7-13363371f455>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end_end
   Enabled: true
   Layers: 1
@@ -5172,11 +4642,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 48e5bdfd-2e89-4d00-9722-70cb120b6177
-  Components:
-    []
+  Components: []
 - !<SceneObject/b3860702-2391-4849-8968-b5a00d5cf6db>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Proximal
   Enabled: true
   Layers: 1
@@ -5189,11 +4657,9 @@
     - !<own> 7907ddc5-ff4f-42e7-98e6-ef36fbcd9ffd
     - !<own> 5c238c21-577c-4124-bf86-1104822f20ac
     - !<own> e7e58587-39f8-408d-86b3-c56e8da87461
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/b44ac852-cbbf-4086-94dd-a4904c39aaa3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5209,12 +4675,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/b52fadc7-389f-457a-bec9-1f277cdf1b27>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end
   Enabled: true
   Layers: 1
@@ -5225,11 +4688,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> ad39a060-161f-4669-852e-0fa713e22981
-  Components:
-    []
+  Components: []
 - !<SceneObject/b5588ea5-f884-4beb-9f29-7fdab1fe3ef5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-0
   Enabled: true
   Layers: 1
@@ -5240,11 +4701,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> c9b8de8c-0299-449e-92c8-fb3f8ad73d0c
-  Components:
-    []
+  Components: []
 - !<SceneObject/b6166e5b-28c9-4db6-bb83-aa66b7c05bc1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-1
   Enabled: true
   Layers: 1
@@ -5255,11 +4714,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> effc4cf5-4d40-4365-8912-edfe8e65d5b8
-  Components:
-    []
+  Components: []
 - !<SceneObject/b67b60ef-0db3-4780-9309-30007e091818>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_index
   Enabled: true
   Layers: 1
@@ -5270,11 +4727,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 4f8d977e-f9fd-4257-97bd-ba9bb1790ccb
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/b685dea2-e3b8-43f3-b048-a98fe9d5d213>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5284,8 +4739,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/b68a9d88-9941-424e-9464-669907c62c18>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5301,12 +4755,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/b881d524-8623-4528-9654-cd2251b15966>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5322,12 +4773,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/b97dbc6a-90be-48b1-9c41-38a7f01a2e9a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5343,12 +4791,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/b9fa8f12-d657-43c0-ad14-48d1c55fe512>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-2
   Enabled: true
   Layers: 1
@@ -5359,11 +4804,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> eab45404-75f1-4064-94ba-147b37a8cdd5
-  Components:
-    []
+  Components: []
 - !<SceneObject/baa0f549-a63b-406d-a491-ee926591e9bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end
   Enabled: true
   Layers: 1
@@ -5374,11 +4817,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 575ae3a4-db20-44f3-9f7a-9da3e0e9a18b
-  Components:
-    []
+  Components: []
 - !<SceneObject/bac40a7a-aa18-4439-9599-c1425d47063a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Middle P2
   Enabled: true
   Layers: 1
@@ -5387,14 +4828,12 @@
     rotation: {x: 91.951187, y: 6.829121, z: -0.141540}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> db4d146f-ab83-4e9b-80bd-c367c803f16b
     - !<own> 99512552-1b09-4f75-adf9-d31b7a910a33
 - !<SceneObject/bae0b790-1e94-418f-9b20-06861794a98e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Distal P1
   Enabled: true
   Layers: 1
@@ -5403,14 +4842,12 @@
     rotation: {x: 79.370514, y: -40.455448, z: 99.699226}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 6f5dde9c-530f-4bb9-ab26-fcdf0adc2317
     - !<own> 121d1bcc-aeef-40f3-bd4a-a3a4268f6a93
 - !<SceneObject/bb194d26-4841-4a7a-a9a6-669257ea235f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-2
   Enabled: true
   Layers: 1
@@ -5421,11 +4858,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 369ae753-1abf-46c2-b05f-f5b64e398fd5
-  Components:
-    []
+  Components: []
 - !<SceneObject/bbdd1f9b-9776-4e6b-8761-4551d0cfb832>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end_end
   Enabled: true
   Layers: 1
@@ -5436,11 +4871,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 287e10a2-6c54-4160-a2ee-ab1362eab52f
-  Components:
-    []
+  Components: []
 - !<SceneObject/bc7eec11-e566-4afb-8799-144f82674f34>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Proximal P2
   Enabled: true
   Layers: 1
@@ -5449,14 +4882,12 @@
     rotation: {x: 98.723434, y: -4.951614, z: 94.638802}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c90617a7-53b3-45da-8dc0-522c5896f37d
     - !<own> f7afb35a-6a3e-4da3-ae12-575be3d908fb
 - !<RenderMeshVisual/bcc4debb-d56e-4851-9cc3-78d41e19f0e5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5472,12 +4903,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/bcd7548f-9b4e-4625-81f9-646cd0a06979>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-0
   Enabled: true
   Layers: 1
@@ -5488,11 +4916,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f9ceca43-2d35-41fb-a0f8-22c5a37a1a9a
-  Components:
-    []
+  Components: []
 - !<SceneObject/bcfc7eac-e007-482d-a6a2-aa1becfb028c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Proximal P3
   Enabled: true
   Layers: 1
@@ -5501,14 +4927,12 @@
     rotation: {x: -152.067596, y: -14.010055, z: -97.918526}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> ca45020a-528f-4f19-bf58-28f2e2ddf1e5
     - !<own> d0e56d78-ebb2-4976-b090-a6ccb64734f6
 - !<SceneObject/bd7030b2-fcb9-41e8-b109-673127028023>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Middle P1
   Enabled: true
   Layers: 1
@@ -5517,14 +4941,12 @@
     rotation: {x: 71.546120, y: -1.208802, z: 175.226532}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> e5cc6701-2467-48e3-85bb-ddefce89e236
     - !<own> 6a1346fb-3c22-48ac-bc71-c93cfa0d1cbd
 - !<PinToMeshComponent/be412716-0eb4-466f-b622-05249516214d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5534,8 +4956,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/be7c33d2-f7b8-4778-a789-8446a92295b4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Middle P2
   Enabled: true
   Layers: 1
@@ -5544,14 +4965,12 @@
     rotation: {x: 19.230110, y: -30.454298, z: -9.995205}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 0935f342-53c6-448c-95a7-1d892f627d42
     - !<own> 084b885a-35a5-495d-80eb-51413f4731e1
 - !<RenderMeshVisual/bf4b1074-7d31-401c-8d5e-89fa7fcf7e8d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5567,9 +4986,7 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ObjectPrefab/bfc22c5c-d122-4468-82f1-d3c9ceb02b20>
   PackagePath: Ring Binding/LeftHandModel
   objects:
@@ -5577,8 +4994,7 @@
   LazyLoading: false
   RetainAssets: true
 - !<SceneObject/c0433fc6-02e1-47b2-855e-c72793d4a4a9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-2
   Enabled: true
   Layers: 1
@@ -5589,11 +5005,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> d8fafcdf-ccc2-4ae9-9674-3ff022d86612
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/c0494b00-1e70-4700-bac0-03414c075ca0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5609,12 +5023,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/c0789f56-1a0a-421e-b30a-035e73cdbb67>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: RightHandRig
   Enabled: true
   Layers: 1
@@ -5625,11 +5036,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 309681ee-845a-4fac-bb22-99e834c6acaa
-  Components:
-    []
+  Components: []
 - !<SceneObject/c1716d7a-a825-411f-b665-e92d2550459a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Distal P3
   Enabled: true
   Layers: 1
@@ -5638,14 +5047,12 @@
     rotation: {x: -128.269135, y: 11.957748, z: -89.992500}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> b97dbc6a-90be-48b1-9c41-38a7f01a2e9a
     - !<own> ac8aa16e-9803-4d39-8cea-666c38c2af53
 - !<RenderMeshVisual/c2ff2fac-a2cb-4ed8-8872-563c4c640abf>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5661,12 +5068,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/c34bc9e2-bf8b-42e4-bfa2-f20fc30b2f42>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end_end
   Enabled: true
   Layers: 1
@@ -5677,11 +5081,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 64944a51-16dc-4058-9531-4e5ca1c835f6
-  Components:
-    []
+  Components: []
 - !<SceneObject/c34f1d0e-334a-4127-a236-550cbfe890c3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Distal P2
   Enabled: true
   Layers: 1
@@ -5690,14 +5092,12 @@
     rotation: {x: 4.242058, y: -37.304146, z: 1.230209}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 8930f192-bb1c-4052-bf9e-a24afd57ee61
     - !<own> 3e40e160-978f-4ac0-ad08-642d93b221c8
 - !<SceneObject/c43cc6a8-7e20-4ea5-885e-52d7f912e745>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Distal P2
   Enabled: true
   Layers: 1
@@ -5706,14 +5106,12 @@
     rotation: {x: 90.077774, y: 16.064253, z: -90.829430}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 17a272a2-180a-49bc-801c-724043ea527c
     - !<own> 51bdbffa-16f0-4c4b-b612-67585c9ef95c
 - !<SceneObject/c48a4d7f-64df-434e-9989-1a1fec74b601>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3
   Enabled: true
   Layers: 1
@@ -5724,11 +5122,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 6d721d64-a50e-4d71-aa59-8c6732a8a69a
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/c49664ba-1142-4ab0-b46e-1fd02c71e8bc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5744,12 +5140,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/c52bede5-d75b-4f0b-a4f6-b3e0ff47f210>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5765,12 +5158,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/c59aa6c5-ce2c-46f0-aa1b-331c497ec375>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end
   Enabled: true
   Layers: 1
@@ -5781,11 +5171,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 3eaeeebf-a027-439a-bd43-b8b5d75fc9b0
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/c5a58a48-fe85-42c8-b274-a5f3f0f58023>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5795,8 +5183,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/c652f082-d503-46d8-a842-27882f3505b0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5806,8 +5193,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/c74c65e8-2178-4d79-9a7c-8b8db22a73f2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: LeftHandModel
   Enabled: true
   Layers: 1
@@ -5822,8 +5208,7 @@
   Components:
     - !<own> 81538c65-248e-4d0d-a373-63b614337f00
 - !<RenderMeshVisual/c8119bfc-c78e-434b-afb7-7936a940ca96>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5839,12 +5224,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/c88ca773-7df0-485d-956c-65f448eb3a0b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5860,12 +5242,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/c8af3179-6225-4269-a754-5e8108b84583>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5881,12 +5260,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/c90617a7-53b3-45da-8dc0-522c5896f37d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5902,12 +5278,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/c9b8de8c-0299-449e-92c8-fb3f8ad73d0c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-1
   Enabled: true
   Layers: 1
@@ -5918,11 +5291,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b9fa8f12-d657-43c0-ad14-48d1c55fe512
-  Components:
-    []
+  Components: []
 - !<SceneObject/ca3827ff-9095-404f-a275-c78431c0d3ab>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Middle P2
   Enabled: true
   Layers: 1
@@ -5931,14 +5302,12 @@
     rotation: {x: 2.549251, y: -17.101191, z: 2.428294}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> dbc5d0e4-35be-4faa-bc3c-b4891f99c960
     - !<own> 3b3b7ded-c31a-4c31-889f-a66b65329a64
 - !<RenderMeshVisual/ca45020a-528f-4f19-bf58-28f2e2ddf1e5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -5954,12 +5323,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/ca9cafe7-0753-4ba6-86fb-a9c4fa964a0b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -5975,8 +5341,7 @@
   LazyLoading: false
   RetainAssets: true
 - !<SceneObject/cb0c7961-8454-496c-a3e7-314d78d85752>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-1
   Enabled: true
   Layers: 1
@@ -5987,11 +5352,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> c0433fc6-02e1-47b2-855e-c72793d4a4a9
-  Components:
-    []
+  Components: []
 - !<SceneObject/cbb55342-ecdb-4f77-a573-058ecb524055>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Middle P3
   Enabled: true
   Layers: 1
@@ -6000,14 +5363,12 @@
     rotation: {x: -91.765236, y: -62.532131, z: 90.661995}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 1be2153b-3e73-4bcc-9bd2-f257e1483057
     - !<own> a9eb3543-effa-44c1-bfe6-bd536e71942d
 - !<RenderMeshVisual/cbda6da1-582f-4fe4-8470-09bb4c48798e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6023,12 +5384,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/cc537939-b303-4777-bb74-734928793476>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end
   Enabled: true
   Layers: 1
@@ -6039,11 +5397,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1f0517f7-ef2e-4f66-ae42-61c874c93ae7
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/cd4e3014-b0ff-42ef-a940-d3ba48695ddd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6059,12 +5415,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/cdff4373-e4e8-4bfc-9eb7-f867d8c6cfca>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6074,8 +5427,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/ce9b82b6-315d-4563-80f3-b4256ebe8be3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6085,8 +5437,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/cffe9f6a-6d85-41a1-9f3b-352128993a99>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6102,12 +5453,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/d06265e3-a0be-41cc-addf-80990f8d543d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Proximal P1
   Enabled: true
   Layers: 1
@@ -6116,14 +5464,12 @@
     rotation: {x: -27.742542, y: -24.625143, z: -147.894196}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 12a8ba8a-ca52-40c2-8536-610fffbf2dd5
     - !<own> e2cd59d4-a687-4d3b-b60e-d93e989f1aed
 - !<SceneObject/d0723d25-18b6-4c84-be7c-6bed32f8aec5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_ring
   Enabled: true
   Layers: 1
@@ -6134,11 +5480,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1d93ba6d-e058-415f-867c-15cd13c3dc8f
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/d0e56d78-ebb2-4976-b090-a6ccb64734f6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6148,8 +5492,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/d198b892-3c99-4f4b-a487-21cf1f6841a6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6165,12 +5508,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/d21f5f89-10b3-47be-a684-343f31dd90d6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6180,8 +5520,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/d23fbcbe-ab35-485f-8f6d-5973b4ec4cd3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6191,8 +5530,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/d27e23a3-7f8e-4966-a918-f363eb3848c3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: LeftHandRig
   Enabled: true
   Layers: 1
@@ -6203,11 +5541,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 03da5569-d57a-4612-a964-c6d030ee1dfb
-  Components:
-    []
+  Components: []
 - !<SceneObject/d2e553a9-c0e2-4c5f-b50d-8039f6b9f238>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb Distal P2
   Enabled: true
   Layers: 1
@@ -6216,14 +5552,12 @@
     rotation: {x: 101.831795, y: -24.284544, z: -157.652176}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 62e56014-f263-4fa7-9edb-6a7d2a4e12da
     - !<own> b685dea2-e3b8-43f3-b048-a98fe9d5d213
 - !<RenderMeshVisual/d2fced36-b4ba-4e29-a5c9-275f35f3ad4e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6239,12 +5573,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/d3aa59cc-2c3e-4ac4-9a02-babd44863043>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6254,8 +5585,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/d3c14f6a-72a1-4409-a8a4-d67cb9bfe91d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6265,8 +5595,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<RenderMeshVisual/d4bc946e-6f62-46b6-896e-7d0ee24fa6cd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6282,12 +5611,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/d5b92fed-ff19-43c6-96a3-a2c19e17b795>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end
   Enabled: true
   Layers: 1
@@ -6298,11 +5624,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> baa0f549-a63b-406d-a491-ee926591e9bb
-  Components:
-    []
+  Components: []
 - !<SceneObject/d64f6763-becf-418d-81c6-6d9fb77afa4c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Middle P3
   Enabled: true
   Layers: 1
@@ -6311,14 +5635,12 @@
     rotation: {x: -93.028046, y: -65.007996, z: 93.844017}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> d198b892-3c99-4f4b-a487-21cf1f6841a6
     - !<own> d3aa59cc-2c3e-4ac4-9a02-babd44863043
 - !<PinToMeshComponent/d6af45d7-089f-4e77-9bda-c60ad41611fc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6328,8 +5650,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/d6e4a7fb-c5b3-49d8-be61-27ba7f5e1588>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Middle P1
   Enabled: true
   Layers: 1
@@ -6338,14 +5659,12 @@
     rotation: {x: -59.304722, y: 68.359909, z: 122.951126}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 2dcc33bc-dcd6-4dda-b94f-89e03ef35778
     - !<own> 60e08a52-6311-4359-9e5d-72469b82b0e1
 - !<SceneObject/d8141843-65d5-4dc5-abe8-4e80e443055e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3_end_end_end
   Enabled: true
   Layers: 1
@@ -6356,11 +5675,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 5b5d9e00-8593-4427-8e69-2b630c2583d1
-  Components:
-    []
+  Components: []
 - !<SceneObject/d8fafcdf-ccc2-4ae9-9674-3ff022d86612>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-3
   Enabled: true
   Layers: 1
@@ -6371,11 +5688,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b52fadc7-389f-457a-bec9-1f277cdf1b27
-  Components:
-    []
+  Components: []
 - !<SceneObject/d99a3d4f-991f-4b88-a9ca-511d3cc0ed33>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -6384,13 +5699,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<PinToMeshComponent/da380cc9-25fa-4d09-9d0e-d627057b08b5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6400,8 +5712,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/da5414ae-b2e2-4f0d-8401-b9e899f390b4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Middle P2
   Enabled: true
   Layers: 1
@@ -6410,14 +5721,12 @@
     rotation: {x: 89.669785, y: 16.491142, z: -91.056870}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 5a13883e-0068-4ed8-b833-b7c7f0506566
     - !<own> be412716-0eb4-466f-b622-05249516214d
 - !<SceneObject/da9d312f-3be8-4ad7-a784-f041e3cdf43e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Thumb
   Enabled: true
   Layers: 1
@@ -6429,11 +5738,9 @@
   Children:
     - !<own> 7bdcdb90-a299-4298-a798-1c4cfb9cad2c
     - !<own> 1c39417b-07de-4b3b-86f7-94ebf49cb0ac
-  Components:
-    []
+  Components: []
 - !<SceneObject/db41d725-ce5c-42cf-8dab-b7fb96552ffe>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: RightHandModel
   Enabled: true
   Layers: 1
@@ -6448,8 +5755,7 @@
   Components:
     - !<own> 668bb180-276c-44cc-966a-2d9931ef3a4b
 - !<RenderMeshVisual/db4d146f-ab83-4e9b-80bd-c367c803f16b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6465,12 +5771,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/dbc5d0e4-35be-4faa-bc3c-b4891f99c960>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6486,12 +5789,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/dc4a6525-5d1b-424e-b204-cf992b55ae2d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Distal P3
   Enabled: true
   Layers: 1
@@ -6500,14 +5800,12 @@
     rotation: {x: -62.142448, y: 8.133017, z: 165.396210}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> bcc4debb-d56e-4851-9cc3-78d41e19f0e5
     - !<own> 7bb75f3e-0bb8-498c-bedb-15910627a853
 - !<PinToMeshComponent/dd6c3c2b-b549-4a21-929f-24ef57f7bf1c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6517,8 +5815,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/ddeeecae-770b-4228-a2ba-b855a12528a3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6528,8 +5825,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/de052d74-fd04-48b8-99f4-9f4bf45c9a8b>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-3_end_end
   Enabled: true
   Layers: 1
@@ -6540,11 +5836,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 40bdbde4-5ef0-4387-86bf-210d36e17c3e
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/de286560-ab4f-4b90-9dcc-ff687b3e8e18>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6554,8 +5848,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/df4ec1b1-df90-4ddc-9067-6d5d6af1e381>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6565,8 +5858,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/dfd3aa05-5942-4832-b87a-a0cc49c946b0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6576,8 +5868,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/e051d737-f056-4688-b27a-e6c1276c49db>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6587,8 +5878,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/e08ff83d-9e0f-48cf-b19e-e45a73110971>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Distal P3
   Enabled: true
   Layers: 1
@@ -6597,14 +5887,12 @@
     rotation: {x: 164.090942, y: 53.621929, z: 128.192535}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 2c792f29-682e-49b6-9af2-36b6c34b16df
     - !<own> 72f76e6c-a88c-44b4-98ff-e87b577496bb
 - !<PinToMeshComponent/e0ba5b1c-1ab4-4128-bf1a-c7d5fc04c984>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6614,8 +5902,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/e15d9418-3f53-4ca0-8f6f-3ece9e91b465>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end
   Enabled: true
   Layers: 1
@@ -6626,11 +5913,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> cc537939-b303-4777-bb74-734928793476
-  Components:
-    []
+  Components: []
 - !<SceneObject/e1bf8875-78bb-49fa-bedb-1cce8f6a598f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Proximal P2
   Enabled: true
   Layers: 1
@@ -6639,14 +5924,12 @@
     rotation: {x: 1.767848, y: -38.816387, z: 8.064628}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> bf4b1074-7d31-401c-8d5e-89fa7fcf7e8d
     - !<own> 75002fa1-70de-41a4-8e54-e07db9667487
 - !<SceneObject/e1e8ed07-2dad-4ccf-b06e-929360664c3a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -6655,13 +5938,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<SceneObject/e243e5e7-53a9-4a48-bbc5-1ab8dca0ac6c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Middle P2
   Enabled: true
   Layers: 1
@@ -6670,14 +5950,12 @@
     rotation: {x: 82.527771, y: 2.941658, z: -1.758116}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> b68a9d88-9941-424e-9464-669907c62c18
     - !<own> 171b802b-dba8-468d-85bb-f169ac062b80
 - !<PinToMeshComponent/e2cd59d4-a687-4d3b-b60e-d93e989f1aed>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6687,8 +5965,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/e42179b9-9da8-4f3c-aada-83644751e2ad>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Distal P3
   Enabled: true
   Layers: 1
@@ -6697,14 +5974,12 @@
     rotation: {x: -99.672958, y: -58.282246, z: 95.513115}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> cbda6da1-582f-4fe4-8470-09bb4c48798e
     - !<own> de286560-ab4f-4b90-9dcc-ff687b3e8e18
 - !<SceneObject/e4ec52c2-25ba-4aec-8294-ea3eff611b79>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Middle Middle
   Enabled: true
   Layers: 1
@@ -6717,11 +5992,9 @@
     - !<own> d6e4a7fb-c5b3-49d8-be61-27ba7f5e1588
     - !<own> bac40a7a-aa18-4439-9599-c1425d47063a
     - !<own> 5e0f8008-5b48-453c-a2b2-4a4fd9e058db
-  Components:
-    []
+  Components: []
 - !<SceneObject/e595c6a8-7b16-483d-9de6-8a7f8d0db9a9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-2
   Enabled: true
   Layers: 1
@@ -6732,11 +6005,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 88430d4d-b326-448f-bf46-117ffbb4770d
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/e5cc6701-2467-48e3-85bb-ddefce89e236>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6752,12 +6023,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/e7e58587-39f8-408d-86b3-c56e8da87461>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Proximal P3
   Enabled: true
   Layers: 1
@@ -6766,14 +6034,12 @@
     rotation: {x: -111.430382, y: -5.750369, z: -29.345734}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 7b1dc005-7adb-44cb-93af-df1c9621a1a9
     - !<own> f3e7b279-304e-492b-8d1f-f07f9839d653
 - !<RenderMeshVisual/e7f7c5e7-d8fc-43d7-b5ee-c2b2ce68e175>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6789,12 +6055,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/e96b5aac-7d9e-4630-ae00-7b0f2c85045f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-1
   Enabled: true
   Layers: 1
@@ -6805,11 +6068,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> bb194d26-4841-4a7a-a9a6-669257ea235f
-  Components:
-    []
+  Components: []
 - !<SceneObject/eab45404-75f1-4064-94ba-147b37a8cdd5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: thumb-3
   Enabled: true
   Layers: 1
@@ -6820,11 +6081,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> d5b92fed-ff19-43c6-96a3-a2c19e17b795
-  Components:
-    []
+  Components: []
 - !<SceneObject/ec376092-cb92-4d07-a53a-27ad685a928f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Index Proximal P2
   Enabled: true
   Layers: 1
@@ -6833,14 +6092,12 @@
     rotation: {x: 4.326803, y: -15.308071, z: 7.974549}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> f096bf1f-7984-4b2a-b487-37605c43c5cd
     - !<own> ad011247-e86a-4b22-aed2-440f90aa31fa
 - !<SceneObject/ec6f3666-7203-46bd-b319-52efee8007d3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Distal
   Enabled: true
   Layers: 1
@@ -6853,11 +6110,9 @@
     - !<own> 9138192b-9cac-4b49-b55c-8a3948788398
     - !<own> 06eb6e1a-88e7-4911-9921-e00e004f1ac7
     - !<own> 185f5e29-528b-4f86-bd96-0a40b383c329
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/ece83f85-f00d-470b-a8ea-53305b5a41ca>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6873,12 +6128,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/ed98c4e9-d4c8-4309-bbf0-ad3c27cbc5a1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Middle Middle P2
   Enabled: true
   Layers: 1
@@ -6887,14 +6139,12 @@
     rotation: {x: 2.506265, y: -38.248974, z: 5.271464}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> b44ac852-cbbf-4086-94dd-a4904c39aaa3
     - !<own> c652f082-d503-46d8-a842-27882f3505b0
 - !<SceneObject/eea9d777-5347-4c73-beb4-e0880529f524>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Hand
   Enabled: true
   Layers: 1
@@ -6909,11 +6159,9 @@
     - !<own> 8e20a998-cfd8-4917-9538-22f5d519434e
     - !<own> 8864339d-038e-4635-8658-ee13572ad53d
     - !<own> 087a91a3-9203-421a-8622-83a1946328b9
-  Components:
-    []
+  Components: []
 - !<SceneObject/effc4cf5-4d40-4365-8912-edfe8e65d5b8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: ring-2
   Enabled: true
   Layers: 1
@@ -6924,11 +6172,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 2f09212f-bf9c-4673-bf32-54c1ff5d97ca
-  Components:
-    []
+  Components: []
 - !<SceneObject/f08f9d12-2194-431d-b1da-e3a496bc77a0>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: wrist_to_thumb
   Enabled: true
   Layers: 1
@@ -6939,11 +6185,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> a690f0ec-0ed0-4d5a-8e25-171f3e4cb3bb
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/f096bf1f-7984-4b2a-b487-37605c43c5cd>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -6959,12 +6203,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/f3437f03-9f8c-4372-abe4-879bd199d369>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3
   Enabled: true
   Layers: 1
@@ -6975,11 +6216,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 3a81d2b9-2da6-4bfe-af89-0b1459fb6634
-  Components:
-    []
+  Components: []
 - !<SceneObject/f378b002-1a8b-4d60-b0ab-d6862331e708>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Distal P1
   Enabled: true
   Layers: 1
@@ -6988,14 +6227,12 @@
     rotation: {x: -80.406685, y: -57.690536, z: -98.001541}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 6bbfe499-93b1-4f21-a806-dbe34068aff9
     - !<own> 96f45815-e4a9-4d55-98c9-b925e5137aca
 - !<PinToMeshComponent/f3e7b279-304e-492b-8d1f-f07f9839d653>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7005,8 +6242,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/f56a174e-7774-435d-b42c-200aaa0410eb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: mid-3_end_end_end_end
   Enabled: true
   Layers: 1
@@ -7015,13 +6251,10 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
+  Children: []
+  Components: []
 - !<SceneObject/f63fab40-ac7a-42d7-8eab-ee0589ee8b7e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Distal P2
   Enabled: true
   Layers: 1
@@ -7030,14 +6263,12 @@
     rotation: {x: 91.569740, y: -2.779507, z: 97.596878}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 55daa299-b13c-47ad-b949-65c46f2ffa9e
     - !<own> 0f6fb9eb-6f25-45e9-985d-10313e18628a
 - !<RenderMeshVisual/f71ced63-4804-4e76-bac7-b87fe66e5476>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -7053,12 +6284,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<PinToMeshComponent/f7afb35a-6a3e-4da3-ae12-575be3d908fb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7068,8 +6296,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/f81907c8-c8b3-4b8b-91dc-98217961a6f5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: pinky-2
   Enabled: true
   Layers: 1
@@ -7080,11 +6307,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 9e40575b-f993-4582-bf7e-e94d095146d4
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/f867ca02-f6af-4b7e-a892-4759f0fc548c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 3
@@ -7100,12 +6325,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/f87c8b83-7666-445e-a95c-4c53c99e7aa1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Pinky Distal P1
   Enabled: true
   Layers: 1
@@ -7114,14 +6336,12 @@
     rotation: {x: -123.114136, y: 74.947517, z: 58.703701}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> f867ca02-f6af-4b7e-a892-4759f0fc548c
     - !<own> 6838074d-b1bb-4b4c-9813-3b2ec0166e6f
 - !<SceneObject/f8f880ee-f2c3-4a13-8bf8-470569454e83>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Ring Proximal
   Enabled: true
   Layers: 1
@@ -7134,11 +6354,9 @@
     - !<own> 8d41c80e-5abd-424b-bf26-cc8b754c2233
     - !<own> a323c29d-8604-4134-a63a-b83314f75c2c
     - !<own> ab91e0e3-3a4c-4baa-aa4c-67504c64364f
-  Components:
-    []
+  Components: []
 - !<SceneObject/f910c754-1f59-403a-88d8-522fd3b56695>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end_end
   Enabled: true
   Layers: 1
@@ -7149,11 +6367,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 40667131-e255-4af4-beed-ea65467839a6
-  Components:
-    []
+  Components: []
 - !<PinToMeshComponent/f937b219-522b-4ea2-a76c-38264dc72c81>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7163,8 +6379,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/f980e32a-e0da-48bd-8fc8-ddceb67a8d7f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Thumb Proximal P3
   Enabled: true
   Layers: 1
@@ -7173,14 +6388,12 @@
     rotation: {x: 178.960602, y: 58.873211, z: 116.143936}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 4b8e801e-afe9-408a-aa31-5538ca1afddb
     - !<own> 604007fe-f1df-412a-8fdc-e382a377ab57
 - !<SceneObject/f9ceca43-2d35-41fb-a0f8-22c5a37a1a9a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-1
   Enabled: true
   Layers: 1
@@ -7191,11 +6404,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 74958e00-5842-4a0b-83b9-854db0d5e66f
-  Components:
-    []
+  Components: []
 - !<SceneObject/fa186f6d-df67-467a-98f5-7a3fd45e027e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: index-3_end_end
   Enabled: true
   Layers: 1
@@ -7206,11 +6417,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 8987bf94-098b-42b6-830f-9fb8bc7222e1
-  Components:
-    []
+  Components: []
 - !<SceneObject/face962b-bd13-4f4f-b619-6a042f1ad490>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Distal P2
   Enabled: true
   Layers: 1
@@ -7219,14 +6428,12 @@
     rotation: {x: 18.757433, y: -30.640926, z: -10.139723}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c2ff2fac-a2cb-4ed8-8872-563c4c640abf
     - !<own> 25a64837-294f-4230-93bb-b8ae44b65849
 - !<PinToMeshComponent/fad69724-14b5-4fb3-9924-a70e8de71c4d>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7236,8 +6443,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<PinToMeshComponent/fbf3d8a2-bfb2-4cbf-bd44-6be29ccc40c3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Pin To Mesh
   Enabled: true
   Target: !<reference> 00000000-0000-0000-0000-000000000000
@@ -7247,8 +6453,7 @@
   UseVertexNormal: false
   Orientation: PositionAndDirection
 - !<SceneObject/ff055413-a0c9-47d0-80b2-ff90f4a43f2f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Ring Proximal P2
   Enabled: true
   Layers: 1
@@ -7257,14 +6462,12 @@
     rotation: {x: -8.002442, y: -2.194821, z: 10.945299}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 78e977e9-0538-42e0-ab3d-0ef4436fc473
     - !<own> 054145db-5ac5-4ab3-aaa8-dfeb1204b8a9
 - !<SceneObject/ff0cb6a5-60d5-4d8c-9702-8f0746ee63d5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Right Pinky Distal
   Enabled: true
   Layers: 1
@@ -7277,11 +6480,9 @@
     - !<own> 18df1d16-2bb4-4f8a-ae19-7cfb09769050
     - !<own> face962b-bd13-4f4f-b619-6a042f1ad490
     - !<own> 646dce7a-4353-4153-9c40-3f1f0562c540
-  Components:
-    []
+  Components: []
 - !<SceneObject/ff12c74e-24b2-458e-a9ef-bd4a88522a74>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Left Index Middle P3
   Enabled: true
   Layers: 1
@@ -7290,8 +6491,7 @@
     rotation: {x: -158.675461, y: 2.852866, z: 179.967926}
     scale: {x: 0.030000, y: 0.030000, z: 0.030000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> cffe9f6a-6d85-41a1-9f3b-352128993a99
     - !<own> ca9cafe7-0753-4ba6-86fb-a9c4fa964a0b

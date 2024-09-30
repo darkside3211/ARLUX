@@ -1,0 +1,169 @@
+{
+    "1677153661628176:83721": {
+        "IFileManager": {
+            "path": "Files/File_1677153661628176_83721.mesh"
+        }
+    },
+    "1677153661629795:83722": {
+        "IResourceController": {
+            "name": "blick_out",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153661669231:83726",
+            "fileId": "1677153661628176:83721",
+            "publicId": "1686647826297955:706328",
+            "expected_hash": "c8a480417691135b4c18d3872bd4b16e",
+            "additional": {
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "8",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "texture0"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "texture1"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "boneData"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153661669231:83726",
+            "name": "Files/File_1677153661628176_83721.mesh",
+            "flags": 1
+        }
+    },
+    "1677153661669231:83726": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "4308502881211342129",
+                        "uncompressed_hash": "c8a480417691135b4c18d3872bd4b16e"
+                    },
+                    "v": "1727527389930805:15093"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "1376",
+                "compressedSize": "2748",
+                "extension": "mesh",
+                "originalRAM": "1376",
+                "originalSize": "2748",
+                "settings": {
+                    "attributeFormat": [
+                        {
+                            "k": "normal",
+                            "v": "8"
+                        },
+                        {
+                            "k": "position",
+                            "v": "8"
+                        },
+                        {
+                            "k": "tangent",
+                            "v": "8"
+                        },
+                        {
+                            "k": "texture0",
+                            "v": "8"
+                        },
+                        {
+                            "k": "texture1",
+                            "v": "8"
+                        }
+                    ],
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture1"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "boneData"
+                            }
+                        ]
+                    },
+                    "isCompressed": "true",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1727527389216586:11038"
+        }
+    },
+    "1686647826297955:706328": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 3/Necklace 3/Meshes/blick_out.mesh",
+                "hash": "c8a480417691135b4c18d3872bd4b16e"
+            }
+        }
+    },
+    "1727527389216586:11038": {
+        "IFileManager": {
+            "path": "Files/File_1727527389216586_11038.mesh"
+        }
+    },
+    "1727527389930805:15093": {
+        "IFileManager": {
+            "path": "Files/File_1727527389930805_15093.mesh"
+        }
+    }
+}

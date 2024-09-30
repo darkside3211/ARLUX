@@ -1,0 +1,31 @@
+{
+    "1685605443753333:92017": {
+        "IFileManager": {
+            "path": "Files/File_1685605443753333_92017.js"
+        }
+    },
+    "1685605443754284:92018": {
+        "IResourceController": {
+            "name": "Image Carousel",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1685605443754292:92019",
+            "fileId": "1685605443753333:92017",
+            "expected_hash": "240a98a510db7bccf6072fdbd58a79ab"
+        },
+        "IResourceManager": {
+            "uid": "1685605443754292:92019",
+            "name": "Files/File_1685605443753333_92017.js",
+            "flags": 1
+        }
+    },
+    "1685605443754292:92019": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "DestructionHelper"
+            ]
+        }
+    }
+}

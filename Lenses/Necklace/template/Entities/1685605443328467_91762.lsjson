@@ -1,0 +1,30 @@
+{
+    "1685605443327535:91761": {
+        "IFileManager": {
+            "path": "Files/File_1685605443327535_91761"
+        }
+    },
+    "1685605443328467:91762": {
+        "IResourceController": {
+            "name": "Gem Encode",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1685605443328471:91763",
+            "fileId": "1685605443327535:91761",
+            "originalId": "1685605443346986:91767",
+            "expected_hash": "64ac4ced341d81d85cae875cf6b82398"
+        },
+        "IResourceManager": {
+            "uid": "1685605443328471:91763",
+            "name": "Files/File_1685605443327535_91761",
+            "flags": 1
+        }
+    },
+    "1685605443346986:91767": {
+        "IFileManager": {
+            "path": "Files/File_1685605443346986_91767.lsmat"
+        }
+    }
+}

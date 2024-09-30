@@ -1,0 +1,39 @@
+{
+    "1677153664765184:84653": {
+        "IFileManager": {
+            "path": "Files/File_1677153664765184_84653"
+        }
+    },
+    "1677153664767284:84654": {
+        "IResourceController": {
+            "name": "chain_mtl",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153664767288:84655",
+            "fileId": "1677153664765184:84653",
+            "originalId": "1677153664799980:84737",
+            "publicId": "1686647826324764:706366",
+            "expected_hash": "00aacd50ada0d0097b73651ec0d207d2"
+        },
+        "IResourceManager": {
+            "uid": "1677153664767288:84655",
+            "name": "Files/File_1677153664765184_84653",
+            "flags": 1
+        }
+    },
+    "1677153664799980:84737": {
+        "IFileManager": {
+            "path": "Files/File_1677153664799980_84737.lsmat"
+        }
+    },
+    "1686647826324764:706366": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/chain_mtl.lsmat",
+                "hash": "a7bfe883abe45bdc04165d5d1758f86b"
+            }
+        }
+    }
+}

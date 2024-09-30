@@ -1,0 +1,22 @@
+{
+    "1686760450880413:26262817": {
+        "IResourceController": {
+            "name": "head",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686760450880673:26262818",
+            "resources": [
+                "1686760450881366:26262819"
+            ]
+        }
+    },
+    "1686760450880673:26262818": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/head"
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "1677153666551709:85433": {
+        "IFileManager": {
+            "path": "Files/File_1677153666551709_85433.jpg"
+        }
+    },
+    "1677153666553388:85434": {
+        "IResourceController": {
+            "name": "chains_mask",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666553705:85435",
+            "fileId": "1677153666551709:85433",
+            "originalId": "1677153666554070:85440",
+            "publicId": "1686647826341759:706391",
+            "expected_hash": "14a1ee429b5955409150e8b2a7b6ca7e",
+            "additional": {
+                "originHash": "14a1ee429b5955409150e8b2a7b6ca7e",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666553705:85435",
+            "name": "Files/File_1677153666551709_85433.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666553705:85435": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "1024",
+                        "uncompressed_hash": "14a1ee429b5955409150e8b2a7b6ca7e"
+                    },
+                    "v": "1686038581947124:20040312"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "14a1ee429b5955409150e8b2a7b6ca7e"
+                    },
+                    "v": "1686038583200912:20043626"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "524288",
+                "compressedSize": "10855",
+                "extension": "jpg",
+                "originalRAM": "524288",
+                "originalSize": "10855",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666562224:85446"
+        }
+    },
+    "1677153666554070:85440": {
+        "IFileManager": {
+            "path": "Files/File_1677153666554070_85440.jpg"
+        }
+    },
+    "1677153666562224:85446": {
+        "IFileManager": {
+            "path": "Files/File_1677153666562224_85446.jpg"
+        }
+    },
+    "1686038581947124:20040312": {
+        "IFileManager": {
+            "path": "Files/File_1686038581947124_20040312.jpg"
+        }
+    },
+    "1686038583200912:20043626": {
+        "IFileManager": {
+            "path": "Files/File_1686038583200912_20043626.jpg"
+        }
+    },
+    "1686647826341759:706391": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/chains_mask.jpg",
+                "hash": "14a1ee429b5955409150e8b2a7b6ca7e"
+            }
+        }
+    }
+}

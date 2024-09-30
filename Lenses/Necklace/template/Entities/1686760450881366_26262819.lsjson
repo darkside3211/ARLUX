@@ -1,0 +1,22 @@
+{
+    "1686760450881366:26262819": {
+        "IResourceController": {
+            "name": "Meshes",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686760450881520:26262820",
+            "resources": [
+                "1686760450857494:26262805"
+            ]
+        }
+    },
+    "1686760450881520:26262820": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/head/Meshes"
+            }
+        }
+    }
+}

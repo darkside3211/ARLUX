@@ -1,0 +1,22 @@
+{
+    "1678108368215816:100512": {
+        "IResourceController": {
+            "name": "Meshes",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826320054:706357",
+            "resources": [
+                "1678108368176945:100496"
+            ]
+        }
+    },
+    "1686647826320054:706357": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Procedural Necklace/Meshes"
+            }
+        }
+    }
+}

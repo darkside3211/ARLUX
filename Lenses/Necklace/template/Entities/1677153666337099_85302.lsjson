@@ -1,0 +1,92 @@
+{
+    "1677153666335190:85299": {
+        "IFileManager": {
+            "path": "Files/File_1677153666335190_85299.jpg"
+        }
+    },
+    "1677153666337099:85302": {
+        "IResourceController": {
+            "name": "halo2",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666337404:85303",
+            "fileId": "1677153666335190:85299",
+            "originalId": "1677153666337795:85308",
+            "publicId": "1686647826339154:706386",
+            "expected_hash": "52b584362d2d03faeb69d924344c4d0e",
+            "additional": {
+                "originHash": "52b584362d2d03faeb69d924344c4d0e",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666337404:85303",
+            "name": "Files/File_1677153666335190_85299.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666337404:85303": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "1024",
+                        "uncompressed_hash": "52b584362d2d03faeb69d924344c4d0e"
+                    },
+                    "v": "1686038546085529:19971453"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "52b584362d2d03faeb69d924344c4d0e"
+                    },
+                    "v": "1686038547618484:19975184"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "1048576",
+                "compressedSize": "9546",
+                "extension": "jpg",
+                "originalRAM": "1048576",
+                "originalSize": "9546",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666347126:85314"
+        }
+    },
+    "1677153666337795:85308": {
+        "IFileManager": {
+            "path": "Files/File_1677153666337795_85308.jpg"
+        }
+    },
+    "1677153666347126:85314": {
+        "IFileManager": {
+            "path": "Files/File_1677153666347126_85314.jpg"
+        }
+    },
+    "1686038546085529:19971453": {
+        "IFileManager": {
+            "path": "Files/File_1686038546085529_19971453.jpg"
+        }
+    },
+    "1686038547618484:19975184": {
+        "IFileManager": {
+            "path": "Files/File_1686038547618484_19975184.jpg"
+        }
+    },
+    "1686647826339154:706386": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/halo2.jpg",
+                "hash": "52b584362d2d03faeb69d924344c4d0e"
+            }
+        }
+    }
+}

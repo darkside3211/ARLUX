@@ -31,7 +31,7 @@ class CartPage extends ConsumerWidget {
                     children: List.generate(
                       item.length,
                       (index) {
-                        final double productPrice = item[index].price;
+                        final double productPrice = item[index].price * item[index].quantity!;
 
                         totalPrices += productPrice;
 

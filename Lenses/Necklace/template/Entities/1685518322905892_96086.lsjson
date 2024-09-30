@@ -1,0 +1,39 @@
+{
+    "1685518322904820:96085": {
+        "IFileManager": {
+            "path": "Files/File_1685518322904820_96085"
+        }
+    },
+    "1685518322905892:96086": {
+        "IResourceController": {
+            "name": "lambert2",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685518322905896:96087",
+            "fileId": "1685518322904820:96085",
+            "originalId": "1685518322926596:96093",
+            "publicId": "1686647826311130:706348",
+            "expected_hash": "9533b8900c0103e7a81962e90e5d8be2"
+        },
+        "IResourceManager": {
+            "uid": "1685518322905896:96087",
+            "name": "Files/File_1685518322904820_96085",
+            "flags": 1
+        }
+    },
+    "1685518322926596:96093": {
+        "IFileManager": {
+            "path": "Files/File_1685518322926596_96093.lsmat"
+        }
+    },
+    "1686647826311130:706348": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/Models/Necklace 2/Rigged Gem Rendering/Materials1/lambert2.lsmat",
+                "hash": "fc0c4d78e1ccbc4fcd7ffbb4d0346e3e"
+            }
+        }
+    }
+}

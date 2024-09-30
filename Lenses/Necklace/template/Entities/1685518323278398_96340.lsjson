@@ -1,0 +1,30 @@
+{
+    "1685518323278398:96340": {
+        "IResourceController": {
+            "name": "UpdatedGem",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": false,
+            "uid": "1685518323278226:96285",
+            "fileId": "1685518323301566:96390",
+            "originalId": "1685521918104670:1553037",
+            "expected_hash": "bfd35254a567596b22826dd2df3d471e"
+        },
+        "IResourceManager": {
+            "uid": "1685518323278226:96285",
+            "name": "UpdatedGem",
+            "flags": 0
+        }
+    },
+    "1685518323301566:96390": {
+        "IFileManager": {
+            "path": "Files/File_1685518323301566_96390.oprfb"
+        }
+    },
+    "1685521918104670:1553037": {
+        "IFileManager": {
+            "path": "Files/File_1685521918104670_1553037.oprfb"
+        }
+    }
+}

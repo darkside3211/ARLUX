@@ -1,0 +1,39 @@
+{
+    "1677153665795591:84971": {
+        "IFileManager": {
+            "path": "Files/File_1677153665795591_84971"
+        }
+    },
+    "1677153665797723:84972": {
+        "IResourceController": {
+            "name": "Gold",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153665797727:84973",
+            "fileId": "1677153665795591:84971",
+            "originalId": "1677153665830110:84979",
+            "publicId": "1686647826326374:706368",
+            "expected_hash": "0ad3f346d1aa65b2b83d4d05318e05fb"
+        },
+        "IResourceManager": {
+            "uid": "1677153665797727:84973",
+            "name": "Files/File_1677153665795591_84971",
+            "flags": 1
+        }
+    },
+    "1677153665830110:84979": {
+        "IFileManager": {
+            "path": "Files/File_1677153665830110_84979.lsmat"
+        }
+    },
+    "1686647826326374:706368": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/Gold.lsmat",
+                "hash": "f72ad5f5e331f8b78ac4f147c8c1b930"
+            }
+        }
+    }
+}

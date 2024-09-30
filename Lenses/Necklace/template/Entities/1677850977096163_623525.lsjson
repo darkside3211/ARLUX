@@ -1,0 +1,39 @@
+{
+    "1677850977090441:623524": {
+        "IFileManager": {
+            "path": "Files/File_1677850977090441_623524"
+        }
+    },
+    "1677850977096163:623525": {
+        "IResourceController": {
+            "name": "refr_front 3",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677850977096169:623526",
+            "fileId": "1677850977090441:623524",
+            "originalId": "1677850977127427:623532",
+            "publicId": "1686647826329920:706373",
+            "expected_hash": "3135eb3b8f1a77a60269c76c6d75f415"
+        },
+        "IResourceManager": {
+            "uid": "1677850977096169:623526",
+            "name": "Files/File_1677850977090441_623524",
+            "flags": 1
+        }
+    },
+    "1677850977127427:623532": {
+        "IFileManager": {
+            "path": "Files/File_1677850977127427_623532.lsmat"
+        }
+    },
+    "1686647826329920:706373": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/refr_front 3.lsmat",
+                "hash": "9c96927ee53b5343787ce7cd7e606582"
+            }
+        }
+    }
+}

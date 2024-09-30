@@ -1,0 +1,54 @@
+{
+    "1685518309218442:91281": {
+        "IResourceController": {
+            "name": "Rigged Gem Rendering",
+            "type": 18,
+            "subtype": -1,
+            "dependency": 2,
+            "hidden": false,
+            "fileId": "1685518323309724:96393",
+            "publicId": "1686647826309565:706345",
+            "expected_hash": "318216dc00cae1b442a4694cff4e640f",
+            "resources": [
+                "1685518322217373:95811",
+                "1685518322343144:95905",
+                "1685518323278398:96340"
+            ],
+            "additional": {
+                "ImportParams": {
+                    "animationCurveOptimization": "true",
+                    "generatePivots": "true",
+                    "importBlendShapeAnimation": "true",
+                    "importTangents": "true",
+                    "importVertexAnimation": "true",
+                    "importVertexColor": "true",
+                    "recalculateTangents": "false",
+                    "regenerateNormalsForSkinned": "true"
+                },
+                "materialMapping": [
+                    {
+                        "k": "lambert2",
+                        "v": "1685518322905896:96087"
+                    },
+                    {
+                        "k": "metal",
+                        "v": "1685518322344543:95908"
+                    }
+                ]
+            }
+        }
+    },
+    "1685518323309724:96393": {
+        "IFileManager": {
+            "path": "Files/File_1685518323309724_96393.fbx"
+        }
+    },
+    "1686647826309565:706345": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 2/Rigged Gem Rendering.fbx",
+                "hash": "318216dc00cae1b442a4694cff4e640f"
+            }
+        }
+    }
+}

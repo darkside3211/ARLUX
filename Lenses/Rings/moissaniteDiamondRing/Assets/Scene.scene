@@ -7,16 +7,14 @@
     - !<own> 85031b79-7814-4689-97b3-7fab0928eadc
     - !<own> 6b97256d-4db8-4aa8-be32-0c0769caf755
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
-    userLayers:
-      []
+    userLayers: []
     HasOrtho: true
   RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderOverlayOutput: !<reference> 4faa52d5-27f2-4e59-9b4f-86bbf0889a6d
   PhysicsRootWorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Camera/0d09197f-b000-4f6a-a991-cd2cc87903f3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Camera
   Enabled: true
   renderLayer: 1
@@ -26,12 +24,13 @@
   Near: 1.000000
   Far: 1000.000000
   Fov: 63.541019
-  ClearColor:
-    mode: None
-    color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-  ClearDepth:
-    mode: Custom
-    value: 1.000000
+  ClearColor: !<CameraClearColor/00000000-0000-0000-0000-000000000000>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 996c6f4e-b2ad-4117-9e3e-3db82e6e97f5
+  ClearDepth: !<CameraClearDepth/00000000-0000-0000-0000-000000000000>
+    Mode: Value
+    Value: 1.000000
   Aspect: 1.000000
   CameraType: Perspective
   DepthMode: Regular
@@ -41,11 +40,9 @@
   RenderTarget: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  InputTexture: !<reference> 996c6f4e-b2ad-4117-9e3e-3db82e6e97f5
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/158f3c40-64d6-41d3-83d3-561e4bdef7e9>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Shadow
   Enabled: true
   Layers: 1
@@ -54,13 +51,11 @@
     rotation: {x: 90.000008, y: -0.000000, z: 0.000000}
     scale: {x: 1.465053, y: 1.056083, z: 2.112167}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 56a13e3e-0982-48c5-b82b-d411eced0a34
 - !<Canvas/1a470105-959c-4c90-9b8e-8d0b147c466a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Canvas
   Enabled: true
   UnitType: Points
@@ -71,8 +66,7 @@
     right: 15.000000
     top: 20.000000
 - !<SceneObject/1c3265dd-9971-4ac3-83d3-3415163a9ab4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: MoissaniteDiamondRing
   Enabled: true
   Layers: 1
@@ -88,8 +82,7 @@
     - !<own> c9e35c2a-4b93-4cbd-92f4-cc79c4333bf4
     - !<own> edc6ee01-ca8d-4719-a93a-34446231df66
 - !<Text/27286ae0-a01c-44ad-9c96-6cfa4c6067ca>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Text
   Enabled: true
   RenderOrder: 0
@@ -151,8 +144,7 @@
     CapitalizationOverride: None
   DepthTest: false
 - !<SceneObject/27e0af83-40db-4ab6-a35d-2df06e1ae9e5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Envmap
   Enabled: true
   Layers: 1
@@ -161,13 +153,11 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 60d75264-5511-4fdf-ae9b-cb4a70b91c54
 - !<SceneObject/29de9cc3-0294-441d-a239-6b4c869dc693>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: RingL
   Enabled: true
   Layers: 1
@@ -181,8 +171,7 @@
   Components:
     - !<own> c36e90b6-9911-450a-9770-0a8afde55258
 - !<Image/31458ad4-5f57-4293-b636-e9c78cc1ca8c>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Image
   Enabled: true
   RenderOrder: 0
@@ -198,8 +187,7 @@
   FlipY: false
   Pivot: {x: 0.000000, y: 0.000000}
 - !<SceneObject/322c335e-1e8b-4f2a-a2bc-2b2be2a09483>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Roulette UI
   Enabled: true
   Layers: 1
@@ -208,13 +196,11 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> ab7165c4-cfcd-4d28-8526-4ad035ed7ba6
 - !<ScreenTransform/3a0a881e-1117-49db-a05d-0ad64430dab7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Transform
   Enabled: true
   IsAdvanced: false
@@ -246,8 +232,7 @@
     right: 0.000000
     top: 0.000000
 - !<SceneObject/3a600d85-131f-4d7e-b248-a5ce9de19319>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring 1
   Enabled: true
   Layers: 1
@@ -258,11 +243,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b0edf1a7-3647-4c49-b725-68c1cdf4f6bb
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/3cd78146-d9aa-4bc1-9983-73ae0041ea3a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 0
@@ -278,12 +261,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/3e7c2195-4744-4350-8fbf-f15a3dd72ded>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Camera Object
   Enabled: true
   Layers: 1
@@ -298,8 +278,7 @@
   Components:
     - !<own> 0d09197f-b000-4f6a-a991-cd2cc87903f3
 - !<ScriptComponent/40c240ae-4f43-4898-b01c-461064bb2d9a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring Binding
   Enabled: true
   ScriptAsset: !<reference> a3a8e6bd-1fb8-4066-a86d-2ddc5dceba6b
@@ -315,8 +294,7 @@
     yaw: true
     pitch: true
     depth: true
-  ScriptTypesDefault:
-    {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       hand: 1
@@ -336,18 +314,15 @@
       rotationOffset: !<Vec3> {x: 90.000000, y: 0.000000, z: 0.000000}
       scaleOffset: 1.100000
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<ScreenRegionComponent/4316141f-e0ba-4b25-bb99-ac85515cc6df>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Region
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
 - !<SceneObject/479a0fa2-d352-482f-bb4a-3bd21ae7d650>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Occluder
   Enabled: true
   Layers: 1
@@ -356,13 +331,11 @@
     rotation: {x: 90.000008, y: -0.000000, z: 0.000000}
     scale: {x: 1.465053, y: 2.112167, z: 2.112167}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> bed4bbbb-9f4f-4e5d-bd00-74b8ee6e1405
 - !<RenderMeshVisual/56a13e3e-0982-48c5-b82b-d411eced0a34>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 0
@@ -378,12 +351,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/57cbce1c-e82c-4537-be7f-4d3bf1908580>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Try_On_Ring_flash
   Enabled: true
   Layers: 1048576
@@ -392,15 +362,13 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> ef224233-9cea-4a16-8028-b6a8a5d419a8
     - !<own> 8b132c6e-9b00-4181-8b9d-cd151533b724
     - !<own> 31458ad4-5f57-4293-b636-e9c78cc1ca8c
 - !<SceneObject/5a862fd2-92d6-4a8e-85d1-681d226afd32>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring
   Enabled: true
   Layers: 1
@@ -411,11 +379,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1c3265dd-9971-4ac3-83d3-3415163a9ab4
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/5e7b6d1b-e16a-495b-85f0-7dbf7768f481>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 0
@@ -431,12 +397,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<LightSource/60d75264-5511-4fdf-ae9b-cb4a70b91c54>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Light Source
   Enabled: true
   renderLayer: 1
@@ -470,8 +433,7 @@
   DecayLimit: false
   DecayRange: 40.000000
 - !<RenderMeshVisual/67239c6b-b3ee-406c-ba71-0ff0e5b7b3cf>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -487,12 +449,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/678d1ac9-86b5-4fd5-91c4-7fa9b82302a7>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Full Frame Region
   Enabled: true
   Layers: 1048576
@@ -508,8 +467,7 @@
     - !<own> 3a0a881e-1117-49db-a05d-0ad64430dab7
     - !<own> 4316141f-e0ba-4b25-bb99-ac85515cc6df
 - !<SceneObject/6b97256d-4db8-4aa8-be32-0c0769caf755>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring
   Enabled: true
   Layers: 1
@@ -518,14 +476,12 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 7196e192-14e4-48cf-b3b0-744e51006103
     - !<own> 9083b487-7bb0-4ff9-bcb2-c4c8ffa177de
 - !<RenderMeshVisual/7196e192-14e4-48cf-b3b0-744e51006103>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -541,12 +497,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/85031b79-7814-4689-97b3-7fab0928eadc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring Controller
   Enabled: true
   Layers: 1
@@ -555,13 +508,11 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> c66d5feb-45a7-45ac-9921-d62ef8fc477f
 - !<ScriptComponent/8b132c6e-9b00-4181-8b9d-cd151533b724>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: CustomHint
   Enabled: true
   ScriptAsset: !<reference> 43cc29e6-0053-40f7-97bc-5c28851465a2
@@ -573,8 +524,7 @@
     tweenPrintDebugLog: true
     disableHiding: true
     hideIfCapture: true
-  ScriptTypesDefault:
-    {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       hintType: image
@@ -594,11 +544,9 @@
       hideIfCapture: true
       hideOnCamSwitch: false
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<RenderMeshVisual/9083b487-7bb0-4ff9-bcb2-c4c8ffa177de>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -614,12 +562,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/936f2aa6-dac1-4bc3-bf1c-61c54cd0f299>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: RingR
   Enabled: true
   Layers: 1
@@ -633,8 +578,7 @@
   Components:
     - !<own> 40c240ae-4f43-4898-b01c-461064bb2d9a
 - !<RenderMeshVisual/9c28689d-3ab4-4e30-aa1e-1cdcbb29e2d2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -650,12 +594,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/a0742d0c-9df2-4fcd-838e-e339ff508a28>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Orthographic Camera
   Enabled: true
   Layers: 1048576
@@ -671,15 +612,13 @@
     - !<own> f4369846-6a74-44c8-989f-578a788e01b3
     - !<own> 1a470105-959c-4c90-9b8e-8d0b147c466a
 - !<ScriptComponent/ab7165c4-cfcd-4d28-8526-4ad035ed7ba6>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Roulette UI
   Enabled: true
   ScriptAsset: !<reference> b622325f-0bac-44f3-a294-d6631bbbf4f9
   ScriptInputsDefault:
     hint: true
-  ScriptTypesDefault:
-    {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       buttonsNumber: 5
@@ -689,30 +628,23 @@
       buttons:
         - on: !<reference.Texture> cdc156b3-0a4f-4ff0-a44e-bf0467ad3024
           off: !<reference.Texture> cdc156b3-0a4f-4ff0-a44e-bf0467ad3024
-          onSelected: !<reference.SceneObject[]>
-            []
+          onSelected: !<reference.SceneObject[]> []
         - on: !<reference.Texture> 36ae10c9-32c5-4c5d-9856-f126158c6e03
           off: !<reference.Texture> 36ae10c9-32c5-4c5d-9856-f126158c6e03
-          onSelected: !<reference.SceneObject[]>
-            []
+          onSelected: !<reference.SceneObject[]> []
         - on: !<reference.Texture> adb70c2c-e8f2-4a1c-918c-58d731f3c8f6
           off: !<reference.Texture> adb70c2c-e8f2-4a1c-918c-58d731f3c8f6
-          onSelected: !<reference.SceneObject[]>
-            []
+          onSelected: !<reference.SceneObject[]> []
         - on: !<reference.Texture> b800bbb4-51f3-4292-b659-bc118d02776e
           off: !<reference.Texture> b800bbb4-51f3-4292-b659-bc118d02776e
-          onSelected: !<reference.SceneObject[]>
-            []
+          onSelected: !<reference.SceneObject[]> []
         - on: !<reference.Texture> 1a798538-55b5-4744-a468-2a2ab415a136
           off: !<reference.Texture> 1a798538-55b5-4744-a468-2a2ab415a136
-          onSelected: !<reference.SceneObject[]>
-            []
+          onSelected: !<reference.SceneObject[]> []
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<SceneObject/b0edf1a7-3647-4c49-b725-68c1cdf4f6bb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: MoissaniteDiamondRing 1
   Enabled: true
   Layers: 1
@@ -728,8 +660,7 @@
     - !<own> 9c28689d-3ab4-4e30-aa1e-1cdcbb29e2d2
     - !<own> 67239c6b-b3ee-406c-ba71-0ff0e5b7b3cf
 - !<SceneObject/b27e715d-cd29-4ac8-8fff-9c4defb72fdc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Occluder
   Enabled: true
   Layers: 1
@@ -738,13 +669,11 @@
     rotation: {x: 90.000008, y: -0.000000, z: 0.000000}
     scale: {x: 1.465053, y: 2.112167, z: 2.112167}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 3cd78146-d9aa-4bc1-9983-73ae0041ea3a
 - !<SceneObject/b4193354-b6b3-4c10-ba30-77cf311e66eb>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Shadow
   Enabled: true
   Layers: 1
@@ -753,13 +682,11 @@
     rotation: {x: 90.000008, y: -0.000000, z: 0.000000}
     scale: {x: 1.465053, y: 1.056083, z: 2.112167}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 5e7b6d1b-e16a-495b-85f0-7dbf7768f481
 - !<RenderMeshVisual/bed4bbbb-9f4f-4e5d-bd00-74b8ee6e1405>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Render Mesh Visual
   Enabled: true
   RenderOrder: 0
@@ -775,12 +702,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ScriptComponent/c36e90b6-9911-450a-9770-0a8afde55258>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring Binding
   Enabled: true
   ScriptAsset: !<reference> a3a8e6bd-1fb8-4066-a86d-2ddc5dceba6b
@@ -795,8 +719,7 @@
     yaw: true
     pitch: true
     depth: true
-  ScriptTypesDefault:
-    {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       hand: 0
@@ -816,29 +739,23 @@
       rotationOffset: !<Vec3> {x: 90.000000, y: 0.000000, z: 0.000000}
       scaleOffset: 1.100000
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<ScriptComponent/c66d5feb-45a7-45ac-9921-d62ef8fc477f>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Ring Controller
   Enabled: true
   ScriptAsset: !<reference> 2f0e513e-057f-4a1f-957c-9e8d92140635
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
+  ScriptInputsDefault: {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       ringL: !<reference.ScriptComponent> c36e90b6-9911-450a-9770-0a8afde55258
       ringR: !<reference.ScriptComponent> 40c240ae-4f43-4898-b01c-461064bb2d9a
       roulette: !<reference.ScriptComponent> ab7165c4-cfcd-4d28-8526-4ad035ed7ba6
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<RenderMeshVisual/c9e35c2a-4b93-4cbd-92f4-cc79c4333bf4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -854,12 +771,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<SceneObject/cde6cb09-43b5-4680-b2ea-ecbb16fb38e3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Lighting
   Enabled: true
   Layers: 1
@@ -870,11 +784,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 27e0af83-40db-4ab6-a35d-2df06e1ae9e5
-  Components:
-    []
+  Components: []
 - !<SceneObject/ce3ef610-c78f-4505-81e9-fe054cb89222>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Text
   Enabled: true
   Layers: 1048576
@@ -883,14 +795,12 @@
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> f9a294c3-4ce7-4dc6-b852-4a892e921861
     - !<own> 27286ae0-a01c-44ad-9c96-6cfa4c6067ca
 - !<RenderMeshVisual/edc6ee01-ca8d-4719-a93a-34446231df66>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -906,12 +816,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ScreenTransform/ef224233-9cea-4a16-8028-b6a8a5d419a8>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Transform
   Enabled: true
   IsAdvanced: false
@@ -943,8 +850,7 @@
     right: 0.000000
     top: 0.000000
 - !<Camera/f4369846-6a74-44c8-989f-578a788e01b3>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Camera
   Enabled: true
   renderLayer: 1048576
@@ -954,12 +860,13 @@
   Near: -1.000000
   Far: 200.000000
   Fov: 63.541019
-  ClearColor:
-    mode: None
-    color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-  ClearDepth:
-    mode: Custom
-    value: 1.000000
+  ClearColor: !<CameraClearColor/00000000-0000-0000-0000-000000000000>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth/00000000-0000-0000-0000-000000000000>
+    Mode: Value
+    Value: 1.000000
   Aspect: 1.000000
   CameraType: Orthographic
   DepthMode: Regular
@@ -969,11 +876,9 @@
   RenderTarget: !<reference> 4faa52d5-27f2-4e59-9b4f-86bbf0889a6d
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScreenTransform/f9a294c3-4ce7-4dc6-b852-4a892e921861>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Transform
   Enabled: true
   IsAdvanced: false

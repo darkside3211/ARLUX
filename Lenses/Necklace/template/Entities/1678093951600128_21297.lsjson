@@ -1,0 +1,17 @@
+{
+    "1678093951600128:21297": {
+        "IResourceController": {
+            "name": "Full Body Mesh",
+            "type": 3,
+            "subtype": 4,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678093951600127:21296"
+        },
+        "IResourceManager": {
+            "uid": "1678093951600127:21296",
+            "name": "",
+            "flags": 0
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "1684327068281253:2479224": {
+        "IResourceController": {
+            "name": "Colliders",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1684327068281087:2479185",
+            "fileId": "1684327068302372:2479265",
+            "originalId": "1684334724080017:5263636",
+            "publicId": "1686647826363790:706418",
+            "expected_hash": "438be31541dd7b20bc8f018e7812f48e"
+        },
+        "IResourceManager": {
+            "uid": "1684327068281087:2479185",
+            "name": "Colliders",
+            "flags": 0
+        }
+    },
+    "1684327068302372:2479265": {
+        "IFileManager": {
+            "path": "Files/File_1684327068302372_2479265.oprfb"
+        }
+    },
+    "1684334724080017:5263636": {
+        "IFileManager": {
+            "path": "Files/File_1684334724080017_5263636.oprfb"
+        }
+    },
+    "1686647826363790:706418": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Colliders.oprfb",
+                "hash": "fa5747a9aa50bf1e7a1e75350e1c86a9"
+            }
+        }
+    }
+}

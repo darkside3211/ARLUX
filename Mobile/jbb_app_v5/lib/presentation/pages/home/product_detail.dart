@@ -32,6 +32,8 @@ class ProductDetail extends StatelessWidget {
             ProductViewer(
               imageUrls: productModel.imageUrls,
               modelUrl: productModel.modelUrl,
+              lensID: productModel.lensID,
+              groupID: productModel.groupID,
               isNetwork: false,
             ),
             gapH16,

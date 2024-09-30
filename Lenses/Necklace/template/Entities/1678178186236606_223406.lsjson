@@ -1,0 +1,17 @@
+{
+    "1678178186236606:223406": {
+        "IResourceController": {
+            "name": "Live Render Target",
+            "type": 1,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678178186236603:223405"
+        },
+        "IResourceManager": {
+            "uid": "1678178186236603:223405",
+            "name": "Render Target",
+            "flags": 0
+        }
+    }
+}

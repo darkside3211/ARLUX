@@ -12,16 +12,9 @@
     - HINT_Try_on_ring_v1.png
   ImporterSettings: !<AssetImporterSettings/ad031fe0-6527-417c-a87c-925a6f96d841>
     {}
-  CompressionSettings: !<ComplexCompressionSettings/a25b124a-9cc7-472d-8de2-597ac2b35269>
-    Presets:
-      Performance Compression: !<SingleCompressionSettings/47d92610-2b93-4e21-a3e6-211ca2000d12>
-        CompressorName: Performance
-        CompressionSettings: !<TextureCompressionSettings/be7496b9-7dde-4917-86d3-33e3f3eb6ff6>
-          Level: Medium
-    ExtensionMappings:
-      png: Performance Compression
-    Overrides:
-      {}
+  CompressionSettings: !<SingleCompressionSettings/746b36da-7601-4d0c-9b7c-979a049556a9>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<AnimatedTextureData/48a55083-217c-42de-854a-52aabf43907d>
   AutoPlay: false
   Reversed: false

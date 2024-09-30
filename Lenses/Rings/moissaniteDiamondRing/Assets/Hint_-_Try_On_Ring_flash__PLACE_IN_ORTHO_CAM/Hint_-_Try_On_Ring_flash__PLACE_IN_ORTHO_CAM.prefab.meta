@@ -7,14 +7,11 @@
   PackagePolicy: CannotBeUnpacked
   AssetDataMap:
     ObjectPrefab: !<own> fc5c4b02-df06-4bb8-a71c-8fcb939a00e6
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings/157d9097-db42-458a-bfa7-565e61da4a4f>
-    {}
+  DependentFiles: []
+  ImporterSettings: !<AssetImporterSettings/157d9097-db42-458a-bfa7-565e61da4a4f> {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/13f33856-768d-416c-9cd2-1af5e8e97b3e>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Try_On_Ring_flash
   Enabled: true
   Layers: 1048576
@@ -23,15 +20,13 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> dc432335-9674-4f0c-b5e4-60e4c9b43567
     - !<own> 76e6ccb4-dae7-4b9f-83da-f9e0cf69b1cc
     - !<own> df0ec9c0-d192-4799-969b-de0979de6a4a
 - !<SceneObject/61c4d1cf-b446-4c2a-a456-88a092ad8d83>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Hint_-_Try_On_Ring_flash__PLACE_IN_ORTHO_CAM
   Enabled: true
   Layers: 1048576
@@ -46,8 +41,7 @@
     - !<own> db359cc1-302c-4c46-8f6e-03a62527d251
     - !<own> 83d0a2ec-a5be-45a9-a751-1e220de3fdbe
 - !<SceneObject/6a7e3bcc-af6e-430d-af38-6af12c068974>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Orthographic Camera
   Enabled: true
   Layers: 1048576
@@ -61,8 +55,7 @@
   Components:
     - !<own> 81ac0498-6541-4aae-9bb1-4ad7f7c1f0c2
 - !<ScriptComponent/76e6ccb4-dae7-4b9f-83da-f9e0cf69b1cc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: CustomHint
   Enabled: true
   ScriptAsset: !<reference> 43cc29e6-0053-40f7-97bc-5c28851465a2
@@ -77,8 +70,7 @@
     disableHiding: true
     hideIfCapture: true
     hideOnCamSwitch: true
-  ScriptTypesDefault:
-    {}
+  ScriptTypesDefault: {}
   ScriptInputs:
     "":
       hintType: image
@@ -98,11 +90,9 @@
       hideIfCapture: true
       hideOnCamSwitch: true
   ScriptTypes:
-    "":
-      {}
+    "": {}
 - !<Camera/81ac0498-6541-4aae-9bb1-4ad7f7c1f0c2>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Camera
   Enabled: true
   renderLayer: 1048576
@@ -112,12 +102,13 @@
   Near: 1.000000
   Far: 200.000000
   Fov: 60.000004
-  ClearColor:
-    mode: None
-    color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-  ClearDepth:
-    mode: Custom
-    value: 1.000000
+  ClearColor: !<CameraClearColor/00000000-0000-0000-0000-000000000000>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth/00000000-0000-0000-0000-000000000000>
+    Mode: Value
+    Value: 1.000000
   Aspect: 1.000000
   CameraType: Orthographic
   DepthMode: Regular
@@ -127,11 +118,9 @@
   RenderTarget: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScreenTransform/83d0a2ec-a5be-45a9-a751-1e220de3fdbe>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Transform
   Enabled: true
   IsAdvanced: false
@@ -169,15 +158,13 @@
   LazyLoading: false
   RetainAssets: true
 - !<ScreenRegionComponent/db359cc1-302c-4c46-8f6e-03a62527d251>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Region
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
 - !<ScreenTransform/dc432335-9674-4f0c-b5e4-60e4c9b43567>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Screen Transform
   Enabled: true
   IsAdvanced: false
@@ -209,8 +196,7 @@
     right: 0.000000
     top: 0.000000
 - !<Image/df0ec9c0-d192-4799-969b-de0979de6a4a>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Image
   Enabled: true
   RenderOrder: 0

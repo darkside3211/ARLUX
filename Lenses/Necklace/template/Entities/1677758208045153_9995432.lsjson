@@ -1,0 +1,39 @@
+{
+    "1677758208043764:9995431": {
+        "IFileManager": {
+            "path": "Files/File_1677758208043764_9995431"
+        }
+    },
+    "1677758208045153:9995432": {
+        "IResourceController": {
+            "name": "metal 2",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677758208045157:9995433",
+            "fileId": "1677758208043764:9995431",
+            "originalId": "1677758208083631:9995439",
+            "publicId": "1686647826328632:706371",
+            "expected_hash": "e60a52ecafb3dfd45e6dfac7287935aa"
+        },
+        "IResourceManager": {
+            "uid": "1677758208045157:9995433",
+            "name": "Files/File_1677758208043764_9995431",
+            "flags": 1
+        }
+    },
+    "1677758208083631:9995439": {
+        "IFileManager": {
+            "path": "Files/File_1677758208083631_9995439.lsmat"
+        }
+    },
+    "1686647826328632:706371": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/metal 2.lsmat",
+                "hash": "edd8b24e47612aefa93973b6b35a78f9"
+            }
+        }
+    }
+}

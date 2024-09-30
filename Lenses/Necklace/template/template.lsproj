@@ -1,0 +1,1983 @@
+{
+    "lens_id": "",
+    "document_id": "mKuLqi2lRmBj7q2hJxQA",
+    "original_document_id": "6IEQv6GbMwi8q9UzNXz4",
+    "version": "33",
+    "preview": "icon.png",
+    "videoPreview": "preview.mp4",
+    "videoPreviewUpdateTime": "",
+    "isReadOnly": "false",
+    "isAutoSaved": "true",
+    "api_level": "public",
+    "public_api_user_data_access": "unrestricted",
+    "studioVersion": {
+        "createdWith": {
+            "type": "Public",
+            "major": "4",
+            "minor": "55",
+            "patch": "1",
+            "build": "0"
+        },
+        "lastSavedWith": {
+            "type": "Public",
+            "major": "4",
+            "minor": "55",
+            "patch": "1",
+            "build": "0"
+        }
+    },
+    "view": {
+        "InspectorUiComponent": "",
+        "MapUiComponent": {
+            "mapPinPoints": {
+                "1649082416475574:107527": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082427199232:110271": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082439729750:113424": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082450030542:116090": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082460630816:118829": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082471244376:121575": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082481781800:124296": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082491465116:126851": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649082504700263:130155": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649083114749264:286916": {
+                    "longitude": "-0.13116145133972168",
+                    "latitude": "51.512794494628906",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1649083114749061:286915",
+                    "locationAsset": "1649083114749736:286917"
+                },
+                "1649094984677630:32157": {
+                    "longitude": "-0.13121148943901062",
+                    "latitude": "51.512771606445312",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1649094984677441:32156",
+                    "locationAsset": "1649094984678151:32158"
+                },
+                "1649772212970366:35230": {
+                    "longitude": "-0.13149562478065491",
+                    "latitude": "51.513656616210938",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1649772212970143:35229",
+                    "locationAsset": "1649772212970867:35231"
+                },
+                "1649778275335615:644381": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1649778655920914:710757": {
+                    "longitude": "-0.13150887191295624",
+                    "latitude": "51.513614654541016",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Frith Street [PLACE_CONTENT_HERE]",
+                    "pinUid": "1649778655920668:710756",
+                    "locationAsset": "1649778655921339:710758"
+                },
+                "1649865066556768:58106": {
+                    "longitude": "-0.13167314231395721",
+                    "latitude": "51.513031005859375",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Old Compton Street [PLACE_CONTENT_HERE]",
+                    "pinUid": "1649865066556471:58105",
+                    "locationAsset": "1649865066557449:58107"
+                },
+                "1649964505575077:712535": {
+                    "longitude": "-0.13096083700656891",
+                    "latitude": "51.512859344482422",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Romilly Street [PLACE_CONTENT_HERE]",
+                    "pinUid": "1649964505574756:712534",
+                    "locationAsset": "1649964505575881:712536"
+                },
+                "1651235427686691:2173118": {
+                    "longitude": "-0.15909266471862793",
+                    "latitude": "51.490554809570312",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1651235427686480:2173117",
+                    "locationAsset": "1651235427687227:2173119"
+                },
+                "1651235568753499:2512792": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1651236324178240:4639697": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1651237577157458:535251": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1651238500096044:323428": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1651239519534476:513004": {
+                    "longitude": "-0.1594167947769165",
+                    "latitude": "51.490947723388672",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1651239519534008:513003",
+                    "locationAsset": "1651239519537392:513005"
+                },
+                "1651244314453965:5876915": {
+                    "longitude": "-0.15900434553623199",
+                    "latitude": "51.490566253662109",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Saatchi Square",
+                    "pinUid": "1651244314453714:5876914",
+                    "locationAsset": "1651244314454569:5876916"
+                },
+                "1651244619048559:5938937": {
+                    "longitude": "-0.15928708016872406",
+                    "latitude": "51.490810394287109",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Walking Area",
+                    "pinUid": "1651244619048301:5938936",
+                    "locationAsset": "1651244619049111:5938938"
+                },
+                "1651740821321039:38503": {
+                    "longitude": "-0.13170607388019562",
+                    "latitude": "51.512580871582031",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Dean Street And Romily",
+                    "pinUid": "1651740821320812:38502",
+                    "locationAsset": "1651740821321523:38504"
+                },
+                "1651744904534351:1306090": {
+                    "longitude": "-0.13159231841564178",
+                    "latitude": "51.512386322021484",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1651744904534135:1306089",
+                    "locationAsset": "1651744904535003:1306091"
+                },
+                "1652347539892906:46549": {
+                    "longitude": "-0.085821650922298431",
+                    "latitude": "51.528266906738281",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1652347539892395:46548",
+                    "locationAsset": "1652347539893864:46550"
+                },
+                "1653297295919937:563039": {
+                    "longitude": "-0.12685032188892365",
+                    "latitude": "51.507827758789062",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1653297295919457:563038",
+                    "locationAsset": "1653297295921503:563046"
+                },
+                "1653297493220826:286071": {
+                    "longitude": "-0.12681996822357178",
+                    "latitude": "51.515045166015625",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1653297493220620:286070",
+                    "locationAsset": "1653297493221647:286072"
+                },
+                "1653297815414767:678204": {
+                    "longitude": "-0.12326952069997787",
+                    "latitude": "51.509716033935547",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1653297815414537:678203",
+                    "locationAsset": "1653297815415381:678205"
+                },
+                "1657550254368914:15332993": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1657625787285297:4578635": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1658489220564632:88229": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1659391863653488:1494129": {
+                    "longitude": "-118.24141693115234",
+                    "latitude": "34.050590515136719",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1659391863653289:1494128",
+                    "locationAsset": "1659391863654075:1494130"
+                },
+                "1659391867770138:1498363": {
+                    "longitude": "-118.24295806884766",
+                    "latitude": "34.050098419189453",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1659391867769916:1498362",
+                    "locationAsset": "1659391867770728:1498364"
+                },
+                "1659536381865821:11549631": {
+                    "longitude": "-118.24239349365234",
+                    "latitude": "34.04888916015625",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Stamp Drum",
+                    "pinUid": "1659536381865451:11549630",
+                    "locationAsset": "1659536381872457:11549632"
+                },
+                "1660054305393591:7269271": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305394925:7269275": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305396211:7269279": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305397500:7269283": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305398815:7269287": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305400111:7269291": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305401481:7269295": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305402845:7269299": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305419128:7269361": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305480432:7269630": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305491935:7269683": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305503286:7269734": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054305514738:7269785": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1660054308151786:7285698": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1663326331625124:1652944": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1663326338325743:1654188": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1663326373182728:1659884": {
+                    "longitude": "0",
+                    "latitude": "0",
+                    "selected": "false",
+                    "valid": "false",
+                    "pinName": "",
+                    "pinUid": "-1:-1",
+                    "locationAsset": "-1:-1"
+                },
+                "1663326697830686:1714863": {
+                    "longitude": "-0.12945312261581421",
+                    "latitude": "51.513839721679688",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin",
+                    "pinUid": "1663326697830407:1714862",
+                    "locationAsset": "1663326697831366:1714864"
+                },
+                "1664816898200590:63073": {
+                    "longitude": "-118.49475860595703",
+                    "latitude": "34.014499664306641",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - 3rd and Broadway [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664816898200389:63072",
+                    "locationAsset": "1664816898201050:63074"
+                },
+                "1664817723865681:182661": {
+                    "longitude": "-118.24846649169922",
+                    "latitude": "34.050472259521484",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Broadway and 3rd [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664817723865475:182660",
+                    "locationAsset": "1664817723866200:182662"
+                },
+                "1664817785631963:190848": {
+                    "longitude": "-118.24960327148438",
+                    "latitude": "34.051132202148438",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Hill and 3rd [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664817785631688:190846",
+                    "locationAsset": "1664817785632524:190850"
+                },
+                "1664818056059844:211648": {
+                    "longitude": "-118.25019073486328",
+                    "latitude": "34.054229736328125",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Grand and 3rd [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664818056059602:211647",
+                    "locationAsset": "1664818056060386:211649"
+                },
+                "1664820351258125:567297": {
+                    "longitude": "-118.49649810791016",
+                    "latitude": "34.015979766845703",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - 3rd and Santa Monica [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664820351257890:567296",
+                    "locationAsset": "1664820351258773:567298"
+                },
+                "1664820917627985:637882": {
+                    "longitude": "-118.49646759033203",
+                    "latitude": "34.015327453613281",
+                    "selected": "false",
+                    "valid": "true",
+                    "pinName": "Pin - Santa Monica and 3rd [PLACE_CONTENT_HERE]",
+                    "pinUid": "1664820917627734:637881",
+                    "locationAsset": "1664820917628672:637883"
+                }
+            },
+            "mapCurrentPosition": {
+                "x": "-0.131214619",
+                "y": "51.5132256"
+            },
+            "mapCurrentCity": "0"
+        },
+        "Material::UiComponent": "",
+        "MetaInfoUIComponent": {
+            "hints": [
+                ""
+            ],
+            "lens": "Necklace Try-On",
+            "applicability": "3",
+            "compatibility_descriptors": [
+                "mobile",
+                "web"
+            ],
+            "lens_descriptors": "",
+            "sg": "false",
+            "git_friendly": "true",
+            "activation_camera": "front",
+            "Spectacles2021UseAllowed": "false"
+        },
+        "ObjectTracking3DUIComponent": "",
+        "PreviewUiComponent": {
+            "preview_descriptor": {
+                "is_capture": "0",
+                "camera_type": "2"
+            },
+            "show_snap_ui": "true",
+            "show_sponsored_ui": "false",
+            "input_stream_type": "Image",
+            "preview_images_project_config": {
+                "back_preview_id": "bundle:Preview\/Images\/Beach.jpg",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/Images\/Person 5.jpg",
+                "front_preview_is_favorite": "false"
+            },
+            "preview_videos_project_config": {
+                "back_preview_id": "bundle:Preview\/Videos\/Beach.webm",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/Videos\/Idle Person 1.webm",
+                "front_preview_is_favorite": "false"
+            },
+            "preview_ie_project_config": {
+                "back_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
+                "front_preview_is_favorite": "false"
+            }
+        },
+        "ResourceUiComponent": "",
+        "SceneTreeUiComponent": "",
+        "Script::UiComponent": "",
+        "VFX::UiComponent": ""
+    },
+    "model": {
+        "IFileManager": "",
+        "IResourceManager": {
+            "MaterialUpdateManager": {
+                "unrecognizedMaterials": ""
+            }
+        },
+        "InspectorComponent": "",
+        "LayerComponent": {
+            "nextLayerId": "22",
+            "showOrthographicLayer": "true",
+            "layersInfo": [
+                {
+                    "layerId": "0",
+                    "layerName": "Default Layer",
+                    "layerMask": "1",
+                    "colorCode": "20"
+                },
+                {
+                    "layerId": "1",
+                    "layerName": "Orthographic Layer",
+                    "layerMask": "1048576",
+                    "colorCode": "21"
+                },
+                {
+                    "layerId": "7",
+                    "layerName": "Hair Occluder",
+                    "layerMask": "32",
+                    "colorCode": "5"
+                }
+            ]
+        },
+        "RemoteApi::ModelManager": {
+            "api_specs": ""
+        },
+        "RenderOrderComponent": "",
+        "WorldComponent": {
+            "sceneFile": "Scene",
+            "sceneType": "splitScene",
+            "hitTestDisabledObjectsList": {
+                "type_name": "array"
+            }
+        }
+    },
+    "controller": {
+        "AssetImportController": {
+            "itemUidToID": [
+                {
+                    "k": "1677508843657726:573001",
+                    "v": "7Emg6Qjej3tcGewIns261f"
+                },
+                {
+                    "k": "1678285422489035:98750",
+                    "v": "6UpvDKXAxFjiYd0bdW5w49"
+                },
+                {
+                    "k": "1678636455598688:15968090",
+                    "v": "6UpvDKXAxFjiYd0bdW5w49"
+                },
+                {
+                    "k": "1678873222376051:470544",
+                    "v": "4pevbdTmgtFUFIbbkZWU7b"
+                },
+                {
+                    "k": "1678873244759129:474893",
+                    "v": "7oYToNbiaOeoHn7kR77ctB"
+                },
+                {
+                    "k": "1678873529452030:495978",
+                    "v": "7oYToNbiaOeoHn7kR77ctB"
+                },
+                {
+                    "k": "1683792941571764:1230647",
+                    "v": "6UpvDKXAxFjiYd0bdW5w49"
+                },
+                {
+                    "k": "1683795693161916:2727032",
+                    "v": "1mNAPemX8P5X781FF3rynP"
+                },
+                {
+                    "k": "1684155524823424:9637287",
+                    "v": "1mNAPemX8P5X781FF3rynP"
+                },
+                {
+                    "k": "1684236907560962:21191302",
+                    "v": "6yReawSSRcKRwtBYM3h8fi"
+                },
+                {
+                    "k": "1684238330372919:22153988",
+                    "v": "1KqR90LryB0MDDazQsdQoy"
+                },
+                {
+                    "k": "1684238333053274:22156957",
+                    "v": "6yReawSSRcKRwtBYM3h8fi"
+                },
+                {
+                    "k": "1684317009661042:1388878",
+                    "v": "42pxn1WgYTi2M1gRBtlfuq"
+                },
+                {
+                    "k": "1684432811367705:1613059",
+                    "v": "1mNAPemX8P5X781FF3rynP"
+                },
+                {
+                    "k": "1685609153378931:2696418",
+                    "v": "6UpvDKXAxFjiYd0bdW5w49"
+                }
+            ]
+        },
+        "Compression::IController": "",
+        "DigitalGoodsController": {
+            "digital_goods": ""
+        },
+        "IResourceController": "",
+        "InspectorController": "",
+        "ObjectPrefabController": {
+            "state": {
+                "objectToInfo": [
+                    {
+                        "k": "1685518379110986:124156",
+                        "v": {
+                            "prefab": "1685518323278226:96285",
+                            "mapping": [
+                                {
+                                    "k": "1685518323261843:96210",
+                                    "v": "1685518379110986:124156"
+                                },
+                                {
+                                    "k": "1685518323264156:96217",
+                                    "v": "1685518379112916:124174"
+                                },
+                                {
+                                    "k": "1685518323265350:96219",
+                                    "v": "1685518379114168:124176"
+                                },
+                                {
+                                    "k": "1685518323266429:96234",
+                                    "v": "1685518379116427:124188"
+                                },
+                                {
+                                    "k": "1685518323267636:96236",
+                                    "v": "1685518379117488:124190"
+                                },
+                                {
+                                    "k": "1685518323268695:96247",
+                                    "v": "1685518379119403:124202"
+                                },
+                                {
+                                    "k": "1685518323269908:96249",
+                                    "v": "1685518379120597:124204"
+                                },
+                                {
+                                    "k": "1685518323270830:96260",
+                                    "v": "1685518379122938:124216"
+                                },
+                                {
+                                    "k": "1685518323271895:96262",
+                                    "v": "1685518379124090:124218"
+                                },
+                                {
+                                    "k": "1685518323272954:96273",
+                                    "v": "1685518379126114:124230"
+                                },
+                                {
+                                    "k": "1685518323274281:96277",
+                                    "v": "1685518379127366:124232"
+                                },
+                                {
+                                    "k": "1685518323275342:96279",
+                                    "v": "1685518379128896:124234"
+                                },
+                                {
+                                    "k": "1685518323276423:96281",
+                                    "v": "1685518379130871:124239"
+                                },
+                                {
+                                    "k": "1685518323277566:96283",
+                                    "v": "1685518379112510:124172"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "k": "1685520620399438:1020913",
+                        "v": {
+                            "prefab": "1685518323278226:96285",
+                            "mapping": [
+                                {
+                                    "k": "1685518323261843:96210",
+                                    "v": "1685520620399438:1020913"
+                                },
+                                {
+                                    "k": "1685518323264156:96217",
+                                    "v": "1685520620400990:1020931"
+                                },
+                                {
+                                    "k": "1685518323265350:96219",
+                                    "v": "1685520620401728:1020933"
+                                },
+                                {
+                                    "k": "1685518323266429:96234",
+                                    "v": "1685520620404312:1020949"
+                                },
+                                {
+                                    "k": "1685518323267636:96236",
+                                    "v": "1685520620519225:1021023"
+                                },
+                                {
+                                    "k": "1685518323268695:96247",
+                                    "v": "1685520620522342:1021042"
+                                },
+                                {
+                                    "k": "1685518323269908:96249",
+                                    "v": "1685520620523246:1021048"
+                                },
+                                {
+                                    "k": "1685518323270830:96260",
+                                    "v": "1685520620525805:1021062"
+                                },
+                                {
+                                    "k": "1685518323271895:96262",
+                                    "v": "1685520620526818:1021064"
+                                },
+                                {
+                                    "k": "1685518323272954:96273",
+                                    "v": "1685520620529560:1021078"
+                                },
+                                {
+                                    "k": "1685518323274281:96277",
+                                    "v": "1685520620530437:1021080"
+                                },
+                                {
+                                    "k": "1685518323275342:96279",
+                                    "v": "1685520620531218:1021082"
+                                },
+                                {
+                                    "k": "1685518323276423:96281",
+                                    "v": "1685520620532051:1021084"
+                                },
+                                {
+                                    "k": "1685518323277566:96283",
+                                    "v": "1685520620400601:1020929"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "k": "1685951095897195:1079241",
+                        "v": {
+                            "prefab": "1685951079542153:1051258",
+                            "mapping": [
+                                {
+                                    "k": "1686221982518167:4068074",
+                                    "v": "1685951095897195:1079241"
+                                },
+                                {
+                                    "k": "1686221982518915:4068088",
+                                    "v": "1685951095898128:1079255"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "k": "1685951146958050:1115034",
+                        "v": {
+                            "prefab": "1685951079542153:1051258",
+                            "mapping": [
+                                {
+                                    "k": "1686221982518167:4068074",
+                                    "v": "1685951146958050:1115034"
+                                },
+                                {
+                                    "k": "1686221982518915:4068088",
+                                    "v": "1685951146958891:1115048"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "importInfo": [
+                {
+                    "k": "1677437099264129:893821",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1677437099227509:893693"
+                        },
+                        {
+                            "k": [
+                                "Blink"
+                            ],
+                            "v": "1677437099254406:893795"
+                        },
+                        {
+                            "k": [
+                                "Blink",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677437099257652:893797"
+                        },
+                        {
+                            "k": [
+                                "Camera"
+                            ],
+                            "v": "1677437099237017:893721"
+                        },
+                        {
+                            "k": [
+                                "Camera",
+                                "Component.Camera"
+                            ],
+                            "v": "1677437099239234:893723"
+                        },
+                        {
+                            "k": [
+                                "Crystal"
+                            ],
+                            "v": "1677437099247782:893782"
+                        },
+                        {
+                            "k": [
+                                "Crystal",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677437099250943:893784"
+                        },
+                        {
+                            "k": [
+                                "Frame"
+                            ],
+                            "v": "1677437099259231:893808"
+                        },
+                        {
+                            "k": [
+                                "Frame",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677437099262160:893810"
+                        },
+                        {
+                            "k": [
+                                "Light"
+                            ],
+                            "v": "1677437099231323:893695"
+                        },
+                        {
+                            "k": [
+                                "Light",
+                                "Component.LightSource"
+                            ],
+                            "v": "1677437099233352:893697"
+                        }
+                    ]
+                },
+                {
+                    "k": "1677676064713291:3960220",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1677676064653511:3960096"
+                        },
+                        {
+                            "k": [
+                                "Armature.001"
+                            ],
+                            "v": "1677676064679081:3960185"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone"
+                            ],
+                            "v": "1677676064682165:3960187"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008"
+                            ],
+                            "v": "1677676064684298:3960189"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007"
+                            ],
+                            "v": "1677676064686319:3960191"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006"
+                            ],
+                            "v": "1677676064688348:3960193"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006",
+                                "Bone.005"
+                            ],
+                            "v": "1677676064690581:3960195"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006",
+                                "Bone.005",
+                                "Bone.004"
+                            ],
+                            "v": "1677676064694025:3960197"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006",
+                                "Bone.005",
+                                "Bone.004",
+                                "Bone.003"
+                            ],
+                            "v": "1677676064697837:3960199"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006",
+                                "Bone.005",
+                                "Bone.004",
+                                "Bone.003",
+                                "Bone.002"
+                            ],
+                            "v": "1677676064700619:3960201"
+                        },
+                        {
+                            "k": [
+                                "Armature.001",
+                                "Bone",
+                                "Bone.008",
+                                "Bone.007",
+                                "Bone.006",
+                                "Bone.005",
+                                "Bone.004",
+                                "Bone.003",
+                                "Bone.002",
+                                "Bone.002_end"
+                            ],
+                            "v": "1677676064704021:3960203"
+                        },
+                        {
+                            "k": [
+                                "Camera"
+                            ],
+                            "v": "1677676064667068:3960126"
+                        },
+                        {
+                            "k": [
+                                "Camera",
+                                "Component.Camera"
+                            ],
+                            "v": "1677676064670946:3960128"
+                        },
+                        {
+                            "k": [
+                                "Component.Skin"
+                            ],
+                            "v": "1677676064711187:3960218"
+                        },
+                        {
+                            "k": [
+                                "Light"
+                            ],
+                            "v": "1677676064657333:3960098"
+                        },
+                        {
+                            "k": [
+                                "Light",
+                                "Component.LightSource"
+                            ],
+                            "v": "1677676064660751:3960100"
+                        },
+                        {
+                            "k": [
+                                "Torus.003"
+                            ],
+                            "v": "1677676064706809:3960205"
+                        },
+                        {
+                            "k": [
+                                "Torus.003",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677676064709263:3960207"
+                        }
+                    ]
+                },
+                {
+                    "k": "1677677657576897:4098652",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1677677657422164:4098230"
+                        },
+                        {
+                            "k": [
+                                "Torus.001"
+                            ],
+                            "v": "1677677657427350:4098232"
+                        },
+                        {
+                            "k": [
+                                "Torus.001",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657429786:4098234"
+                        },
+                        {
+                            "k": [
+                                "Torus.004"
+                            ],
+                            "v": "1677677657431816:4098245"
+                        },
+                        {
+                            "k": [
+                                "Torus.004",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657434306:4098247"
+                        },
+                        {
+                            "k": [
+                                "Torus.005"
+                            ],
+                            "v": "1677677657435874:4098258"
+                        },
+                        {
+                            "k": [
+                                "Torus.005",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657438899:4098260"
+                        },
+                        {
+                            "k": [
+                                "Torus.006"
+                            ],
+                            "v": "1677677657440373:4098271"
+                        },
+                        {
+                            "k": [
+                                "Torus.006",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657442916:4098273"
+                        },
+                        {
+                            "k": [
+                                "Torus.007"
+                            ],
+                            "v": "1677677657444398:4098285"
+                        },
+                        {
+                            "k": [
+                                "Torus.007",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657447608:4098288"
+                        },
+                        {
+                            "k": [
+                                "Torus.008"
+                            ],
+                            "v": "1677677657449393:4098299"
+                        },
+                        {
+                            "k": [
+                                "Torus.008",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657452811:4098301"
+                        },
+                        {
+                            "k": [
+                                "Torus.009"
+                            ],
+                            "v": "1677677657455172:4098312"
+                        },
+                        {
+                            "k": [
+                                "Torus.009",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657458053:4098314"
+                        },
+                        {
+                            "k": [
+                                "Torus.010"
+                            ],
+                            "v": "1677677657459567:4098325"
+                        },
+                        {
+                            "k": [
+                                "Torus.010",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657462039:4098327"
+                        },
+                        {
+                            "k": [
+                                "Torus.011"
+                            ],
+                            "v": "1677677657463409:4098338"
+                        },
+                        {
+                            "k": [
+                                "Torus.011",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657465870:4098340"
+                        },
+                        {
+                            "k": [
+                                "Torus.012"
+                            ],
+                            "v": "1677677657467278:4098351"
+                        },
+                        {
+                            "k": [
+                                "Torus.012",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657470177:4098353"
+                        },
+                        {
+                            "k": [
+                                "Torus.013"
+                            ],
+                            "v": "1677677657471731:4098364"
+                        },
+                        {
+                            "k": [
+                                "Torus.013",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657474457:4098366"
+                        },
+                        {
+                            "k": [
+                                "Torus.014"
+                            ],
+                            "v": "1677677657475967:4098377"
+                        },
+                        {
+                            "k": [
+                                "Torus.014",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657478458:4098379"
+                        },
+                        {
+                            "k": [
+                                "Torus.015"
+                            ],
+                            "v": "1677677657479847:4098390"
+                        },
+                        {
+                            "k": [
+                                "Torus.015",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657482262:4098392"
+                        },
+                        {
+                            "k": [
+                                "Torus.016"
+                            ],
+                            "v": "1677677657483546:4098403"
+                        },
+                        {
+                            "k": [
+                                "Torus.016",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657486397:4098405"
+                        },
+                        {
+                            "k": [
+                                "Torus.017"
+                            ],
+                            "v": "1677677657488132:4098416"
+                        },
+                        {
+                            "k": [
+                                "Torus.017",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657491962:4098418"
+                        },
+                        {
+                            "k": [
+                                "Torus.018"
+                            ],
+                            "v": "1677677657493733:4098429"
+                        },
+                        {
+                            "k": [
+                                "Torus.018",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657496452:4098431"
+                        },
+                        {
+                            "k": [
+                                "Torus.019"
+                            ],
+                            "v": "1677677657497855:4098442"
+                        },
+                        {
+                            "k": [
+                                "Torus.019",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657501213:4098444"
+                        },
+                        {
+                            "k": [
+                                "Torus.020"
+                            ],
+                            "v": "1677677657503311:4098455"
+                        },
+                        {
+                            "k": [
+                                "Torus.020",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657506323:4098457"
+                        },
+                        {
+                            "k": [
+                                "Torus.021"
+                            ],
+                            "v": "1677677657508250:4098468"
+                        },
+                        {
+                            "k": [
+                                "Torus.021",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657512229:4098470"
+                        },
+                        {
+                            "k": [
+                                "Torus.022"
+                            ],
+                            "v": "1677677657513835:4098481"
+                        },
+                        {
+                            "k": [
+                                "Torus.022",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657516510:4098483"
+                        },
+                        {
+                            "k": [
+                                "Torus.023"
+                            ],
+                            "v": "1677677657518066:4098494"
+                        },
+                        {
+                            "k": [
+                                "Torus.023",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657521173:4098496"
+                        },
+                        {
+                            "k": [
+                                "Torus.024"
+                            ],
+                            "v": "1677677657522893:4098507"
+                        },
+                        {
+                            "k": [
+                                "Torus.024",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657525653:4098509"
+                        },
+                        {
+                            "k": [
+                                "Torus.025"
+                            ],
+                            "v": "1677677657527055:4098520"
+                        },
+                        {
+                            "k": [
+                                "Torus.025",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657529536:4098522"
+                        },
+                        {
+                            "k": [
+                                "Torus.026"
+                            ],
+                            "v": "1677677657530847:4098533"
+                        },
+                        {
+                            "k": [
+                                "Torus.026",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657533298:4098535"
+                        },
+                        {
+                            "k": [
+                                "Torus.027"
+                            ],
+                            "v": "1677677657534663:4098546"
+                        },
+                        {
+                            "k": [
+                                "Torus.027",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657538136:4098548"
+                        },
+                        {
+                            "k": [
+                                "Torus.028"
+                            ],
+                            "v": "1677677657540097:4098559"
+                        },
+                        {
+                            "k": [
+                                "Torus.028",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657543323:4098561"
+                        },
+                        {
+                            "k": [
+                                "Torus.029"
+                            ],
+                            "v": "1677677657545244:4098574"
+                        },
+                        {
+                            "k": [
+                                "Torus.029",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657548446:4098576"
+                        },
+                        {
+                            "k": [
+                                "Torus.030"
+                            ],
+                            "v": "1677677657551551:4098587"
+                        },
+                        {
+                            "k": [
+                                "Torus.030",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657556085:4098589"
+                        },
+                        {
+                            "k": [
+                                "Torus.031"
+                            ],
+                            "v": "1677677657557970:4098600"
+                        },
+                        {
+                            "k": [
+                                "Torus.031",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657560701:4098602"
+                        },
+                        {
+                            "k": [
+                                "Torus.032"
+                            ],
+                            "v": "1677677657562130:4098613"
+                        },
+                        {
+                            "k": [
+                                "Torus.032",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657564701:4098615"
+                        },
+                        {
+                            "k": [
+                                "Torus.033"
+                            ],
+                            "v": "1677677657566107:4098626"
+                        },
+                        {
+                            "k": [
+                                "Torus.033",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657568905:4098628"
+                        },
+                        {
+                            "k": [
+                                "Torus.034"
+                            ],
+                            "v": "1677677657570762:4098639"
+                        },
+                        {
+                            "k": [
+                                "Torus.034",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677677657573630:4098641"
+                        }
+                    ]
+                },
+                {
+                    "k": "1677678027941148:4395004",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1677678027883383:4394857"
+                        },
+                        {
+                            "k": [
+                                "Torus.005"
+                            ],
+                            "v": "1677678027888835:4394861"
+                        },
+                        {
+                            "k": [
+                                "Torus.005",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027891776:4394863"
+                        },
+                        {
+                            "k": [
+                                "Torus.006"
+                            ],
+                            "v": "1677678027893579:4394874"
+                        },
+                        {
+                            "k": [
+                                "Torus.006",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027896755:4394876"
+                        },
+                        {
+                            "k": [
+                                "Torus.009"
+                            ],
+                            "v": "1677678027898803:4394887"
+                        },
+                        {
+                            "k": [
+                                "Torus.009",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027901685:4394889"
+                        },
+                        {
+                            "k": [
+                                "Torus.012"
+                            ],
+                            "v": "1677678027903213:4394900"
+                        },
+                        {
+                            "k": [
+                                "Torus.012",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027905722:4394902"
+                        },
+                        {
+                            "k": [
+                                "Torus.015"
+                            ],
+                            "v": "1677678027907075:4394913"
+                        },
+                        {
+                            "k": [
+                                "Torus.015",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027910428:4394915"
+                        },
+                        {
+                            "k": [
+                                "Torus.018"
+                            ],
+                            "v": "1677678027912255:4394926"
+                        },
+                        {
+                            "k": [
+                                "Torus.018",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027915463:4394928"
+                        },
+                        {
+                            "k": [
+                                "Torus.021"
+                            ],
+                            "v": "1677678027917044:4394939"
+                        },
+                        {
+                            "k": [
+                                "Torus.021",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027920380:4394941"
+                        },
+                        {
+                            "k": [
+                                "Torus.024"
+                            ],
+                            "v": "1677678027921959:4394952"
+                        },
+                        {
+                            "k": [
+                                "Torus.024",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027924808:4394954"
+                        },
+                        {
+                            "k": [
+                                "Torus.027"
+                            ],
+                            "v": "1677678027926353:4394965"
+                        },
+                        {
+                            "k": [
+                                "Torus.027",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027930043:4394967"
+                        },
+                        {
+                            "k": [
+                                "Torus.030"
+                            ],
+                            "v": "1677678027931909:4394978"
+                        },
+                        {
+                            "k": [
+                                "Torus.030",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027935048:4394980"
+                        },
+                        {
+                            "k": [
+                                "Torus.033"
+                            ],
+                            "v": "1677678027936639:4394991"
+                        },
+                        {
+                            "k": [
+                                "Torus.033",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677678027939166:4394993"
+                        }
+                    ]
+                },
+                {
+                    "k": "1677997253321141:1604116",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1677997253299985:1604057"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.008"
+                            ],
+                            "v": "1677997253303154:1604061"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.008",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677997253305201:1604063"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.009"
+                            ],
+                            "v": "1677997253306985:1604074"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.009",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677997253309970:1604076"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.010"
+                            ],
+                            "v": "1677997253311633:1604087"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.010",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677997253313964:1604089"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.011"
+                            ],
+                            "v": "1677997253315598:1604100"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.011",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1677997253317820:1604102"
+                        },
+                        {
+                            "k": [
+                                "yellow_l.011",
+                                "Component.RenderMeshVisual1"
+                            ],
+                            "v": "1677997253319241:1604113"
+                        }
+                    ]
+                },
+                {
+                    "k": "1685502922571804:2859437",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1685502922567421:2859418"
+                        },
+                        {
+                            "k": [
+                                "hand_L_low"
+                            ],
+                            "v": "1685502922569035:2859420"
+                        },
+                        {
+                            "k": [
+                                "hand_L_low",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685502922570161:2859422"
+                        }
+                    ]
+                },
+                {
+                    "k": "1685518323278226:96285",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1685518323261843:96210"
+                        },
+                        {
+                            "k": [
+                                "Armature"
+                            ],
+                            "v": "1685518323272954:96273"
+                        },
+                        {
+                            "k": [
+                                "Armature",
+                                "Bone"
+                            ],
+                            "v": "1685518323274281:96277"
+                        },
+                        {
+                            "k": [
+                                "Armature",
+                                "Bone",
+                                "Bone.001"
+                            ],
+                            "v": "1685518323275342:96279"
+                        },
+                        {
+                            "k": [
+                                "Armature",
+                                "Bone",
+                                "Bone.001",
+                                "Bone.001_end"
+                            ],
+                            "v": "1685518323276423:96281"
+                        },
+                        {
+                            "k": [
+                                "Ball 1"
+                            ],
+                            "v": "1685518323268695:96247"
+                        },
+                        {
+                            "k": [
+                                "Ball 1",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685518323269908:96249"
+                        },
+                        {
+                            "k": [
+                                "Ball 2"
+                            ],
+                            "v": "1685518323266429:96234"
+                        },
+                        {
+                            "k": [
+                                "Ball 2",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685518323267636:96236"
+                        },
+                        {
+                            "k": [
+                                "Component.Skin"
+                            ],
+                            "v": "1685518323277566:96283"
+                        },
+                        {
+                            "k": [
+                                "Frame"
+                            ],
+                            "v": "1685518323264156:96217"
+                        },
+                        {
+                            "k": [
+                                "Frame",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685518323265350:96219"
+                        },
+                        {
+                            "k": [
+                                "Pear"
+                            ],
+                            "v": "1685518323270830:96260"
+                        },
+                        {
+                            "k": [
+                                "Pear",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685518323271895:96262"
+                        }
+                    ]
+                },
+                {
+                    "k": "1685872013990361:6796644",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1685872013987120:6796629"
+                        },
+                        {
+                            "k": [
+                                "body"
+                            ],
+                            "v": "1685872013988139:6796631"
+                        },
+                        {
+                            "k": [
+                                "body",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685872013988755:6796633"
+                        }
+                    ]
+                },
+                {
+                    "k": "1685974302471321:9519609",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1685974302467003:9519594"
+                        },
+                        {
+                            "k": [
+                                "head_low"
+                            ],
+                            "v": "1685974302468774:9519596"
+                        },
+                        {
+                            "k": [
+                                "head_low",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1685974302469920:9519598"
+                        }
+                    ]
+                },
+                {
+                    "k": "1686496342727323:1875970",
+                    "v": [
+                        {
+                            "k": "",
+                            "v": "1686496342725029:1875955"
+                        },
+                        {
+                            "k": [
+                                "head"
+                            ],
+                            "v": "1686496342725775:1875957"
+                        },
+                        {
+                            "k": [
+                                "head",
+                                "Component.RenderMeshVisual"
+                            ],
+                            "v": "1686496342726197:1875959"
+                        }
+                    ]
+                }
+            ]
+        },
+        "ObjectTracking3DController": {
+            "hand_tracking_mode": "0"
+        },
+        "ScriptModulesController": ""
+    },
+    "templateName": "Necklace Try-On",
+    "templateUrl": "https:\/\/downloads.ctfassets.net\/xyb83mibqg29\/3ej4JLZ0jSoGHIAGH6GqGS\/7468458ee1486c3bf819ee248899cd1f\/Necklace_Try-On.zip"
+}

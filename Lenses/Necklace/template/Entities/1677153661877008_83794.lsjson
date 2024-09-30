@@ -1,0 +1,173 @@
+{
+    "1677153661875383:83793": {
+        "IFileManager": {
+            "path": "Files/File_1677153661875383_83793.mesh"
+        }
+    },
+    "1677153661877008:83794": {
+        "IResourceController": {
+            "name": "blick_in",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153661917542:83798",
+            "fileId": "1677153661875383:83793",
+            "publicId": "1686647826300284:706332",
+            "expected_hash": "f218723393ce79fe2ee3ed7aac5ea477",
+            "additional": {
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "8",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "texture0"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "texture1"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "8",
+                            "semantic": "boneData"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153661917542:83798",
+            "name": "Files/File_1677153661875383_83793.mesh",
+            "flags": 1
+        }
+    },
+    "1677153661917542:83798": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "9117120912967028690",
+                        "uncompressed_hash": "f218723393ce79fe2ee3ed7aac5ea477"
+                    },
+                    "v": "1727527389939394:15135"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "1032",
+                "compressedSize": "2286",
+                "extension": "mesh",
+                "originalRAM": "1032",
+                "originalSize": "2286",
+                "settings": {
+                    "attributeFormat": [
+                        {
+                            "k": "boneData",
+                            "v": "8"
+                        },
+                        {
+                            "k": "normal",
+                            "v": "8"
+                        },
+                        {
+                            "k": "position",
+                            "v": "8"
+                        },
+                        {
+                            "k": "tangent",
+                            "v": "8"
+                        },
+                        {
+                            "k": "texture0",
+                            "v": "8"
+                        },
+                        {
+                            "k": "texture1",
+                            "v": "8"
+                        }
+                    ],
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture1"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "boneData"
+                            }
+                        ]
+                    },
+                    "isCompressed": "true",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1727527389227057:11042"
+        }
+    },
+    "1686647826300284:706332": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 3/Necklace 3/Meshes/blick_in.mesh",
+                "hash": "f218723393ce79fe2ee3ed7aac5ea477"
+            }
+        }
+    },
+    "1727527389227057:11042": {
+        "IFileManager": {
+            "path": "Files/File_1727527389227057_11042.mesh"
+        }
+    },
+    "1727527389939394:15135": {
+        "IFileManager": {
+            "path": "Files/File_1727527389939394_15135.mesh"
+        }
+    }
+}

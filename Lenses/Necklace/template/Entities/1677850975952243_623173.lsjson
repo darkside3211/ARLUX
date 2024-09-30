@@ -1,0 +1,121 @@
+{
+    "1677850975950965:623172": {
+        "IFileManager": {
+            "path": "Files/File_1677850975950965_623172.mesh"
+        }
+    },
+    "1677850975952243:623173": {
+        "IResourceController": {
+            "name": "right 3",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677850975987830:623177",
+            "fileId": "1677850975950965:623172",
+            "publicId": "1686647826305493:706341",
+            "expected_hash": "dee67d12a2f29d777a84a21dbd4ace1c",
+            "additional": {
+                "externalBodyLink": [
+                    "1677056925048673:4848",
+                    "1677056925048694:5043",
+                    "1677056925049967:5907",
+                    "1677056925049967:5908"
+                ],
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "9",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture0"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677850975987830:623177",
+            "name": "Files/File_1677850975950965_623172.mesh",
+            "flags": 1
+        }
+    },
+    "1677850975987830:623177": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "170508",
+                "compressedSize": "101914",
+                "extension": "mesh",
+                "originalRAM": "170508",
+                "originalSize": "101914",
+                "settings": {
+                    "attributeFormat": "",
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            }
+                        ]
+                    },
+                    "isCompressed": "false",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677850975992814:623188"
+        }
+    },
+    "1677850975992814:623188": {
+        "IFileManager": {
+            "path": "Files/File_1677850975992814_623188.mesh"
+        }
+    },
+    "1686647826305493:706341": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 2/Necklace 2 Bodies/right 3.mesh",
+                "hash": "dee67d12a2f29d777a84a21dbd4ace1c"
+            }
+        }
+    }
+}

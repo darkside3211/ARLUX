@@ -1,0 +1,22 @@
+{
+    "1678092483347851:54629": {
+        "IResourceController": {
+            "name": "Necklace 1",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826311844:706349",
+            "resources": [
+                "1678092483348966:54631"
+            ]
+        }
+    },
+    "1686647826311844:706349": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 1"
+            }
+        }
+    }
+}

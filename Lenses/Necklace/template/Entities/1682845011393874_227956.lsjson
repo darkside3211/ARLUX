@@ -1,0 +1,37 @@
+{
+    "1682845011392699:227954": {
+        "IFileManager": {
+            "path": "Files/File_1682845011392699_227954.lsc"
+        }
+    },
+    "1682845011393874:227956": {
+        "IResourceController": {
+            "name": "Chain",
+            "type": 32,
+            "subtype": 0,
+            "dependency": 2,
+            "hidden": false,
+            "uid": "1682593437652950:83104",
+            "fileId": "1682845011392699:227954",
+            "originalId": "1682845011401011:227991",
+            "publicId": "1686647826358201:706406",
+            "expected_hash": "936b069328906a08e4cded1b615a1c99",
+            "resources": [
+                "1682845011397543:227958"
+            ]
+        }
+    },
+    "1682845011401011:227991": {
+        "IFileManager": {
+            "path": "Files/File_1682845011401011_227991.lsc"
+        }
+    },
+    "1686647826358201:706406": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Chain.lsc",
+                "hash": "ff1e1864f15874d43124672c99fa97de"
+            }
+        }
+    }
+}

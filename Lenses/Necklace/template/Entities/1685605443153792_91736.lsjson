@@ -1,0 +1,30 @@
+{
+    "1685605443152883:91735": {
+        "IFileManager": {
+            "path": "Files/File_1685605443152883_91735"
+        }
+    },
+    "1685605443153792:91736": {
+        "IResourceController": {
+            "name": "Debug Cubemap",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1685605443153794:91737",
+            "fileId": "1685605443152883:91735",
+            "originalId": "1685605443173114:91741",
+            "expected_hash": "d2706877a651fe0ec202398ff0dd8e37"
+        },
+        "IResourceManager": {
+            "uid": "1685605443153794:91737",
+            "name": "Files/File_1685605443152883_91735",
+            "flags": 1
+        }
+    },
+    "1685605443173114:91741": {
+        "IFileManager": {
+            "path": "Files/File_1685605443173114_91741.lsmat"
+        }
+    }
+}

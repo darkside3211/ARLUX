@@ -1,0 +1,39 @@
+{
+    "1678093955547059:21848": {
+        "IFileManager": {
+            "path": "Files/File_1678093955547059_21848"
+        }
+    },
+    "1678093955549417:21849": {
+        "IResourceController": {
+            "name": "Upper Garment Occluder",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678093955549421:21850",
+            "fileId": "1678093955547059:21848",
+            "originalId": "1678093955580540:21854",
+            "publicId": "1686647826331303:706375",
+            "expected_hash": "465b896c808e0d8cf9b4279d440f1bf5"
+        },
+        "IResourceManager": {
+            "uid": "1678093955549421:21850",
+            "name": "Files/File_1678093955547059_21848",
+            "flags": 1
+        }
+    },
+    "1678093955580540:21854": {
+        "IFileManager": {
+            "path": "Files/File_1678093955580540_21854.lsmat"
+        }
+    },
+    "1686647826331303:706375": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Upper Garment Occluder.lsmat",
+                "hash": "23d95fd79e69a4d368574ead3004294d"
+            }
+        }
+    }
+}

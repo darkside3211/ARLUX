@@ -1,0 +1,39 @@
+{
+    "1677153665373535:84867": {
+        "IFileManager": {
+            "path": "Files/File_1677153665373535_84867"
+        }
+    },
+    "1677153665375780:84868": {
+        "IResourceController": {
+            "name": "gem_mtl",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153665375784:84869",
+            "fileId": "1677153665373535:84867",
+            "originalId": "1677153665408545:84875",
+            "publicId": "1686647826325652:706367",
+            "expected_hash": "7207e21290e33800a8a189d653cd8772"
+        },
+        "IResourceManager": {
+            "uid": "1677153665375784:84869",
+            "name": "Files/File_1677153665373535_84867",
+            "flags": 1
+        }
+    },
+    "1677153665408545:84875": {
+        "IFileManager": {
+            "path": "Files/File_1677153665408545_84875.lsmat"
+        }
+    },
+    "1686647826325652:706367": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/gem_mtl.lsmat",
+                "hash": "a7a68ee9ef8e3be2d116d7f45288e30e"
+            }
+        }
+    }
+}

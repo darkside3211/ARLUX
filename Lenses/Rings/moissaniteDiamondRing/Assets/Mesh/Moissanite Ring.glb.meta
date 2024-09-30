@@ -16,8 +16,7 @@
   PackagePolicy: CanBeUnpacked
   AssetDataMap:
     Scene: !<own> b9438ee1-6df0-41e9-b960-e35abdfbddab
-  DependentFiles:
-    []
+  DependentFiles: []
   ImporterSettings: !<GltfImporterSettings/75afb279-bc1b-458d-9be1-a0a3bc02e40a>
     UseLegacyImporter: false
     WithMaterials: false
@@ -29,6 +28,7 @@
     ImportMorphTargetAnimation: true
     ConvertMetersToCentimeters: false
     RegenerateTangents: false
+    PersistentIdGenerationAlgorithm: Legacy
   CompressionSettings: !<ComplexCompressionSettings/22c7cd90-1b34-40e0-8d17-aa0b687a8958>
     Presets:
       None Compression: !<SingleCompressionSettings/c0071e3e-e874-4219-9132-0ebddd2e7bf7>
@@ -36,11 +36,9 @@
         CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
     ExtensionMappings:
       mesh: None Compression
-    Overrides:
-      {}
+    Overrides: {}
 - !<SceneObject/2e64cbe4-fd98-4298-a7a8-04a5407a62d5>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Scene
   Enabled: true
   Layers: 1
@@ -54,8 +52,7 @@
   Components:
     - !<own> da043f49-3236-4b55-a23b-76fcddbad098
 - !<SceneObject/303584a4-964a-4f71-9cc6-8730f1177ef1>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Scenes
   Enabled: true
   Layers: 1
@@ -66,11 +63,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 2e64cbe4-fd98-4298-a7a8-04a5407a62d5
-  Components:
-    []
+  Components: []
 - !<RenderMeshVisual/5cd5cc2d-fd87-43f7-821a-0b672f0d2441>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -86,12 +81,9 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<RenderMeshVisual/6ba11458-1b1d-4e85-85c1-6de6f897a9e4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Cube.001
   Enabled: true
   RenderOrder: 0
@@ -107,9 +99,7 @@
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
-  BlendShapes:
-    {}
-  RayTracing: !<own> 00000000-0000-0000-0000-000000000000
+  BlendShapes: {}
 - !<ObjectPrefab/71b89fff-d67e-40eb-876c-639fd4544861>
   PackagePath: ""
   objects:
@@ -129,17 +119,14 @@
     - edb732a3-1d5a-4958-a514-c464bfecac82: 5cd5cc2d-fd87-43f7-821a-0b672f0d2441
   SourceState: !<own> 71b89fff-d67e-40eb-876c-639fd4544861
 - !<AnimationPlayer/da043f49-3236-4b55-a23b-76fcddbad098>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: component_2
   Enabled: true
   Autoplay: true
   ClipRangeType: Frames
-  AnimationClips:
-    []
+  AnimationClips: []
 - !<SceneObject/f57c1288-de93-41eb-b2c9-64ba514be1dc>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: MoissaniteDiamondRing
   Enabled: true
   Layers: 1
@@ -148,14 +135,12 @@
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.296881, y: 0.899550, z: 0.899550}
     hasSegmentScaleCompensation: false
-  Children:
-    []
+  Children: []
   Components:
     - !<own> 6ba11458-1b1d-4e85-85c1-6de6f897a9e4
     - !<own> 5cd5cc2d-fd87-43f7-821a-0b672f0d2441
 - !<SceneObject/f7bdbb6a-4f95-4f76-a5d8-66804ef139c4>
-  PrefabRemaps:
-    []
+  PrefabRemaps: []
   Name: Moissanite Ring
   Enabled: true
   Layers: 1
@@ -166,5 +151,4 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 303584a4-964a-4f71-9cc6-8730f1177ef1
-  Components:
-    []
+  Components: []

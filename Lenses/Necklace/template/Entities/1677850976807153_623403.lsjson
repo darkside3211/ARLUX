@@ -1,0 +1,39 @@
+{
+    "1677850976804951:623402": {
+        "IFileManager": {
+            "path": "Files/File_1677850976804951_623402"
+        }
+    },
+    "1677850976807153:623403": {
+        "IResourceController": {
+            "name": "refr_back 2",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677850976807166:623404",
+            "fileId": "1677850976804951:623402",
+            "originalId": "1677850976852124:623410",
+            "publicId": "1686647826329235:706372",
+            "expected_hash": "f38b2ba6792d81bfaf77f6cdf1318c9d"
+        },
+        "IResourceManager": {
+            "uid": "1677850976807166:623404",
+            "name": "Files/File_1677850976804951_623402",
+            "flags": 1
+        }
+    },
+    "1677850976852124:623410": {
+        "IFileManager": {
+            "path": "Files/File_1677850976852124_623410.lsmat"
+        }
+    },
+    "1686647826329235:706372": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/refr_back 2.lsmat",
+                "hash": "f9d4348f4ce30ba5b3b0ff9083627cd5"
+            }
+        }
+    }
+}

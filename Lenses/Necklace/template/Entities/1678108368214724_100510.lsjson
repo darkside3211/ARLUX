@@ -1,0 +1,22 @@
+{
+    "1678108368214724:100510": {
+        "IResourceController": {
+            "name": "Procedural Necklace",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826319678:706356",
+            "resources": [
+                "1678108368215816:100512"
+            ]
+        }
+    },
+    "1686647826319678:706356": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Procedural Necklace"
+            }
+        }
+    }
+}

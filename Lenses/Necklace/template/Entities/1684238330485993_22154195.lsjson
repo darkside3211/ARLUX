@@ -1,0 +1,22 @@
+{
+    "1684238330485993:22154195": {
+        "IResourceController": {
+            "name": "Meshes",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826369720:706428",
+            "resources": [
+                "1684238331202801:22154856"
+            ]
+        }
+    },
+    "1686647826369720:706428": {
+        "IResourceController": {
+            "public": {
+                "path": "Gemstone/Gemstone Pack Resources/Meshes"
+            }
+        }
+    }
+}

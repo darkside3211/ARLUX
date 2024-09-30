@@ -1,0 +1,23 @@
+{
+    "1685518322343144:95905": {
+        "IResourceController": {
+            "name": "Materials1",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826310083:706346",
+            "resources": [
+                "1685518322344537:95907",
+                "1685518322905892:96086"
+            ]
+        }
+    },
+    "1686647826310083:706346": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/Models/Necklace 2/Rigged Gem Rendering/Materials1"
+            }
+        }
+    }
+}

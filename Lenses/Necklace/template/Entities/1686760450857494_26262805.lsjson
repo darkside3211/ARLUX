@@ -1,0 +1,118 @@
+{
+    "1686760450853939:26262802": {
+        "IFileManager": {
+            "path": "Files/File_1686760450853939_26262802.mesh"
+        }
+    },
+    "1686760450857494:26262805": {
+        "IResourceController": {
+            "name": "head_low",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1686760450876365:26262807",
+            "fileId": "1686760450853939:26262802",
+            "publicId": "1686760450885603:26262823",
+            "expected_hash": "c701510b367f284e36f9c1d93c4a0303",
+            "additional": {
+                "externalBodyLink": [
+                    "1685973792401317:9393170"
+                ],
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "9",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture0"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1686760450876365:26262807",
+            "name": "Files/File_1686760450853939_26262802.mesh",
+            "flags": 1
+        }
+    },
+    "1686760450876365:26262807": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "4284",
+                "compressedSize": "3976",
+                "extension": "mesh",
+                "originalRAM": "4284",
+                "originalSize": "3976",
+                "settings": {
+                    "attributeFormat": "",
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            }
+                        ]
+                    },
+                    "isCompressed": "false",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1686760450882230:26262822"
+        }
+    },
+    "1686760450882230:26262822": {
+        "IFileManager": {
+            "path": "Files/File_1686760450882230_26262822.mesh"
+        }
+    },
+    "1686760450885603:26262823": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/head/Meshes/head_low.mesh",
+                "hash": "c701510b367f284e36f9c1d93c4a0303"
+            }
+        }
+    }
+}

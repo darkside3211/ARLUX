@@ -1,0 +1,41 @@
+{
+    "1685273985114398:39536": {
+        "IFileManager": {
+            "path": "Files/File_1685273985114398_39536.js"
+        }
+    },
+    "1685273985118709:39537": {
+        "IResourceController": {
+            "name": "NeckBinding",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685273985118730:39538",
+            "fileId": "1685273985114398:39536",
+            "publicId": "1686647826362842:706416",
+            "expected_hash": "f0467b70b7019830251fbcdc771e09b6"
+        },
+        "IResourceManager": {
+            "uid": "1685273985118730:39538",
+            "name": "Files/File_1685273985114398_39536.js",
+            "flags": 1
+        }
+    },
+    "1685273985118730:39538": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "SceneObjectHelpersModule",
+                "DestructionHelper"
+            ]
+        }
+    },
+    "1686647826362842:706416": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Scripts/NeckBinding.js",
+                "hash": "f0467b70b7019830251fbcdc771e09b6"
+            }
+        }
+    }
+}

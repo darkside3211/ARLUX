@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
+import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/features/products/model/search_product_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -21,13 +22,15 @@ class ProductRemoteRepository {
         List<ProductModel> jewelries =
             json.map((item) => ProductModel.fromJson(item)).toList();
 
+        await ProductLocalRepository().cacheProducts(jewelries);
+
         return jewelries;
       } else {
-        return List.empty();
+        return ProductLocalRepository().getCachedProducts();
       }
     } catch (e) {
       log(e.toString());
-      return List.empty();
+      return ProductLocalRepository().getCachedProducts();
     }
   }
 
@@ -125,6 +128,6 @@ Future<List<ProductModel>> categorizeProductList(
   required String category,
 }) async {
   final productRemoteRepository = ref.watch(productRemoteRepositoryProvider);
-  
+
   return productRemoteRepository.categorizeProductList(category: category);
 }

@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   badges: ^3.1.2
+  camerakit_flutter: ^1.0.1
   dio: ^5.7.0
   firebase_auth: ^5.3.0
   firebase_core: ^3.5.0

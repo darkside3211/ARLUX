@@ -1,0 +1,39 @@
+{
+    "1677153663591655:84306": {
+        "IFileManager": {
+            "path": "Files/File_1677153663591655_84306"
+        }
+    },
+    "1677153663592798:84307": {
+        "IResourceController": {
+            "name": "shadow_gem_mtl",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153663592801:84308",
+            "fileId": "1677153663591655:84306",
+            "originalId": "1677153663625803:84314",
+            "publicId": "1686647826324321:706365",
+            "expected_hash": "08f0ef298c825825fba5f8c31c5725fa"
+        },
+        "IResourceManager": {
+            "uid": "1677153663592801:84308",
+            "name": "Files/File_1677153663591655_84306",
+            "flags": 1
+        }
+    },
+    "1677153663625803:84314": {
+        "IFileManager": {
+            "path": "Files/File_1677153663625803_84314.lsmat"
+        }
+    },
+    "1686647826324321:706365": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/shadow_gem_mtl.lsmat",
+                "hash": "50c364f6880089801889bd342ed60035"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "1680167901036627:1147673": {
+        "IResourceController": {
+            "name": "Necklace Matter 2",
+            "type": 37,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1680167901036621:1147672"
+        },
+        "IResourceManager": {
+            "uid": "1680167901036621:1147672",
+            "name": "PhysicsMatter Asset",
+            "flags": 0
+        }
+    }
+}

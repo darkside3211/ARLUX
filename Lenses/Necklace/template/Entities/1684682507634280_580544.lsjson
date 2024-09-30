@@ -1,0 +1,23 @@
+{
+    "1684682507634280:580544": {
+        "IResourceController": {
+            "name": "Gemstone",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826368414:706426",
+            "resources": [
+                "1684238330484792:22154193",
+                "1685605443128631:91705"
+            ]
+        }
+    },
+    "1686647826368414:706426": {
+        "IResourceController": {
+            "public": {
+                "path": "Gemstone"
+            }
+        }
+    }
+}

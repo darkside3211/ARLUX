@@ -1,0 +1,39 @@
+{
+    "1684325377354663:1668490": {
+        "IResourceController": {
+            "name": "Neck Binding Helpers",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1684325377354449:1668424",
+            "fileId": "1684325377383532:1668582",
+            "originalId": "1684326952361008:2370214",
+            "publicId": "1686647826364143:706419",
+            "expected_hash": "85a98fbadf1e6771c7b634177df1469f"
+        },
+        "IResourceManager": {
+            "uid": "1684325377354449:1668424",
+            "name": "Neck Tracking",
+            "flags": 0
+        }
+    },
+    "1684325377383532:1668582": {
+        "IFileManager": {
+            "path": "Files/File_1684325377383532_1668582.oprfb"
+        }
+    },
+    "1684326952361008:2370214": {
+        "IFileManager": {
+            "path": "Files/File_1684326952361008_2370214.oprfb"
+        }
+    },
+    "1686647826364143:706419": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Neck Binding Helpers.oprfb",
+                "hash": "0883868d042a191524cb329416a37ee3"
+            }
+        }
+    }
+}

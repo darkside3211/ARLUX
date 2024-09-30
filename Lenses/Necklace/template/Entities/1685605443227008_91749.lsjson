@@ -1,0 +1,30 @@
+{
+    "1685605443226066:91748": {
+        "IFileManager": {
+            "path": "Files/File_1685605443226066_91748"
+        }
+    },
+    "1685605443227008:91749": {
+        "IResourceController": {
+            "name": "Gem Material",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1685605443227011:91750",
+            "fileId": "1685605443226066:91748",
+            "originalId": "1685605443245301:91754",
+            "expected_hash": "6b45c487eb1bbc37e321a14385d4de4b"
+        },
+        "IResourceManager": {
+            "uid": "1685605443227011:91750",
+            "name": "Files/File_1685605443226066_91748",
+            "flags": 1
+        }
+    },
+    "1685605443245301:91754": {
+        "IFileManager": {
+            "path": "Files/File_1685605443245301_91754.lsmat"
+        }
+    }
+}

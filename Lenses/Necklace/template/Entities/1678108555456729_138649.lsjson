@@ -1,0 +1,24 @@
+{
+    "1678108555456729:138649": {
+        "IResourceController": {
+            "name": "Simple Necklace Body Mesh",
+            "type": 3,
+            "subtype": 4,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678108555456726:138648",
+            "additional": {
+                "_exteraFile_": [
+                    "Files/File_1678108562533589_140988.extmesh"
+                ],
+                "externalBodyMapFileID": "1678108562533589:140988",
+                "externalBodyMapFilepath": "Files/File_1678108562533589_140988.extmesh"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1678108555456726:138648",
+            "name": "",
+            "flags": 0
+        }
+    }
+}

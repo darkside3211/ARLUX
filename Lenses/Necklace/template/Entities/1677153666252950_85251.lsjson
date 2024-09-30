@@ -1,0 +1,104 @@
+{
+    "1677153666251232:85250": {
+        "IFileManager": {
+            "path": "Files/File_1677153666251232_85250.jpg"
+        }
+    },
+    "1677153666252950:85251": {
+        "IResourceController": {
+            "name": "gems_ao",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666253355:85252",
+            "fileId": "1677153666251232:85250",
+            "originalId": "1677153666253731:85257",
+            "publicId": "1686647826337617:706383",
+            "expected_hash": "3a8e42bcdf79400a3b3635a0944c55c9",
+            "additional": {
+                "originHash": "0e84acd87ca6f32cc7e8039472dddd25",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666253355:85252",
+            "name": "Files/File_1677153666251232_85250.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666253355:85252": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "1024",
+                        "uncompressed_hash": "0e84acd87ca6f32cc7e8039472dddd25"
+                    },
+                    "v": "1686038469124325:19871330"
+                },
+                {
+                    "k": {
+                        "settings_hash": "2048",
+                        "uncompressed_hash": "0e84acd87ca6f32cc7e8039472dddd25"
+                    },
+                    "v": "1686038484283115:19895767"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "0e84acd87ca6f32cc7e8039472dddd25"
+                    },
+                    "v": "1686038480402453:19886718"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "262144",
+                "compressedSize": "4903",
+                "extension": "jpg",
+                "originalRAM": "262144",
+                "originalSize": "6508",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666262799:85263"
+        }
+    },
+    "1677153666253731:85257": {
+        "IFileManager": {
+            "path": "Files/File_1677153666253731_85257.jpg"
+        }
+    },
+    "1677153666262799:85263": {
+        "IFileManager": {
+            "path": "Files/File_1677153666262799_85263.jpg"
+        }
+    },
+    "1686038469124325:19871330": {
+        "IFileManager": {
+            "path": "Files/File_1686038469124325_19871330.jpg"
+        }
+    },
+    "1686038480402453:19886718": {
+        "IFileManager": {
+            "path": "Files/File_1686038480402453_19886718.jpg"
+        }
+    },
+    "1686038484283115:19895767": {
+        "IFileManager": {
+            "path": "Files/File_1686038484283115_19895767.jpg"
+        }
+    },
+    "1686647826337617:706383": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/gems_ao.jpg",
+                "hash": "0e84acd87ca6f32cc7e8039472dddd25"
+            }
+        }
+    }
+}

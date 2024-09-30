@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewelry Model Viewer</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-        model-viewer {
-            width: 400px;
-            height: 600px;
-            border: 1px solid black;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Viewer</title>
+    <script async src="es-module-shims.js"></script>
+    <script type="module" src="model-viewer-module.min.js"></script>
+    <script type="module" src="model-viewer-effects.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@^0.168.0/build/three.module.min.js"
         }
-    </style>
-</head>
-<body>
-    <model-viewer id="jewelryViewer" camera-controls auto-rotate></model-viewer>
-    <script src="viewerController.js">
-
+      }
     </script>
-</body>
+    <style>
+      model-viewer {
+        width: 1024px;
+        height: 1024px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="MoissaniteRing.glb"
+      camera-controls
+      tone-mapping="neutral"
+      shadow-intensity="1"
+      environment-image="jewelry_studio.hdr"
+      exposure="0.8"
+      shadow-softness="1"
+    >
+      <effect-composer>
+        <bloom-effect strength="10"></bloom-effect>
+        <ssao-effect></ssao-effect>
+        <outline-effect></outline-effect>
+      </effect-composer>
+    </model-viewer>
+  </body>
 </html>

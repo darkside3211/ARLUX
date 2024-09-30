@@ -1,0 +1,39 @@
+{
+    "1678183741882359:115461": {
+        "IFileManager": {
+            "path": "Files/File_1678183741882359_115461"
+        }
+    },
+    "1678183741888242:115462": {
+        "IResourceController": {
+            "name": "Silver",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678183741888250:115463",
+            "fileId": "1678183741882359:115461",
+            "originalId": "1678183741941428:115469",
+            "publicId": "1686647826332674:706377",
+            "expected_hash": "4de5e7763dada0d0fcfb7b077d076277"
+        },
+        "IResourceManager": {
+            "uid": "1678183741888250:115463",
+            "name": "Files/File_1678183741882359_115461",
+            "flags": 1
+        }
+    },
+    "1678183741941428:115469": {
+        "IFileManager": {
+            "path": "Files/File_1678183741941428_115469.lsmat"
+        }
+    },
+    "1686647826332674:706377": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Necklaces/Silver.lsmat",
+                "hash": "1486199a1a20ca1a94d089914b29c061"
+            }
+        }
+    }
+}

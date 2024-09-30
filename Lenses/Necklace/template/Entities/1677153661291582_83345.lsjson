@@ -1,0 +1,23 @@
+{
+    "1677153661291582:83345": {
+        "IResourceController": {
+            "name": "Body Tracking",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826294242:706322",
+            "resources": [
+                "1677676010449327:3916627",
+                "1678108555456729:138649"
+            ]
+        }
+    },
+    "1686647826294242:706322": {
+        "IResourceController": {
+            "public": {
+                "path": "Body Tracking"
+            }
+        }
+    }
+}

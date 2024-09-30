@@ -1,0 +1,125 @@
+{
+    "1677153661684257:83739": {
+        "IFileManager": {
+            "path": "Files/File_1677153661684257_83739.mesh"
+        }
+    },
+    "1677153661685973:83740": {
+        "IResourceController": {
+            "name": "ch_in",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153661725625:83744",
+            "fileId": "1677153661684257:83739",
+            "publicId": "1686647826298419:706329",
+            "expected_hash": "e6f5b6a3fd967db366addf71da4a1219",
+            "additional": {
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "9",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture0"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "boneData"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153661725625:83744",
+            "name": "Files/File_1677153661684257_83739.mesh",
+            "flags": 1
+        }
+    },
+    "1677153661725625:83744": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "284208",
+                "compressedSize": "206395",
+                "extension": "mesh",
+                "originalRAM": "284208",
+                "originalSize": "206395",
+                "settings": {
+                    "attributeFormat": "",
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "boneData"
+                            }
+                        ]
+                    },
+                    "isCompressed": "false",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153661735016:83755"
+        }
+    },
+    "1677153661735016:83755": {
+        "IFileManager": {
+            "path": "Files/File_1677153661735016_83755.mesh"
+        }
+    },
+    "1686647826298419:706329": {
+        "IResourceController": {
+            "public": {
+                "path": "Models/Necklace 3/Necklace 3/Meshes/ch_in.mesh",
+                "hash": "e6f5b6a3fd967db366addf71da4a1219"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "1684239124482503:22947093": {
+        "IFileManager": {
+            "path": "Files/File_1684239124482503_22947093"
+        }
+    },
+    "1684239124483901:22947094": {
+        "IResourceController": {
+            "name": "Gem Ring Light Green",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1684239124483905:22947095",
+            "fileId": "1684239124482503:22947093",
+            "originalId": "1684239124504256:22947101",
+            "publicId": "1686647826335398:706380",
+            "expected_hash": "cfb2750427f1807b6f7b0cfe5ca07f0d"
+        },
+        "IResourceManager": {
+            "uid": "1684239124483905:22947095",
+            "name": "Files/File_1684239124482503_22947093",
+            "flags": 1
+        }
+    },
+    "1684239124504256:22947101": {
+        "IFileManager": {
+            "path": "Files/File_1684239124504256_22947101.lsmat"
+        }
+    },
+    "1686647826335398:706380": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Gem Ring Light Green.lsmat",
+                "hash": "5fd5745fd16c191e0254f94cec294719"
+            }
+        }
+    }
+}

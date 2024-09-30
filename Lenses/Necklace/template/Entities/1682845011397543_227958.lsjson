@@ -1,0 +1,29 @@
+{
+    "1682845011393948:227957": {
+        "IFileManager": {
+            "path": "Files/File_1682845011393948_227957.js"
+        }
+    },
+    "1682845011397543:227958": {
+        "IResourceController": {
+            "name": "Chain",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1682845011397572:227959",
+            "fileId": "1682845011393948:227957",
+            "expected_hash": "352050570803ab1c0a328af54dd04da1"
+        },
+        "IResourceManager": {
+            "uid": "1682845011397572:227959",
+            "name": "Files/File_1682845011393948_227957.js",
+            "flags": 1
+        }
+    },
+    "1682845011397572:227959": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

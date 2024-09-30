@@ -35,8 +35,8 @@
     2dAligner Roulette: !<own> d5eb26e5-6e01-4009-9082-44ec3d2614f2
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/04184fe8-d8c9-494f-8983-7333864b0dd2>
-    {}
+  ImporterSettings: !<LensCoreImporterSettings/04184fe8-d8c9-494f-8983-7333864b0dd2>
+    PersistentIdGenerationAlgorithm: Legacy
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/0db2ca32-aa7b-4db3-aab9-92cf3c6392d4>
   PrefabRemaps:
