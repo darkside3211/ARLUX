@@ -10,7 +10,7 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@^0.168.0/build/three.module.min.js"
+          "three": "./three.module.min.js"
         }
       }
     </script>
@@ -19,12 +19,13 @@
         width: 1024px;
         height: 1024px;
         margin: 0 auto;
+        background-color: cornsilk;
       }
     </style>
   </head>
   <body>
     <model-viewer
-      src="MoissaniteRing.glb"
+      src="HeartRing.glb"
       camera-controls
       tone-mapping="neutral"
       shadow-intensity="1"
@@ -33,9 +34,8 @@
       shadow-softness="1"
     >
       <effect-composer>
-        <bloom-effect strength="10"></bloom-effect>
+        <bloom-effect></bloom-effect>
         <ssao-effect></ssao-effect>
-        <outline-effect></outline-effect>
       </effect-composer>
     </model-viewer>
   </body>

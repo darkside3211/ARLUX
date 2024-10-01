@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
@@ -121,6 +122,17 @@ class HomeMenuDrawer extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class FilterDrawer extends ConsumerWidget {
+  const FilterDrawer({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Drawer(
+      child: ListView(),
     );
   }
 }

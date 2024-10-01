@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jbb_app_v5/features/try_on/presentation/try_on_screen.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
-import 'package:o3d/o3d.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
 
 class ProductViewer extends StatefulWidget {
   final bool isNetwork;
@@ -55,7 +55,7 @@ class _ProductViewerState extends State<ProductViewer>
       child: Stack(
         children: [
           isModelView
-              ? _buildModelView()
+              ? _buildModelViewPlus()
               : CustomGalleryImage(
                   imageItems: widget.imageUrls,
                   isNetwork: widget.isNetwork,
@@ -174,13 +174,16 @@ class _ProductViewerState extends State<ProductViewer>
     );
   }
 
-  O3D _buildModelView() {
-    return O3D.asset(
+  ModelViewer _buildModelViewPlus() {
+    return ModelViewer(
       src: widget.isNetwork
           ? widget.modelUrl!
           : 'assets/models/${widget.modelUrl}',
       alt: 'Jewelry 3D model',
       backgroundColor: Colors.amber.shade50,
+      cameraControls: true,
+      autoRotate: true,
+      autoRotateDelay: 3000,
       shadowIntensity: 1,
       exposure: 2,
     );

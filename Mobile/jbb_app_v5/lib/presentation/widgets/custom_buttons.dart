@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
+import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/providers/theme_notifier.dart';
 
@@ -80,7 +81,14 @@ class CartElevatedButton extends ConsumerWidget implements CustomButtons {
                 isConfirm ? customFunction?.call() : _showCartSheet(context);
               } else {
                 ref.read(bottomNavIndexProvider.notifier).state = 3;
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen();
+                    },
+                  ),
+                );
               }
             },
             error: (err, stack) {},

@@ -576,14 +576,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
-  o3d:
+  model_viewer_plus:
     dependency: "direct main"
     description:
-      name: o3d
-      sha256: "64e45cafa45db2a233f1c2f7187388d33c59b7f7d0fa46af1eb79e16a6936276"
+      name: model_viewer_plus
+      sha256: daeee3c498ece539125933e233252aebdc0b6d842538efb7061f7eaf3b97939e
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "1.7.0"
   package_config:
     dependency: transitive
     description:
@@ -1013,6 +1013,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.10.0"
+  webview_flutter_plus:
+    dependency: "direct main"
+    description:
+      name: webview_flutter_plus
+      sha256: "57ec757eada4e23bfb015f5d5f84a45108cb2c29b1e77e23956768cd5e0c8468"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.7"
   webview_flutter_wkwebview:
     dependency: transitive
     description:
