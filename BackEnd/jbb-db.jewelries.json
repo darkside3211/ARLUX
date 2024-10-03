@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965a"
+  },
+  "id": "101",
+  "name": "Evil Eye Earring",
+  "price": 499.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "94c34034-d229-4f17-94a6-3b8749593c24",
+  "category": "Earring",
+  "averageRating": 4.6,
+  "imageUrls": [
+    "EvilEye.jpg",
+    "EvilEye2.jpg"
+  ],
+  "modelUrl": "HeartRing.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965b"
+  },
+  "id": "102",
+  "name": "Flat Bracelet",
+  "price": 3549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "cbada347-ba3b-408d-a39f-fcab662b25ad",
+  "category": "Bracelet",
+  "averageRating": 4.3,
+  "imageUrls": [
+    "FlatBracelet.jpg",
+    "FlatBracelet2.jpg"
+  ],
+  "modelUrl": "HeartRing.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965c"
+  },
+  "id": "103",
+  "name": "Hardware Clip Earring",
+  "price": 2499.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "94c34034-d229-4f17-94a6-3b8749593c24",
+  "category": "Earring",
+  "averageRating": 3.8,
+  "imageUrls": [
+    "HardwareClip.jpg",
+    "HardwareClip2.jpg"
+  ],
+  "modelUrl": "HeartRing.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965d"
+  },
+  "id": "104",
+  "name": "Heart Necklace",
+  "price": 3549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "4092dd3f-c421-4030-bbe2-bc789d4ffb82",
+  "category": "Necklace",
+  "averageRating": 4.9,
+  "imageUrls": [
+    "HeartNecklace.jpg"
+  ],
+  "modelUrl": "HeartNecklace.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965e"
+  },
+  "id": "105",
+  "name": "Heart Ring",
+  "price": 2549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "lensID": "6b13b1ba-d977-4a99-b57d-d3ca8f86d2f2",
+  "groupID": "7aeb2993-bfe1-4e83-a359-f9be18206dbc",
+  "category": "Ring",
+  "averageRating": 4.2,
+  "imageUrls": [
+    "HeartRing.jpg",
+    "HeartRing2.jpg"
+  ],
+  "modelUrl": "HeartRing.glb"
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed34965f"
+  },
+  "id": "106",
+  "name": "INRI Krus Pendant",
+  "price": 2499.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "4092dd3f-c421-4030-bbe2-bc789d4ffb82",
+  "category": "Necklace",
+  "averageRating": 4.1,
+  "imageUrls": [
+    "InriKrusPendant.jpg"
+  ],
+  "modelUrl": "HeartNecklace.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed349660"
+  },
+  "id": "107",
+  "name": "Mother and Child Pendant",
+  "price": 2549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "4092dd3f-c421-4030-bbe2-bc789d4ffb82",
+  "category": "Necklace",
+  "averageRating": 3.7,
+  "imageUrls": [
+    "MotherChildPendant.jpg"
+  ],
+  "modelUrl": "HeartNecklace.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed349661"
+  },
+  "id": "108",
+  "name": "Palay Bracelet",
+  "price": 2499.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "cbada347-ba3b-408d-a39f-fcab662b25ad",
+  "category": "Bracelet",
+  "averageRating": 4.8,
+  "imageUrls": [
+    "PalayBracelet.jpg",
+    "PalayBracelet2.jpg"
+  ],
+  "modelUrl": "HeartRing.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed349662"
+  },
+  "id": "109",
+  "name": "Rosary Necklace",
+  "price": 2549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "groupID": "4092dd3f-c421-4030-bbe2-bc789d4ffb82",
+  "category": "Necklace",
+  "averageRating": 4.8,
+  "imageUrls": [
+    "RosaryNecklace.jpg"
+  ],
+  "modelUrl": "HeartNecklace.glb",
+  "lensID": ""
+},
+{
+  "_id": {
+    "$oid": "66caca7a19139fa8ed349663"
+  },
+  "id": "110",
+  "name": "Moissanite Engagement Solid Ring",
+  "price": 3549.99,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris lorem, interdum nec aliquet eu, molestie a odio. Nullam fringilla laoreet felis, et auctor tellus fermentum ac. Praesent a ipsum id ligula dignissim bibendum. Nulla luctus pulvinar mauris, a auctor neque elementum id. Sed blandit iaculis libero vitae condimentum. Aenean nec nisl erat. Donec eleifend justo ut orci dignissim, eu rhoncus nisi fermentum.",
+  "lensID": "6b13b1ba-d977-4a99-b57d-d3ca8f86d2f2",
+  "groupID": "7aeb2993-bfe1-4e83-a359-f9be18206dbc",
+  "category": "Ring",
+  "averageRating": 4.9,
+  "imageUrls": [
+    "SolidRing.jpg",
+    "SolidRing2.jpg"
+  ],
+  "modelUrl": "MoissaniteRing.glb"
+}]
