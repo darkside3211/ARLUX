@@ -20,7 +20,7 @@ We are developing an e-commerce application that aims to enhance the online shop
 
 This project was built with the following technologies:
 
-- [Nuxt](https://nuxt.com)
+
 - [Vue](https://vuejs.org)
 - [MongoDB](https://www.mongodb.com)
 - [Snap AR Lens Studio](https://ar.snap.com/lens-studio)
