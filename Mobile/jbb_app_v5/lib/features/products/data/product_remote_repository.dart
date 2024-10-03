@@ -43,7 +43,7 @@ class ProductRemoteRepository {
     try {
       final Map<String, dynamic> params = {'q': q};
 
-      if (category != null) {
+      if (category != null && category != "All") {
         params['category'] = category;
       }
 

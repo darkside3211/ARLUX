@@ -2,6 +2,7 @@ import 'package:camerakit_flutter/camerakit_flutter.dart';
 import 'package:camerakit_flutter/lens_model.dart';
 import 'package:flutter/material.dart';
 import 'package:jbb_app_v5/core/constants/lens_config.dart';
+import 'package:jbb_app_v5/presentation/pages/try_on/try_on_result.dart';
 
 class TryOnScreen extends StatefulWidget {
   final String lensID;
@@ -73,7 +74,12 @@ class _TryOnScreenState extends State<TryOnScreen>
     setState(() {
       _filePath = result["path"] as String;
       _fileType = result["type"] as String;
-      Navigator.pop(context);
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => TryOnResult(path: _filePath, type: _fileType),
+        ),
+      );
     });
   }
 

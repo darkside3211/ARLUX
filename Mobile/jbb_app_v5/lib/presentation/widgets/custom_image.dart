@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
@@ -7,6 +9,7 @@ abstract class CustomImage {}
 class CustomSingleImage extends StatelessWidget implements CustomImage {
   final String image;
   final bool isNetwork;
+  final bool isFile;
   final bool disableGestures;
   final double aspectRatio;
 
@@ -15,7 +18,8 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
     required this.image,
     required this.disableGestures,
     required this.aspectRatio,
-    required this.isNetwork,
+    this.isNetwork = false,
+    this.isFile = false,
   });
 
   @override
@@ -25,7 +29,9 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
       child: PhotoView(
         imageProvider: isNetwork
             ? NetworkImage(image)
-            : AssetImage('assets/images/$image'),
+            : isFile
+                ? FileImage(File(image))
+                : AssetImage('assets/images/$image'),
         disableGestures: disableGestures,
         loadingBuilder: (context, event) =>
             const CircularProgressIndicator(color: Colors.amber),

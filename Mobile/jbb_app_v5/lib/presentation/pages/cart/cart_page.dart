@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
+import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
@@ -31,12 +32,14 @@ class CartPage extends ConsumerWidget {
                     children: List.generate(
                       item.length,
                       (index) {
-                        final double productPrice = item[index].price * item[index].quantity!;
+                        final double productPrice =
+                            item[index].price *
+                                item[index].quantity;
 
                         totalPrices += productPrice;
 
                         return ProductTile(
-                          productModel: item[index],
+                          cartModel: item[index],
                         );
                       },
                     ),
@@ -62,7 +65,7 @@ class CartPage extends ConsumerWidget {
                 style: const ButtonStyle(
                     backgroundColor: WidgetStatePropertyAll(Colors.amber)),
                 onPressed: () {
-                  ref.read(bottomNavIndexProvider.notifier).state = 3;
+                  ref.read(bottomNavIndexProvider.notifier).state = 2;
                 },
                 child: Text(
                   'Login now',
@@ -117,9 +120,8 @@ class CartPage extends ConsumerWidget {
           isCartEmpty
               ? const SizedBox()
               : Padding(
-                
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: Row(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const CheckoutElevatedButton(),
@@ -129,7 +131,7 @@ class CartPage extends ConsumerWidget {
                       ),
                     ],
                   ),
-              ),
+                ),
           gapH16,
           const Divider(height: 32),
           gapH16,

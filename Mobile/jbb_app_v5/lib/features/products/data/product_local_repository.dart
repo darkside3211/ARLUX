@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -28,7 +28,7 @@ class ProductLocalRepository {
     }
   }
 
-  Future<void> cacheBag(List<ProductModel> products) async {
+  Future<void> cacheBag(List<CartModel> products) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     List<String> productListJson =
@@ -37,7 +37,7 @@ class ProductLocalRepository {
     await prefs.setStringList('cached_bag', productListJson);
   }
 
-  Future<List<ProductModel>> getCachedBag() async {
+  Future<List<CartModel>> getCachedBag() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     List<String>? productListJson = prefs.getStringList('cached_bag');
@@ -45,7 +45,7 @@ class ProductLocalRepository {
     if (productListJson != null) {
       return productListJson
           .map((productListJson) =>
-              ProductModel.fromJson(jsonDecode(productListJson)))
+              CartModel.fromJson(jsonDecode(productListJson)))
           .toList();
     } else {
       return List.empty();

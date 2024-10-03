@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_sizes.dart';
+import 'package:jbb_app_v5/core/constants/filter_values.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
+import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
+import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
+import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 
 abstract class Menus {}
 
@@ -131,8 +137,143 @@ class FilterDrawer extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final searchState = ref.watch(searchQueryProvider);
+    final filterState = ref.watch(filterStateProvider);
+    final filterNotifier = ref.read(filterStateProvider.notifier);
+
+    final TextEditingController minPriceController =
+        TextEditingController(text: filterState.minPrice.toString());
+    final TextEditingController maxPriceController = TextEditingController(
+        text: filterState.maxPrice == double.infinity
+            ? ''
+            : filterState.maxPrice.toString());
+
+    // Example categories list (can be replaced with actual categories)
+    final List<String> categories = [
+      'All',
+    ];
+
+    categories.addAll(jewelryCategories);
+
     return Drawer(
-      child: ListView(),
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          const DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.amber,
+            ),
+            child: Text(
+              'Filter Options',
+              style: TextStyle(color: Colors.black, fontSize: 24),
+            ),
+          ),
+          // Min and Max Price in a Row
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Row(
+              children: [
+                // Min Price TextField
+                Expanded(
+                  child: TextField(
+                    controller: minPriceController,
+                    keyboardType: TextInputType.number,
+                    decoration: const InputDecoration(
+                      labelText: 'Min Price',
+                      hintText: 'Min',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 16,
+                  child: Divider(),
+                ),
+                // Max Price TextField
+                Expanded(
+                  child: TextField(
+                    controller: maxPriceController,
+                    keyboardType: TextInputType.number,
+                    decoration: const InputDecoration(
+                      labelText: 'Max Price',
+                      hintText: 'Max',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          gapH20,
+          // Category Dropdown
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: DropdownButtonFormField<String>(
+              value: filterState.category,
+              decoration: const InputDecoration(
+                labelText: 'Category',
+                border: OutlineInputBorder(),
+              ),
+              items: categories.map((String category) {
+                return DropdownMenuItem<String>(
+                  value: category,
+                  child: Text(category),
+                );
+              }).toList(),
+              onChanged: (String? newValue) {
+                filterNotifier.state = filterState.copyWith(category: newValue);
+              },
+            ),
+          ),
+          gapH20,
+          // Apply Filters Button
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: ElevatedButton(
+              onPressed: () {
+                // Implement filter logic here
+                final minPrice =
+                    double.tryParse(minPriceController.text) ?? 0.0;
+                final maxPrice =
+                    double.tryParse(maxPriceController.text) ?? double.infinity;
+
+                filterNotifier.state = filterState.copyWith(
+                  minPrice: minPrice,
+                  maxPrice: maxPrice,
+                );
+
+                // ignore: unused_result
+                ref.refresh(
+                  searchProductListProvider(
+                    q: searchState,
+                    category: filterState.category,
+                    minPrice: filterState.minPrice,
+                    maxPrice: filterState.maxPrice,
+                  ),
+                );
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductListing(
+                      productGrid: ProductSearchImpl(
+                        q: searchState,
+                        category: filterState.category,
+                        minPrice: filterState.minPrice,
+                        maxPrice: filterState.maxPrice,
+                        isScrollable: true,
+                      ),
+                    ),
+                  ),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black, foregroundColor: Colors.amber),
+              child: const Text('Apply Filters'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

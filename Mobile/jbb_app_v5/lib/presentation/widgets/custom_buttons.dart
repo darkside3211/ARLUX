@@ -25,7 +25,7 @@ class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
               if (user != null) {
                 //TODO buy now
               } else {
-                ref.read(bottomNavIndexProvider.notifier).state = 3;
+                ref.read(bottomNavIndexProvider.notifier).state = 2;
                 Navigator.pop(context);
               }
             },
@@ -67,8 +67,11 @@ class CartElevatedButton extends ConsumerWidget implements CustomButtons {
   final bool isConfirm;
   final VoidCallback? customFunction;
 
-  const CartElevatedButton(
-      {super.key, required this.isConfirm, this.customFunction});
+  const CartElevatedButton({
+    super.key,
+    required this.isConfirm,
+    this.customFunction,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -80,7 +83,7 @@ class CartElevatedButton extends ConsumerWidget implements CustomButtons {
               if (user != null) {
                 isConfirm ? customFunction?.call() : _showCartSheet(context);
               } else {
-                ref.read(bottomNavIndexProvider.notifier).state = 3;
+                ref.read(bottomNavIndexProvider.notifier).state = 2;
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -119,74 +122,10 @@ void _showCartSheet(BuildContext context) {
               .viewInsets
               .bottom, // Handle keyboard overlap
         ),
-        child: const CartBottomSheet(), // Content inside the bottom sheet
+        child: const AddCartBottomSheet(), // Content inside the bottom sheet
       );
     },
   );
-}
-
-class WishListIconButton extends StatefulWidget {
-  final bool isWished;
-  final bool withBG;
-
-  const WishListIconButton({
-    super.key,
-    this.isWished = false,
-    this.withBG = false,
-  });
-
-  @override
-  State<WishListIconButton> createState() => _WishListIconButtonState();
-}
-
-class _WishListIconButtonState extends State<WishListIconButton> {
-  bool wished = false;
-
-  @override
-  void initState() {
-    super.initState();
-    wished = widget.isWished;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return widget.withBG
-        ? InkWell(
-            onTap: () {
-              setState(() {
-                wished = !wished;
-              });
-            },
-            child: CircleAvatar(
-              backgroundColor: Colors.black,
-              child: wished
-                  ? const Icon(
-                      Icons.favorite,
-                      color: Colors.amber,
-                    )
-                  : const Icon(
-                      Icons.favorite_border_outlined,
-                      color: Colors.amber,
-                    ),
-            ),
-          )
-        : IconButton(
-            onPressed: () {
-              setState(() {
-                wished = !wished;
-              });
-            },
-            icon: wished
-                ? const Icon(
-                    Icons.favorite,
-                    color: Colors.amber,
-                  )
-                : const Icon(
-                    Icons.favorite_border_outlined,
-                    color: Colors.black,
-                  ),
-          );
-  }
 }
 
 class ThemeToggleButton extends ConsumerWidget implements CustomButtons {

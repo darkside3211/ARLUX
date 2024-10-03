@@ -3,7 +3,6 @@ import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/widgets/app_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/bottom_bars.dart';
-import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_viewer.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.dart';
@@ -46,7 +45,6 @@ class ProductDetail extends StatelessWidget {
                     textStyle: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
-                const WishListIconButton()
               ],
             ),
             Text(

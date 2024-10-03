@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jbb_app_v5/features/try_on/presentation/try_on_screen.dart';
+import 'package:jbb_app_v5/presentation/pages/try_on/try_on_screen.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 

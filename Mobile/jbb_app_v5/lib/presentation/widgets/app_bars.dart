@@ -117,7 +117,9 @@ class ProductListTopBar extends StatelessWidget implements AppBars {
       backgroundColor: Colors.amber,
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Scaffold.of(context).openEndDrawer();
+          },
           icon: const Icon(Icons.sort),
         ),
       ],

@@ -14,7 +14,6 @@ class HomeScreen extends ConsumerWidget {
   final List<Widget> pages = [
     const HomePage(),
     const CartPage(),
-    const Center(child: Text("Wishlist Page")),
     const AuthScreen(),
   ];
 

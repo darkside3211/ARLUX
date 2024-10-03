@@ -49,5 +49,10 @@
 		<string>app need camera permission for showing camerakit lens</string>
 		<key>NSMicrophoneUsageDescription</key>
 		<string>app need microphone permission for recording a video</string>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>sms</string>
+			<string>tel</string>
+		</array>
 	</dict>
 </plist>

@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 abstract class NetworkCore {}
 
@@ -7,8 +8,8 @@ class DioInstance implements NetworkCore {
 
   DioInstance() {
     _dio.options.baseUrl = 'http://${HostAddress.value}/api';
-    _dio.options.connectTimeout = const Duration(seconds: 5);
-    _dio.options.receiveTimeout = const Duration(seconds: 3);
+    _dio.options.connectTimeout = const Duration(seconds: 8);
+    _dio.options.receiveTimeout = const Duration(seconds: 5);
   }
 
   Dio getDioInstance() {
@@ -26,4 +27,20 @@ class HostAddress {
   }
 
   static String get value => '$_ip:$_port';
+}
+
+class LaunchMessenger implements NetworkCore {
+  final String facebookID = 'https://m.me/jbbgold';
+
+  LaunchMessenger() {
+    launchMessenger();
+  }
+
+  void launchMessenger() async {
+    if (await canLaunchUrl(Uri.parse(facebookID))) {
+      await launchUrl(Uri.parse(facebookID));
+    } else {
+      throw 'Could not launch $facebookID';
+    }
+  }
 }

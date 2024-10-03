@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 
-class ProductSearchField extends StatefulWidget {
+class ProductSearchField extends ConsumerStatefulWidget {
   final String initialText;
 
   const ProductSearchField({super.key, this.initialText = ""});
 
   @override
-  State<ProductSearchField> createState() => _ProductSearchFieldState();
+  ConsumerState<ConsumerStatefulWidget> createState() =>
+      _ProductSearchFieldState();
 }
 
-class _ProductSearchFieldState extends State<ProductSearchField> {
+class _ProductSearchFieldState extends ConsumerState<ProductSearchField> {
   final TextEditingController _controller = TextEditingController();
 
   String? _errorMessage;
@@ -38,13 +41,13 @@ class _ProductSearchFieldState extends State<ProductSearchField> {
 
     if (_errorMessage == null) {
       Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => ProductListing(
+        MaterialPageRoute(builder: (context) {
+          return ProductListing(
             productGrid:
                 ProductSearchImpl(q: _controller.text, isScrollable: true),
             queryText: _controller.text,
-          ),
-        ),
+          );
+        }),
       );
     }
   }
@@ -90,7 +93,10 @@ class _ProductSearchFieldState extends State<ProductSearchField> {
                   )
                 : null,
           ),
-          onSubmitted: _handleSubmit,
+          onSubmitted: (value) {
+            ref.read(searchQueryProvider.notifier).state = value;
+            _handleSubmit(value);
+          },
         );
       },
     );

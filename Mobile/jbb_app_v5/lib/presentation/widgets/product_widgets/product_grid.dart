@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -91,26 +92,46 @@ class ProductSearchImpl extends ConsumerWidget implements ProductGrid {
 
         if (productList.isNotEmpty) {
           return MasonryGridView.builder(
-            shrinkWrap: !isScrollable,
-            physics: isScrollable
-                ? const BouncingScrollPhysics()
-                : const NeverScrollableScrollPhysics(),
-            gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2),
-            itemCount:isRecommendation ? productList.length - 1 : productList.length,
-            itemBuilder: (context, index) {
-              if (isRecommendation) {
-                return ProductThumbnail(productModel: productList[index + 1]);
-              } else {
-                return ProductThumbnail(productModel: productList[index]);
-              }
-            }
-          );
+              shrinkWrap: !isScrollable,
+              physics: isScrollable
+                  ? const BouncingScrollPhysics()
+                  : const NeverScrollableScrollPhysics(),
+              gridDelegate:
+                  const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+              itemCount: isRecommendation
+                  ? productList.length - 1
+                  : productList.length,
+              itemBuilder: (context, index) {
+                if (isRecommendation) {
+                  return ProductThumbnail(productModel: productList[index + 1]);
+                } else {
+                  return ProductThumbnail(productModel: productList[index]);
+                }
+              });
         }
 
-        return const IconedFailure(
-          message: 'No Products Found.',
-          displayIcon: Icon(Icons.error),
+        return SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const IconedFailure(
+                message: 'No Products Found.',
+                displayIcon: Icon(Icons.error),
+              ),
+              const Divider(height: 32),
+              gapH16,
+              Text(
+                "Browse for More",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge!
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+              gapH8,
+              const ProductListImpl(isScrollable: false),
+            ],
+          ),
         );
       },
       error: (err, stack) => IconedFailure(
@@ -170,5 +191,3 @@ class ProductCategorizedImpl extends ConsumerWidget implements ProductGrid {
     );
   }
 }
-
-

@@ -32,7 +32,7 @@ class ToastFailure implements FailureWidget {
   ToastFailure({required String message}) {
     Fluttertoast.showToast(
       msg: message,
-      toastLength: Toast.LENGTH_LONG,
+      toastLength: Toast.LENGTH_SHORT,
       gravity: ToastGravity.SNACKBAR,
       backgroundColor: Colors.grey[850],
       textColor: Colors.white,
@@ -46,6 +46,7 @@ class SnackBarFailure implements FailureWidget {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
+        duration: const Duration(seconds: 1),
       ),
     );
   }

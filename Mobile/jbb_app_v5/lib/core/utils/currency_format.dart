@@ -1,3 +1,10 @@
+import 'package:intl/intl.dart';
+
 String currencyFormat({required double value}) {
-  return "₱${value.toStringAsFixed(2)}";
+  final formatter = NumberFormat.currency(
+    locale: 'en_PH',
+    symbol: '₱',
+    decimalDigits: 2,
+  );
+  return formatter.format(value);
 }

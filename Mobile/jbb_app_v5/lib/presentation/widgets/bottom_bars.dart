@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_icons.dart';
@@ -37,10 +38,6 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
             label: 'Bag',
           ),
           const BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Wishlist',
-          ),
-          const BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: 'Account',
           ),
@@ -73,7 +70,7 @@ class ProductBuyCartBar extends StatelessWidget implements BottomBars {
               IconButton(
                 icon: const Icon(Icons.chat),
                 onPressed: () {
-                  // Handle chat icon button press
+                  LaunchMessenger();
                 },
               ),
               const Expanded(

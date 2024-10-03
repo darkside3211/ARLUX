@@ -1,9 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'product_model.g.dart';
+part 'cart_model.g.dart';
 
 @JsonSerializable()
-class ProductModel {
+class CartModel {
   final String id;
   final String name;
   final double price;
@@ -14,8 +14,11 @@ class ProductModel {
   final double averageRating;
   final List<String> imageUrls;
   final String modelUrl;
+  final String cartID;
+  final String size;
+  final int quantity;
 
-  ProductModel({
+  CartModel({
     required this.id,
     required this.name,
     required this.price,
@@ -26,12 +29,15 @@ class ProductModel {
     required this.averageRating,
     required this.imageUrls,
     required this.modelUrl,
+    required this.cartID,
+    required this.size,
+    required this.quantity,
   });
 
-  // Factory constructor to create a ProductModel from a JSON map
-  factory ProductModel.fromJson(Map<String, dynamic> json) =>
-      _$ProductModelFromJson(json);
+  // Factory constructor to create a CartModel from a JSON map
+  factory CartModel.fromJson(Map<String, dynamic> json) =>
+      _$CartModelFromJson(json);
 
-  // Method to convert a ProductModel instance to JSON
-  Map<String, dynamic> toJson() => _$ProductModelToJson(this);
+  // Method to convert a CartModel instance to JSON
+  Map<String, dynamic> toJson() => _$CartModelToJson(this);
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jbb_app_v5/presentation/widgets/app_bars.dart';
+import 'package:jbb_app_v5/presentation/widgets/menus.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 
 class ProductListing extends StatelessWidget {
@@ -20,6 +21,7 @@ class ProductListing extends StatelessWidget {
           child: productGrid,
         ),
       ),
+      endDrawer: const FilterDrawer(),
     );
   }
 }
