@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 
 abstract class InputFields {}
 
@@ -23,7 +24,7 @@ class EmailPasswordField implements InputFields {
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
         labelText: 'username',
-        labelStyle: TextStyle(color: Colors.amber[100]),
+        labelStyle: const TextStyle(color: AppColors.yellow),
         filled: true,
         fillColor: Colors.white24,
         border: OutlineInputBorder(
@@ -32,7 +33,7 @@ class EmailPasswordField implements InputFields {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.amber),
+          borderSide: const BorderSide(color: AppColors.yellow),
         ),
       ),
     );
@@ -45,7 +46,7 @@ class EmailPasswordField implements InputFields {
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         labelText: 'email',
-        labelStyle: TextStyle(color: Colors.amber[100]),
+        labelStyle: const TextStyle(color: AppColors.yellow),
         filled: true,
         fillColor: Colors.white24,
         border: OutlineInputBorder(
@@ -54,7 +55,7 @@ class EmailPasswordField implements InputFields {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.amber),
+          borderSide: const BorderSide(color: AppColors.yellow),
         ),
       ),
     );
@@ -67,7 +68,7 @@ class EmailPasswordField implements InputFields {
       style: const TextStyle(color: Colors.white),
       decoration: InputDecoration(
         labelText: 'password',
-        labelStyle: TextStyle(color: Colors.amber[100]),
+        labelStyle: const TextStyle(color: AppColors.yellow),
         filled: true,
         fillColor: Colors.white24,
         border: OutlineInputBorder(
@@ -76,7 +77,7 @@ class EmailPasswordField implements InputFields {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.amber),
+          borderSide: const BorderSide(color: AppColors.yellow),
         ),
       ),
     );

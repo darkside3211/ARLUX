@@ -20,19 +20,17 @@ class ProductCategoryCarousel extends StatelessWidget implements Carousels {
   @override
   Widget build(BuildContext context) {
     categoryList.addAll(jewelryCategories);
-    int startColor = 600;
 
     return SizedBox(
-      height: 120.0,
+      height: 128,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: categoryList.length,
         itemBuilder: (context, index) {
-          startColor -= 100;
           return SizedBox(
             width: 128,
             child: Card(
-              color: Colors.amber[startColor],
+              color: Colors.amber.shade50,
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(
@@ -88,31 +86,22 @@ class ProductFeaturedCarousel extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final AsyncValue<SearchProductModel> searchResult =
         ref.watch(searchProductListProvider(q: 'Moissanite Heart Evil'));
-
-    int startColor = 100;
     return SizedBox(
-      height: 330,
+      height: 294,
       child: searchResult.when(
         data: (data) {
           final List<ProductModel> productList = data.results;
 
           if (productList.isNotEmpty) {
-            return SizedBox(
-              height: 330,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: productList.length,
-                itemBuilder: (context, index) {
-                  startColor += 100;
-                  return SizedBox(
-                    width: 200,
-                    child: ProductThumbnail(
-                      productModel: productList[index],
-                      cardColor: Colors.yellow[startColor],
-                    ),
-                  );
-                },
-              ),
+            return ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: productList.length,
+              itemBuilder: (context, index) {
+                return SizedBox(
+                  width: 200,
+                  child: ProductFeatureCard(productModel: productList[index]),
+                );
+              },
             );
           }
           return const IconedFailure(

@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 
@@ -34,7 +35,7 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
                 : AssetImage('assets/images/$image'),
         disableGestures: disableGestures,
         loadingBuilder: (context, event) =>
-            const CircularProgressIndicator(color: Colors.amber),
+            const CircularProgressIndicator(color: AppColors.yellow),
         tightMode: true,
       ),
     );

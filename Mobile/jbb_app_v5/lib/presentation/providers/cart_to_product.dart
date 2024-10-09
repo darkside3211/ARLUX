@@ -18,6 +18,7 @@ class CartToProduct {
       averageRating: cartModel.averageRating,
       imageUrls: cartModel.imageUrls,
       modelUrl: cartModel.modelUrl,
+      soldCount: cartModel.soldCount,
     );
   }
 }

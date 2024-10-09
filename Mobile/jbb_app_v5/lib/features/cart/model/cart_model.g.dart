@@ -18,6 +18,7 @@ CartModel _$CartModelFromJson(Map<String, dynamic> json) => CartModel(
       imageUrls:
           (json['imageUrls'] as List<dynamic>).map((e) => e as String).toList(),
       modelUrl: json['modelUrl'] as String,
+      soldCount: (json['soldCount'] as num).toInt(),
       cartID: json['cartID'] as String,
       size: json['size'] as String,
       quantity: (json['quantity'] as num).toInt(),
@@ -34,6 +35,7 @@ Map<String, dynamic> _$CartModelToJson(CartModel instance) => <String, dynamic>{
       'averageRating': instance.averageRating,
       'imageUrls': instance.imageUrls,
       'modelUrl': instance.modelUrl,
+      'soldCount': instance.soldCount,
       'cartID': instance.cartID,
       'size': instance.size,
       'quantity': instance.quantity,

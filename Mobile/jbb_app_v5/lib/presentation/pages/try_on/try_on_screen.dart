@@ -1,6 +1,7 @@
 import 'package:camerakit_flutter/camerakit_flutter.dart';
 import 'package:camerakit_flutter/lens_model.dart';
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/lens_config.dart';
 import 'package:jbb_app_v5/presentation/pages/try_on/try_on_result.dart';
 
@@ -42,13 +43,13 @@ class _TryOnScreenState extends State<TryOnScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: AppColors.yellow,
         leading: IconButton(
           onPressed: () => Navigator.pop(context),
           icon: const Icon(Icons.close),
         ),
       ),
-      backgroundColor: Colors.amber,
+      backgroundColor: AppColors.yellow,
       body: SafeArea(
         child: Center(
           child: Column(

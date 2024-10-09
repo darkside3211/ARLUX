@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/7ac8eb6d-8366-4ba0-867b-ba8c58a0e41c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> c7f5e50a-e656-4877-8b92-fab5125806ce
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> c7f5e50a-e656-4877-8b92-fab5125806ce
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 02a27889-7e73-4a5b-a89f-6e4dc2d4125c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/6af22686-3092-407e-a0a6-48a63c59e1a3>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/02a27889-7e73-4a5b-a89f-6e4dc2d4125c>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    enableLeftHandOccluder: false
+    enableRightHandOccluder: false
+    handTrackingLeft: false
+    handTrackingRight: false
+    leftHandMesh: false
+    rightHandMesh: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - handTrackingLeft: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      enableLeftHandOccluder: false
+      leftHandMesh: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      handTrackingRight: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      enableRightHandOccluder: false
+      rightHandMesh: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

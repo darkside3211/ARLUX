@@ -18,6 +18,7 @@ ProductModel _$ProductModelFromJson(Map<String, dynamic> json) => ProductModel(
       imageUrls:
           (json['imageUrls'] as List<dynamic>).map((e) => e as String).toList(),
       modelUrl: json['modelUrl'] as String,
+      soldCount: (json['soldCount'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ProductModelToJson(ProductModel instance) =>
@@ -32,4 +33,5 @@ Map<String, dynamic> _$ProductModelToJson(ProductModel instance) =>
       'averageRating': instance.averageRating,
       'imageUrls': instance.imageUrls,
       'modelUrl': instance.modelUrl,
+      'soldCount': instance.soldCount,
     };

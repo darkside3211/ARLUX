@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/presentation/pages/try_on/try_on_screen.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
@@ -75,7 +76,7 @@ class _ProductViewerState extends State<ProductViewer>
                     child: IconButton(
                       icon: const Icon(
                         Icons.settings,
-                        color: Colors.amber,
+                        color: AppColors.yellow,
                       ),
                       onPressed: () {
                         setState(() {
@@ -123,7 +124,7 @@ class _ProductViewerState extends State<ProductViewer>
                           icon: const Icon(Icons.camera_enhance),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.black,
-                            foregroundColor: Colors.amber,
+                            foregroundColor: AppColors.yellow,
                           ),
                         )
                       : const SizedBox(), // Empty widget when not showing
@@ -162,7 +163,7 @@ class _ProductViewerState extends State<ProductViewer>
                               : const Icon(Icons.view_in_ar),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,
-                              foregroundColor: Colors.amber),
+                              foregroundColor: AppColors.yellow),
                         )
                       : const SizedBox(), // Empty widget when not showing
                 ),

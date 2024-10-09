@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
+import 'package:jbb_app_v5/core/utils/currency_format.dart';
 
 abstract class ProductWidget {}
 
@@ -12,18 +14,14 @@ class ProductPriceBuilder extends StatelessWidget implements ProductWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      _currencyFormat(value: price),
+      currencyFormat(value: price),
       style: textStyle?.copyWith(
-              color: Colors.amber, fontWeight: FontWeight.bold) ??
+              color: AppColors.black, fontWeight: FontWeight.bold) ??
           Theme.of(context)
               .textTheme
               .titleMedium
-              ?.copyWith(color: Colors.amber, fontWeight: FontWeight.bold),
+              ?.copyWith(color: AppColors.black, fontWeight: FontWeight.bold),
     );
-  }
-
-  String _currencyFormat({required double value}) {
-    return "₱${value.toStringAsFixed(2)}";
   }
 }
 
@@ -41,7 +39,7 @@ class ProductRatingBuilder extends StatelessWidget implements ProductWidget {
     this.maxRating = 5,
     this.size = 24,
     this.filledColor = Colors.amber,
-    this.halfFilledColor = Colors.amberAccent,
+    this.halfFilledColor = AppColors.yellow,
     this.unfilledColor = Colors.grey,
   });
 

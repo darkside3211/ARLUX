@@ -40,7 +40,7 @@ final fetchProductListProvider =
 );
 
 typedef FetchProductListRef = AutoDisposeFutureProviderRef<List<ProductModel>>;
-String _$searchProductListHash() => r'ac32af21649350914fa907dd551a9eeded2c3048';
+String _$searchProductListHash() => r'16717f13882c1fe472079262f638e0d1e8bffeb7';
 
 /// Copied from Dart SDK
 class _SystemHash {

@@ -14,6 +14,7 @@ class CartModel {
   final double averageRating;
   final List<String> imageUrls;
   final String modelUrl;
+  final int soldCount;
   final String cartID;
   final String size;
   final int quantity;
@@ -29,6 +30,7 @@ class CartModel {
     required this.averageRating,
     required this.imageUrls,
     required this.modelUrl,
+    required this.soldCount,
     required this.cartID,
     required this.size,
     required this.quantity,

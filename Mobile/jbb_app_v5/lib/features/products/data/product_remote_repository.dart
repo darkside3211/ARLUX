@@ -5,6 +5,7 @@ import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/features/products/model/search_product_model.dart';
+import 'package:jbb_app_v5/features/search/data/search_history_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'product_remote_repository.g.dart';
@@ -114,12 +115,18 @@ Future<SearchProductModel> searchProductList(
   double? maxPrice,
 }) async {
   final productRemoteRepository = ref.watch(productRemoteRepositoryProvider);
-  return productRemoteRepository.searchProductList(
+  final SearchProductModel searchResults =
+      await productRemoteRepository.searchProductList(
     q: q,
     category: category,
     minPrice: minPrice,
     maxPrice: maxPrice,
   );
+
+  // ignore: unused_result
+  ref.refresh(getSearchHistoryProvider);
+
+  return searchResults;
 }
 
 @riverpod

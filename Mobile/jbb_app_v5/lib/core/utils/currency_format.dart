@@ -8,3 +8,9 @@ String currencyFormat({required double value}) {
   );
   return formatter.format(value);
 }
+
+String compactNumerFormat({required int value}) {
+  final formatter = NumberFormat.compact();
+
+  return formatter.format(value);
+}

@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/d3b91910-6a42-41c4-bc17-16a2822e7525>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> b99d8277-a619-491c-9ea3-b2fd7578aa9f
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> b99d8277-a619-491c-9ea3-b2fd7578aa9f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 7821c120-8583-44da-b2e2-476de4c48035
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2ed81b4f-7487-4a46-b424-578b5d94f29a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/7821c120-8583-44da-b2e2-476de4c48035>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    hintSo: false
+    leftSo: false
+    rightSo: false
+    wristBindingCC: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - leftObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      wristBindingCC: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      leftSo: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightSo: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hintSo: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

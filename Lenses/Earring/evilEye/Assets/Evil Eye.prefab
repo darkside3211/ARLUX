@@ -1,0 +1,62 @@
+- !<ObjectPrefab/620fe588-ca73-499a-8725-62428443e5db>
+  PackagePath: ""
+  objects:
+    - !<own> 96b0960b-41b1-4c5d-95b9-8835484c42f2
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/29cd037e-0d2d-4b80-b243-1eb1a5f2b335>
+  PrefabRemaps:
+    []
+  Name: Sphere.003
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f17314a3-a2ac-4ce0-ae3b-09e920851221
+  Mesh: !<reference> 6f5bcd1d-d180-485d-a823-d58a2028eff4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/79de1883-00c2-40ec-b8ad-fb3ab2769070>
+  PrefabRemaps:
+    []
+  Name: Sphere.003
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 66d70a60-2d5e-4603-8e90-e7818e3944a2
+  Mesh: !<reference> 83d5a76a-c5be-4782-86bc-8f9c4ab8e813
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/96b0960b-41b1-4c5d-95b9-8835484c42f2>
+  PrefabRemaps:
+    []
+  Name: Evil Eye
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 3.000000, y: 1.100000, z: 0.000000}
+    rotation: {x: -45.000015, y: -0.675217, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 79de1883-00c2-40ec-b8ad-fb3ab2769070
+    - !<own> 29cd037e-0d2d-4b80-b243-1eb1a5f2b335

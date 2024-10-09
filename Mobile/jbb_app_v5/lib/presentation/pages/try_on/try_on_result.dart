@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cached_video_player_plus/cached_video_player_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
 
@@ -66,7 +67,7 @@ class _TryOnResultState extends ConsumerState<TryOnResult> {
                               child: CachedVideoPlayerPlus(videoController),
                             )
                           : const CircularProgressIndicator(
-                              color: Colors.amber),
+                              color: AppColors.yellow),
                     ),
                   ),
             Positioned(
@@ -93,12 +94,12 @@ class _TryOnResultState extends ConsumerState<TryOnResult> {
             onPressed: () {},
             iconSize: 32,
             style: const ButtonStyle(
-                backgroundColor: WidgetStatePropertyAll(Colors.amber)),
+                backgroundColor: WidgetStatePropertyAll(AppColors.yellow)),
             icon: const Icon(Icons.save_alt),
           ),
           gapH16,
           FloatingActionButton(
-            backgroundColor: Colors.amber,
+            backgroundColor: AppColors.yellow,
             onPressed: () {
               setState(() {
                 videoController.value.isPlaying

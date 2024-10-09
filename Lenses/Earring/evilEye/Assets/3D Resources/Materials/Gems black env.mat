@@ -1,0 +1,86 @@
+- !<Material/3ed5e320-3ebf-4349-8792-450ecdca8174>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> b6b03199-7d20-48f0-899f-50aa4a8cd51a
+- !<PassInfo/b6b03199-7d20-48f0-899f-50aa4a8cd51a>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+  BlendMode: Disabled
+  Properties:
+    Port_AO_N095:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Emissive_N095:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N047:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Port_Import_N089:
+      typeIdx: 1
+      value: 0.000000
+    Port_Import_N090:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N072:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: -1.000000}
+    Port_Input1_N081:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input1_N085:
+      typeIdx: 1
+      value: 2.000000
+    Port_Input1_N087:
+      typeIdx: 3
+      value: {x: 0.500000, y: 0.500000}
+    Port_Opacity_N095:
+      typeIdx: 1
+      value: 1.000000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N93:
+      typeIdx: 9
+      value:
+        id: da720d12-0fb8-4a63-9caa-56d1d387cdc5
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    Tweak_N93BorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N93Dims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N93Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Tweak_N93UvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N94:
+      typeIdx: 1
+      value: 3.000000
+  Pass: !<reference> 26bce477-f8b9-45d3-9761-d6cf44d83261

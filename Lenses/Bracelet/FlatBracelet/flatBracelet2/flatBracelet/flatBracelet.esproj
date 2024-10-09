@@ -1,0 +1,37 @@
+studioVersion:
+  major: 5
+  minor: 1
+  patch: 1
+  build: 24092500
+updateCheckpoint: 48
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
+viewConfig:
+  simulation:
+    device: iPhone 14 Pro
+    cameraFov: 45.709999
+    fullFrameAspect: 0.562500
+    viewport: Maximized
+    output: Live
+    stereoOutputEye: Center
+    deviceTypeOverride: Unknown
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  tags:
+    []
+  lensName: Wristwear Try On
+  lensDescriptors:
+    []
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Mobile
+    - CameraKit
+  iconHash: cc1e7271763c75e886a34beb20aee8b1
+  videoPreviewHash: ""
+  fromTemplateName: Wristwear Try On
+  fromTemplateUrl: Lens Studio 5.1.1.24092500
+  activationCamera: Front
+  sourceMapEnabled: false

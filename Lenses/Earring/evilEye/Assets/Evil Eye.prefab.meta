@@ -1,0 +1,82 @@
+- !<AssetImportMetadata/277ecfc9-b3da-4b07-9f7d-daca1b5e4ece>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 620fe588-ca73-499a-8725-62428443e5db
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 620fe588-ca73-499a-8725-62428443e5db
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 1646c353-6c67-456d-b3dd-ec1229e88f46
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/87f2ff58-e72f-488b-86db-0d9649961e0f>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/03d20c56-d716-48b0-998e-0c87da363ae2>
+  PackagePath: ""
+  objects:
+    - !<own> 0dba506c-ebe3-4bf8-8165-4d25ff1146d3
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/0dba506c-ebe3-4bf8-8165-4d25ff1146d3>
+  PrefabRemaps:
+    []
+  Name: Evil Eye
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 3.000000, y: 1.100000, z: 0.000000}
+    rotation: {x: -45.000015, y: -0.675217, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 21089b10-2685-44b4-846f-374b1fa4933b
+    - !<own> f4f2a9c8-8c78-4b79-be79-ee68e5f1d01c
+- !<ObjectPrefabAssetData/1646c353-6c67-456d-b3dd-ec1229e88f46>
+  SourceRemaps:
+    - 29cd037e-0d2d-4b80-b243-1eb1a5f2b335: f4f2a9c8-8c78-4b79-be79-ee68e5f1d01c
+    - 79de1883-00c2-40ec-b8ad-fb3ab2769070: 21089b10-2685-44b4-846f-374b1fa4933b
+    - 96b0960b-41b1-4c5d-95b9-8835484c42f2: 0dba506c-ebe3-4bf8-8165-4d25ff1146d3
+  SourceState: !<own> 03d20c56-d716-48b0-998e-0c87da363ae2
+- !<RenderMeshVisual/21089b10-2685-44b4-846f-374b1fa4933b>
+  PrefabRemaps:
+    []
+  Name: Sphere.003
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 66d70a60-2d5e-4603-8e90-e7818e3944a2
+  Mesh: !<reference> 83d5a76a-c5be-4782-86bc-8f9c4ab8e813
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/f4f2a9c8-8c78-4b79-be79-ee68e5f1d01c>
+  PrefabRemaps:
+    []
+  Name: Sphere.003
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f17314a3-a2ac-4ce0-ae3b-09e920851221
+  Mesh: !<reference> 6f5bcd1d-d180-485d-a823-d58a2028eff4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

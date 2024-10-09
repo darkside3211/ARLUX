@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/constants/filter_values.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
@@ -93,7 +94,7 @@ class HomeMenuDrawer extends StatelessWidget {
             TextButton(
               child: const Text(
                 'Save',
-                style: TextStyle(color: Colors.amber),
+                style: TextStyle(color: AppColors.yellow),
               ),
               onPressed: () {
                 String ipAddress = ipController.text.trim();
@@ -161,7 +162,7 @@ class FilterDrawer extends ConsumerWidget {
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.amber,
+              color: AppColors.yellow,
             ),
             child: Text(
               'Filter Options',
@@ -268,7 +269,7 @@ class FilterDrawer extends ConsumerWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black, foregroundColor: Colors.amber),
+                  backgroundColor: Colors.black, foregroundColor: AppColors.yellow),
               child: const Text('Apply Filters'),
             ),
           ),

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 
 class AuthButtons {
   Widget authButton({VoidCallback? onPressed, required String buttonText}) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 16),
-        backgroundColor: Colors.amber,
+        backgroundColor: AppColors.yellow,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),

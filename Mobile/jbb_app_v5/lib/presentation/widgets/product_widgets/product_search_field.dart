@@ -1,8 +1,49 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
+import 'package:jbb_app_v5/features/search/data/search_history_repository.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
+import 'package:jbb_app_v5/presentation/search/search_page.dart';
+import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
+
+class SearchPlaceHolder extends ConsumerWidget {
+  final bool isDefault;
+  const SearchPlaceHolder({super.key, required this.isDefault});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final String initialText = ref.watch(searchQueryProvider);
+
+    return InkWell(
+      onTap: () {
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => const SearchPage()));
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+        decoration: BoxDecoration(
+          color: Colors.amber[50],
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: Colors.amber),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.search, color: Colors.grey),
+            const SizedBox(width: 8),
+            Text(
+              initialText.isEmpty || isDefault
+                  ? 'Search Jewelry...'
+                  : initialText,
+              style: const TextStyle(color: Colors.grey, fontSize: 16),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 class ProductSearchField extends ConsumerStatefulWidget {
   final String initialText;
@@ -17,7 +58,7 @@ class ProductSearchField extends ConsumerStatefulWidget {
 class _ProductSearchFieldState extends ConsumerState<ProductSearchField> {
   final TextEditingController _controller = TextEditingController();
 
-  String? _errorMessage;
+  bool _isError = false;
 
   @override
   void dispose() {
@@ -25,21 +66,24 @@ class _ProductSearchFieldState extends ConsumerState<ProductSearchField> {
     _controller.dispose();
   }
 
-  String? _validateInput(String text) {
+  bool _validateInput(String text) {
     if (text.isEmpty) {
-      return 'Search query cannot be empty.';
+      SnackBarFailure(context, message: 'Search query cannot be empty.');
+      return true;
     } else if (text.length < 3) {
-      return 'Query too short.';
+      SnackBarFailure(context, message: 'Query too short.');
+      return true;
     }
-    return null;
+
+    return false;
   }
 
   void _handleSubmit(String value) {
     setState(() {
-      _errorMessage = _validateInput(value);
+      _isError = _validateInput(value);
     });
 
-    if (_errorMessage == null) {
+    if (!_isError) {
       Navigator.of(context).push(
         MaterialPageRoute(builder: (context) {
           return ProductListing(
@@ -62,39 +106,52 @@ class _ProductSearchFieldState extends ConsumerState<ProductSearchField> {
       builder: (context, value, _) {
         return TextField(
           controller: _controller,
-          autofocus: false,
+          autofocus: true,
           style: Theme.of(context).textTheme.titleSmall,
           decoration: InputDecoration(
+            filled: true,
+            fillColor: Colors.amber.shade50,
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: Colors.amber),
+              borderSide: const BorderSide(color: AppColors.black),
             ),
-            labelStyle: TextStyle(color: Colors.amber[100]),
-            filled: true,
-            fillColor: Colors.amber[50],
+            labelStyle: const TextStyle(color: AppColors.yellow),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide.none,
             ),
             hintText: 'Search jewelry...',
-            icon: const Icon(Icons.search),
-            errorText: _errorMessage,
             suffixIcon: value.text.isNotEmpty
                 ? IconButton(
                     onPressed: () {
                       setState(
-                        () {
-                          _controller.clear();
-                          _errorMessage = null;
+                        () async {
+                          ref.read(searchQueryProvider.notifier).state =
+                              value.text;
+
+                          final List<String> currentHistory =
+                              await SearchHistoryRepository()
+                                  .getSearchHistory();
+                          await SearchHistoryRepository()
+                              .cacheSearchHistory(currentHistory, value.text);
+
+                          _handleSubmit(value.text);
                         },
                       );
                     },
-                    icon: const Icon(Icons.clear),
+                    icon: const Icon(Icons.search),
                   )
                 : null,
           ),
-          onSubmitted: (value) {
+          onSubmitted: (value) async {
             ref.read(searchQueryProvider.notifier).state = value;
+
+            final List<String> currentHistory =
+                await SearchHistoryRepository().getSearchHistory();
+
+            await SearchHistoryRepository()
+                .cacheSearchHistory(currentHistory, value);
+
             _handleSubmit(value);
           },
         );

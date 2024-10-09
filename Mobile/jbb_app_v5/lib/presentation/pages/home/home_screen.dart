@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/presentation/pages/account/auth_screen.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_page.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_page.dart';
+import 'package:jbb_app_v5/presentation/pages/order/order_page.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/app_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/bottom_bars.dart';
@@ -14,6 +15,7 @@ class HomeScreen extends ConsumerWidget {
   final List<Widget> pages = [
     const HomePage(),
     const CartPage(),
+    const OrderPage(),
     const AuthScreen(),
   ];
 
@@ -22,7 +24,7 @@ class HomeScreen extends ConsumerWidget {
     final currentIndex = ref.watch(bottomNavIndexProvider);
 
     return Scaffold(
-      appBar: const HomeTopBar(isDefault: true),
+      appBar: const HomeTopBar(isDefault: true), 
       bottomNavigationBar: HomeNavigationBar(
         currentIndex: currentIndex,
         onTap: (value) {

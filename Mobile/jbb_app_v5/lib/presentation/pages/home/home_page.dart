@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
 import 'package:jbb_app_v5/presentation/widgets/carousels.dart';
@@ -23,7 +24,7 @@ class _HomePageState extends ConsumerState<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           gapH16,
-          const ProductSearchField(),
+          const SearchPlaceHolder(isDefault: true),
           gapH16,
           Center(
             child: Text(
@@ -37,7 +38,7 @@ class _HomePageState extends ConsumerState<HomePage> {
           Center(
             child: ElevatedButton(
                 style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll(Colors.amber)),
+                    backgroundColor: WidgetStatePropertyAll(AppColors.yellow)),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => const ProductListing(

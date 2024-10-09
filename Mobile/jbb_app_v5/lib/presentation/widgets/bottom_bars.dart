@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
@@ -26,7 +27,7 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
         backgroundColor: const Color(0xff292929),
         elevation: 0,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.amber, // Color of the selected item
+        selectedItemColor: AppColors.yellow, // Color of the selected item
         unselectedItemColor: Colors.grey[400],
         items: <BottomNavigationBarItem>[
           const BottomNavigationBarItem(
@@ -36,6 +37,10 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
           BottomNavigationBarItem(
             icon: BagIconWithCount(bagCount: bagCount),
             label: 'Bag',
+          ),
+          BottomNavigationBarItem(
+            icon: OrderIconWithCount(orderCount: bagCount),
+            label: 'Orders',
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
@@ -58,7 +63,7 @@ class ProductBuyCartBar extends StatelessWidget implements BottomBars {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.amber, width: 2.0))),
+          border: Border(top: BorderSide(color: AppColors.yellow, width: 2.0))),
       child: BottomAppBar(
         color: Colors.white,
         child: Container(
@@ -88,6 +93,26 @@ class ProductBuyCartBar extends StatelessWidget implements BottomBars {
           ),
         ),
       ),
+    );
+  }
+}
+
+class CartBottomBar extends ConsumerStatefulWidget {
+  final bool isEditing;
+  final List<double>? selectedItemPrices;
+
+  const CartBottomBar(
+      {super.key, required this.isEditing, this.selectedItemPrices});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() => _CartBottomBarState();
+}
+
+class _CartBottomBarState extends ConsumerState<CartBottomBar> {
+  @override
+  Widget build(BuildContext context) {
+    return const BottomAppBar(
+      
     );
   }
 }

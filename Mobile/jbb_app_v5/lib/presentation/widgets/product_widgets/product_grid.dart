@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
@@ -50,7 +51,7 @@ class ProductListImpl extends ConsumerWidget implements ProductGrid {
             message: err.toString(), displayIcon: const Icon(Icons.error)),
         loading: () => const Center(
               child: CircularProgressIndicator(
-                color: Colors.amber,
+                color: AppColors.yellow,
               ),
             ));
   }
@@ -138,7 +139,7 @@ class ProductSearchImpl extends ConsumerWidget implements ProductGrid {
           message: err.toString(), displayIcon: const Icon(Icons.error)),
       loading: () => const Center(
         child: CircularProgressIndicator(
-          color: Colors.amber,
+          color: AppColors.yellow,
         ),
       ),
     );
@@ -185,7 +186,7 @@ class ProductCategorizedImpl extends ConsumerWidget implements ProductGrid {
           message: err.toString(), displayIcon: const Icon(Icons.error)),
       loading: () => const Center(
         child: CircularProgressIndicator(
-          color: Colors.amber,
+          color: AppColors.yellow,
         ),
       ),
     );

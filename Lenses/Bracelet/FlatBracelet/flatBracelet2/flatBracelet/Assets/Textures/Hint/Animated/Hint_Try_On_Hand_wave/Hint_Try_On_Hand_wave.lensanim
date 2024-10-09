@@ -1,0 +1,1011 @@
+{
+
+"images": [
+    "wave.png"
+],
+
+"frames": [
+{
+    "name": "Yellowwave_00000.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00001.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00002.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00003.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00004.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00026.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00027.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00028.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00029.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00030.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00031.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00032.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00033.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00034.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00035.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00036.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00037.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00038.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00039.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00040.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00041.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00042.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 3,
+        "width": 5,
+        "height": 5
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 0,
+        "top": 0,
+        "right": 5,
+        "bottom": 5
+    }
+},{
+    "name": "Yellowwave_00005.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 12,
+        "y": 3,
+        "width": 36,
+        "height": 36
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 146,
+        "top": 64,
+        "right": 182,
+        "bottom": 100
+    }
+},{
+    "name": "Yellowwave_00006.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 52,
+        "y": 3,
+        "width": 55,
+        "height": 54
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 137,
+        "top": 55,
+        "right": 192,
+        "bottom": 109
+    }
+},{
+    "name": "Yellowwave_00007.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 111,
+        "y": 3,
+        "width": 75,
+        "height": 74
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 127,
+        "top": 45,
+        "right": 202,
+        "bottom": 119
+    }
+},{
+    "name": "Yellowwave_00008.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 190,
+        "y": 3,
+        "width": 87,
+        "height": 91
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 37,
+        "right": 210,
+        "bottom": 128
+    }
+},{
+    "name": "Yellowwave_00009.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 281,
+        "y": 3,
+        "width": 94,
+        "height": 104
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 30,
+        "right": 217,
+        "bottom": 134
+    }
+},{
+    "name": "Yellowwave_00010.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 111,
+        "width": 99,
+        "height": 114
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 25,
+        "right": 222,
+        "bottom": 139
+    }
+},{
+    "name": "Yellowwave_00011.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 106,
+        "y": 111,
+        "width": 99,
+        "height": 122
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 21,
+        "right": 222,
+        "bottom": 143
+    }
+},{
+    "name": "Yellowwave_00012.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 209,
+        "y": 111,
+        "width": 99,
+        "height": 126
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 19,
+        "right": 222,
+        "bottom": 145
+    }
+},{
+    "name": "Yellowwave_00013.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 312,
+        "y": 111,
+        "width": 99,
+        "height": 129
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 147
+    }
+},{
+    "name": "Yellowwave_00014.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 244,
+        "width": 99,
+        "height": 125
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 20,
+        "right": 222,
+        "bottom": 145
+    }
+},{
+    "name": "Yellowwave_00015.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 106,
+        "y": 244,
+        "width": 99,
+        "height": 128
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 146
+    }
+},{
+    "name": "Yellowwave_00016.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 209,
+        "y": 244,
+        "width": 99,
+        "height": 129
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 147
+    }
+},{
+    "name": "Yellowwave_00017.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 312,
+        "y": 244,
+        "width": 99,
+        "height": 124
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 20,
+        "right": 222,
+        "bottom": 144
+    }
+},{
+    "name": "Yellowwave_00018.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 377,
+        "width": 99,
+        "height": 128
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 146
+    }
+},{
+    "name": "Yellowwave_00019.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 106,
+        "y": 377,
+        "width": 99,
+        "height": 129
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 147
+    }
+},{
+    "name": "Yellowwave_00020.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 209,
+        "y": 377,
+        "width": 99,
+        "height": 122
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 21,
+        "right": 222,
+        "bottom": 143
+    }
+},{
+    "name": "Yellowwave_00021.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 312,
+        "y": 377,
+        "width": 99,
+        "height": 126
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 19,
+        "right": 222,
+        "bottom": 145
+    }
+},{
+    "name": "Yellowwave_00022.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 3,
+        "y": 510,
+        "width": 99,
+        "height": 129
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 147
+    }
+},{
+    "name": "Yellowwave_00023.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 106,
+        "y": 510,
+        "width": 99,
+        "height": 122
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 21,
+        "right": 222,
+        "bottom": 143
+    }
+},{
+    "name": "Yellowwave_00024.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 209,
+        "y": 510,
+        "width": 99,
+        "height": 126
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 19,
+        "right": 222,
+        "bottom": 145
+    }
+},{
+    "name": "Yellowwave_00025.png",
+    "texture": 0,
+    "samplingRect": {
+        "objectName": "",
+        "x": 312,
+        "y": 510,
+        "width": 99,
+        "height": 129
+    },
+    "rotated": false,
+    "trimmed": true,
+    "sourceSize": {
+        "objectName": "",
+        "width": 283,
+        "height": 245
+    },
+    "clipping": {
+        "left": 123,
+        "top": 18,
+        "right": 222,
+        "bottom": 147
+    }
+}
+],
+
+"animations": {
+    "Yellowwave": { "frames": [0, 1, 2, 3, 4, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] }
+},
+
+"meta": {
+        "app": "http://www.codeandweb.com/texturepacker",
+        "description": "Json file for Lens Studio Framework",
+        "version": "1.0",
+        "smartupdate": "$TexturePacker:SmartUpdate:34eb07e11a305d88fdc5094bda99a8b4:b9e1f3fb4e7a21297676654b8c632c81:db5563a58a486953e4f99bf8d6dec0a4$"
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for Lens Studio"
+    }
+}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
@@ -24,7 +25,7 @@ class HomeTopBar extends StatelessWidget implements AppBars {
       backgroundColor: const Color(0xff292929),
       shadowColor: Colors.grey,
       elevation: 8,
-      iconTheme: Theme.of(context).iconTheme.copyWith(color: Colors.amber),
+      iconTheme: Theme.of(context).iconTheme.copyWith(color: AppColors.yellow),
       title: Image.asset(
         'assets/icons/jbb_logo.jpeg',
         width: 120,
@@ -68,13 +69,13 @@ class ProductDetailTopBar extends ConsumerWidget implements AppBars {
   Widget build(BuildContext context, WidgetRef ref) {
     final int bagCount = ref.watch(bagItemCountProvider);
     return AppBar(
-      iconTheme: const IconThemeData(color: Colors.amber),
+      iconTheme: const IconThemeData(color: AppColors.yellow),
       title: Text(
         productName,
         style: Theme.of(context)
             .textTheme
             .titleLarge!
-            .copyWith(fontWeight: FontWeight.bold, color: Colors.amber),
+            .copyWith(fontWeight: FontWeight.bold, color: AppColors.yellow),
       ),
       actions: [
         IconButton(
@@ -111,10 +112,8 @@ class ProductListTopBar extends StatelessWidget implements AppBars {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: ProductSearchField(
-        initialText: searchedText,
-      ),
-      backgroundColor: Colors.amber,
+      title: const SearchPlaceHolder(isDefault: false,),
+      backgroundColor: AppColors.yellow,
       actions: [
         IconButton(
           onPressed: () {

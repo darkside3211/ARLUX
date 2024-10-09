@@ -14,6 +14,7 @@ class ProductModel {
   final double averageRating;
   final List<String> imageUrls;
   final String modelUrl;
+  final int soldCount;
 
   ProductModel({
     required this.id,
@@ -26,6 +27,7 @@ class ProductModel {
     required this.averageRating,
     required this.imageUrls,
     required this.modelUrl,
+    required this.soldCount,
   });
 
   // Factory constructor to create a ProductModel from a JSON map

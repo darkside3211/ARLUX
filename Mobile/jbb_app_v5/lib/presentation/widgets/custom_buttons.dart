@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
@@ -33,7 +34,7 @@ class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
             loading: () => null);
       },
       style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.amber,
+          backgroundColor: AppColors.yellow,
           foregroundColor: const Color(0xff292929)),
       child: const Text('Buy Now'),
     );
@@ -53,7 +54,7 @@ class CheckoutElevatedButton extends StatelessWidget implements CustomButtons {
         // Handle Buy Now button press
       },
       style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.amber,
+          backgroundColor: AppColors.yellow,
           foregroundColor: const Color(0xff292929)),
       child: const Text('Checkout'),
     );
@@ -99,7 +100,7 @@ class CartElevatedButton extends ConsumerWidget implements CustomButtons {
       },
       style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xff292929),
-          foregroundColor: Colors.amber),
+          foregroundColor: AppColors.yellow),
       child: const Text('Add to Bag'),
     );
   }

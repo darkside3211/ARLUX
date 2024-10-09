@@ -1,0 +1,23 @@
+- !<AssetImportMetadata/253c633d-1cb3-495f-ba5c-a3b98d4f5f51>
+  ImportedAssetIds:
+    .hidden/Occluder: !<reference> 784f9cba-97ca-46b9-bc6b-fa8e519a6b24
+    .hidden/Simple PBR: !<reference> abcd6f66-c5cc-47af-914e-ea2c0f360efa
+    Ear Binding/Base: !<reference> b8faa36a-d5fa-40e6-a2b5-ef12c5bd036a
+    Ear Binding/Ear Binding: !<reference> 06da4a06-f5fe-42e3-84fd-ab54840e456e
+    Ear Binding/Face Mesh: !<reference> 5267e6bd-13ec-4398-9638-43793c041223
+    Ear Binding/Occluder: !<reference> 43b1e2ba-b719-4513-b089-f610f320cc8f
+    Ear Binding/Occluder|Occluder|GraphPassInfo: !<reference> 7fbf238d-ef84-4984-8ed0-b72495feb623
+    Ear Binding/SceneObjectHelpersModule_101: !<reference> 046d8219-43c1-498c-a4c9-8f903ea9dd8c
+    Ear Binding/Simple PBR: !<reference> 94ad60b0-6299-4559-be9c-09946a696059
+    Ear Binding/Simple PBR|Simple PBR|GraphPassInfo: !<reference> a3221fc6-2157-4b43-a5f5-9e528627377c
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 06da4a06-f5fe-42e3-84fd-ab54840e456e
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/fd2d7d46-f2b4-4ef5-af69-437123d3a7b4>
+    PersistentIdGenerationAlgorithm: Legacy
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
