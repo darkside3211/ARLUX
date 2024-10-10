@@ -149,8 +149,8 @@ Future<bool> addToBag(
   required String size,
   required int quantity,
 }) async {
-  CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
+  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.addToBag(
     productID: productID,
@@ -169,8 +169,8 @@ Future<bool> addToBag(
 
 @riverpod
 Future<List<CartModel>> getBagItems(GetBagItemsRef ref) async {
-  CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
+  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
 
   final items = await cartRepository.getBagItems(token: firebaseToken);
 
@@ -182,8 +182,8 @@ Future<List<CartModel>> getBagItems(GetBagItemsRef ref) async {
 @riverpod
 Future<bool> removeBagItems(RemoveBagItemsRef ref,
     {required List<String> cartIDs}) async {
-  CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
+  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.removeBagItems(
     cartIDs: cartIDs,
@@ -205,8 +205,8 @@ Future<bool> editBagItem(
   required String newSize,
   required int newQuantity,
 }) async {
-  CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
+  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.editBagItem(
     cartID: cartID,

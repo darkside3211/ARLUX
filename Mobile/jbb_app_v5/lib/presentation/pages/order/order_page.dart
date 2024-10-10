@@ -16,7 +16,7 @@ class _OrderPageState extends ConsumerState<OrderPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('Order Page'),
+          Text('Orders Page'),
         ],
       ),
     );

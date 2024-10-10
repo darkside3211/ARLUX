@@ -44,3 +44,19 @@ class LaunchMessenger implements NetworkCore {
     }
   }
 }
+
+class LaunchCheckout implements NetworkCore {
+  final String checkoutUrl;
+
+  LaunchCheckout({required this.checkoutUrl}) {
+    launchCheckout();
+  }
+
+  void launchCheckout() async {
+    if (await canLaunchUrl(Uri.parse(checkoutUrl))) {
+      await launchUrl(Uri.parse(checkoutUrl));
+    } else {
+      throw 'Could not launch $checkoutUrl';
+    }
+  }
+}

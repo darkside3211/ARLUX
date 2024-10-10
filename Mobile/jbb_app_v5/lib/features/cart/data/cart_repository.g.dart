@@ -21,7 +21,7 @@ final cartRepositoryProvider = AutoDisposeProvider<CartRepository>.internal(
 );
 
 typedef CartRepositoryRef = AutoDisposeProviderRef<CartRepository>;
-String _$addToBagHash() => r'e870188f9c791d9a6794ffc4405063746db12623';
+String _$addToBagHash() => r'dc22f343a982fe39cdd072e63d146f0065ac3c5d';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -202,7 +202,7 @@ class _AddToBagProviderElement extends AutoDisposeFutureProviderElement<bool>
   int get quantity => (origin as AddToBagProvider).quantity;
 }
 
-String _$getBagItemsHash() => r'82d776370dca3395f5182da087ff63aab9a122d1';
+String _$getBagItemsHash() => r'3ac770c9ef729c610511ab421a2adc73506a9a22';
 
 /// See also [getBagItems].
 @ProviderFor(getBagItems)
@@ -216,7 +216,7 @@ final getBagItemsProvider = AutoDisposeFutureProvider<List<CartModel>>.internal(
 );
 
 typedef GetBagItemsRef = AutoDisposeFutureProviderRef<List<CartModel>>;
-String _$removeBagItemsHash() => r'ce941aa5f94a99e107192fb687cd17fc59fbf6e0';
+String _$removeBagItemsHash() => r'9404abe36aa55650943fc93c1e5bb7c89a5758cd';
 
 /// See also [removeBagItems].
 @ProviderFor(removeBagItems)
@@ -344,7 +344,7 @@ class _RemoveBagItemsProviderElement
   List<String> get cartIDs => (origin as RemoveBagItemsProvider).cartIDs;
 }
 
-String _$editBagItemHash() => r'49f08802d4577351f44b2e13fcbf0a2080ace95b';
+String _$editBagItemHash() => r'b8fbf0d76c2a442fe5abde4fed8f342cebe27bf2';
 
 /// See also [editBagItem].
 @ProviderFor(editBagItem)

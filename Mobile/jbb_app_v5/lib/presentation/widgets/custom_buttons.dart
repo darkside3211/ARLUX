@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
+import 'package:jbb_app_v5/features/order/data/order_repository.dart';
+import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
@@ -14,7 +16,8 @@ abstract class CustomButtons {
 }
 
 class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
-  const BuyElevatedButton({super.key});
+  final List<CheckoutItem>? checkouts;
+  const BuyElevatedButton({super.key, this.checkouts});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -24,7 +27,9 @@ class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
         authState.when(
             data: (user) {
               if (user != null) {
-                //TODO buy now
+                if (checkouts != null) {
+                  ref.read(checkoutOrderProvider(orders: checkouts!));
+                }
               } else {
                 ref.read(bottomNavIndexProvider.notifier).state = 2;
                 Navigator.pop(context);

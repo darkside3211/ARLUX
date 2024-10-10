@@ -138,7 +138,11 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
 class EditCartBottomSheet extends ConsumerStatefulWidget
     implements AddCartBottomSheet {
   final CartModel cartModel;
-  const EditCartBottomSheet({super.key, required this.cartModel});
+
+  const EditCartBottomSheet({
+    super.key,
+    required this.cartModel,
+  });
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -228,45 +232,82 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
             ],
           ),
           gapH32,
-          CartElevatedButton(
-            isConfirm: true,
-            customFunction: () async {
-              showDialog(
-                context: context,
-                barrierDismissible: false,
-                builder: (context) => const Center(
-                    child: CircularProgressIndicator(
-                  color: Colors.amber,
-                )),
-              );
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CartElevatedButton(
+                isConfirm: true,
+                customFunction: () async {
+                  showDialog(
+                    context: context,
+                    barrierDismissible: false,
+                    builder: (context) => const Center(
+                        child: CircularProgressIndicator(
+                      color: Colors.amber,
+                    )),
+                  );
 
-              if (_quantity == widget.cartModel.quantity &&
-                  _selectedSize == widget.cartModel.size) {
-                Navigator.of(context, rootNavigator: true).pop();
-                if (context.mounted) {
-                  Navigator.pop(context);
-                }
-              } else {
-                final isProductModified = await ref.read(
-                  editBagItemProvider(
-                    cartID: widget.cartModel.cartID,
-                    newQuantity: _quantity,
-                    newSize: _selectedSize,
-                  ).future,
-                );
+                  if (_quantity == widget.cartModel.quantity &&
+                      _selectedSize == widget.cartModel.size) {
+                    Navigator.of(context, rootNavigator: true).pop();
+                    if (context.mounted) {
+                      Navigator.pop(context);
+                    }
+                  } else {
+                    final isProductModified = await ref.read(
+                      editBagItemProvider(
+                        cartID: widget.cartModel.cartID,
+                        newQuantity: _quantity,
+                        newSize: _selectedSize,
+                      ).future,
+                    );
 
-                // ignore: use_build_context_synchronously
-                Navigator.of(context, rootNavigator: true).pop();
+                    // ignore: use_build_context_synchronously
+                    Navigator.of(context, rootNavigator: true).pop();
 
-                if (isProductModified && context.mounted) {
-                  Navigator.pop(context);
-                  SnackBarFailure(context, message: "Successfully modified!");
-                } else {
+                    if (isProductModified && context.mounted) {
+                      Navigator.pop(context);
+                      SnackBarFailure(context,
+                          message: "Successfully modified!");
+                    } else {
+                      // ignore: use_build_context_synchronously
+                      SnackBarFailure(context, message: "Failed to modify.");
+                    }
+                  }
+                },
+              ),
+              const VerticalDivider(),
+              ElevatedButton(
+                onPressed: () async {
+                  showDialog(
+                    context: context,
+                    barrierDismissible: false,
+                    builder: (context) => const Center(
+                        child: CircularProgressIndicator(
+                      color: Colors.amber,
+                    )),
+                  );
+
+                  final isProductDeleted = await ref.read(
+                      removeBagItemsProvider(cartIDs: [widget.cartModel.cartID])
+                          .future);
+
                   // ignore: use_build_context_synchronously
-                  SnackBarFailure(context, message: "Failed to modify.");
-                }
-              }
-            },
+                  Navigator.of(context, rootNavigator: true).pop();
+
+                  if (isProductDeleted && context.mounted) {
+                    Navigator.pop(context);
+                    SnackBarFailure(context, message: "Successfully modified!");
+                  } else {
+                    // ignore: use_build_context_synchronously
+                    SnackBarFailure(context, message: "Failed to modify.");
+                  }
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white, foregroundColor: Colors.red),
+                child: const Text('Delete'),
+              ),
+            ],
           ),
         ],
       ),

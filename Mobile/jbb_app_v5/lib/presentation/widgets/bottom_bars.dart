@@ -21,6 +21,7 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final bagCount = ref.watch(bagItemCountProvider);
+    final orderCount = ref.watch(ordersItemCountProvider);
     return SizedBox(
       height: const Size.fromHeight(64).height,
       child: BottomNavigationBar(
@@ -39,7 +40,7 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
             label: 'Bag',
           ),
           BottomNavigationBarItem(
-            icon: OrderIconWithCount(orderCount: bagCount),
+            icon: OrderIconWithCount(orderCount: orderCount),
             label: 'Orders',
           ),
           const BottomNavigationBarItem(

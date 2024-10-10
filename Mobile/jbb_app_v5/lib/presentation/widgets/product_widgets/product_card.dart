@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/utils/currency_format.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
+import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
+import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/product/product_detail.dart';
 import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
+import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.dart';
 
@@ -66,9 +70,8 @@ class ProductThumbnail extends ConsumerWidget implements ProductCard {
                   if (productModel.modelUrl.isNotEmpty)
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: Colors.grey.shade300
-                      ),
+                          borderRadius: BorderRadius.circular(4),
+                          color: Colors.grey.shade300),
                       padding: const EdgeInsets.all(2),
                       child: const Row(
                         children: [
@@ -87,9 +90,8 @@ class ProductThumbnail extends ConsumerWidget implements ProductCard {
                   if (productModel.lensID.isNotEmpty)
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: Colors.grey.shade300
-                      ),
+                          borderRadius: BorderRadius.circular(4),
+                          color: Colors.grey.shade300),
                       padding: const EdgeInsets.all(2),
                       child: const Row(
                         children: [
@@ -180,27 +182,32 @@ class ProductFeatureCard extends ConsumerWidget implements ProductCard {
   }
 }
 
-class ProductTile extends StatelessWidget {
+class ProductTile extends ConsumerWidget {
   final CartModel cartModel;
-  final bool isEditing; // Pass editing state
+  final bool isEditing;
+  final bool isSelected;
+  final ValueChanged<bool?> onSelected;
 
   const ProductTile({
     super.key,
     required this.cartModel,
     required this.isEditing,
+    required this.isSelected,
+    required this.onSelected,
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     double totalPrice = cartModel.price;
 
     if (cartModel.quantity > 0) {
       totalPrice = cartModel.quantity * cartModel.price;
     }
+
     return Card(
-      child: ListTile(
-        leading: InkWell(
-          onTap: () {
+      child: InkWell(
+        onTap: () {
+          if (!isEditing) {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => ProductDetail(
@@ -209,65 +216,114 @@ class ProductTile extends StatelessWidget {
                 ),
               ),
             );
-          },
-          child: CustomSingleImage(
+          }
+        },
+        child: ListTile(
+          leading: CustomSingleImage(
             image: cartModel.imageUrls[0],
             disableGestures: true,
             aspectRatio: 1 / 1,
             isNetwork: false,
           ),
-        ),
-        title: Row(
-          children: [
-            Expanded(
-              child: Text(
-                cartModel.name,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      fontWeight: FontWeight.bold,
+          title: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      cartModel.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
+                    ProductPriceBuilder(
+                      price: totalPrice,
+                      textStyle: const TextStyle(fontSize: 18),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            // Conditionally render checkbox in edit mode
-            if (isEditing)
-              Checkbox(
-                value: false,
-                onChanged: (value) {
-                  // Handle checkbox state
+              ElevatedButton.icon(
+                onPressed: () {
+                  _showEditCartSheet(context);
                 },
+                icon: const Icon(
+                  Icons.edit,
+                  color: AppColors.black,
+                ),
+                label: const Text(
+                  'Edit',
+                  style: TextStyle(color: AppColors.black),
+                ),
               ),
-          ],
-        ),
-        subtitle: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Quantity: ${cartModel.quantity.toString()}",
-                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+              if (isEditing)
+                Checkbox(
+                  value: isSelected,
+                  onChanged: onSelected,
+                  checkColor: AppColors.black,
+                  activeColor: AppColors.yellow,
                 ),
-                Text(
-                  "Size: ${cartModel.size}",
-                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+            ],
+          ),
+          subtitle: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Quantity: ${cartModel.quantity.toString()}",
+                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  Text(
+                    "Size: ${cartModel.size}",
+                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
+              ),
+              if (!isEditing)
+                BuyElevatedButton(
+                  checkouts: [
+                    CheckoutItem(
+                        name: cartModel.name,
+                        amount: cartModel.price.round(),
+                        quantity: cartModel.quantity),
+                  ],
                 ),
-              ],
-            ),
-            ProductPriceBuilder(
-              price: totalPrice,
-              textStyle: const TextStyle(fontSize: 18),
-            ),
-          ],
+            ],
+          ),
+          isThreeLine: true,
         ),
-        isThreeLine: true,
       ),
+    );
+  }
+
+  void _showEditCartSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true, // Allow the bottom sheet to take full height
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return Padding(
+          padding: EdgeInsets.only(
+            bottom: MediaQuery.of(context)
+                .viewInsets
+                .bottom, // Handle keyboard overlap
+          ),
+          child: EditCartBottomSheet(
+              cartModel: cartModel), // Content inside the bottom sheet
+        );
+      },
     );
   }
 }
