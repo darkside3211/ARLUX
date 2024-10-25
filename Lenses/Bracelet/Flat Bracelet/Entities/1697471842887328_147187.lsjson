@@ -1,0 +1,115 @@
+{
+    "1697471842885125:147186": {
+        "IFileManager": {
+            "path": "Files/File_1697471842885125_147186.mesh"
+        }
+    },
+    "1697471842887328:147187": {
+        "IResourceController": {
+            "name": "WristOccluder",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1697471842906997:147189",
+            "fileId": "1697471842885125:147186",
+            "publicId": "1701112777752599:4522",
+            "expected_hash": "a35bba1eaf429aedc42b06a8edad7ee5",
+            "additional": {
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "9",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture0"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1697471842906997:147189",
+            "name": "Files/File_1697471842885125_147186.mesh",
+            "flags": 1
+        }
+    },
+    "1697471842906997:147189": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "6984",
+                "compressedSize": "3463",
+                "extension": "mesh",
+                "originalRAM": "6984",
+                "originalSize": "3463",
+                "settings": {
+                    "attributeFormat": "",
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            }
+                        ]
+                    },
+                    "isCompressed": "false",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1697471842911345:147206"
+        }
+    },
+    "1697471842911345:147206": {
+        "IFileManager": {
+            "path": "Files/File_1697471842911345_147206.mesh"
+        }
+    },
+    "1701112777752599:4522": {
+        "IResourceController": {
+            "public": {
+                "path": "Meshes/Occluder/WristOccluder.mesh",
+                "hash": "a35bba1eaf429aedc42b06a8edad7ee5"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "1674573633995063:4009": {
+        "IResourceController": {
+            "name": "Silver metal env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690588824495:253798",
+            "fileId": "1674573633995152:4134",
+            "originalId": "1674573633995153:4135",
+            "publicId": "1728871178595124:1502297",
+            "expected_hash": "ebdedb422063ad15d771cfc7c95fb4b6"
+        },
+        "IResourceManager": {
+            "uid": "1663690588824495:253798",
+            "name": "Files/File_1674573633995152_4134",
+            "flags": 1
+        }
+    },
+    "1674573633995152:4134": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995152_4134"
+        }
+    },
+    "1674573633995153:4135": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995153_4135.lsmat"
+        }
+    },
+    "1728871178595124:1502297": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Silver metal env.lsmat",
+                "hash": "e1210fb66e1817671adcf750bb60a6f5"
+            }
+        }
+    }
+}

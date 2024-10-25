@@ -1,0 +1,39 @@
+{
+    "1728869460262049:812622": {
+        "IFileManager": {
+            "path": "Files/File_1728869460262049_812622"
+        }
+    },
+    "1728869460264739:812623": {
+        "IResourceController": {
+            "name": "Gold",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728869460264745:812624",
+            "fileId": "1728869460262049:812622",
+            "originalId": "1728869460288012:812634",
+            "publicId": "1728869460723405:812902",
+            "expected_hash": "20b64ecbdcf7e2b82c0aa29038627025"
+        },
+        "IResourceManager": {
+            "uid": "1728869460264745:812624",
+            "name": "Files/File_1728869460262049_812622",
+            "flags": 1
+        }
+    },
+    "1728869460288012:812634": {
+        "IFileManager": {
+            "path": "Files/File_1728869460288012_812634.lsmat"
+        }
+    },
+    "1728869460723405:812902": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/EvilEyeEarring-Single/Materials/Gold.lsmat",
+                "hash": "7fe7f5956c4aa5b1a15207f6d5f82f31"
+            }
+        }
+    }
+}

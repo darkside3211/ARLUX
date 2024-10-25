@@ -1,0 +1,17 @@
+{
+    "1728869323349298:763503": {
+        "IResourceController": {
+            "name": "Head Visibility",
+            "type": 1,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323349292:763502"
+        },
+        "IResourceManager": {
+            "uid": "1728869323349292:763502",
+            "name": "Render Target",
+            "flags": 0
+        }
+    }
+}

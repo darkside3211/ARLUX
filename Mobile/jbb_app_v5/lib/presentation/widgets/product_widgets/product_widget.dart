@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
-import 'package:jbb_app_v5/core/utils/currency_format.dart';
+import 'package:jbb_app_v5/core/utils/formats.dart';
 
 abstract class ProductWidget {}
 
@@ -9,7 +9,11 @@ class ProductPriceBuilder extends StatelessWidget implements ProductWidget {
   final double price;
   final TextStyle? textStyle;
 
-  const ProductPriceBuilder({super.key, required this.price, this.textStyle});
+  const ProductPriceBuilder({
+    super.key,
+    required this.price,
+    this.textStyle,
+  });
 
   @override
   Widget build(BuildContext context) {

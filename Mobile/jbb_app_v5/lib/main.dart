@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/firebase_options.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
-import 'package:jbb_app_v5/presentation/providers/theme_notifier.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,12 +20,9 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final themeMode = ref.watch(themeNotifierProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      themeMode: themeMode,
       home: HomeScreen(),
     );
   }

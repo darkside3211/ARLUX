@@ -15,6 +15,9 @@ class CartModel {
   final List<String> imageUrls;
   final String modelUrl;
   final int soldCount;
+  final int stockCount;
+  final DateTime createdAt;
+  final DateTime updatedAt;
   final String cartID;
   final String size;
   final int quantity;
@@ -31,6 +34,9 @@ class CartModel {
     required this.imageUrls,
     required this.modelUrl,
     required this.soldCount,
+    required this.stockCount,
+    required this.createdAt,
+    required this.updatedAt,
     required this.cartID,
     required this.size,
     required this.quantity,

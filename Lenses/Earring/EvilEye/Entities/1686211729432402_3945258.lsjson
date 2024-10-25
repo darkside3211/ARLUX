@@ -1,0 +1,29 @@
+{
+    "1686211729431069:3945257": {
+        "IFileManager": {
+            "path": "Files/File_1686211729431069_3945257.js"
+        }
+    },
+    "1686211729432402:3945258": {
+        "IResourceController": {
+            "name": "Zoom Image",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1686211729432411:3945259",
+            "fileId": "1686211729431069:3945257",
+            "expected_hash": "9e0e798ff5383f98606b49ee3190e18a"
+        },
+        "IResourceManager": {
+            "uid": "1686211729432411:3945259",
+            "name": "Files/File_1686211729431069_3945257.js",
+            "flags": 1
+        }
+    },
+    "1686211729432411:3945259": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

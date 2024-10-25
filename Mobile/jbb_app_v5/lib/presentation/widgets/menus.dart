@@ -3,135 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/constants/filter_values.dart';
-import 'package:jbb_app_v5/core/network/network_core.dart';
-import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
+import 'package:jbb_app_v5/features/search/model/search_model.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
-import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
-import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
-import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 
 abstract class Menus {}
-
-class HomeMenuDrawer extends StatelessWidget {
-  const HomeMenuDrawer({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Color(0xff292929),
-            ),
-            child: Text(
-              'Settings',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('Host Address'),
-            onTap: () {
-              Navigator.of(context).pop();
-              _showHostAddressDialog(context);
-            },
-          ),
-          const ThemeToggleButton(),
-        ],
-      ),
-    );
-  }
-
-  void _showHostAddressDialog(BuildContext context) {
-    final TextEditingController ipController = TextEditingController();
-    final TextEditingController portController = TextEditingController();
-
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text(
-            'Set Host Address',
-            style: TextStyle(color: Colors.black),
-          ),
-          content: Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: ipController,
-                  decoration: const InputDecoration(
-                    hintText: 'IP Address',
-                    hintStyle: TextStyle(color: Colors.grey),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: TextField(
-                  controller: portController,
-                  decoration: const InputDecoration(
-                    hintText: 'Port',
-                    hintStyle: TextStyle(color: Colors.grey),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              child:
-                  const Text('Cancel', style: TextStyle(color: Colors.black)),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-            TextButton(
-              child: const Text(
-                'Save',
-                style: TextStyle(color: AppColors.yellow),
-              ),
-              onPressed: () {
-                String ipAddress = ipController.text.trim();
-                String portAddress = portController.text.trim();
-
-                if (ipAddress.isEmpty || portAddress.isEmpty) {
-                  SnackBarFailure(context,
-                      message: 'Please enter both IP and Port');
-                  return;
-                }
-
-                try {
-                  int parsedPort = int.parse(portAddress);
-                  if (parsedPort <= 0 || parsedPort > 65535) {
-                    SnackBarFailure(context,
-                        message:
-                            'Invalid port number. Must be between 1 and 65535');
-                    return;
-                  }
-                } catch (e) {
-                  SnackBarFailure(context,
-                      message: 'Invalid port number. Must be a number');
-                  return;
-                }
-
-                HostAddress.setValue(newIp: ipAddress, newPort: portAddress);
-                Navigator.of(context).pop();
-                SnackBarFailure(context,
-                    message: 'Host address updated successfully');
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-}
 
 class FilterDrawer extends ConsumerWidget {
   const FilterDrawer({super.key});
@@ -139,15 +15,14 @@ class FilterDrawer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final searchState = ref.watch(searchQueryProvider);
-    final filterState = ref.watch(filterStateProvider);
-    final filterNotifier = ref.read(filterStateProvider.notifier);
+    final categoryState = ref.watch(categoryQueryProvider);
+    final minPriceState = ref.watch(minPriceQueryProvider);
+    final maxPriceState = ref.watch(maxPriceQueryProvider);
 
     final TextEditingController minPriceController =
-        TextEditingController(text: filterState.minPrice.toString());
+        TextEditingController(text: minPriceState.toString());
     final TextEditingController maxPriceController = TextEditingController(
-        text: filterState.maxPrice == double.infinity
-            ? ''
-            : filterState.maxPrice.toString());
+        text: maxPriceState == double.infinity ? '' : maxPriceState.toString());
 
     // Example categories list (can be replaced with actual categories)
     final List<String> categories = [
@@ -162,13 +37,21 @@ class FilterDrawer extends ConsumerWidget {
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: AppColors.yellow,
+              color: Color(0xff292929),
             ),
             child: Text(
               'Filter Options',
-              style: TextStyle(color: Colors.black, fontSize: 24),
+              style: TextStyle(color: Colors.white, fontSize: 24),
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Text(
+              'Price Range:',
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+          gapH8,
           // Min and Max Price in a Row
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -205,12 +88,13 @@ class FilterDrawer extends ConsumerWidget {
               ],
             ),
           ),
+          const Divider(),
           gapH20,
           // Category Dropdown
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: DropdownButtonFormField<String>(
-              value: filterState.category,
+              value: categoryState,
               decoration: const InputDecoration(
                 labelText: 'Category',
                 border: OutlineInputBorder(),
@@ -222,7 +106,8 @@ class FilterDrawer extends ConsumerWidget {
                 );
               }).toList(),
               onChanged: (String? newValue) {
-                filterNotifier.state = filterState.copyWith(category: newValue);
+                ref.read(categoryQueryProvider.notifier).state =
+                    newValue ?? 'All';
               },
             ),
           ),
@@ -238,20 +123,10 @@ class FilterDrawer extends ConsumerWidget {
                 final maxPrice =
                     double.tryParse(maxPriceController.text) ?? double.infinity;
 
-                filterNotifier.state = filterState.copyWith(
-                  minPrice: minPrice,
-                  maxPrice: maxPrice,
-                );
+                ref.read(minPriceQueryProvider.notifier).state = minPrice;
+                ref.read(maxPriceQueryProvider.notifier).state = maxPrice;
 
-                // ignore: unused_result
-                ref.refresh(
-                  searchProductListProvider(
-                    q: searchState,
-                    category: filterState.category,
-                    minPrice: filterState.minPrice,
-                    maxPrice: filterState.maxPrice,
-                  ),
-                );
+                Navigator.pop(context);
 
                 Navigator.push(
                   context,
@@ -259,9 +134,9 @@ class FilterDrawer extends ConsumerWidget {
                     builder: (context) => ProductListing(
                       productGrid: ProductSearchImpl(
                         q: searchState,
-                        category: filterState.category,
-                        minPrice: filterState.minPrice,
-                        maxPrice: filterState.maxPrice,
+                        category: categoryState,
+                        minPrice: minPriceState,
+                        maxPrice: maxPriceState,
                         isScrollable: true,
                       ),
                     ),
@@ -269,7 +144,8 @@ class FilterDrawer extends ConsumerWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black, foregroundColor: AppColors.yellow),
+                  backgroundColor: Colors.black,
+                  foregroundColor: AppColors.yellow),
               child: const Text('Apply Filters'),
             ),
           ),

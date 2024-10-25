@@ -1,0 +1,30 @@
+{
+    "1728869323657252:763596": {
+        "IFileManager": {
+            "path": "Files/File_1728869323657252_763596"
+        }
+    },
+    "1728869323658963:763597": {
+        "IResourceController": {
+            "name": "Head Visibility 2",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323658969:763598",
+            "fileId": "1728869323657252:763596",
+            "originalId": "1728869323682385:763602",
+            "expected_hash": "4f9ea7abe8ae4cc33d47b95528d7b455"
+        },
+        "IResourceManager": {
+            "uid": "1728869323658969:763598",
+            "name": "Files/File_1728869323657252_763596",
+            "flags": 1
+        }
+    },
+    "1728869323682385:763602": {
+        "IFileManager": {
+            "path": "Files/File_1728869323682385_763602.lsmat"
+        }
+    }
+}

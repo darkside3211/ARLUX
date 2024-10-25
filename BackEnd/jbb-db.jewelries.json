@@ -13,8 +13,16 @@
     "EvilEye.jpg",
     "EvilEye2.jpg"
   ],
-  "modelUrl": "HeartRing.glb",
-  "lensID": ""
+  "modelUrl": "EvilEyeEarring.glb",
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -31,8 +39,16 @@
     "FlatBracelet.jpg",
     "FlatBracelet2.jpg"
   ],
-  "modelUrl": "HeartRing.glb",
-  "lensID": ""
+  "modelUrl": "FlatBracelet.glb",
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -49,8 +65,16 @@
     "HardwareClip.jpg",
     "HardwareClip2.jpg"
   ],
-  "modelUrl": "HeartRing.glb",
-  "lensID": ""
+  "modelUrl": "HardwareClipEarring.glb",
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -67,7 +91,15 @@
     "HeartNecklace.jpg"
   ],
   "modelUrl": "HeartNecklace.glb",
-  "lensID": ""
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -85,7 +117,15 @@
     "HeartRing.jpg",
     "HeartRing2.jpg"
   ],
-  "modelUrl": "HeartRing.glb"
+  "modelUrl": "HeartRing.glb",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -102,7 +142,15 @@
     "InriKrusPendant.jpg"
   ],
   "modelUrl": "HeartNecklace.glb",
-  "lensID": ""
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -119,7 +167,15 @@
     "MotherChildPendant.jpg"
   ],
   "modelUrl": "HeartNecklace.glb",
-  "lensID": ""
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -136,8 +192,16 @@
     "PalayBracelet.jpg",
     "PalayBracelet2.jpg"
   ],
-  "modelUrl": "HeartRing.glb",
-  "lensID": ""
+  "modelUrl": "FlatBracelet.glb",
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -154,7 +218,15 @@
     "RosaryNecklace.jpg"
   ],
   "modelUrl": "HeartNecklace.glb",
-  "lensID": ""
+  "lensID": "",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 },
 {
   "_id": {
@@ -172,5 +244,13 @@
     "SolidRing.jpg",
     "SolidRing2.jpg"
   ],
-  "modelUrl": "MoissaniteRing.glb"
+  "modelUrl": "MoissaniteRing.glb",
+  "soldCount": 0,
+  "stockCount": 10,
+  "createdAt": {
+    "$date": "2024-10-11T00:24:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T03:21:13.060Z"
+  }
 }]

@@ -1,0 +1,30 @@
+{
+    "1728869323789391:763681": {
+        "IResourceController": {
+            "name": "Selective Hair Seg",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323789352:763678",
+            "fileId": "1728869323826427:763685",
+            "originalId": "1728869328291416:764635",
+            "expected_hash": "30befaaa2ce36fbc278ff6bd6025712d"
+        },
+        "IResourceManager": {
+            "uid": "1728869323789352:763678",
+            "name": "sceneObject_2",
+            "flags": 0
+        }
+    },
+    "1728869323826427:763685": {
+        "IFileManager": {
+            "path": "Files/File_1728869323826427_763685.oprfb"
+        }
+    },
+    "1728869328291416:764635": {
+        "IFileManager": {
+            "path": "Files/File_1728869328291416_764635.oprfb"
+        }
+    }
+}

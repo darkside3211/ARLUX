@@ -1,0 +1,39 @@
+{
+    "1674573633995063:4008": {
+        "IResourceController": {
+            "name": "Drop shadow",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690588667323:253691",
+            "fileId": "1674573633995149:4132",
+            "originalId": "1674573633995150:4133",
+            "publicId": "1728871178967771:1503358",
+            "expected_hash": "324f03069e19a3d99d5da518da4db773"
+        },
+        "IResourceManager": {
+            "uid": "1663690588667323:253691",
+            "name": "Files/File_1674573633995149_4132",
+            "flags": 1
+        }
+    },
+    "1674573633995149:4132": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995149_4132"
+        }
+    },
+    "1674573633995150:4133": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995150_4133.lsmat"
+        }
+    },
+    "1728871178967771:1503358": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Drop shadow.lsmat",
+                "hash": "c7bf82bec08ec1282591d79a7b71a0ea"
+            }
+        }
+    }
+}

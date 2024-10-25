@@ -1,0 +1,80 @@
+{
+    "1663690588449473:253619": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "7d881683bb12439b1a79081e1ee09ff2"
+                    },
+                    "v": "1674573633995188:4163"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "262144",
+                "compressedSize": "9869",
+                "extension": "jpg",
+                "originalRAM": "262144",
+                "originalSize": "9869",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1674573633995144:4128"
+        }
+    },
+    "1674573633995063:4006": {
+        "IResourceController": {
+            "name": "drop_shadow",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690588449473:253619",
+            "fileId": "1674573633995141:4126",
+            "originalId": "1674573633995143:4127",
+            "publicId": "1728871209768677:1520717",
+            "expected_hash": "7d881683bb12439b1a79081e1ee09ff2",
+            "additional": {
+                "originHash": "7d881683bb12439b1a79081e1ee09ff2",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1663690588449473:253619",
+            "name": "Files/File_1674573633995141_4126.jpg",
+            "flags": 1
+        }
+    },
+    "1674573633995141:4126": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995141_4126.jpg"
+        }
+    },
+    "1674573633995143:4127": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995143_4127.jpg"
+        }
+    },
+    "1674573633995144:4128": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995144_4128.jpg"
+        }
+    },
+    "1674573633995188:4163": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995188_4163.jpg"
+        }
+    },
+    "1728871209768677:1520717": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/drop_shadow.jpg",
+                "hash": "7d881683bb12439b1a79081e1ee09ff2"
+            }
+        }
+    }
+}

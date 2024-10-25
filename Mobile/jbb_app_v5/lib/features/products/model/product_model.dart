@@ -15,6 +15,9 @@ class ProductModel {
   final List<String> imageUrls;
   final String modelUrl;
   final int soldCount;
+  final int stockCount;
+  final DateTime createdAt;
+  final DateTime updatedAt;
 
   ProductModel({
     required this.id,
@@ -28,6 +31,9 @@ class ProductModel {
     required this.imageUrls,
     required this.modelUrl,
     required this.soldCount,
+    required this.stockCount,
+    required this.createdAt,
+    required this.updatedAt,
   });
 
   // Factory constructor to create a ProductModel from a JSON map

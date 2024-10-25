@@ -1,0 +1,38 @@
+{
+    "1685540752405557:14866": {
+        "IFileManager": {
+            "path": "Files/File_1685540752405557_14866.js"
+        }
+    },
+    "1685540752406651:14867": {
+        "IResourceController": {
+            "name": "NecklaceSelector",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685540752406667:14868",
+            "fileId": "1685540752405557:14866",
+            "publicId": "1728877248897445:597870",
+            "expected_hash": "ae13273e5c690af1f2f76b5dc7fac435"
+        },
+        "IResourceManager": {
+            "uid": "1685540752406667:14868",
+            "name": "Files/File_1685540752405557_14866.js",
+            "flags": 1
+        }
+    },
+    "1685540752406667:14868": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1728877248897445:597870": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/NecklaceSelector.js",
+                "hash": "ae13273e5c690af1f2f76b5dc7fac435"
+            }
+        }
+    }
+}

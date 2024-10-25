@@ -1,0 +1,67 @@
+{
+    "1681731556449903:1194858": {
+        "IFileManager": {
+            "path": "Files/File_1681731556449903_1194858.png"
+        }
+    },
+    "1681731556452035:1194859": {
+        "IResourceController": {
+            "name": "Close@2x",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556452140:1194860",
+            "fileId": "1681731556449903:1194858",
+            "originalId": "1681731556452492:1194865",
+            "publicId": "1681731556463061:1194874",
+            "expected_hash": "a78d36a93f2b46997d55343136cc9ce1",
+            "additional": {
+                "originHash": "a78d36a93f2b46997d55343136cc9ce1",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1681731556452140:1194860",
+            "name": "Files/File_1681731556449903_1194858.jpg",
+            "flags": 1
+        }
+    },
+    "1681731556452140:1194860": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "53824",
+                "compressedSize": "8753",
+                "extension": "png",
+                "originalRAM": "53824",
+                "originalSize": "8753",
+                "settings": {
+                    "isCompressed": "false",
+                    "level": "0",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1681731556459617:1194873"
+        }
+    },
+    "1681731556452492:1194865": {
+        "IFileManager": {
+            "path": "Files/File_1681731556452492_1194865.png"
+        }
+    },
+    "1681731556459617:1194873": {
+        "IFileManager": {
+            "path": "Files/File_1681731556459617_1194873.png"
+        }
+    },
+    "1681731556463061:1194874": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Close@2x.png",
+                "hash": "a78d36a93f2b46997d55343136cc9ce1"
+            }
+        }
+    }
+}

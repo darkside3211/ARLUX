@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
-import 'package:jbb_app_v5/core/utils/currency_format.dart';
+import 'package:jbb_app_v5/core/network/network_core.dart';
+import 'package:jbb_app_v5/core/utils/formats.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
-import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/product/product_detail.dart';
 import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
@@ -50,7 +50,7 @@ class ProductThumbnail extends ConsumerWidget implements ProductCard {
                 image: productModel.imageUrls[0],
                 disableGestures: true,
                 aspectRatio: 1 / 1,
-                isNetwork: false,
+                isNetwork: true,
               ),
               const Divider(height: 16),
               Text(
@@ -160,7 +160,7 @@ class ProductFeatureCard extends ConsumerWidget implements ProductCard {
                 image: productModel.imageUrls[0],
                 disableGestures: true,
                 aspectRatio: 1 / 1,
-                isNetwork: false,
+                isNetwork: true,
               ),
               const Divider(height: 16),
               Text(
@@ -182,148 +182,144 @@ class ProductFeatureCard extends ConsumerWidget implements ProductCard {
   }
 }
 
+class OrderTile extends ConsumerWidget {
+  final OrderModel orderModel;
+  const OrderTile({super.key, required this.orderModel});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Card(
+      child: InkWell(
+        child: ListTile(
+          leading: orderModel.checkoutUrl == null
+              ? Text(orderModel.checkoutID)
+              : CartElevatedButton(
+                  isConfirm: true,
+                  customLabel: 'Pay Now',
+                  customFunction: () {
+                    LaunchCheckout(checkoutUrl: orderModel.checkoutUrl!);
+                  },
+                ),
+          title: Text(orderModel.orderStatus),
+          subtitle: Text(orderModel.createdAt.toLocal().toString()),
+        ),
+      ),
+    );
+  }
+}
+
 class ProductTile extends ConsumerWidget {
   final CartModel cartModel;
-  final bool isEditing;
-  final bool isSelected;
-  final ValueChanged<bool?> onSelected;
+  final bool value;
+  final bool isDefault;
+  final Function(bool? value) onChanged;
 
   const ProductTile({
     super.key,
     required this.cartModel,
-    required this.isEditing,
-    required this.isSelected,
-    required this.onSelected,
+    required this.value,
+    required this.onChanged,
+    this.isDefault = true,
   });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     double totalPrice = cartModel.price;
-
     if (cartModel.quantity > 0) {
       totalPrice = cartModel.quantity * cartModel.price;
     }
-
     return Card(
-      child: InkWell(
-        onTap: () {
-          if (!isEditing) {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => ProductDetail(
-                  productModel:
-                      CartToProduct(cartModel: cartModel).getConvertedProduct(),
-                ),
+      child: ListTile(
+        isThreeLine: isDefault,
+        leading: isDefault
+            ? Checkbox(
+                activeColor: AppColors.yellow,
+                checkColor: AppColors.black,
+                value: value,
+                onChanged: onChanged,
+              )
+            : CustomSingleImage(
+                image: cartModel.imageUrls[0],
+                disableGestures: true,
+                aspectRatio: 1,
+                isNetwork: true,
               ),
-            );
-          }
-        },
-        child: ListTile(
-          leading: CustomSingleImage(
-            image: cartModel.imageUrls[0],
-            disableGestures: true,
-            aspectRatio: 1 / 1,
-            isNetwork: false,
-          ),
-          title: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      cartModel.name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ),
-                    ProductPriceBuilder(
-                      price: totalPrice,
-                      textStyle: const TextStyle(fontSize: 18),
-                    ),
-                  ],
-                ),
+        title: Text(
+          cartModel.name,
+          maxLines: 1,
+          textAlign: TextAlign.start,
+          overflow: TextOverflow.ellipsis,
+          style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                fontWeight: FontWeight.bold,
               ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  _showEditCartSheet(context);
-                },
-                icon: const Icon(
-                  Icons.edit,
-                  color: AppColors.black,
-                ),
-                label: const Text(
-                  'Edit',
-                  style: TextStyle(color: AppColors.black),
-                ),
-              ),
-              if (isEditing)
-                Checkbox(
-                  value: isSelected,
-                  onChanged: onSelected,
-                  checkColor: AppColors.black,
-                  activeColor: AppColors.yellow,
-                ),
-            ],
-          ),
-          subtitle: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        subtitle: isDefault
+            ? Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
-                    "Quantity: ${cartModel.quantity.toString()}",
-                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  Text(
-                    "Size: ${cartModel.size}",
-                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
+                  ProductPriceBuilder(price: totalPrice),
+                  Text(' | Qty: ${cartModel.quantity}')
+                ],
+              )
+            : Row(
+                children: [
+                  ProductPriceBuilder(price: cartModel.price),
+                  Text(' x${cartModel.quantity}')
                 ],
               ),
-              if (!isEditing)
-                BuyElevatedButton(
-                  checkouts: [
-                    CheckoutItem(
-                        name: cartModel.name,
-                        amount: cartModel.price.round(),
-                        quantity: cartModel.quantity),
-                  ],
+        trailing: isDefault
+            ? InkWell(
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return ProductDetail(
+                      productModel: CartToProduct(cartModel: cartModel)
+                          .getConvertedProduct(),
+                    );
+                  }));
+                },
+                child: CustomSingleImage(
+                  image: cartModel.imageUrls[0],
+                  disableGestures: true,
+                  aspectRatio: 1,
+                  isNetwork: true,
                 ),
-            ],
-          ),
-          isThreeLine: true,
-        ),
+              )
+            : Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Subtotal:'),
+                  ProductPriceBuilder(price: totalPrice),
+                ],
+              ),
       ),
     );
   }
+}
 
-  void _showEditCartSheet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true, // Allow the bottom sheet to take full height
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+class CheckoutTile extends StatelessWidget {
+  final CartModel checkoutItem;
+  const CheckoutTile({
+    super.key,
+    required this.checkoutItem,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        onTap: () {},
+        leading: CustomSingleImage(
+          image: checkoutItem.imageUrls[0],
+          disableGestures: true,
+          aspectRatio: 1,
+          isNetwork: true,
+        ),
+        title: Text("${checkoutItem.name} (${checkoutItem.quantity})"),
+        subtitle: ProductPriceBuilder(
+            price: checkoutItem.quantity * checkoutItem.price),
+        isThreeLine: true,
       ),
-      builder: (context) {
-        return Padding(
-          padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context)
-                .viewInsets
-                .bottom, // Handle keyboard overlap
-          ),
-          child: EditCartBottomSheet(
-              cartModel: cartModel), // Content inside the bottom sheet
-        );
-      },
     );
   }
 }

@@ -1,0 +1,31 @@
+{
+    "1702579462064339:44516": {
+        "IFileManager": {
+            "path": "Files/File_1702579462064339_44516.js"
+        }
+    },
+    "1702579462065532:44517": {
+        "IResourceController": {
+            "name": "OpticalFlow_100",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462065546:44518",
+            "fileId": "1702579462064339:44516",
+            "expected_hash": "31d1862a71ffbaaf32066b99f197a19a"
+        },
+        "IResourceManager": {
+            "uid": "1702579462065546:44518",
+            "name": "Files/File_1702579462064339_44516.js",
+            "flags": 1
+        }
+    },
+    "1702579462065546:44518": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "NewJSMathLibrary_102"
+            ]
+        }
+    }
+}

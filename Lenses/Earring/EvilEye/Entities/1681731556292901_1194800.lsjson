@@ -1,0 +1,67 @@
+{
+    "1681731556291313:1194799": {
+        "IFileManager": {
+            "path": "Files/File_1681731556291313_1194799.png"
+        }
+    },
+    "1681731556292901:1194800": {
+        "IResourceController": {
+            "name": "Button_bg",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556293217:1194801",
+            "fileId": "1681731556291313:1194799",
+            "originalId": "1681731556293557:1194806",
+            "publicId": "1681731556305360:1194819",
+            "expected_hash": "1d716eca7ee87e8e681dd7c30270c128",
+            "additional": {
+                "originHash": "1d716eca7ee87e8e681dd7c30270c128",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1681731556293217:1194801",
+            "name": "Files/File_1681731556291313_1194799.jpg",
+            "flags": 1
+        }
+    },
+    "1681731556293217:1194801": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "12288",
+                "compressedSize": "2710",
+                "extension": "png",
+                "originalRAM": "12288",
+                "originalSize": "2710",
+                "settings": {
+                    "isCompressed": "false",
+                    "level": "0",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1681731556301566:1194818"
+        }
+    },
+    "1681731556293557:1194806": {
+        "IFileManager": {
+            "path": "Files/File_1681731556293557_1194806.png"
+        }
+    },
+    "1681731556301566:1194818": {
+        "IFileManager": {
+            "path": "Files/File_1681731556301566_1194818.png"
+        }
+    },
+    "1681731556305360:1194819": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Button_bg.png",
+                "hash": "1d716eca7ee87e8e681dd7c30270c128"
+            }
+        }
+    }
+}

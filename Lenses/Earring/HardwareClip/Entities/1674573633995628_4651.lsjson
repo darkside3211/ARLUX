@@ -1,0 +1,23 @@
+{
+    "1674573633995384:4302": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources"
+            }
+        }
+    },
+    "1674573633995628:4651": {
+        "IResourceController": {
+            "name": "3D Resources",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1674573633995384:4302",
+            "resources": [
+                "1674573633995628:4650",
+                "1674573633995515:4644"
+            ]
+        }
+    }
+}

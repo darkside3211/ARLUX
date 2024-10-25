@@ -1,0 +1,80 @@
+{
+    "1677153666283888:85267": {
+        "IFileManager": {
+            "path": "Files/File_1677153666283888_85267.jpeg"
+        }
+    },
+    "1677153666285664:85268": {
+        "IResourceController": {
+            "name": "C_AtOYZY",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666285978:85269",
+            "fileId": "1677153666283888:85267",
+            "originalId": "1677153666286339:85274",
+            "publicId": "1686647826338169:706384",
+            "expected_hash": "ea457225b2749ddf468c2a6b6ff97c60",
+            "additional": {
+                "originHash": "ea457225b2749ddf468c2a6b6ff97c60",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666285978:85269",
+            "name": "Files/File_1677153666283888_85267.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666285978:85269": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "ea457225b2749ddf468c2a6b6ff97c60"
+                    },
+                    "v": "1677153673617967:87111"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "65536",
+                "compressedSize": "14980",
+                "extension": "jpeg",
+                "originalRAM": "65536",
+                "originalSize": "14980",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666294553:85280"
+        }
+    },
+    "1677153666286339:85274": {
+        "IFileManager": {
+            "path": "Files/File_1677153666286339_85274.jpeg"
+        }
+    },
+    "1677153666294553:85280": {
+        "IFileManager": {
+            "path": "Files/File_1677153666294553_85280.jpeg"
+        }
+    },
+    "1677153673617967:87111": {
+        "IFileManager": {
+            "path": "Files/File_1677153673617967_87111.jpeg"
+        }
+    },
+    "1686647826338169:706384": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/C_AtOYZY.jpeg",
+                "hash": "ea457225b2749ddf468c2a6b6ff97c60"
+            }
+        }
+    }
+}

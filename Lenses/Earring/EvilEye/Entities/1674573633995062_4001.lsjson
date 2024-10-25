@@ -1,0 +1,80 @@
+{
+    "1663690588256665:253422": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "5178d8fc24ebf5aa52142eedb873cb03"
+                    },
+                    "v": "1674573633995181:4158"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "262144",
+                "compressedSize": "20664",
+                "extension": "jpg",
+                "originalRAM": "262144",
+                "originalSize": "20664",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1674573633995125:4113"
+        }
+    },
+    "1674573633995062:4001": {
+        "IResourceController": {
+            "name": "gem_black",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690588256665:253422",
+            "fileId": "1674573633995123:4111",
+            "originalId": "1674573633995124:4112",
+            "publicId": "1728871209782573:1520722",
+            "expected_hash": "5178d8fc24ebf5aa52142eedb873cb03",
+            "additional": {
+                "originHash": "5178d8fc24ebf5aa52142eedb873cb03",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1663690588256665:253422",
+            "name": "Files/File_1674573633995123_4111.jpg",
+            "flags": 1
+        }
+    },
+    "1674573633995123:4111": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995123_4111.jpg"
+        }
+    },
+    "1674573633995124:4112": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995124_4112.jpg"
+        }
+    },
+    "1674573633995125:4113": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995125_4113.jpg"
+        }
+    },
+    "1674573633995181:4158": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995181_4158.jpg"
+        }
+    },
+    "1728871209782573:1520722": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/gem_black.jpg",
+                "hash": "5178d8fc24ebf5aa52142eedb873cb03"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "1679215142078284:636063": {
+        "IFileManager": {
+            "path": "Files/File_1679215142078284_636063.js"
+        }
+    },
+    "1679215142079861:636064": {
+        "IResourceController": {
+            "name": "EuroFilter",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1679215142079872:636065",
+            "fileId": "1679215142078284:636063",
+            "publicId": "1686647826362390:706415",
+            "expected_hash": "ad42ddc7e9df0794fb83ada411ce5f06"
+        },
+        "IResourceManager": {
+            "uid": "1679215142079872:636065",
+            "name": "Files/File_1679215142078284_636063.js",
+            "flags": 1
+        }
+    },
+    "1679215142079872:636065": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1686647826362390:706415": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Scripts/EuroFilter.js",
+                "hash": "ad42ddc7e9df0794fb83ada411ce5f06"
+            }
+        }
+    }
+}

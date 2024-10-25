@@ -1,0 +1,38 @@
+{
+    "1663690726094049:277620": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1674573633995065:4020": {
+        "IResourceController": {
+            "name": "Earring API Example",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690726094049:277620",
+            "fileId": "1674573633995190:4165",
+            "publicId": "1674573633995397:4348",
+            "expected_hash": "2440a0869ba990b9a185e55a57863ea2"
+        },
+        "IResourceManager": {
+            "uid": "1663690726094049:277620",
+            "name": "Files/File_1674573633995190_4165.js",
+            "flags": 1
+        }
+    },
+    "1674573633995190:4165": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995190_4165.js"
+        }
+    },
+    "1674573633995397:4348": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Earring API Example.js",
+                "hash": "2440a0869ba990b9a185e55a57863ea2"
+            }
+        }
+    }
+}

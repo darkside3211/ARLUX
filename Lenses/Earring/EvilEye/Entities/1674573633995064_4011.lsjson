@@ -1,0 +1,39 @@
+{
+    "1674573633995064:4011": {
+        "IResourceController": {
+            "name": "Pearl env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690589191798:253974",
+            "fileId": "1674573633995157:4138",
+            "originalId": "1674573633995158:4139",
+            "publicId": "1728871177785123:1501075",
+            "expected_hash": "9e6964ee40d737ea9f35130a51f16cb3"
+        },
+        "IResourceManager": {
+            "uid": "1663690589191798:253974",
+            "name": "Files/File_1674573633995157_4138",
+            "flags": 1
+        }
+    },
+    "1674573633995157:4138": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995157_4138"
+        }
+    },
+    "1674573633995158:4139": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995158_4139.lsmat"
+        }
+    },
+    "1728871177785123:1501075": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Pearl env.lsmat",
+                "hash": "343428f4549af22bd170fcd7a749e1e5"
+            }
+        }
+    }
+}

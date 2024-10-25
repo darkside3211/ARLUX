@@ -1,0 +1,53 @@
+{
+    "1728869457866972:811850": {
+        "IResourceController": {
+            "name": "EvilEyeEarring-Single",
+            "type": 18,
+            "subtype": -1,
+            "dependency": 2,
+            "hidden": false,
+            "fileId": "1728869460671855:812875",
+            "publicId": "1728869460716719:812896",
+            "expected_hash": "87f3c3fee9da138047d5b813e263fddb",
+            "resources": [
+                "1728869459766797:812412",
+                "1728869459820583:812454",
+                "1728869459879334:812480",
+                "1728869460621585:812822"
+            ],
+            "additional": {
+                "ImportParams": {
+                    "animationCurveOptimization": "true",
+                    "convertMetersToCentimeters": "true",
+                    "importMorphTargetAnimation": "true",
+                    "importTangents": "true",
+                    "importVertexColor": "true",
+                    "recalculateTangents": "false"
+                },
+                "materialMapping": [
+                    {
+                        "k": "EyeBall",
+                        "v": "1728869459881412:812483"
+                    },
+                    {
+                        "k": "Gold",
+                        "v": "1728869460264745:812624"
+                    }
+                ]
+            }
+        }
+    },
+    "1728869460671855:812875": {
+        "IFileManager": {
+            "path": "Files/File_1728869460671855_812875.glb"
+        }
+    },
+    "1728869460716719:812896": {
+        "IResourceController": {
+            "public": {
+                "path": "EvilEyeEarring-Single.glb",
+                "hash": "87f3c3fee9da138047d5b813e263fddb"
+            }
+        }
+    }
+}

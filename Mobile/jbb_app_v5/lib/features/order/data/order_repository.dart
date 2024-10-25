@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
+import 'package:jbb_app_v5/features/auth/model/user_model.dart';
 import 'package:jbb_app_v5/features/order/model/order_model.dart';
-import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -12,12 +12,16 @@ part 'order_repository.g.dart';
 class OrderRepository {
   final Dio dio = DioInstance().getDioInstance();
 
-  Future<void> checkoutOrder(
-      {required List<CheckoutItem> jewelryItems, required String? token}) async {
+  Future<String?> checkoutOrder({
+    required List<CheckoutItem> jewelryItems,
+    required AddressModel address,
+    required String? token,
+  }) async {
     try {
       final Response result = await dio.request(
         '/users/auth/checkout',
         data: {
+          "address": address.toPayMongoJson(),
           "jewelryItems": jewelryItems,
         },
         options: Options(
@@ -31,11 +35,12 @@ class OrderRepository {
 
       if (result.statusCode == 200) {
         final json = result.data;
-        LaunchCheckout(checkoutUrl: json["checkoutURL"]!);
+        return json["checkoutURL"];
       }
     } catch (e) {
       ToastFailure(message: e.toString());
     }
+    return null;
   }
 
   Future<List<OrderModel>> getOrders({required String? token}) async {
@@ -52,20 +57,15 @@ class OrderRepository {
       );
 
       if (result.statusCode == 200) {
-        final json = result.data as List<dynamic>;
+        final List<dynamic> json = result.data;
 
-        List<OrderModel> jewelries =
-            json.map((item) => OrderModel.fromJson(item)).toList();
-
-        await ProductLocalRepository().cacheOrder(jewelries);
-
-        return jewelries;
+        return json.map((order) => OrderModel.fromJson(order)).toList();
       } else {
-        ToastFailure(message: "failed to get order items.");
-        return ProductLocalRepository().getCachedOrders();
+        throw Exception("Failed to fetch orders.");
       }
     } catch (e) {
-      throw Exception(e);
+      ToastFailure(message: "Failed to fetch user orders.");
+      throw Exception(e.toString());
     }
   }
 }
@@ -76,17 +76,24 @@ OrderRepository orderRepository(OrderRepositoryRef ref) {
 }
 
 @riverpod
-Future<void> checkoutOrder(CheckoutOrderRef ref,
-    {required List<CheckoutItem> orders}) async {
+Future<String?> checkoutOrder(
+  CheckoutOrderRef ref, {
+  required List<CheckoutItem> orders,
+  required AddressModel address,
+}) async {
   final OrderRepository orderRepository = ref.watch(orderRepositoryProvider);
   final String? firebaseToken =
       await ref.watch(getFirebaseTokenProvider.future);
 
-  await orderRepository.checkoutOrder(
-      jewelryItems: orders, token: firebaseToken);
+  final order = await orderRepository.checkoutOrder(
+      address: address, jewelryItems: orders, token: firebaseToken);
 
-  // ignore: unused_result
-  ref.refresh(getOrdersProvider);
+  if (order != null) {
+    // ignore: unused_result
+    ref.refresh(getOrdersProvider);
+  }
+
+  return order;
 }
 
 @riverpod
@@ -97,7 +104,7 @@ Future<List<OrderModel>> getOrders(GetOrdersRef ref) async {
 
   final items = await orderRepository.getOrders(token: firebaseToken);
 
-  ref.read(ordersItemCountProvider.notifier).state = items.length;
+  ref.read(orderStatusCountProvider.notifier).updateCounts(items);
 
   return items;
 }

@@ -1,0 +1,38 @@
+{
+    "1681731556844515:1195192": {
+        "IFileManager": {
+            "path": "Files/File_1681731556844515_1195192.js"
+        }
+    },
+    "1681731556845959:1195194": {
+        "IResourceController": {
+            "name": "Exit Btn",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556845970:1195195",
+            "fileId": "1681731556844515:1195192",
+            "publicId": "1681731556850381:1195207",
+            "expected_hash": "444c4c1668ec11b5a7e4e85facbf5e80"
+        },
+        "IResourceManager": {
+            "uid": "1681731556845970:1195195",
+            "name": "Files/File_1681731556844515_1195192.js",
+            "flags": 1
+        }
+    },
+    "1681731556845970:1195195": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1681731556850381:1195207": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Helpers/Exit Btn.js",
+                "hash": "444c4c1668ec11b5a7e4e85facbf5e80"
+            }
+        }
+    }
+}

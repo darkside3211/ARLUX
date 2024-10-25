@@ -1,0 +1,80 @@
+{
+    "1661794207896941:51104": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "671afbc1d6810060ccbaac866a91cfa1"
+                    },
+                    "v": "1686755079904652:1096"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "1024",
+                "compressedSize": "1407",
+                "extension": "png",
+                "originalRAM": "8192",
+                "originalSize": "2856",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1686755079904647:1092"
+        }
+    },
+    "1686755079904632:1016": {
+        "IResourceController": {
+            "name": "echopark_diff",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1661794207896941:51104",
+            "fileId": "1686755079904641:1090",
+            "originalId": "1686755079904646:1091",
+            "publicId": "1701112777765839:4535",
+            "expected_hash": "edd5d3664362007600485c9f8406c48d",
+            "additional": {
+                "originHash": "671afbc1d6810060ccbaac866a91cfa1",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1661794207896941:51104",
+            "name": "Files/File14.jpg",
+            "flags": 1
+        }
+    },
+    "1686755079904641:1090": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904641_1090.pvr"
+        }
+    },
+    "1686755079904646:1091": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904646_1091.png"
+        }
+    },
+    "1686755079904647:1092": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904647_1092.png"
+        }
+    },
+    "1686755079904652:1096": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904652_1096.pvr"
+        }
+    },
+    "1701112777765839:4535": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Echopark/echopark_diff.png",
+                "hash": "671afbc1d6810060ccbaac866a91cfa1"
+            }
+        }
+    }
+}

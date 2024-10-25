@@ -1,0 +1,17 @@
+{
+    "1692169261505399:277221": {
+        "IResourceController": {
+            "name": "UI Render Target",
+            "type": 1,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1692169261505394:277220"
+        },
+        "IResourceManager": {
+            "uid": "1692169261505394:277220",
+            "name": "Render Target",
+            "flags": 0
+        }
+    }
+}

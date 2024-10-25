@@ -1,0 +1,17 @@
+{
+    "1687334705208089:66489": {
+        "IResourceController": {
+            "name": "Portrait Hair Segmentation",
+            "type": 1,
+            "subtype": 14,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1687334705206646:66483"
+        },
+        "IResourceManager": {
+            "uid": "1687334705206646:66483",
+            "name": "Portrait Background Segmentation",
+            "flags": 0
+        }
+    }
+}

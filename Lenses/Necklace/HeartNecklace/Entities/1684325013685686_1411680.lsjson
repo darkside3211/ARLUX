@@ -1,0 +1,40 @@
+{
+    "1684325013683629:1411679": {
+        "IFileManager": {
+            "path": "Files/File_1684325013683629_1411679.js"
+        }
+    },
+    "1684325013685686:1411680": {
+        "IResourceController": {
+            "name": "SmoothTracking",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1684325013685703:1411681",
+            "fileId": "1684325013683629:1411679",
+            "publicId": "1686647826361663:706413",
+            "expected_hash": "d890f3848154e38ae1c30fd2ccb9e3e9"
+        },
+        "IResourceManager": {
+            "uid": "1684325013685703:1411681",
+            "name": "Files/File_1684325013683629_1411679.js",
+            "flags": 1
+        }
+    },
+    "1684325013685703:1411681": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "SceneObjectHelpersModule"
+            ]
+        }
+    },
+    "1686647826361663:706413": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Scripts/SmoothTracking.js",
+                "hash": "d890f3848154e38ae1c30fd2ccb9e3e9"
+            }
+        }
+    }
+}

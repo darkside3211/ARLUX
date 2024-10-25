@@ -1,0 +1,30 @@
+{
+    "1728869323457054:763528": {
+        "IResourceController": {
+            "name": "TrackedScreenCrop",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323457000:763525",
+            "fileId": "1728869323495409:763532",
+            "originalId": "1728869328124532:764556",
+            "expected_hash": "3d701366fdcfbc169e0fb90b2d667548"
+        },
+        "IResourceManager": {
+            "uid": "1728869323457000:763525",
+            "name": "sceneObject_0",
+            "flags": 0
+        }
+    },
+    "1728869323495409:763532": {
+        "IFileManager": {
+            "path": "Files/File_1728869323495409_763532.oprfb"
+        }
+    },
+    "1728869328124532:764556": {
+        "IFileManager": {
+            "path": "Files/File_1728869328124532_764556.oprfb"
+        }
+    }
+}

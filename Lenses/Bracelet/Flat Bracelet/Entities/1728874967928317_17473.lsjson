@@ -1,0 +1,22 @@
+{
+    "1728874967928317:17473": {
+        "IResourceController": {
+            "name": "Materials",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1728874968416675:17702",
+            "resources": [
+                "1728874967930862:17475"
+            ]
+        }
+    },
+    "1728874968416675:17702": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/FlatBracelet-LowPoly/Materials"
+            }
+        }
+    }
+}

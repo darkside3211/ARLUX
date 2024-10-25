@@ -1,0 +1,39 @@
+{
+    "1674573633995066:4032": {
+        "IResourceController": {
+            "name": "Gold chains env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666176885258585:6096102",
+            "fileId": "1674573633995221:4190",
+            "originalId": "1674573633995222:4191",
+            "publicId": "1728871176358758:1497951",
+            "expected_hash": "6dc48e3bc2bedec8fbceeea8028df17d"
+        },
+        "IResourceManager": {
+            "uid": "1666176885258585:6096102",
+            "name": "Files/File_1674573633995221_4190",
+            "flags": 1
+        }
+    },
+    "1674573633995221:4190": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995221_4190"
+        }
+    },
+    "1674573633995222:4191": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995222_4191.lsmat"
+        }
+    },
+    "1728871176358758:1497951": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Gold chains env.lsmat",
+                "hash": "8eb2ebbce79d2374d524f8dc9eca69c5"
+            }
+        }
+    }
+}

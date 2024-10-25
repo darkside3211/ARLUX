@@ -1,0 +1,38 @@
+{
+    "1681731556828793:1195110": {
+        "IFileManager": {
+            "path": "Files/File_1681731556828793_1195110.js"
+        }
+    },
+    "1681731556830399:1195120": {
+        "IResourceController": {
+            "name": "Zoom Btn Ctrl",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556830415:1195121",
+            "fileId": "1681731556828793:1195110",
+            "publicId": "1681731556834282:1195152",
+            "expected_hash": "1a088bea14aca38f6cd902928b1c40ab"
+        },
+        "IResourceManager": {
+            "uid": "1681731556830415:1195121",
+            "name": "Files/File_1681731556828793_1195110.js",
+            "flags": 1
+        }
+    },
+    "1681731556830415:1195121": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1681731556834282:1195152": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Zoom/Zoom Btn Ctrl.js",
+                "hash": "1a088bea14aca38f6cd902928b1c40ab"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "1728876717251250:470603": {
+        "IFileManager": {
+            "path": "Files/File_1728876717251250_470603"
+        }
+    },
+    "1728876717253113:470604": {
+        "IResourceController": {
+            "name": "Gold",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728876717253119:470605",
+            "fileId": "1728876717251250:470603",
+            "originalId": "1728876717279697:470611",
+            "publicId": "1728876717738988:470792",
+            "expected_hash": "20b64ecbdcf7e2b82c0aa29038627025"
+        },
+        "IResourceManager": {
+            "uid": "1728876717253119:470605",
+            "name": "Files/File_1728876717251250_470603",
+            "flags": 1
+        }
+    },
+    "1728876717279697:470611": {
+        "IFileManager": {
+            "path": "Files/File_1728876717279697_470611.lsmat"
+        }
+    },
+    "1728876717738988:470792": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/HeartNecklace-lowpoly/Materials/Gold.lsmat",
+                "hash": "3d82165db459dcd6b1d882b7987078bb"
+            }
+        }
+    }
+}

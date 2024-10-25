@@ -1,0 +1,22 @@
+{
+    "1728869459820583:812454": {
+        "IResourceController": {
+            "name": "Textures",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1728869460717452:812897",
+            "resources": [
+                "1728869459828792:812456"
+            ]
+        }
+    },
+    "1728869460717452:812897": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/EvilEyeEarring-Single/Textures"
+            }
+        }
+    }
+}

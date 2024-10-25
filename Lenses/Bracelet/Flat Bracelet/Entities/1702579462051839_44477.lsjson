@@ -1,0 +1,31 @@
+{
+    "1702579462050921:44476": {
+        "IFileManager": {
+            "path": "Files/File_1702579462050921_44476.js"
+        }
+    },
+    "1702579462051839:44477": {
+        "IResourceController": {
+            "name": "ObjectBinding_002",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462051844:44478",
+            "fileId": "1702579462050921:44476",
+            "expected_hash": "754a6a0b8d22723ca06d0589498fc3af"
+        },
+        "IResourceManager": {
+            "uid": "1702579462051844:44478",
+            "name": "Files/File_1702579462050921_44476.js",
+            "flags": 1
+        }
+    },
+    "1702579462051844:44478": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "NewJSMathLibrary_102"
+            ]
+        }
+    }
+}

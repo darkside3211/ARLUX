@@ -1,0 +1,80 @@
+{
+    "1678093961621655:22957": {
+        "IFileManager": {
+            "path": "Files/File_1678093961621655_22957.pvr"
+        }
+    },
+    "1678093961622700:22958": {
+        "IResourceController": {
+            "name": "Necklace Icon 3",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678093961623024:22959",
+            "fileId": "1678093961621655:22957",
+            "originalId": "1678093961623271:22964",
+            "publicId": "1686647826344373:706395",
+            "expected_hash": "71eab49b9cc945c63bb39e445c4a67ab",
+            "additional": {
+                "originHash": "d1ff83a3e47d18635dab388ce8e7cbb7",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1678093961623024:22959",
+            "name": "Files/File_1678093961621655_22957.jpg",
+            "flags": 1
+        }
+    },
+    "1678093961623024:22959": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "d1ff83a3e47d18635dab388ce8e7cbb7"
+                    },
+                    "v": "1678093968639929:29200"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "130104",
+                "compressedSize": "7056",
+                "extension": "png",
+                "originalRAM": "1032656",
+                "originalSize": "37276",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1678093961632826:22972"
+        }
+    },
+    "1678093961623271:22964": {
+        "IFileManager": {
+            "path": "Files/File_1678093961623271_22964.png"
+        }
+    },
+    "1678093961632826:22972": {
+        "IFileManager": {
+            "path": "Files/File_1678093961632826_22972.png"
+        }
+    },
+    "1678093968639929:29200": {
+        "IFileManager": {
+            "path": "Files/File_1678093968639929_29200.pvr"
+        }
+    },
+    "1686647826344373:706395": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Necklace Icon 3.png",
+                "hash": "d1ff83a3e47d18635dab388ce8e7cbb7"
+            }
+        }
+    }
+}

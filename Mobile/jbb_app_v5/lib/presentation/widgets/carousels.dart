@@ -6,6 +6,9 @@ import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/features/products/model/search_product_model.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
+import 'package:jbb_app_v5/presentation/pages/order/order_page.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
+import 'package:jbb_app_v5/presentation/widgets/custom_icons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_card.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
@@ -79,7 +82,7 @@ class ProductCategoryCarousel extends StatelessWidget implements Carousels {
   }
 }
 
-class ProductFeaturedCarousel extends ConsumerWidget {
+class ProductFeaturedCarousel extends ConsumerWidget implements Carousels {
   const ProductFeaturedCarousel({super.key});
 
   @override
@@ -120,6 +123,51 @@ class ProductFeaturedCarousel extends ConsumerWidget {
         loading: () => const Center(
           child: CircularProgressIndicator(color: Colors.amber),
         ),
+      ),
+    );
+  }
+}
+
+class UserPurchasesCarousel extends ConsumerWidget implements Carousels {
+  const UserPurchasesCarousel({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final orderItems = ref.watch(orderStatusCountProvider);
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsetsDirectional.symmetric(horizontal: 16),
+      child: Row(
+        children: [
+          CustomIconWithCount(
+            count: orderItems.totalOrders,
+            title: 'All',
+            icon: const Icon(Icons.all_inbox),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const OrderPage()));
+            },
+          ),
+          CustomIconWithCount(
+            count: orderItems.toPay,
+            title: 'To Pay',
+            icon: const Icon(Icons.payments_outlined),
+          ),
+          CustomIconWithCount(
+            count: orderItems.toShip,
+            title: 'To Ship',
+            icon: const Icon(Icons.local_shipping_outlined),
+          ),
+          CustomIconWithCount(
+            count: orderItems.toReceive,
+            title: 'To Receive',
+            icon: const Icon(Icons.shopping_bag_outlined),
+          ),
+          CustomIconWithCount(
+            count: orderItems.toRate,
+            title: 'To Rate',
+            icon: const Icon(Icons.rate_review_outlined),
+          ),
+        ],
       ),
     );
   }

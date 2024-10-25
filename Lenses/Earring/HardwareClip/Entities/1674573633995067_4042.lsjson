@@ -1,0 +1,79 @@
+{
+    "1666602554879578:34012": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "bf3b9768fc5b2c9d517ce6059d790ca9"
+                    },
+                    "v": "1674573633995264:4220"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "8192",
+                "compressedSize": "3733",
+                "extension": "png",
+                "originalRAM": "65536",
+                "originalSize": "5833",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1674573633995254:4212"
+        }
+    },
+    "1674573633995067:4042": {
+        "IResourceController": {
+            "name": "leaf_normal",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666602554879578:34012",
+            "fileId": "1674573633995249:4210",
+            "originalId": "1674573633995253:4211",
+            "publicId": "1728871209784137:1520723",
+            "expected_hash": "659bc2a92aec532500d28242f962baeb",
+            "additional": {
+                "originHash": "bf3b9768fc5b2c9d517ce6059d790ca9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1666602554879578:34012",
+            "name": "Files/File703.png",
+            "flags": 1
+        }
+    },
+    "1674573633995249:4210": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995249_4210.pvr"
+        }
+    },
+    "1674573633995253:4211": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995253_4211.png"
+        }
+    },
+    "1674573633995254:4212": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995254_4212.png"
+        }
+    },
+    "1674573633995264:4220": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995264_4220.pvr"
+        }
+    },
+    "1728871209784137:1520723": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/leaf_normal.png",
+                "hash": "bf3b9768fc5b2c9d517ce6059d790ca9"
+            }
+        }
+    }
+}

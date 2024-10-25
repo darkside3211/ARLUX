@@ -1,0 +1,40 @@
+{
+    "1681731772983409:1344860": {
+        "IFileManager": {
+            "path": "Files/File_1681731772983409_1344860.js"
+        }
+    },
+    "1681731772986502:1344861": {
+        "IResourceController": {
+            "name": "Zoom To Ear",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731772986514:1344862",
+            "fileId": "1681731772983409:1344860",
+            "publicId": "1681731772990148:1344872",
+            "expected_hash": "a2e06a9d14611ba81b920ac7d309040a"
+        },
+        "IResourceManager": {
+            "uid": "1681731772986514:1344862",
+            "name": "Files/File_1681731772983409_1344860.js",
+            "flags": 1
+        }
+    },
+    "1681731772986514:1344862": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "SceneObjectHelpersModule"
+            ]
+        }
+    },
+    "1681731772990148:1344872": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Zoom/Zoom To Ear.js",
+                "hash": "a2e06a9d14611ba81b920ac7d309040a"
+            }
+        }
+    }
+}

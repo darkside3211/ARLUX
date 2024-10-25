@@ -1,0 +1,39 @@
+{
+    "1702579462043044:44445": {
+        "IFileManager": {
+            "path": "Files/File_1702579462043044_44445.js"
+        }
+    },
+    "1702579462044405:44447": {
+        "IResourceController": {
+            "name": "Wrist Binding",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462044613:44449",
+            "fileId": "1702579462043044:44445",
+            "expected_hash": "1cfc26e17e625663e38ec0fba6fefcfa"
+        },
+        "IResourceManager": {
+            "uid": "1702579462044613:44449",
+            "name": "Files/File_1702579462043044_44445.js",
+            "flags": 1
+        }
+    },
+    "1702579462044613:44449": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "WristKeypointConfig_HE",
+                "GenericHelperScript_001",
+                "NewJSMathLibrary_102",
+                "Solver_101",
+                "ObjectBinding_002",
+                "Annotator_002",
+                "OpticalFlow_100",
+                "SceneObjectHelpersModule_110",
+                "EventModule_101"
+            ]
+        }
+    }
+}

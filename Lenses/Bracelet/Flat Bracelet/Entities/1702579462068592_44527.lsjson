@@ -1,0 +1,32 @@
+{
+    "1702579462067647:44526": {
+        "IFileManager": {
+            "path": "Files/File_1702579462067647_44526.js"
+        }
+    },
+    "1702579462068592:44527": {
+        "IResourceController": {
+            "name": "GenericDecoders_002",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462068600:44528",
+            "fileId": "1702579462067647:44526",
+            "expected_hash": "e266b9fc3b8efa4f1df7266e090d8706"
+        },
+        "IResourceManager": {
+            "uid": "1702579462068600:44528",
+            "name": "Files/File_1702579462067647_44526.js",
+            "flags": 1
+        }
+    },
+    "1702579462068600:44528": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "NewJSMathLibrary_102",
+                "GenericHelperScript_001"
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "1686755079905073:1404": {
+        "IResourceController": {
+            "name": "Friendship Bracelet",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1701112777767513:4537",
+            "resources": [
+                "1686755079904633:1020",
+                "1686755079904633:1021",
+                "1686755079904633:1022"
+            ]
+        }
+    },
+    "1701112777767513:4537": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Friendship Bracelet"
+            }
+        }
+    }
+}

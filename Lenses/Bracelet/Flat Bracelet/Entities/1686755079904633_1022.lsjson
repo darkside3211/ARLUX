@@ -1,0 +1,80 @@
+{
+    "1666104582408973:8651055": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "861808e5982b74a2d518872b7aa362fa"
+                    },
+                    "v": "1686755079904685:1122"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "4194304",
+                "compressedSize": "21699",
+                "extension": "jpg",
+                "originalRAM": "4194304",
+                "originalSize": "21699",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1686755079904676:1115"
+        }
+    },
+    "1686755079904633:1022": {
+        "IResourceController": {
+            "name": "FriendshipBraceletLetters",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666104582408973:8651055",
+            "fileId": "1686755079904673:1113",
+            "originalId": "1686755079904675:1114",
+            "publicId": "1701112777769271:4540",
+            "expected_hash": "861808e5982b74a2d518872b7aa362fa",
+            "additional": {
+                "originHash": "861808e5982b74a2d518872b7aa362fa",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1666104582408973:8651055",
+            "name": "Files/File_1686755079904673_1113.jpg",
+            "flags": 1
+        }
+    },
+    "1686755079904673:1113": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904673_1113.jpg"
+        }
+    },
+    "1686755079904675:1114": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904675_1114.jpg"
+        }
+    },
+    "1686755079904676:1115": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904676_1115.jpg"
+        }
+    },
+    "1686755079904685:1122": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904685_1122.jpg"
+        }
+    },
+    "1701112777769271:4540": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Friendship Bracelet/FriendshipBraceletLetters.jpg",
+                "hash": "861808e5982b74a2d518872b7aa362fa"
+            }
+        }
+    }
+}

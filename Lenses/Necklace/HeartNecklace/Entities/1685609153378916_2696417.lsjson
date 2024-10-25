@@ -1,0 +1,38 @@
+{
+    "1685609153376591:2696416": {
+        "IFileManager": {
+            "path": "Files/File_1685609153376591_2696416.js"
+        }
+    },
+    "1685609153378916:2696417": {
+        "IResourceController": {
+            "name": "SceneObjectHelpersModule",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685609153378931:2696418",
+            "fileId": "1685609153376591:2696416",
+            "publicId": "1686647826363262:706417",
+            "expected_hash": "3840708d98d4624b318c7a53b1a45433"
+        },
+        "IResourceManager": {
+            "uid": "1685609153378931:2696418",
+            "name": "Files/File_1685609153376591_2696416.js",
+            "flags": 1
+        }
+    },
+    "1685609153378931:2696418": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1686647826363262:706417": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Scripts/SceneObjectHelpersModule.js",
+                "hash": "3840708d98d4624b318c7a53b1a45433"
+            }
+        }
+    }
+}

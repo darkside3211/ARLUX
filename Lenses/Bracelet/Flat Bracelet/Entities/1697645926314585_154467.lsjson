@@ -1,0 +1,22 @@
+{
+    "1697645926314585:154467": {
+        "IResourceController": {
+            "name": "Static",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1701112777792677:4550",
+            "resources": [
+                "1697645926309287:154455"
+            ]
+        }
+    },
+    "1701112777792677:4550": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Hint/Static"
+            }
+        }
+    }
+}

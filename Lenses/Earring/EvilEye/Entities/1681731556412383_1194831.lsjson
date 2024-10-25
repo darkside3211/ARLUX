@@ -1,0 +1,67 @@
+{
+    "1681731556410216:1194830": {
+        "IFileManager": {
+            "path": "Files/File_1681731556410216_1194830.png"
+        }
+    },
+    "1681731556412383:1194831": {
+        "IResourceController": {
+            "name": "Picture_icon",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556412602:1194832",
+            "fileId": "1681731556410216:1194830",
+            "originalId": "1681731556413090:1194837",
+            "publicId": "1681731556424373:1194845",
+            "expected_hash": "f75a9d9f12d2d0e8433d4d6092a8e937",
+            "additional": {
+                "originHash": "f75a9d9f12d2d0e8433d4d6092a8e937",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1681731556412602:1194832",
+            "name": "Files/File_1681731556410216_1194830.jpg",
+            "flags": 1
+        }
+    },
+    "1681731556412602:1194832": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "23104",
+                "compressedSize": "1862",
+                "extension": "png",
+                "originalRAM": "23104",
+                "originalSize": "1862",
+                "settings": {
+                    "isCompressed": "false",
+                    "level": "0",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1681731556419705:1194844"
+        }
+    },
+    "1681731556413090:1194837": {
+        "IFileManager": {
+            "path": "Files/File_1681731556413090_1194837.png"
+        }
+    },
+    "1681731556419705:1194844": {
+        "IFileManager": {
+            "path": "Files/File_1681731556419705_1194844.png"
+        }
+    },
+    "1681731556424373:1194845": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Picture_icon.png",
+                "hash": "f75a9d9f12d2d0e8433d4d6092a8e937"
+            }
+        }
+    }
+}

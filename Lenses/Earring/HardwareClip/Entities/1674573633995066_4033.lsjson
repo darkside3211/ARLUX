@@ -1,0 +1,39 @@
+{
+    "1674573633995066:4033": {
+        "IResourceController": {
+            "name": "Metal gold env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666176885751613:6096328",
+            "fileId": "1674573633995223:4192",
+            "originalId": "1674573633995225:4193",
+            "publicId": "1728871176048088:1496951",
+            "expected_hash": "2e44ff35ba52c1f9096a9af2920467c5"
+        },
+        "IResourceManager": {
+            "uid": "1666176885751613:6096328",
+            "name": "Files/File_1674573633995223_4192",
+            "flags": 1
+        }
+    },
+    "1674573633995223:4192": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995223_4192"
+        }
+    },
+    "1674573633995225:4193": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995225_4193.lsmat"
+        }
+    },
+    "1728871176048088:1496951": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Metal gold env.lsmat",
+                "hash": "8c2d595ce41adffde93da35201a46134"
+            }
+        }
+    }
+}

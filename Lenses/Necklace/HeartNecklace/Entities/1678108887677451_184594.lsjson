@@ -1,0 +1,39 @@
+{
+    "1678108887675260:184593": {
+        "IFileManager": {
+            "path": "Files/File_1678108887675260_184593"
+        }
+    },
+    "1678108887677451:184594": {
+        "IResourceController": {
+            "name": "Occluder",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678108887677456:184595",
+            "fileId": "1678108887675260:184593",
+            "originalId": "1678108887720753:184601",
+            "publicId": "1686647826360459:706410",
+            "expected_hash": "b7a7d0f424b53651980aeb22e65a28d5"
+        },
+        "IResourceManager": {
+            "uid": "1678108887677456:184595",
+            "name": "Files/File_1678108887675260_184593",
+            "flags": 1
+        }
+    },
+    "1678108887720753:184601": {
+        "IFileManager": {
+            "path": "Files/File_1678108887720753_184601.lsmat"
+        }
+    },
+    "1686647826360459:706410": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Occluder.lsmat",
+                "hash": "da372c40a462061199ed6793fc5c1551"
+            }
+        }
+    }
+}

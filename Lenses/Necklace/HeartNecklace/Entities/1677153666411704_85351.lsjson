@@ -1,0 +1,104 @@
+{
+    "1677153666410023:85350": {
+        "IFileManager": {
+            "path": "Files/File_1677153666410023_85350.jpg"
+        }
+    },
+    "1677153666411704:85351": {
+        "IResourceController": {
+            "name": "gold_ball",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666411999:85352",
+            "fileId": "1677153666410023:85350",
+            "originalId": "1677153666412376:85357",
+            "publicId": "1686647826340197:706388",
+            "expected_hash": "4df341e367032bd60bc686c3834ddd5f",
+            "additional": {
+                "originHash": "4df341e367032bd60bc686c3834ddd5f",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666411999:85352",
+            "name": "Files/File_1677153666410023_85350.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666411999:85352": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "1024",
+                        "uncompressed_hash": "4df341e367032bd60bc686c3834ddd5f"
+                    },
+                    "v": "1686038554793815:19986136"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "4df341e367032bd60bc686c3834ddd5f"
+                    },
+                    "v": "1686038556501420:19990402"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3073",
+                        "uncompressed_hash": "4df341e367032bd60bc686c3834ddd5f"
+                    },
+                    "v": "1686038560323209:19997276"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "16384",
+                "compressedSize": "3560",
+                "extension": "jpg",
+                "originalRAM": "16384",
+                "originalSize": "3560",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666422508:85363"
+        }
+    },
+    "1677153666412376:85357": {
+        "IFileManager": {
+            "path": "Files/File_1677153666412376_85357.jpg"
+        }
+    },
+    "1677153666422508:85363": {
+        "IFileManager": {
+            "path": "Files/File_1677153666422508_85363.jpg"
+        }
+    },
+    "1686038554793815:19986136": {
+        "IFileManager": {
+            "path": "Files/File_1686038554793815_19986136.jpg"
+        }
+    },
+    "1686038556501420:19990402": {
+        "IFileManager": {
+            "path": "Files/File_1686038556501420_19990402.jpg"
+        }
+    },
+    "1686038560323209:19997276": {
+        "IFileManager": {
+            "path": "Files/File_1686038560323209_19997276.pvr"
+        }
+    },
+    "1686647826340197:706388": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/gold_ball.jpg",
+                "hash": "4df341e367032bd60bc686c3834ddd5f"
+            }
+        }
+    }
+}

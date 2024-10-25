@@ -1,0 +1,80 @@
+{
+    "1663690587114058:252933": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "88c482b2aafca830a794d80809f5efb1"
+                    },
+                    "v": "1674573633995180:4157"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "40000",
+                "compressedSize": "5780",
+                "extension": "jpg",
+                "originalRAM": "40000",
+                "originalSize": "5780",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1674573633995093:4088"
+        }
+    },
+    "1674573633995061:3989": {
+        "IResourceController": {
+            "name": "refl_white",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690587114058:252933",
+            "fileId": "1674573633995091:4086",
+            "originalId": "1674573633995092:4087",
+            "publicId": "1728871209790096:1520730",
+            "expected_hash": "88c482b2aafca830a794d80809f5efb1",
+            "additional": {
+                "originHash": "88c482b2aafca830a794d80809f5efb1",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1663690587114058:252933",
+            "name": "Files/File_1674573633995091_4086.jpg",
+            "flags": 1
+        }
+    },
+    "1674573633995091:4086": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995091_4086.jpg"
+        }
+    },
+    "1674573633995092:4087": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995092_4087.jpg"
+        }
+    },
+    "1674573633995093:4088": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995093_4088.jpg"
+        }
+    },
+    "1674573633995180:4157": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995180_4157.jpg"
+        }
+    },
+    "1728871209790096:1520730": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/refl_white.jpg",
+                "hash": "88c482b2aafca830a794d80809f5efb1"
+            }
+        }
+    }
+}

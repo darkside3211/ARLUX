@@ -1,0 +1,39 @@
+{
+    "1674573633995064:4014": {
+        "IResourceController": {
+            "name": "Glow",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690589772201:254246",
+            "fileId": "1674573633995164:4144",
+            "originalId": "1674573633995165:4145",
+            "publicId": "1728871177403072:1500042",
+            "expected_hash": "009f894d6ca356bfa52520b5cd4a1b88"
+        },
+        "IResourceManager": {
+            "uid": "1663690589772201:254246",
+            "name": "Files/File_1674573633995164_4144",
+            "flags": 1
+        }
+    },
+    "1674573633995164:4144": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995164_4144"
+        }
+    },
+    "1674573633995165:4145": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995165_4145.lsmat"
+        }
+    },
+    "1728871177403072:1500042": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Glow.lsmat",
+                "hash": "f22f2f4c9480db506ef8a2ff4d18673d"
+            }
+        }
+    }
+}

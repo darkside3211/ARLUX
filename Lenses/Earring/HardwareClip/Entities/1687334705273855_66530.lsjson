@@ -1,0 +1,39 @@
+{
+    "1687334705271925:66529": {
+        "IFileManager": {
+            "path": "Files/File_1687334705271925_66529"
+        }
+    },
+    "1687334705273855:66530": {
+        "IResourceController": {
+            "name": "Hair Occluder",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1687334705273860:66531",
+            "fileId": "1687334705271925:66529",
+            "originalId": "1687334705296051:66537",
+            "publicId": "1687334705358962:66544",
+            "expected_hash": "715e0c029c2e5e2ed7348168d9d827ac"
+        },
+        "IResourceManager": {
+            "uid": "1687334705273860:66531",
+            "name": "Files/File_1687334705271925_66529",
+            "flags": 1
+        }
+    },
+    "1687334705296051:66537": {
+        "IFileManager": {
+            "path": "Files/File_1687334705296051_66537.lsmat"
+        }
+    },
+    "1687334705358962:66544": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Hair Occluder.lsmat",
+                "hash": "e2837340b6936ba2ce1eb845df818549"
+            }
+        }
+    }
+}

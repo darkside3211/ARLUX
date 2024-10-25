@@ -1,0 +1,29 @@
+{
+    "1702579462083196:44574": {
+        "IFileManager": {
+            "path": "Files/File_1702579462083196_44574.js"
+        }
+    },
+    "1702579462084160:44575": {
+        "IResourceController": {
+            "name": "WristKeypointConfig_HE",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462084165:44576",
+            "fileId": "1702579462083196:44574",
+            "expected_hash": "769e2c7d50133fd6e5c97a2248d9ef71"
+        },
+        "IResourceManager": {
+            "uid": "1702579462084165:44576",
+            "name": "Files/File_1702579462083196_44574.js",
+            "flags": 1
+        }
+    },
+    "1702579462084165:44576": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "1702579462057812:44496": {
+        "IFileManager": {
+            "path": "Files/File_1702579462057812_44496.js"
+        }
+    },
+    "1702579462058825:44497": {
+        "IResourceController": {
+            "name": "GenericHelperScript_001",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462058828:44498",
+            "fileId": "1702579462057812:44496",
+            "expected_hash": "b0faf635f159fc997862307b9afb4121"
+        },
+        "IResourceManager": {
+            "uid": "1702579462058828:44498",
+            "name": "Files/File_1702579462057812_44496.js",
+            "flags": 1
+        }
+    },
+    "1702579462058828:44498": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

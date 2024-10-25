@@ -1,0 +1,30 @@
+{
+    "1686211729513249:3945291": {
+        "IFileManager": {
+            "path": "Files/File_1686211729513249_3945291"
+        }
+    },
+    "1686211729514241:3945292": {
+        "IResourceController": {
+            "name": "2D_Shapes_Shader_v1",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1686211729514245:3945293",
+            "fileId": "1686211729513249:3945291",
+            "originalId": "1686211729534201:3945297",
+            "expected_hash": "d3475fd0040ae42feb354dcddc00f01e"
+        },
+        "IResourceManager": {
+            "uid": "1686211729514245:3945293",
+            "name": "Files/File_1686211729513249_3945291",
+            "flags": 1
+        }
+    },
+    "1686211729534201:3945297": {
+        "IFileManager": {
+            "path": "Files/File_1686211729534201_3945297.lsmat"
+        }
+    }
+}

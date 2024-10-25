@@ -1,0 +1,38 @@
+{
+    "1680088903386848:99253": {
+        "IFileManager": {
+            "path": "Files/File_1680088903386848_99253.js"
+        }
+    },
+    "1680088903389894:99254": {
+        "IResourceController": {
+            "name": "TrackingEnable",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1680088903389949:99255",
+            "fileId": "1680088903386848:99253",
+            "publicId": "1686647826357609:706405",
+            "expected_hash": "a803196f67c74080b0d76f2f48884886"
+        },
+        "IResourceManager": {
+            "uid": "1680088903389949:99255",
+            "name": "Files/File_1680088903386848_99253.js",
+            "flags": 1
+        }
+    },
+    "1680088903389949:99255": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1686647826357609:706405": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/TrackingEnable.js",
+                "hash": "a803196f67c74080b0d76f2f48884886"
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "1728869460621585:812822": {
+        "IResourceController": {
+            "name": "EvilEyeEarring-Single",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": false,
+            "uid": "1728869460621440:812788",
+            "fileId": "1728869460659861:812874",
+            "originalId": "1728870242547736:1144422",
+            "expected_hash": "dccc9b64a4dc31633856be0aa186893b"
+        },
+        "IResourceManager": {
+            "uid": "1728869460621440:812788",
+            "name": "GltfImport_0",
+            "flags": 0
+        }
+    },
+    "1728869460659861:812874": {
+        "IFileManager": {
+            "path": "Files/File_1728869460659861_812874.oprfb"
+        }
+    },
+    "1728870242547736:1144422": {
+        "IFileManager": {
+            "path": "Files/File_1728870242547736_1144422.oprfb"
+        }
+    }
+}

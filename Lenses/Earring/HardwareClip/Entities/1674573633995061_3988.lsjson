@@ -1,0 +1,80 @@
+{
+    "1663690587016637:252923": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "007886f89df1a7db95bab27c7946bba8"
+                    },
+                    "v": "1674573633995179:4156"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "16384",
+                "compressedSize": "2911",
+                "extension": "jpg",
+                "originalRAM": "16384",
+                "originalSize": "2911",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1674573633995089:4085"
+        }
+    },
+    "1674573633995061:3988": {
+        "IResourceController": {
+            "name": "ball",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690587016637:252923",
+            "fileId": "1674573633995087:4083",
+            "originalId": "1674573633995088:4084",
+            "publicId": "1728871209772881:1520720",
+            "expected_hash": "007886f89df1a7db95bab27c7946bba8",
+            "additional": {
+                "originHash": "007886f89df1a7db95bab27c7946bba8",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1663690587016637:252923",
+            "name": "Files/File_1674573633995087_4083.jpg",
+            "flags": 1
+        }
+    },
+    "1674573633995087:4083": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995087_4083.jpg"
+        }
+    },
+    "1674573633995088:4084": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995088_4084.jpg"
+        }
+    },
+    "1674573633995089:4085": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995089_4085.jpg"
+        }
+    },
+    "1674573633995179:4156": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995179_4156.jpg"
+        }
+    },
+    "1728871209772881:1520720": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/ball.jpg",
+                "hash": "007886f89df1a7db95bab27c7946bba8"
+            }
+        }
+    }
+}

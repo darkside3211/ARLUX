@@ -1,0 +1,80 @@
+{
+    "1677153666360506:85316": {
+        "IFileManager": {
+            "path": "Files/File_1677153666360506_85316.jpg"
+        }
+    },
+    "1677153666362181:85317": {
+        "IResourceController": {
+            "name": "ball_43",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666362488:85318",
+            "fileId": "1677153666360506:85316",
+            "originalId": "1677153666362849:85323",
+            "publicId": "1686647826339693:706387",
+            "expected_hash": "7bd1a4619e8c9828bbfd249fb2953eee",
+            "additional": {
+                "originHash": "7bd1a4619e8c9828bbfd249fb2953eee",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666362488:85318",
+            "name": "Files/File_1677153666360506_85316.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666362488:85318": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "7bd1a4619e8c9828bbfd249fb2953eee"
+                    },
+                    "v": "1677153673484026:87023"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "16384",
+                "compressedSize": "2497",
+                "extension": "jpg",
+                "originalRAM": "16384",
+                "originalSize": "2497",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1677153666371672:85331"
+        }
+    },
+    "1677153666362849:85323": {
+        "IFileManager": {
+            "path": "Files/File_1677153666362849_85323.jpg"
+        }
+    },
+    "1677153666371672:85331": {
+        "IFileManager": {
+            "path": "Files/File_1677153666371672_85331.jpg"
+        }
+    },
+    "1677153673484026:87023": {
+        "IFileManager": {
+            "path": "Files/File_1677153673484026_87023.jpg"
+        }
+    },
+    "1686647826339693:706387": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/ball_43.jpg",
+                "hash": "7bd1a4619e8c9828bbfd249fb2953eee"
+            }
+        }
+    }
+}

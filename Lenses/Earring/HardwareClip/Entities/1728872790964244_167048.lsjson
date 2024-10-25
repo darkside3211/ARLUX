@@ -1,0 +1,22 @@
+{
+    "1728872790964244:167048": {
+        "IResourceController": {
+            "name": "Materials",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1728872791430773:167293",
+            "resources": [
+                "1728872790966985:167050"
+            ]
+        }
+    },
+    "1728872791430773:167293": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/HardwareClipEarring-Single/Materials"
+            }
+        }
+    }
+}

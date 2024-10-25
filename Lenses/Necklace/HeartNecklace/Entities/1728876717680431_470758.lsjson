@@ -1,0 +1,30 @@
+{
+    "1728876717680431:470758": {
+        "IResourceController": {
+            "name": "HeartNecklace-lowpoly",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": false,
+            "uid": "1728876717680315:470738",
+            "fileId": "1728876717707317:470784",
+            "originalId": "1728876864319068:499990",
+            "expected_hash": "7d682c99374ebcf4ffc80eea08fde18a"
+        },
+        "IResourceManager": {
+            "uid": "1728876717680315:470738",
+            "name": "GltfImport_1",
+            "flags": 0
+        }
+    },
+    "1728876717707317:470784": {
+        "IFileManager": {
+            "path": "Files/File_1728876717707317_470784.oprfb"
+        }
+    },
+    "1728876864319068:499990": {
+        "IFileManager": {
+            "path": "Files/File_1728876864319068_499990.oprfb"
+        }
+    }
+}

@@ -32,7 +32,7 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
             ? NetworkImage(image)
             : isFile
                 ? FileImage(File(image))
-                : AssetImage('assets/images/$image'),
+                : AssetImage(image),
         disableGestures: disableGestures,
         loadingBuilder: (context, event) =>
             const CircularProgressIndicator(color: AppColors.yellow),

@@ -1,0 +1,39 @@
+{
+    "1685951079542339:1051277": {
+        "IResourceController": {
+            "name": "Neck Binding",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685951079542153:1051258",
+            "fileId": "1685951079568398:1051413",
+            "originalId": "1685952615415714:1724566",
+            "publicId": "1686647826364980:706421",
+            "expected_hash": "40c2f0a539ade37f9381ab1d0016418b"
+        },
+        "IResourceManager": {
+            "uid": "1685951079542153:1051258",
+            "name": "Neck Binding",
+            "flags": 0
+        }
+    },
+    "1685951079568398:1051413": {
+        "IFileManager": {
+            "path": "Files/File_1685951079568398_1051413.oprfb"
+        }
+    },
+    "1685952615415714:1724566": {
+        "IFileManager": {
+            "path": "Files/File_1685952615415714_1724566.oprfb"
+        }
+    },
+    "1686647826364980:706421": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Neck Binding.oprfb",
+                "hash": "47694c7354f7e20c546e45d3b3b51845"
+            }
+        }
+    }
+}

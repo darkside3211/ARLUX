@@ -1,0 +1,24 @@
+{
+    "1678093961630934:22970": {
+        "IResourceController": {
+            "name": "Icons",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1686647826343812:706394",
+            "resources": [
+                "1678093961622700:22958",
+                "1678093961648984:22975",
+                "1678093961679791:22990"
+            ]
+        }
+    },
+    "1686647826343812:706394": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons"
+            }
+        }
+    }
+}

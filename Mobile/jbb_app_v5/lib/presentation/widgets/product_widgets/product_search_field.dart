@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/features/search/data/search_history_repository.dart';
+import 'package:jbb_app_v5/features/search/model/search_model.dart';
 import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
-import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/search/search_page.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
@@ -84,7 +84,7 @@ class _ProductSearchFieldState extends ConsumerState<ProductSearchField> {
     });
 
     if (!_isError) {
-      Navigator.of(context).push(
+      Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) {
           return ProductListing(
             productGrid:

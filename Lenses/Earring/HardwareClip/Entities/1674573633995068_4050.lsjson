@@ -1,0 +1,38 @@
+{
+    "1666617640748232:611500": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1674573633995068:4050": {
+        "IResourceController": {
+            "name": "Enable By Index",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666617640748232:611500",
+            "fileId": "1674573633995283:4235",
+            "publicId": "1674573633995405:4378",
+            "expected_hash": "5cdd7398cf90721b91d1dd91388506ef"
+        },
+        "IResourceManager": {
+            "uid": "1666617640748232:611500",
+            "name": "Files/File_1674573633995283_4235.js",
+            "flags": 1
+        }
+    },
+    "1674573633995283:4235": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995283_4235.js"
+        }
+    },
+    "1674573633995405:4378": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Helpers/Enable By Index.js",
+                "hash": "5cdd7398cf90721b91d1dd91388506ef"
+            }
+        }
+    }
+}

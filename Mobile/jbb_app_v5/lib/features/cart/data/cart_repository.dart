@@ -68,11 +68,12 @@ class CartRepository {
 
         return jewelries;
       } else {
-        ToastFailure(message: "failed to get cart items.");
+        ToastFailure(message: "You seem to be offline.");
         return ProductLocalRepository().getCachedBag();
       }
     } catch (e) {
-      throw Exception(e);
+      ToastFailure(message: "You seem to be offline.");
+      return ProductLocalRepository().getCachedBag();
     }
   }
 
@@ -150,7 +151,8 @@ Future<bool> addToBag(
   required int quantity,
 }) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final String? firebaseToken =
+      await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.addToBag(
     productID: productID,
@@ -170,7 +172,8 @@ Future<bool> addToBag(
 @riverpod
 Future<List<CartModel>> getBagItems(GetBagItemsRef ref) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final String? firebaseToken =
+      await ref.watch(getFirebaseTokenProvider.future);
 
   final items = await cartRepository.getBagItems(token: firebaseToken);
 
@@ -183,7 +186,8 @@ Future<List<CartModel>> getBagItems(GetBagItemsRef ref) async {
 Future<bool> removeBagItems(RemoveBagItemsRef ref,
     {required List<String> cartIDs}) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final String? firebaseToken =
+      await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.removeBagItems(
     cartIDs: cartIDs,
@@ -206,7 +210,8 @@ Future<bool> editBagItem(
   required int newQuantity,
 }) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
-  final String? firebaseToken = await ref.watch(getFirebaseTokenProvider.future);
+  final String? firebaseToken =
+      await ref.watch(getFirebaseTokenProvider.future);
 
   bool result = await cartRepository.editBagItem(
     cartID: cartID,

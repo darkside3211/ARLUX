@@ -1,0 +1,80 @@
+{
+    "1678093961678795:22989": {
+        "IFileManager": {
+            "path": "Files/File_1678093961678795_22989.pvr"
+        }
+    },
+    "1678093961679791:22990": {
+        "IResourceController": {
+            "name": "Neckace Icon 2",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678093961680086:22991",
+            "fileId": "1678093961678795:22989",
+            "originalId": "1678093961680336:22996",
+            "publicId": "1686647826345982:706397",
+            "expected_hash": "fa0e6eedba10456c68479e05c326256f",
+            "additional": {
+                "originHash": "a423a19854b41e64982951e9e87e93ab",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1678093961680086:22991",
+            "name": "Files/File_1678093961678795_22989.jpg",
+            "flags": 1
+        }
+    },
+    "1678093961680086:22991": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "a423a19854b41e64982951e9e87e93ab"
+                    },
+                    "v": "1678093969241505:31579"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "170528",
+                "compressedSize": "28575",
+                "extension": "png",
+                "originalRAM": "1364224",
+                "originalSize": "143644",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1678093961687263:23002"
+        }
+    },
+    "1678093961680336:22996": {
+        "IFileManager": {
+            "path": "Files/File_1678093961680336_22996.png"
+        }
+    },
+    "1678093961687263:23002": {
+        "IFileManager": {
+            "path": "Files/File_1678093961687263_23002.png"
+        }
+    },
+    "1678093969241505:31579": {
+        "IFileManager": {
+            "path": "Files/File_1678093969241505_31579.pvr"
+        }
+    },
+    "1686647826345982:706397": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Neckace Icon 2.png",
+                "hash": "a423a19854b41e64982951e9e87e93ab"
+            }
+        }
+    }
+}

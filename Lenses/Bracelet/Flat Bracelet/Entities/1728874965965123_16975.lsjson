@@ -1,0 +1,48 @@
+{
+    "1728874965965123:16975": {
+        "IResourceController": {
+            "name": "FlatBracelet-LowPoly",
+            "type": 18,
+            "subtype": -1,
+            "dependency": 2,
+            "hidden": false,
+            "fileId": "1728874968380601:17690",
+            "publicId": "1728874968415244:17701",
+            "expected_hash": "3bb2e47c22dc8012c00b03d2738e0d0c",
+            "resources": [
+                "1728874967897837:17449",
+                "1728874967928317:17473",
+                "1728874968349597:17661"
+            ],
+            "additional": {
+                "ImportParams": {
+                    "animationCurveOptimization": "true",
+                    "convertMetersToCentimeters": "true",
+                    "importMorphTargetAnimation": "true",
+                    "importTangents": "true",
+                    "importVertexColor": "true",
+                    "recalculateTangents": "false"
+                },
+                "materialMapping": [
+                    {
+                        "k": "Gold",
+                        "v": "1728874967930868:17476"
+                    }
+                ]
+            }
+        }
+    },
+    "1728874968380601:17690": {
+        "IFileManager": {
+            "path": "Files/File_1728874968380601_17690.glb"
+        }
+    },
+    "1728874968415244:17701": {
+        "IResourceController": {
+            "public": {
+                "path": "FlatBracelet-LowPoly.glb",
+                "hash": "3bb2e47c22dc8012c00b03d2738e0d0c"
+            }
+        }
+    }
+}

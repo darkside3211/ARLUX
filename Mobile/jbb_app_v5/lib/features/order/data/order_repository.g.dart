@@ -21,7 +21,7 @@ final orderRepositoryProvider = AutoDisposeProvider<OrderRepository>.internal(
 );
 
 typedef OrderRepositoryRef = AutoDisposeProviderRef<OrderRepository>;
-String _$checkoutOrderHash() => r'8976cfa27291643ad1b9e8016f29b415a964bf5f';
+String _$checkoutOrderHash() => r'eaed606e0d7c8b62d9c285bda7fc4496bf7f7f0d';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -49,16 +49,18 @@ class _SystemHash {
 const checkoutOrderProvider = CheckoutOrderFamily();
 
 /// See also [checkoutOrder].
-class CheckoutOrderFamily extends Family<AsyncValue<void>> {
+class CheckoutOrderFamily extends Family<AsyncValue<String?>> {
   /// See also [checkoutOrder].
   const CheckoutOrderFamily();
 
   /// See also [checkoutOrder].
   CheckoutOrderProvider call({
     required List<CheckoutItem> orders,
+    required AddressModel address,
   }) {
     return CheckoutOrderProvider(
       orders: orders,
+      address: address,
     );
   }
 
@@ -68,6 +70,7 @@ class CheckoutOrderFamily extends Family<AsyncValue<void>> {
   ) {
     return call(
       orders: provider.orders,
+      address: provider.address,
     );
   }
 
@@ -87,14 +90,16 @@ class CheckoutOrderFamily extends Family<AsyncValue<void>> {
 }
 
 /// See also [checkoutOrder].
-class CheckoutOrderProvider extends AutoDisposeFutureProvider<void> {
+class CheckoutOrderProvider extends AutoDisposeFutureProvider<String?> {
   /// See also [checkoutOrder].
   CheckoutOrderProvider({
     required List<CheckoutItem> orders,
+    required AddressModel address,
   }) : this._internal(
           (ref) => checkoutOrder(
             ref as CheckoutOrderRef,
             orders: orders,
+            address: address,
           ),
           from: checkoutOrderProvider,
           name: r'checkoutOrderProvider',
@@ -106,6 +111,7 @@ class CheckoutOrderProvider extends AutoDisposeFutureProvider<void> {
           allTransitiveDependencies:
               CheckoutOrderFamily._allTransitiveDependencies,
           orders: orders,
+          address: address,
         );
 
   CheckoutOrderProvider._internal(
@@ -116,13 +122,15 @@ class CheckoutOrderProvider extends AutoDisposeFutureProvider<void> {
     required super.debugGetCreateSourceHash,
     required super.from,
     required this.orders,
+    required this.address,
   }) : super.internal();
 
   final List<CheckoutItem> orders;
+  final AddressModel address;
 
   @override
   Override overrideWith(
-    FutureOr<void> Function(CheckoutOrderRef provider) create,
+    FutureOr<String?> Function(CheckoutOrderRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
@@ -134,43 +142,52 @@ class CheckoutOrderProvider extends AutoDisposeFutureProvider<void> {
         allTransitiveDependencies: null,
         debugGetCreateSourceHash: null,
         orders: orders,
+        address: address,
       ),
     );
   }
 
   @override
-  AutoDisposeFutureProviderElement<void> createElement() {
+  AutoDisposeFutureProviderElement<String?> createElement() {
     return _CheckoutOrderProviderElement(this);
   }
 
   @override
   bool operator ==(Object other) {
-    return other is CheckoutOrderProvider && other.orders == orders;
+    return other is CheckoutOrderProvider &&
+        other.orders == orders &&
+        other.address == address;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
     hash = _SystemHash.combine(hash, orders.hashCode);
+    hash = _SystemHash.combine(hash, address.hashCode);
 
     return _SystemHash.finish(hash);
   }
 }
 
-mixin CheckoutOrderRef on AutoDisposeFutureProviderRef<void> {
+mixin CheckoutOrderRef on AutoDisposeFutureProviderRef<String?> {
   /// The parameter `orders` of this provider.
   List<CheckoutItem> get orders;
+
+  /// The parameter `address` of this provider.
+  AddressModel get address;
 }
 
 class _CheckoutOrderProviderElement
-    extends AutoDisposeFutureProviderElement<void> with CheckoutOrderRef {
+    extends AutoDisposeFutureProviderElement<String?> with CheckoutOrderRef {
   _CheckoutOrderProviderElement(super.provider);
 
   @override
   List<CheckoutItem> get orders => (origin as CheckoutOrderProvider).orders;
+  @override
+  AddressModel get address => (origin as CheckoutOrderProvider).address;
 }
 
-String _$getOrdersHash() => r'1de7a7ef99c9300528d86550a5ec934b3ec8b527';
+String _$getOrdersHash() => r'5e30ee2a366c8eba1b4276e6a30421ab46cd9691';
 
 /// See also [getOrders].
 @ProviderFor(getOrders)

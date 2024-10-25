@@ -1,0 +1,30 @@
+{
+    "1728872791381267:167252": {
+        "IResourceController": {
+            "name": "HardwareClipEarring-Single",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": false,
+            "uid": "1728872791381151:167232",
+            "fileId": "1728872791405401:167274",
+            "originalId": "1728873342490530:276779",
+            "expected_hash": "6b6048850b1a54b8d84b91c53c7a46c3"
+        },
+        "IResourceManager": {
+            "uid": "1728872791381151:167232",
+            "name": "GltfImport_0",
+            "flags": 0
+        }
+    },
+    "1728872791405401:167274": {
+        "IFileManager": {
+            "path": "Files/File_1728872791405401_167274.oprfb"
+        }
+    },
+    "1728873342490530:276779": {
+        "IFileManager": {
+            "path": "Files/File_1728873342490530_276779.oprfb"
+        }
+    }
+}

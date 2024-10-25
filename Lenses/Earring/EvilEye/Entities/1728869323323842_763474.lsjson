@@ -1,0 +1,17 @@
+{
+    "1728869323323842:763474": {
+        "IResourceController": {
+            "name": "Screen Crop Texture 4",
+            "type": 1,
+            "subtype": 18,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323323837:763473"
+        },
+        "IResourceManager": {
+            "uid": "1728869323323837:763473",
+            "name": "Screen Crop Texture",
+            "flags": 0
+        }
+    }
+}

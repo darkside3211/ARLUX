@@ -1,0 +1,38 @@
+{
+    "1684320423901289:208136": {
+        "IFileManager": {
+            "path": "Files/File_1684320423901289_208136.js"
+        }
+    },
+    "1684320423903129:208137": {
+        "IResourceController": {
+            "name": "ReferenceHolder",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1684320423903142:208138",
+            "fileId": "1684320423901289:208136",
+            "publicId": "1686647826361290:706412",
+            "expected_hash": "61f00d113626a1b2750772fa9afe1699"
+        },
+        "IResourceManager": {
+            "uid": "1684320423903142:208138",
+            "name": "Files/File_1684320423901289_208136.js",
+            "flags": 1
+        }
+    },
+    "1684320423903142:208138": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1686647826361290:706412": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Scripts/ReferenceHolder.js",
+                "hash": "61f00d113626a1b2750772fa9afe1699"
+            }
+        }
+    }
+}

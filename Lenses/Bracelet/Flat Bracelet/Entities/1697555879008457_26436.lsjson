@@ -1,0 +1,39 @@
+{
+    "1697555879007362:26435": {
+        "IFileManager": {
+            "path": "Files/File_1697555879007362_26435"
+        }
+    },
+    "1697555879008457:26436": {
+        "IResourceController": {
+            "name": "WristShadow",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1697555879008462:26437",
+            "fileId": "1697555879007362:26435",
+            "originalId": "1697555879031884:26450",
+            "publicId": "1701112777823384:4574",
+            "expected_hash": "eadd4a7687183965ce93face43939c0b"
+        },
+        "IResourceManager": {
+            "uid": "1697555879008462:26437",
+            "name": "Files/File_1697555879007362_26435",
+            "flags": 1
+        }
+    },
+    "1697555879031884:26450": {
+        "IFileManager": {
+            "path": "Files/File_1697555879031884_26450.lsmat"
+        }
+    },
+    "1701112777823384:4574": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/WristShadow.lsmat",
+                "hash": "668a76fc380f10fc4448122aefd2e4a8"
+            }
+        }
+    }
+}

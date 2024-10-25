@@ -1,0 +1,39 @@
+{
+    "1674573633995064:4010": {
+        "IResourceController": {
+            "name": "Gems black env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690589007208:253824",
+            "fileId": "1674573633995154:4136",
+            "originalId": "1674573633995155:4137",
+            "publicId": "1728871178219976:1501262",
+            "expected_hash": "35e444df2c204f75c7a80650f9fa6a0d"
+        },
+        "IResourceManager": {
+            "uid": "1663690589007208:253824",
+            "name": "Files/File_1674573633995154_4136",
+            "flags": 1
+        }
+    },
+    "1674573633995154:4136": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995154_4136"
+        }
+    },
+    "1674573633995155:4137": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995155_4137.lsmat"
+        }
+    },
+    "1728871178219976:1501262": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Gems black env.lsmat",
+                "hash": "f63a7e2778cc1ff0341dbf442d7762be"
+            }
+        }
+    }
+}

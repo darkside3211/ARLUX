@@ -1,0 +1,38 @@
+{
+    "1681731556837158:1195170": {
+        "IFileManager": {
+            "path": "Files/File_1681731556837158_1195170.js"
+        }
+    },
+    "1681731556838553:1195179": {
+        "IResourceController": {
+            "name": "Btn Animation",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731556838562:1195180",
+            "fileId": "1681731556837158:1195170",
+            "publicId": "1681731556841531:1195191",
+            "expected_hash": "689d180674225a93b29618981d50ba2b"
+        },
+        "IResourceManager": {
+            "uid": "1681731556838562:1195180",
+            "name": "Files/File_1681731556837158_1195170.js",
+            "flags": 1
+        }
+    },
+    "1681731556838562:1195180": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    },
+    "1681731556841531:1195191": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Helpers/Btn Animation.js",
+                "hash": "689d180674225a93b29618981d50ba2b"
+            }
+        }
+    }
+}

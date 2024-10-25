@@ -1,0 +1,23 @@
+{
+    "1682262456058673:4769073": {
+        "IResourceController": {
+            "name": "Zoom",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1682262456058934:4769074",
+            "resources": [
+                "1681731772986502:1344861",
+                "1681731556830399:1195120"
+            ]
+        }
+    },
+    "1682262456058934:4769074": {
+        "IResourceController": {
+            "public": {
+                "path": "Scripts/Zoom"
+            }
+        }
+    }
+}

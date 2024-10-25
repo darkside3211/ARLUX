@@ -1,0 +1,23 @@
+{
+    "1674573633995643:4657": {
+        "IResourceController": {
+            "name": "Physics Matters",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1728871212346633:1522525",
+            "resources": [
+                "1674573633995066:4029",
+                "1674573633995066:4030"
+            ]
+        }
+    },
+    "1728871212346633:1522525": {
+        "IResourceController": {
+            "public": {
+                "path": "Physics Matters"
+            }
+        }
+    }
+}

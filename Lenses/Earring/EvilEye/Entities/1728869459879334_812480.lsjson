@@ -1,0 +1,23 @@
+{
+    "1728869459879334:812480": {
+        "IResourceController": {
+            "name": "Materials",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1728869460719570:812899",
+            "resources": [
+                "1728869459881407:812482",
+                "1728869460264739:812623"
+            ]
+        }
+    },
+    "1728869460719570:812899": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/EvilEyeEarring-Single/Materials"
+            }
+        }
+    }
+}

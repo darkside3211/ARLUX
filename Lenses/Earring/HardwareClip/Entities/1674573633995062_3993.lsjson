@@ -1,0 +1,39 @@
+{
+    "1674573633995062:3993": {
+        "IResourceController": {
+            "name": "Pink metal env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690587294192:252984",
+            "fileId": "1674573633995102:4095",
+            "originalId": "1674573633995104:4096",
+            "publicId": "1728871206788015:1514807",
+            "expected_hash": "03f413123b82b80c4597a479d43a0186"
+        },
+        "IResourceManager": {
+            "uid": "1663690587294192:252984",
+            "name": "Files/File_1674573633995102_4095",
+            "flags": 1
+        }
+    },
+    "1674573633995102:4095": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995102_4095"
+        }
+    },
+    "1674573633995104:4096": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995104_4096.lsmat"
+        }
+    },
+    "1728871206788015:1514807": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Pink metal env.lsmat",
+                "hash": "aa11f419195b0fb17914bf1b9b7538aa"
+            }
+        }
+    }
+}

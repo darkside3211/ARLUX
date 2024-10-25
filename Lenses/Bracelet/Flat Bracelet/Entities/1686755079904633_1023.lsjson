@@ -1,0 +1,125 @@
+{
+    "1666104582504336:8651073": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "279040",
+                "compressedSize": "206582",
+                "extension": "mesh",
+                "originalRAM": "279040",
+                "originalSize": "206582",
+                "settings": {
+                    "attributeFormat": "",
+                    "draco": {
+                        "colorBits": "8",
+                        "compressLvl": "7",
+                        "normalBits": "8",
+                        "posBits": "11",
+                        "texBits": "10"
+                    },
+                    "info": {
+                        "hasBlendShapes": "false",
+                        "vertexAttribs": [
+                            {
+                                "canBeDisabled": "false",
+                                "format": "9",
+                                "semantic": "position"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "normal"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "tangent"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture0"
+                            },
+                            {
+                                "canBeDisabled": "true",
+                                "format": "9",
+                                "semantic": "texture1"
+                            }
+                        ]
+                    },
+                    "isCompressed": "false",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1686755079904678:1117"
+        }
+    },
+    "1686755079904633:1023": {
+        "IResourceController": {
+            "name": "BraceletSphereBeads",
+            "type": 3,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666104582504336:8651073",
+            "fileId": "1686755079904677:1116",
+            "publicId": "1728875203948544:76443",
+            "expected_hash": "fb79cbb33b7edc33d11f62453741b51f",
+            "additional": {
+                "info": {
+                    "hasBlendShapes": "false",
+                    "vertexAttribs": [
+                        {
+                            "canBeDisabled": "false",
+                            "format": "9",
+                            "semantic": "position"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "normal"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "tangent"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture0"
+                        },
+                        {
+                            "canBeDisabled": "true",
+                            "format": "9",
+                            "semantic": "texture1"
+                        }
+                    ]
+                }
+            }
+        },
+        "IResourceManager": {
+            "uid": "1666104582504336:8651073",
+            "name": "Files/File_1686755079904677_1116.mesh",
+            "flags": 1
+        }
+    },
+    "1686755079904677:1116": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904677_1116.mesh"
+        }
+    },
+    "1686755079904678:1117": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904678_1117.mesh"
+        }
+    },
+    "1728875203948544:76443": {
+        "IResourceController": {
+            "public": {
+                "path": "Meshes/Friendship Bracelet/BraceletSphereBeads.mesh",
+                "hash": "fb79cbb33b7edc33d11f62453741b51f"
+            }
+        }
+    }
+}

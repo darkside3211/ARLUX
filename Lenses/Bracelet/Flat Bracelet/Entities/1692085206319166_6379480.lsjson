@@ -1,0 +1,39 @@
+{
+    "1692085206317296:6379479": {
+        "IFileManager": {
+            "path": "Files/File_1692085206317296_6379479"
+        }
+    },
+    "1692085206319166:6379480": {
+        "IResourceController": {
+            "name": "Occluder",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1692085206319184:6379481",
+            "fileId": "1692085206317296:6379479",
+            "originalId": "1692085206337713:6379487",
+            "publicId": "1701112777823942:4575",
+            "expected_hash": "0e1563ba85e25651b954c2c9243804f7"
+        },
+        "IResourceManager": {
+            "uid": "1692085206319184:6379481",
+            "name": "Files/File_1692085206317296_6379479",
+            "flags": 1
+        }
+    },
+    "1692085206337713:6379487": {
+        "IFileManager": {
+            "path": "Files/File_1692085206337713_6379487.lsmat"
+        }
+    },
+    "1701112777823942:4575": {
+        "IResourceController": {
+            "public": {
+                "path": "Materials/Occluder.lsmat",
+                "hash": "21af0ed556a37cfec16eb3c4b3e92229"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "1728869459826667:812455": {
+        "IFileManager": {
+            "path": "Files/File_1728869459826667_812455.jpeg"
+        }
+    },
+    "1728869459828792:812456": {
+        "IResourceController": {
+            "name": "evil_eye",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728869459829117:812457",
+            "fileId": "1728869459826667:812455",
+            "originalId": "1728869459829582:812462",
+            "publicId": "1728869460719117:812898",
+            "expected_hash": "4bf50b3c10f939d5141d7bc792c69994",
+            "additional": {
+                "originHash": "4bf50b3c10f939d5141d7bc792c69994"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1728869459829117:812457",
+            "name": "Files/File_1728869459826667_812455.jpg",
+            "flags": 1
+        }
+    },
+    "1728869459829117:812457": {
+        "Compression::IController": {
+            "compressed_files": "",
+            "infos": {
+                "compressedRAM": "1281600",
+                "compressedSize": "23115",
+                "extension": "jpeg",
+                "originalRAM": "1281600",
+                "originalSize": "23115",
+                "settings": {
+                    "isCompressed": "false",
+                    "level": "0",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1728869459841387:812470"
+        }
+    },
+    "1728869459829582:812462": {
+        "IFileManager": {
+            "path": "Files/File_1728869459829582_812462.jpeg"
+        }
+    },
+    "1728869459841387:812470": {
+        "IFileManager": {
+            "path": "Files/File_1728869459841387_812470.jpeg"
+        }
+    },
+    "1728869460719117:812898": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/EvilEyeEarring-Single/Textures/evil_eye.jpeg",
+                "hash": "4bf50b3c10f939d5141d7bc792c69994"
+            }
+        }
+    }
+}

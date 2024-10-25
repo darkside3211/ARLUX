@@ -1,0 +1,39 @@
+{
+    "1685974066334681:9464042": {
+        "IFileManager": {
+            "path": "Files/File_1685974066334681_9464042"
+        }
+    },
+    "1685974066336652:9464043": {
+        "IResourceController": {
+            "name": "Occluder Back",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685974066336658:9464044",
+            "fileId": "1685974066334681:9464042",
+            "originalId": "1685974066359529:9464048",
+            "publicId": "1686647826365500:706422",
+            "expected_hash": "b7a7d0f424b53651980aeb22e65a28d5"
+        },
+        "IResourceManager": {
+            "uid": "1685974066336658:9464044",
+            "name": "Files/File_1685974066334681_9464042",
+            "flags": 1
+        }
+    },
+    "1685974066359529:9464048": {
+        "IFileManager": {
+            "path": "Files/File_1685974066359529_9464048.lsmat"
+        }
+    },
+    "1686647826365500:706422": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Occluder Back.lsmat",
+                "hash": "4d31761415d7be4202c6bd7be92c8e3b"
+            }
+        }
+    }
+}

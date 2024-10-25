@@ -1,0 +1,32 @@
+{
+    "1702579462076397:44546": {
+        "IFileManager": {
+            "path": "Files/File_1702579462076397_44546.js"
+        }
+    },
+    "1702579462077918:44553": {
+        "IResourceController": {
+            "name": "Annotator_002",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462077928:44554",
+            "fileId": "1702579462076397:44546",
+            "expected_hash": "9c2cdea37e8e14503d4ed3d4f26f1a1a"
+        },
+        "IResourceManager": {
+            "uid": "1702579462077928:44554",
+            "name": "Files/File_1702579462076397_44546.js",
+            "flags": 1
+        }
+    },
+    "1702579462077928:44554": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "GenericHelperScript_001",
+                "GenericDecoders_002"
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "1728869459766797:812412": {
+        "IResourceController": {
+            "name": "Meshes",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 1,
+            "hidden": false,
+            "resources": [
+                "1728869459769601:812415",
+                "1728869459795754:812434"
+            ]
+        }
+    }
+}

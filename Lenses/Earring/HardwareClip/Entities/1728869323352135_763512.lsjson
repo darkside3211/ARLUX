@@ -1,0 +1,30 @@
+{
+    "1728869323350370:763511": {
+        "IFileManager": {
+            "path": "Files/File_1728869323350370_763511"
+        }
+    },
+    "1728869323352135:763512": {
+        "IResourceController": {
+            "name": "selectiveHairSeg",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323352141:763513",
+            "fileId": "1728869323350370:763511",
+            "originalId": "1728869323376625:763517",
+            "expected_hash": "3fe3ca30d5e4ca8d475303e4f9b2c151"
+        },
+        "IResourceManager": {
+            "uid": "1728869323352141:763513",
+            "name": "Files/File_1728869323350370_763511",
+            "flags": 1
+        }
+    },
+    "1728869323376625:763517": {
+        "IFileManager": {
+            "path": "Files/File_1728869323376625_763517.lsmat"
+        }
+    }
+}

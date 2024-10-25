@@ -1,0 +1,31 @@
+{
+    "1697459822348360:32745": {
+        "IFileManager": {
+            "path": "Files/File_1697459822348360_32745.js"
+        }
+    },
+    "1697459822349413:32746": {
+        "IResourceController": {
+            "name": "Ear Binding",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1697459822349434:32747",
+            "fileId": "1697459822348360:32745",
+            "expected_hash": "d7cfc0585ab0f79ba7af5ea9aa0173dc"
+        },
+        "IResourceManager": {
+            "uid": "1697459822349434:32747",
+            "name": "Files/File_1697459822348360_32745.js",
+            "flags": 1
+        }
+    },
+    "1697459822349434:32747": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "SceneObjectHelpersModule_101"
+            ]
+        }
+    }
+}

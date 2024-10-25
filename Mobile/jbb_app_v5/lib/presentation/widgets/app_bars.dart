@@ -23,8 +23,6 @@ class HomeTopBar extends StatelessWidget implements AppBars {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: const Color(0xff292929),
-      shadowColor: Colors.grey,
-      elevation: 8,
       iconTheme: Theme.of(context).iconTheme.copyWith(color: AppColors.yellow),
       title: Image.asset(
         'assets/icons/jbb_logo.jpeg',
@@ -112,8 +110,11 @@ class ProductListTopBar extends StatelessWidget implements AppBars {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const SearchPlaceHolder(isDefault: false,),
-      backgroundColor: AppColors.yellow,
+      iconTheme: const IconThemeData(color: Colors.amber),
+      title: const SearchPlaceHolder(
+        isDefault: false,
+      ),
+      backgroundColor: const Color(0xff292929),
       actions: [
         IconButton(
           onPressed: () {

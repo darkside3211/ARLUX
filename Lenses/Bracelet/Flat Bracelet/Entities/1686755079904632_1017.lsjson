@@ -1,0 +1,80 @@
+{
+    "1661794208007624:51123": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "8e599835d0d45c5879eafb1f474469cd"
+                    },
+                    "v": "1686755079904653:1097"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "87162",
+                "compressedSize": "96691",
+                "extension": "png",
+                "originalRAM": "697303",
+                "originalSize": "275653",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1686755079904651:1095"
+        }
+    },
+    "1686755079904632:1017": {
+        "IResourceController": {
+            "name": "echopark_spec",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1661794208007624:51123",
+            "fileId": "1686755079904648:1093",
+            "originalId": "1686755079904650:1094",
+            "publicId": "1701112777766363:4536",
+            "expected_hash": "12f8aade08f49e0a5b3fa3ebca2af5c1",
+            "additional": {
+                "originHash": "8e599835d0d45c5879eafb1f474469cd",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1661794208007624:51123",
+            "name": "Files/File17.jpg",
+            "flags": 1
+        }
+    },
+    "1686755079904648:1093": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904648_1093.pvr"
+        }
+    },
+    "1686755079904650:1094": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904650_1094.png"
+        }
+    },
+    "1686755079904651:1095": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904651_1095.png"
+        }
+    },
+    "1686755079904653:1097": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904653_1097.pvr"
+        }
+    },
+    "1701112777766363:4536": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Echopark/echopark_spec.png",
+                "hash": "8e599835d0d45c5879eafb1f474469cd"
+            }
+        }
+    }
+}

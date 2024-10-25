@@ -1,0 +1,116 @@
+{
+    "1677153666438867:85365": {
+        "IFileManager": {
+            "path": "Files/File_1677153666438867_85365.pvr"
+        }
+    },
+    "1677153666440706:85366": {
+        "IResourceController": {
+            "name": "chains_norm",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1677153666441015:85367",
+            "fileId": "1677153666438867:85365",
+            "originalId": "1677153666441468:85374",
+            "publicId": "1686647826340662:706389",
+            "expected_hash": "85217522fd09abbf2d67485ecb3b0c9b",
+            "additional": {
+                "originHash": "8063d6ccb28461ddde6ffe8e82d50055",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1677153666441015:85367",
+            "name": "Files/File_1677153666438867_85365.jpg",
+            "flags": 1
+        }
+    },
+    "1677153666441015:85367": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "1024",
+                        "uncompressed_hash": "8063d6ccb28461ddde6ffe8e82d50055"
+                    },
+                    "v": "1686038569499642:20012159"
+                },
+                {
+                    "k": {
+                        "settings_hash": "2048",
+                        "uncompressed_hash": "8063d6ccb28461ddde6ffe8e82d50055"
+                    },
+                    "v": "1686038572620374:20020237"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "8063d6ccb28461ddde6ffe8e82d50055"
+                    },
+                    "v": "1686038570909011:20015742"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3073",
+                        "uncompressed_hash": "8063d6ccb28461ddde6ffe8e82d50055"
+                    },
+                    "v": "1686038627131729:20105206"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "65536",
+                "compressedSize": "21410",
+                "extension": "jpg",
+                "originalRAM": "524288",
+                "originalSize": "23394",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "3",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1677153666450650:85380"
+        }
+    },
+    "1677153666441468:85374": {
+        "IFileManager": {
+            "path": "Files/File_1677153666441468_85374.jpg"
+        }
+    },
+    "1677153666450650:85380": {
+        "IFileManager": {
+            "path": "Files/File_1677153666450650_85380.jpg"
+        }
+    },
+    "1686038569499642:20012159": {
+        "IFileManager": {
+            "path": "Files/File_1686038569499642_20012159.jpg"
+        }
+    },
+    "1686038570909011:20015742": {
+        "IFileManager": {
+            "path": "Files/File_1686038570909011_20015742.jpg"
+        }
+    },
+    "1686038572620374:20020237": {
+        "IFileManager": {
+            "path": "Files/File_1686038572620374_20020237.jpg"
+        }
+    },
+    "1686038627131729:20105206": {
+        "IFileManager": {
+            "path": "Files/File_1686038627131729_20105206.pvr"
+        }
+    },
+    "1686647826340662:706389": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/chains_norm.jpg",
+                "hash": "8063d6ccb28461ddde6ffe8e82d50055"
+            }
+        }
+    }
+}

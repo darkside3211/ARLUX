@@ -1,0 +1,39 @@
+{
+    "1728874967928915:17474": {
+        "IFileManager": {
+            "path": "Files/File_1728874967928915_17474"
+        }
+    },
+    "1728874967930862:17475": {
+        "IResourceController": {
+            "name": "Gold",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728874967930868:17476",
+            "fileId": "1728874967928915:17474",
+            "originalId": "1728874967954809:17482",
+            "publicId": "1728874968418844:17703",
+            "expected_hash": "20b64ecbdcf7e2b82c0aa29038627025"
+        },
+        "IResourceManager": {
+            "uid": "1728874967930868:17476",
+            "name": "Files/File_1728874967928915_17474",
+            "flags": 1
+        }
+    },
+    "1728874967954809:17482": {
+        "IFileManager": {
+            "path": "Files/File_1728874967954809_17482.lsmat"
+        }
+    },
+    "1728874968418844:17703": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/FlatBracelet-LowPoly/Materials/Gold.lsmat",
+                "hash": "dffb476acd8ed7dd2f85cb3fd0f56356"
+            }
+        }
+    }
+}

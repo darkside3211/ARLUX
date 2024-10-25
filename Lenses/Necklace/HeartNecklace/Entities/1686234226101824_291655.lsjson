@@ -1,0 +1,79 @@
+{
+    "1686234226100217:291654": {
+        "IFileManager": {
+            "path": "Files/File_1686234226100217_291654.pvr"
+        }
+    },
+    "1686234226101824:291655": {
+        "IResourceController": {
+            "name": "gold_ball 2",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1686234226101984:291656",
+            "fileId": "1686234226100217:291654",
+            "originalId": "1686234226102397:291661",
+            "publicId": "1686647826351225:706402",
+            "expected_hash": "8bb9a91c3f3e0b4c0c02e727d6b4453b",
+            "additional": {
+                "originHash": "daa54372309a35aff1fdfc33e7f8fd6b"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1686234226101984:291656",
+            "name": "Files/File_1686234226100217_291654.png",
+            "flags": 1
+        }
+    },
+    "1686234226101984:291656": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "daa54372309a35aff1fdfc33e7f8fd6b"
+                    },
+                    "v": "1686234226374870:294073"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "2048",
+                "compressedSize": "1895",
+                "extension": "png",
+                "originalRAM": "16384",
+                "originalSize": "7147",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1686234226105889:291662"
+        }
+    },
+    "1686234226102397:291661": {
+        "IFileManager": {
+            "path": "Files/File_1686234226102397_291661.png"
+        }
+    },
+    "1686234226105889:291662": {
+        "IFileManager": {
+            "path": "Files/File_1686234226105889_291662.png"
+        }
+    },
+    "1686234226374870:294073": {
+        "IFileManager": {
+            "path": "Files/File_1686234226374870_294073.pvr"
+        }
+    },
+    "1686647826351225:706402": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/gold_ball 2.png",
+                "hash": "daa54372309a35aff1fdfc33e7f8fd6b"
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "1666176883977306:6095641": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "24726ccd3378ac6f1b24c1cb2d8df93b"
+                    },
+                    "v": "1674573633995231:4198"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "13953720",
+                "compressedSize": "60746",
+                "extension": "t3d",
+                "originalRAM": "13953720",
+                "originalSize": "61010",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "5",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1674573633995220:4189"
+        }
+    },
+    "1674573633995066:4031": {
+        "IResourceController": {
+            "name": "glow_animation",
+            "type": 1,
+            "subtype": 5,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666176883977306:6095641",
+            "fileId": "1674573633995218:4187",
+            "originalId": "1674573633995219:4188",
+            "publicId": "1728871209771357:1520719",
+            "expected_hash": "e27189b0954b3ef9c9d5a7588c351afa"
+        },
+        "IResourceManager": {
+            "uid": "1666176883977306:6095641",
+            "name": "Files/File_1674573633995218_4187",
+            "flags": 1
+        }
+    },
+    "1674573633995218:4187": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995218_4187"
+        }
+    },
+    "1674573633995219:4188": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995219_4188"
+        }
+    },
+    "1674573633995220:4189": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995220_4189"
+        }
+    },
+    "1674573633995231:4198": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995231_4198"
+        }
+    },
+    "1728871209771357:1520719": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Textures/glow_animation",
+                "hash": "24726ccd3378ac6f1b24c1cb2d8df93b",
+                "complexResourceHash": "d3ca26b4b1a4f52b05a7a0ca7f2feddb"
+            }
+        }
+    }
+}

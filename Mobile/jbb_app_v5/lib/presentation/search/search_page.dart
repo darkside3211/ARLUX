@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/features/search/data/search_history_repository.dart';
+import 'package:jbb_app_v5/features/search/model/search_model.dart';
+import 'package:jbb_app_v5/presentation/pages/home/product_listing.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
+import 'package:jbb_app_v5/presentation/widgets/menus.dart';
+import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_search_field.dart';
 
 class SearchPage extends ConsumerStatefulWidget {
@@ -16,9 +19,21 @@ class _SearchPageState extends ConsumerState<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: const FilterDrawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.yellow,
+        iconTheme: const IconThemeData(color: Colors.amber),
+        backgroundColor: const Color(0xff292929),
         title: const ProductSearchField(),
+        actions: [
+          Builder(builder: (context) {
+            return IconButton(
+              onPressed: () {
+                Scaffold.of(context).openEndDrawer();
+              },
+              icon: const Icon(Icons.sort),
+            );
+          }),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.only(top: 16, left: 8, right: 8),
@@ -53,7 +68,15 @@ class _SearchPageState extends ConsumerState<SearchPage> {
               ),
             ),
             const Divider(),
-            
+            Text(
+              "Browse for More",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            const ProductListImpl(isScrollable: false),
           ],
         ),
       ),
@@ -81,6 +104,20 @@ class _HistoryListState extends ConsumerState<HistoryList> {
               search.length,
               (index) {
                 return ListTile(
+                  onTap: () {
+                    ref.read(searchQueryProvider.notifier).state =
+                        search[index];
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return ProductListing(
+                            productGrid: ProductSearchImpl(
+                                q: search[index], isScrollable: true),
+                          );
+                        },
+                      ),
+                    );
+                  },
                   title: Text(
                     search[index],
                     style: const TextStyle(fontSize: 12),

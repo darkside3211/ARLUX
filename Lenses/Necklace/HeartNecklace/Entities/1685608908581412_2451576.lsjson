@@ -1,0 +1,39 @@
+{
+    "1685608908581412:2451576": {
+        "IResourceController": {
+            "name": "Euro Filter",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1685608908581337:2451563",
+            "fileId": "1685608908602101:2451596",
+            "originalId": "1685609261752299:2713554",
+            "publicId": "1686647826364534:706420",
+            "expected_hash": "ece58cbb2457c2454eb1dd3d6bfc014a"
+        },
+        "IResourceManager": {
+            "uid": "1685608908581337:2451563",
+            "name": "Euro Filter",
+            "flags": 0
+        }
+    },
+    "1685608908602101:2451596": {
+        "IFileManager": {
+            "path": "Files/File_1685608908602101_2451596.oprfb"
+        }
+    },
+    "1685609261752299:2713554": {
+        "IFileManager": {
+            "path": "Files/File_1685609261752299_2713554.oprfb"
+        }
+    },
+    "1686647826364534:706420": {
+        "IResourceController": {
+            "public": {
+                "path": "Neck Binding Resources/Euro Filter.oprfb",
+                "hash": "c199cac29efb95e7e5ca2a0ac9e2b543"
+            }
+        }
+    }
+}

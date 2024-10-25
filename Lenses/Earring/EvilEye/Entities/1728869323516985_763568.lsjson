@@ -1,0 +1,30 @@
+{
+    "1728869323516985:763568": {
+        "IResourceController": {
+            "name": "Test Visibility",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323516953:763565",
+            "fileId": "1728869323539082:763572",
+            "originalId": "1728869328195231:764605",
+            "expected_hash": "7b14af1e5bf115cb2c3168e340fdef87"
+        },
+        "IResourceManager": {
+            "uid": "1728869323516953:763565",
+            "name": "sceneObject_1",
+            "flags": 0
+        }
+    },
+    "1728869323539082:763572": {
+        "IFileManager": {
+            "path": "Files/File_1728869323539082_763572.oprfb"
+        }
+    },
+    "1728869328195231:764605": {
+        "IFileManager": {
+            "path": "Files/File_1728869328195231_764605.oprfb"
+        }
+    }
+}

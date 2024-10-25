@@ -1,0 +1,43 @@
+{
+    "1678108368794444:100562": {
+        "IFileManager": {
+            "path": "Files/File_1678108368794444_100562.png"
+        }
+    },
+    "1678108368795774:100563": {
+        "IResourceController": {
+            "name": "white 2",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1678108368796214:100564",
+            "fileId": "1678108368794444:100562",
+            "originalId": "1678108368796645:100569",
+            "publicId": "1686647826347009:706398",
+            "expected_hash": "0c8dcfed2f50bb81ac5276a14967c005",
+            "additional": {
+                "originHash": "0c8dcfed2f50bb81ac5276a14967c005",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1678108368796214:100564",
+            "name": "Files/File_1678108368794444_100562.jpg",
+            "flags": 1
+        }
+    },
+    "1678108368796645:100569": {
+        "IFileManager": {
+            "path": "Files/File_1678108368796645_100569.png"
+        }
+    },
+    "1686647826347009:706398": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/white 2.png",
+                "hash": "0c8dcfed2f50bb81ac5276a14967c005"
+            }
+        }
+    }
+}

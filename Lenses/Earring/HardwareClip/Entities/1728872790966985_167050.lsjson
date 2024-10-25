@@ -1,0 +1,39 @@
+{
+    "1728872790964866:167049": {
+        "IFileManager": {
+            "path": "Files/File_1728872790964866_167049"
+        }
+    },
+    "1728872790966985:167050": {
+        "IResourceController": {
+            "name": "Gold",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728872790966992:167051",
+            "fileId": "1728872790964866:167049",
+            "originalId": "1728872790990409:167058",
+            "publicId": "1728872791432225:167294",
+            "expected_hash": "20b64ecbdcf7e2b82c0aa29038627025"
+        },
+        "IResourceManager": {
+            "uid": "1728872790966992:167051",
+            "name": "Files/File_1728872790964866_167049",
+            "flags": 1
+        }
+    },
+    "1728872790990409:167058": {
+        "IFileManager": {
+            "path": "Files/File_1728872790990409_167058.lsmat"
+        }
+    },
+    "1728872791432225:167294": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/HardwareClipEarring-Single/Materials/Gold.lsmat",
+                "hash": "0e5e2ef04597618625e677028717830f"
+            }
+        }
+    }
+}

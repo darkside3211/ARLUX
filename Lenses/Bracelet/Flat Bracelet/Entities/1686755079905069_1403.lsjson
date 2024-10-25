@@ -1,0 +1,23 @@
+{
+    "1686755079905069:1403": {
+        "IResourceController": {
+            "name": "Echopark",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1701112777765433:4534",
+            "resources": [
+                "1686755079904632:1016",
+                "1686755079904632:1017"
+            ]
+        }
+    },
+    "1701112777765433:4534": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Echopark"
+            }
+        }
+    }
+}

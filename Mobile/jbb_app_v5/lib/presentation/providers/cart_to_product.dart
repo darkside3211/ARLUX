@@ -1,4 +1,5 @@
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
+import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 
 class CartToProduct {
@@ -19,6 +20,25 @@ class CartToProduct {
       imageUrls: cartModel.imageUrls,
       modelUrl: cartModel.modelUrl,
       soldCount: cartModel.soldCount,
+      stockCount: cartModel.stockCount,
+      createdAt: cartModel.createdAt,
+      updatedAt: cartModel.updatedAt,
+    );
+  }
+}
+
+class CartToCheckout {
+  final CartModel cartModel;
+
+  CartToCheckout({required this.cartModel});
+
+  CheckoutItem getConvertedItem() {
+    return CheckoutItem(
+      productID: cartModel.id,
+      name: cartModel.name,
+      amount: cartModel.price.round(),
+      size: cartModel.size,
+      quantity: cartModel.quantity,
     );
   }
 }

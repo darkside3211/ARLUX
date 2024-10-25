@@ -1,0 +1,39 @@
+{
+    "1681731773381309:1345067": {
+        "IFileManager": {
+            "path": "Files/File_1681731773381309_1345067"
+        }
+    },
+    "1681731773382925:1345068": {
+        "IResourceController": {
+            "name": "Close",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1681731773382929:1345069",
+            "fileId": "1681731773381309:1345067",
+            "originalId": "1681731773418130:1345076",
+            "publicId": "1681731773495340:1345086",
+            "expected_hash": "4f9ea7abe8ae4cc33d47b95528d7b455"
+        },
+        "IResourceManager": {
+            "uid": "1681731773382929:1345069",
+            "name": "Files/File_1681731773381309_1345067",
+            "flags": 1
+        }
+    },
+    "1681731773418130:1345076": {
+        "IFileManager": {
+            "path": "Files/File_1681731773418130_1345076.lsmat"
+        }
+    },
+    "1681731773495340:1345086": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Close.lsmat",
+                "hash": "3d1287b1983cf78166a28ff88bd6326b"
+            }
+        }
+    }
+}

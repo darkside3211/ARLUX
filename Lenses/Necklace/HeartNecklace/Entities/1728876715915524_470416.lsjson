@@ -1,0 +1,48 @@
+{
+    "1728876715915524:470416": {
+        "IResourceController": {
+            "name": "HeartNecklace-lowpoly",
+            "type": 18,
+            "subtype": -1,
+            "dependency": 2,
+            "hidden": false,
+            "fileId": "1728876717713088:470785",
+            "publicId": "1728876717735948:470790",
+            "expected_hash": "d0a113c6cd57c22b2b2cd24406dee6fe",
+            "resources": [
+                "1728876717220342:470580",
+                "1728876717250709:470602",
+                "1728876717680431:470758"
+            ],
+            "additional": {
+                "ImportParams": {
+                    "animationCurveOptimization": "true",
+                    "convertMetersToCentimeters": "true",
+                    "importMorphTargetAnimation": "true",
+                    "importTangents": "true",
+                    "importVertexColor": "true",
+                    "recalculateTangents": "false"
+                },
+                "materialMapping": [
+                    {
+                        "k": "Gold",
+                        "v": "1728876717253119:470605"
+                    }
+                ]
+            }
+        }
+    },
+    "1728876717713088:470785": {
+        "IFileManager": {
+            "path": "Files/File_1728876717713088_470785.glb"
+        }
+    },
+    "1728876717735948:470790": {
+        "IResourceController": {
+            "public": {
+                "path": "HeartNecklace-lowpoly.glb",
+                "hash": "d0a113c6cd57c22b2b2cd24406dee6fe"
+            }
+        }
+    }
+}

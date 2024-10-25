@@ -1,0 +1,29 @@
+{
+    "1728869323771799:763609": {
+        "IFileManager": {
+            "path": "Files/File_1728869323771799_763609.js"
+        }
+    },
+    "1728869323773805:763610": {
+        "IResourceController": {
+            "name": "setPartialHairSegmentation",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323773827:763611",
+            "fileId": "1728869323771799:763609",
+            "expected_hash": "b14d5740be5870985d8948d700fa5035"
+        },
+        "IResourceManager": {
+            "uid": "1728869323773827:763611",
+            "name": "Files/File_1728869323771799_763609.js",
+            "flags": 1
+        }
+    },
+    "1728869323773827:763611": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

@@ -35,7 +35,6 @@ class SearchHistoryRepository {
   Future<void> clearSingleHistory(String query) async {
     final sharedPrefs = await SharedPreferences.getInstance();
     List<String>? history = sharedPrefs.getStringList('cache_search');
-    await sharedPrefs.remove('cache_search');
 
     if (history != null) {
       history.removeWhere((item) => item == query);
@@ -50,11 +49,12 @@ Future<List<String>> getSearchHistory(GetSearchHistoryRef ref) async {
 }
 
 @riverpod
-Future<void> clearHistory (ClearHistoryRef ref) {
+Future<void> clearHistory(ClearHistoryRef ref) {
   return SearchHistoryRepository().clearHistory();
 }
 
 @riverpod
-Future<void> clearSingleHistory (ClearSingleHistoryRef ref, {required String query}) async {
+Future<void> clearSingleHistory(ClearSingleHistoryRef ref,
+    {required String query}) async {
   await SearchHistoryRepository().clearSingleHistory(query);
 }

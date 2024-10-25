@@ -5,9 +5,10 @@ import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
-import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
-import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
+import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
+import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
+import 'package:jbb_app_v5/presentation/widgets/no_user.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_card.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.dart';
@@ -20,100 +21,116 @@ class CartPage extends ConsumerStatefulWidget {
 }
 
 class _CartPageState extends ConsumerState<CartPage> {
-  bool isEditing = false;
-  double totalPrices = 0.0;
+  List<CartModel> selectedBag = [];
   bool isSelectAll = false;
-  List<bool> selectedItems = [];
-  List<CartModel>? checkoutCart;
+
+  double totalPrice = 0.0;
 
   @override
   Widget build(BuildContext context) {
     final authState = ref.watch(authStateProvider);
-    final cartItems = ref.watch(getBagItemsProvider);
-    final subTotalPrices = ref.watch(subTotalPriceProvider);
+    final bagItems = ref.watch(getBagItemsProvider);
 
-    Widget buildAuthState() {
-      return authState.when(
-        data: (user) {
-          if (user != null) {
-            return cartItems.when(
-              data: (item) {
-                if (item.isNotEmpty) {
-                  totalPrices = item.fold(
-                      0.0, (sum, item) => sum + (item.price * item.quantity));
+    void toggleSelectAll(List<CartModel> items) {
+      setState(() {
+        if (isSelectAll) {
+          // Unselect all items
+          selectedBag.clear();
+          totalPrice = 0.0;
+        } else {
+          // Select all items
+          selectedBag = List.from(items); // Add all items to selectedBag
+          totalPrice =
+              items.fold(0.0, (sum, item) => sum + item.price * item.quantity);
+        }
+        isSelectAll = !isSelectAll; // Toggle isSelectAll
+      });
+    }
 
-                  // Initialize selectedItems list based on item length
-                  if (selectedItems.length != item.length) {
-                    selectedItems = List<bool>.filled(item.length, false);
-                  }
+    void showEditCartSheet(BuildContext context, CartModel cartModel) {
+      showModalBottomSheet(
+        context: context,
+        isScrollControlled: true, // Allow the bottom sheet to take full height
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        ),
+        builder: (context) {
+          return Padding(
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context)
+                  .viewInsets
+                  .bottom, // Handle keyboard overlap
+            ),
+            child: EditCartBottomSheet(
+                cartModel: cartModel), // Content inside the bottom sheet
+          );
+        },
+      );
+    }
 
-                  return Column(
-                    children: [
-                      //Display all cart items
-                      Column(
-                        children: List.generate(
-                          item.length,
-                          (index) {
-                            return ProductTile(
-                                cartModel: item[index],
-                                isEditing: isEditing,
-                                isSelected: selectedItems[index],
-                                onSelected: (value) {
-                                  setState(() {
-                                    selectedItems[index] = value!;
-                                    isSelectAll = selectedItems.every((e) => e);
-                                    value
-                                        ? ref
-                                            .read(
-                                                subTotalPriceProvider.notifier)
-                                            .state += item[index]
-                                                .price *
-                                            item[index].quantity
-                                        : ref
-                                            .read(
-                                                subTotalPriceProvider.notifier)
-                                            .state -= item[index]
-                                                .price *
-                                            item[index].quantity;
-                                  });
-                                });
-                          },
-                        ),
-                      ),
-                    ],
-                  );
-                }
-                return const Center(child: Text('Cart is empty'));
+    Widget buildBags() {
+      return bagItems.when(
+        data: (item) {
+          if (item.isNotEmpty) {
+            return ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: item.length,
+              itemBuilder: (context, index) {
+                final cartItem = item[index];
+                final isSelected = selectedBag.contains(cartItem);
+
+                return InkWell(
+                  onLongPress: () {
+                    setState(() {
+                      isSelectAll = false;
+                      totalPrice = 0.0;
+                      selectedBag.clear();
+                    });
+                    return showEditCartSheet(context, cartItem);
+                  },
+                  onTap: () {
+                    setState(() {
+                      isSelectAll = false;
+                      totalPrice = 0.0;
+                      selectedBag.clear();
+                    });
+                    return showEditCartSheet(context, cartItem);
+                  },
+                  child: ProductTile(
+                      cartModel: cartItem,
+                      value: isSelected,
+                      onChanged: (value) {
+                        if (value == true) {
+                          setState(() {
+                            totalPrice +=
+                                item[index].price * item[index].quantity;
+                            selectedBag.add(item[index]);
+                          });
+                        } else {
+                          setState(() {
+                            totalPrice -=
+                                item[index].price * item[index].quantity;
+                            selectedBag.remove(item[index]);
+                          });
+                        }
+
+                        isSelectAll = selectedBag.length == item.length;
+                      }),
+                );
               },
-              error: (err, stack) {
-                return IconedFailure(
-                    message: err.toString(),
-                    displayIcon: const Icon(Icons.error));
-              },
-              loading: () => const Center(
-                child: CircularProgressIndicator(
-                  color: Colors.amber,
-                ),
-              ),
             );
           } else {
-            return Center(
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll(Colors.amber)),
-                onPressed: () {
-                  ref.read(bottomNavIndexProvider.notifier).state = 2;
-                },
-                child: Text(
-                  'Login now',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
-              ),
+            return const IconedFailure(
+              message: 'You bag is empty...',
+              displayIcon: Icon(Icons.remove_shopping_cart_outlined),
             );
           }
         },
-        error: (err, stack) => IconedFailure(
-            message: err.toString(), displayIcon: const Icon(Icons.error)),
+        error: (err, stack) => const IconedFailure(
+          message: 'Failed to get cart items. Try again...',
+          displayIcon: Icon(Icons.remove_shopping_cart_outlined),
+        ),
         loading: () => const Center(
           child: CircularProgressIndicator(
             color: Colors.amber,
@@ -122,136 +139,126 @@ class _CartPageState extends ConsumerState<CartPage> {
       );
     }
 
-    void toggleSelectAll(bool? value) {
-      setState(() {
-        isSelectAll = value!;
-        selectedItems = List<bool>.filled(selectedItems.length, isSelectAll);
-        if (value) {
-          ref.read(subTotalPriceProvider.notifier).state = 0;
-        }
-      });
-    }
-
-    Widget buildBottomMenu() {
-      return Container(
-        decoration: const BoxDecoration(
-            border:
-                Border(top: BorderSide(color: AppColors.yellow, width: 2.0))),
-        child: BottomAppBar(
-          color: Colors.white,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Expanded(
+    return authState.when(
+      data: (user) {
+        if (user != null) {
+          return Scaffold(
+            bottomNavigationBar: Container(
+              decoration: const BoxDecoration(
+                  border: Border(
+                      top: BorderSide(color: AppColors.yellow, width: 2.0))),
+              child: BottomAppBar(
+                padding: const EdgeInsets.all(0),
+                elevation: 2,
+                color: AppColors.white,
                 child: Row(
-                  children: [
-                    Checkbox(
-                      activeColor: AppColors.yellow,
-                      checkColor: AppColors.black,
-                      value: isSelectAll,
-                      onChanged: (value) {
-                        toggleSelectAll(value);
-                      },
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Row(
+                      children: [
+                        Checkbox(
+                          activeColor: AppColors.yellow,
+                          checkColor: AppColors.black,
+                          value: isSelectAll,
+                          onChanged: (value) {
+                            final List<CartModel> bagItemData =
+                                bagItems.maybeWhen(
+                                    data: (items) => items, orElse: () => []);
+                            toggleSelectAll(bagItemData);
+                          },
+                        ),
+                        const Text('Select All'),
+                      ],
                     ),
-                    const Text('All'),
+                    const Spacer(),
+                    ProductPriceBuilder(price: totalPrice.abs()),
+                    gapW16,
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.yellow,
+                          fixedSize: const Size.fromHeight(80.0),
+                          shape: const BeveledRectangleBorder(
+                            side: BorderSide.none,
+                            borderRadius: BorderRadius.zero,
+                          )),
+                      onPressed: () {
+                        if (selectedBag.isNotEmpty) {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return CheckoutPage(
+                                  items: selectedBag,
+                                  totalPrice: totalPrice,
+                                );
+                              },
+                            ),
+                          );
+                        } else {
+                          SnackBarFailure(context,
+                              message: 'Item selections are empty.');
+                        }
+                      },
+                      child: Text(
+                        'Checkout (${selectedBag.length})',
+                        style: const TextStyle(
+                          color: AppColors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "Total:",
-                    style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red),
-                  ),
-                  ProductPriceBuilder(
-                      price: isSelectAll ? totalPrices.abs() : subTotalPrices.abs()),
-                ],
-              ),
-              gapW16,
-              const BuyElevatedButton(),
-            ],
-          ),
-        ),
-      );
-    }
-
-    return Stack(
-      children: [
-        SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Shopping Bag Title and Edit Button Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.shopping_bag_rounded,
-                        color: Colors.amber,
-                      ),
-                      const SizedBox(width: 16),
-                      Text(
-                        "Shopping Bag",
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleLarge!
-                            .copyWith(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                  // Edit Button
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      setState(() {
-                        isEditing = !isEditing;
-                      });
-                    },
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.black),
-                    label: Icon(
-                      Icons.sort,
-                      color: isEditing ? Colors.red : Colors.amber,
+            ),
+            body: SingleChildScrollView(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.shopping_bag_rounded,
+                          color: Colors.amber,
+                        ),
+                        const SizedBox(width: 16),
+                        Text(
+                          "Shopping Bag",
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleLarge!
+                              .copyWith(fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
-                    icon: Text(
-                      isEditing ? 'Done' : 'Edit',
-                      style: TextStyle(
-                        color: isEditing ? Colors.red : Colors.amber,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    const Divider(),
+                    buildBags(),
+                    gapH16,
+                    Text(
+                      "Browse for More",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge!
+                          .copyWith(fontWeight: FontWeight.bold),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 16),
-              buildAuthState(),
-              const SizedBox(height: 8),
-              const Divider(height: 32),
-              const SizedBox(height: 16),
-              Text(
-                "Browse for More",
-                style: Theme.of(context)
-                    .textTheme
-                    .titleLarge!
-                    .copyWith(fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 8),
-              const ProductListImpl(isScrollable: false),
-            ],
-          ),
+                    const Divider(),
+                    const ProductListImpl(isScrollable: false),
+                  ],
+                )),
+          );
+        } else {
+          return const NoUser(
+              title: 'Shopping Bag', icon: Icons.remove_shopping_cart);
+        }
+      },
+      error: (err, stack) => const IconedFailure(
+          message: 'You seem to be offline.',
+          displayIcon: Icon(Icons.wifi_off)),
+      loading: () => const Center(
+        child: CircularProgressIndicator(
+          color: Colors.amber,
         ),
-        if (isEditing)
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: buildBottomMenu(),
-          )
-      ],
+      ),
     );
   }
 }

@@ -1,0 +1,39 @@
+{
+    "1674573633995062:3995": {
+        "IResourceController": {
+            "name": "Metal gold flat env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1663690587614331:253148",
+            "fileId": "1674573633995108:4099",
+            "originalId": "1674573633995109:4100",
+            "publicId": "1728871199189099:1510837",
+            "expected_hash": "ee0240dc154a852d2cf70f4eaed7375f"
+        },
+        "IResourceManager": {
+            "uid": "1663690587614331:253148",
+            "name": "Files/File_1674573633995108_4099",
+            "flags": 1
+        }
+    },
+    "1674573633995108:4099": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995108_4099"
+        }
+    },
+    "1674573633995109:4100": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995109_4100.lsmat"
+        }
+    },
+    "1728871199189099:1510837": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Metal gold flat env.lsmat",
+                "hash": "3b4e64edf4ca45f2216a03f4e876e711"
+            }
+        }
+    }
+}

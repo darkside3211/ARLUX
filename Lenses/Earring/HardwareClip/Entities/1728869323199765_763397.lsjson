@@ -1,0 +1,29 @@
+{
+    "1728869323196529:763396": {
+        "IFileManager": {
+            "path": "Files/File_1728869323196529_763396.js"
+        }
+    },
+    "1728869323199765:763397": {
+        "IResourceController": {
+            "name": "Smart Hair Occluder",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323211303:763398",
+            "fileId": "1728869323196529:763396",
+            "expected_hash": "14b3c2df9045abbff49dc73fb367066b"
+        },
+        "IResourceManager": {
+            "uid": "1728869323211303:763398",
+            "name": "Files/File_1728869323196529_763396.js",
+            "flags": 1
+        }
+    },
+    "1728869323211303:763398": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

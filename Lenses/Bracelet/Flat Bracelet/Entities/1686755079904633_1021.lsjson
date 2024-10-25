@@ -1,0 +1,92 @@
+{
+    "1666104582330794:8651040": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2048",
+                        "uncompressed_hash": "936fdf6238fbe3ff056e43c38947c6ad"
+                    },
+                    "v": "1686755079904751:1173"
+                },
+                {
+                    "k": {
+                        "settings_hash": "3072",
+                        "uncompressed_hash": "936fdf6238fbe3ff056e43c38947c6ad"
+                    },
+                    "v": "1686755079904684:1121"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "1048576",
+                "compressedSize": "25955",
+                "extension": "jpg",
+                "originalRAM": "1048576",
+                "originalSize": "44557",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "0"
+                }
+            },
+            "uncompressed_file": "1686755079904672:1112"
+        }
+    },
+    "1686755079904633:1021": {
+        "IResourceController": {
+            "name": "FriendshipBraceletAO",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666104582330794:8651040",
+            "fileId": "1686755079904670:1110",
+            "originalId": "1686755079904671:1111",
+            "publicId": "1701112777768578:4539",
+            "expected_hash": "28d9da09bb9468f3370ad59a6ae387fc",
+            "additional": {
+                "originHash": "936fdf6238fbe3ff056e43c38947c6ad",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1666104582330794:8651040",
+            "name": "Files/File_1686755079904670_1110.jpg",
+            "flags": 1
+        }
+    },
+    "1686755079904670:1110": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904670_1110.jpg"
+        }
+    },
+    "1686755079904671:1111": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904671_1111.jpg"
+        }
+    },
+    "1686755079904672:1112": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904672_1112.jpg"
+        }
+    },
+    "1686755079904684:1121": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904684_1121.jpg"
+        }
+    },
+    "1686755079904751:1173": {
+        "IFileManager": {
+            "path": "Files/File_1686755079904751_1173.jpg"
+        }
+    },
+    "1701112777768578:4539": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Friendship Bracelet/FriendshipBraceletAO.jpg",
+                "hash": "936fdf6238fbe3ff056e43c38947c6ad"
+            }
+        }
+    }
+}

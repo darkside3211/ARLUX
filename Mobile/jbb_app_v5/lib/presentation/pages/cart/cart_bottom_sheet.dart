@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
@@ -109,23 +110,28 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
                 )),
               );
 
-              final isProductAdded = await ref.read(
-                addToBagProvider(
-                  productID: productId,
-                  quantity: _quantity,
-                  size: _selectedSize,
-                ).future,
-              );
-
-              // ignore: use_build_context_synchronously
-              Navigator.of(context, rootNavigator: true).pop();
-
-              if (isProductAdded && context.mounted) {
-                Navigator.pop(context);
-                SnackBarFailure(context, message: "Successfully added to bag!");
-              } else {
+              try {
+                final isProductAdded = await ref.read(
+                  addToBagProvider(
+                    productID: productId,
+                    quantity: _quantity,
+                    size: _selectedSize,
+                  ).future,
+                );
                 // ignore: use_build_context_synchronously
-                SnackBarFailure(context, message: "Failed to add to bag.");
+                Navigator.of(context, rootNavigator: true).pop();
+
+                if (isProductAdded && context.mounted) {
+                  Navigator.pop(context);
+                  SnackBarFailure(context,
+                      message: "Successfully added to bag!");
+                } else {
+                  // ignore: use_build_context_synchronously
+                  SnackBarFailure(context, message: "Failed to add to bag.");
+                }
+              } catch (e) {
+                // ignore: use_build_context_synchronously
+                SnackBarFailure(context, message: "Error to add to bag.");
               }
             },
           ),
@@ -235,9 +241,12 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CartElevatedButton(
-                isConfirm: true,
-                customFunction: () async {
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xff292929),
+                    foregroundColor: AppColors.yellow),
+                child: const Text("Apply"),
+                onPressed: () async {
                   showDialog(
                     context: context,
                     barrierDismissible: false,

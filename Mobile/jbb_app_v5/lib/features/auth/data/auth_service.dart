@@ -6,6 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/core/utils/failure.dart';
+import 'package:jbb_app_v5/features/auth/data/local_auth_service.dart';
+import 'package:jbb_app_v5/features/auth/model/user_model.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'auth_service.g.dart';
@@ -15,20 +18,15 @@ class AuthService {
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   final Dio dio = DioInstance().getDioInstance();
 
-  Future<void> signup({
+  Future<bool> signup({
     required String email,
     required String password,
-    required username,
   }) async {
     try {
-      UserCredential userCredential = await _auth
-          .createUserWithEmailAndPassword(email: email, password: password);
+      await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
 
-      String? token = await userCredential.user?.getIdToken();
-
-      await _registerUser(email: email, username: username, token: token);
-
-      await Future.delayed(const Duration(seconds: 1));
+      return true;
     } on FirebaseAuthException catch (e) {
       String message = "Something went wrong.";
 
@@ -39,16 +37,17 @@ class AuthService {
       }
 
       Failure.showErrorToast(message);
+      return false;
     } catch (e) {
-      Failure.showErrorToast(e.toString());
+      return false;
     }
   }
 
-  Future<void> signin({required String email, required String password}) async {
+  Future<bool> signin({required String email, required String password}) async {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
 
-      await Future.delayed(const Duration(seconds: 1));
+      return true;
     } on FirebaseAuthException catch (e) {
       String message = 'Please Input email and Password';
 
@@ -57,28 +56,42 @@ class AuthService {
       }
 
       Failure.showErrorToast(message);
+      return false;
     } catch (e) {
-      Failure.showErrorToast(e.toString());
+      return false;
     }
   }
 
-  Future<void> passwordResetEmail({required String email}) async {
-    await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
-    await signout();
+  Future<bool> passwordResetEmail({required String email}) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      await signout();
+
+      return true;
+    } on FirebaseAuthException catch (e) {
+      String message = 'Please Input email and Password';
+
+      if (e.code == 'invalid-credential') {
+        message = 'Wrong email or password';
+      }
+
+      Failure.showErrorToast(message);
+      return false;
+    } catch (e) {
+      return false;
+    }
   }
 
   Future<void> signout() async {
     await _auth.signOut();
-
-    await Future.delayed(const Duration(seconds: 1));
   }
 
-  Future<void> signInWithGoogle() async {
+  Future<bool> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
 
       if (googleUser == null) {
-        return;
+        return false;
       }
 
       final GoogleSignInAuthentication googleAuth =
@@ -89,56 +102,75 @@ class AuthService {
         idToken: googleAuth.idToken,
       );
 
-      UserCredential userCredential =
-          await _auth.signInWithCredential(credential);
-
-      String? token = await userCredential.user?.getIdToken();
-
-      await _registerUser(
-        token: token!,
-        email: googleUser.email,
-        username: googleUser.displayName!,
-      );
+      await _auth.signInWithCredential(credential);
+      return true;
     } on FirebaseAuthException catch (e) {
       Failure.showErrorToast("Google Sign-In failed: ${e.message}");
+      return false;
     } catch (e) {
-      Failure.showErrorToast(e.toString());
+      return false;
     }
   }
 
-  Future<void> _registerUser({
-    required String email,
-    required String username,
-    required String? token,
-  }) async {
+  Future<UserModel> getUserInfo({required String? token}) async {
     try {
-      final Map<String, dynamic> data = {
-        'email': email,
-        'username': username,
-      };
-
       final Response result = await dio.request(
-        '/register',
-        data: data,
+        "/users/auth/register",
         options: Options(
           headers: {
             'Authorization': 'Bearer $token',
             'Content-Type': 'application/json',
           },
-          method: "POST",
+          method: "GET",
         ),
       );
 
-      if (result.statusCode == 201) {
-        Failure.showErrorToast('User registered successfully');
-      } else if (result.statusCode == 200) {
-        Failure.showErrorToast('User already exists');
+      if (result.statusCode == 200) {
+        final json = result.data;
+
+        final user = UserModel.fromJson(json);
+
+        await LocalAuthService().cacheUserInfo(user: user);
+
+        return user;
       } else {
-        Failure.showErrorToast(
-            'Unexpected server response: ${result.statusCode}');
+        return LocalAuthService().getCachedUser();
       }
     } catch (e) {
-      Failure.showErrorToast('Error calling backend: ${e.toString()}');
+      Failure.showErrorToast("Failed getting user info.");
+      throw Exception(e.toString());
+    }
+  }
+
+  Future<bool> updateUserInfo({
+    required String? token,
+    required String username,
+    required String phone,
+  }) async {
+    try {
+      final Response result = await dio.request(
+        "/users/auth/register",
+        data: {
+          'username': username,
+          'phone': phone,
+        },
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+            'Content-Type': 'application/json',
+          },
+          method: "PUT",
+        ),
+      );
+
+      if (result.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      Failure.showErrorToast("Failed updating user info.");
+      throw Exception(e.toString());
     }
   }
 
@@ -150,6 +182,97 @@ class AuthService {
     }
 
     return null;
+  }
+
+  Future<bool> addUserAddress({
+    required AddressModel address,
+    required String? token,
+  }) async {
+    try {
+      final Response result = await dio.request(
+        "/users/auth/register/address",
+        data: {
+          'address': address.toJson(),
+        },
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+            'Content-Type': 'application/json',
+          },
+          method: "POST",
+        ),
+      );
+
+      if (result.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      Failure.showErrorToast("Failed adding address.");
+      return false;
+    }
+  }
+
+  Future<bool> editUserAddress(
+      {required String addressLabel,
+      required AddressModel address,
+      required String? token}) async {
+    try {
+      final Response result = await dio.request(
+        "/users/auth/register/address",
+        queryParameters: {
+          'addressLabel': addressLabel,
+        },
+        data: {
+          'address': address.toJson(),
+        },
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+            'Content-Type': 'application/json',
+          },
+          method: "PUT",
+        ),
+      );
+
+      if (result.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      Failure.showErrorToast("Failed updating address.");
+      return false;
+    }
+  }
+
+  Future<bool> deleteUserAddress(
+      {required String addressLabel, required String? token}) async {
+    try {
+      final Response result = await dio.request(
+        "/users/auth/register/address",
+        queryParameters: {
+          'addressLabel': addressLabel,
+        },
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+            'Content-Type': 'application/json',
+          },
+          method: "DELETE",
+        ),
+      );
+
+      if (result.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      Failure.showErrorToast("Failed updating address.");
+      throw Exception(e.toString());
+    }
   }
 }
 
@@ -164,7 +287,93 @@ Stream<User?> authState(AuthStateRef ref) {
 }
 
 @riverpod
-Future<String?> getFirebaseToken(GetFirebaseTokenRef ref) {
-  AuthService authService = ref.watch(authServiceProvider);
+Future<String?> getFirebaseToken(GetFirebaseTokenRef ref) async {
+  final AuthService authService = ref.watch(authServiceProvider);
   return authService.getFirebaseToken();
+}
+
+@riverpod
+Future<UserModel> getUserInfo(GetUserInfoRef ref) async {
+  final AuthService authService = ref.watch(authServiceProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final user = await authService.getUserInfo(token: token);
+
+  ref.read(defaultAddressProvider.notifier).state = user.addresses[0];
+
+  return user;
+}
+
+@riverpod
+Future<bool> updateUserInfo(
+  UpdateUserInfoRef ref, {
+  required String username,
+  required String phone,
+}) async {
+  final AuthService authService = ref.watch(authServiceProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final result = await authService.updateUserInfo(
+      token: token, username: username, phone: phone);
+
+  if (result) {
+    // ignore: unused_result
+    ref.refresh(getUserInfoProvider);
+  }
+
+  return result;
+}
+
+@riverpod
+Future<bool> addUserAddress(AddUserAddressRef ref,
+    {required AddressModel address}) async {
+  final AuthService authService = ref.watch(authServiceProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final result =
+      await authService.addUserAddress(token: token, address: address);
+
+  if (result) {
+    // ignore: unused_result
+    ref.refresh(getUserInfoProvider);
+  }
+
+  return result;
+}
+
+@riverpod
+Future<bool> editUserAddress(EditUserAddressRef ref,
+    {required AddressModel address, required String addressLabel}) async {
+  final AuthService authService = ref.watch(authServiceProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final result = await authService.editUserAddress(
+    token: token,
+    address: address,
+    addressLabel: addressLabel,
+  );
+
+  if (result) {
+    // ignore: unused_result
+    ref.refresh(getUserInfoProvider);
+  }
+
+  return result;
+}
+
+@riverpod
+Future<bool> deleteUserAddress(DeleteUserAddressRef ref,
+    {required String addressLabel}) async {
+  final AuthService authService = ref.watch(authServiceProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final result = await authService.deleteUserAddress(
+      token: token, addressLabel: addressLabel);
+
+  if (result) {
+    // ignore: unused_result
+    ref.refresh(getUserInfoProvider);
+  }
+
+  return result;
 }

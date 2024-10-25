@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/presentation/pages/try_on/try_on_screen.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_image.dart';
-import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:jbb_app_v5/presentation/widgets/product_widgets/gmodel_view.dart';
 
-class ProductViewer extends StatefulWidget {
+class ProductViewer extends ConsumerStatefulWidget {
   final bool isNetwork;
   final String? modelUrl;
   final String lensID;
@@ -13,7 +14,7 @@ class ProductViewer extends StatefulWidget {
 
   const ProductViewer({
     super.key,
-    this.modelUrl,
+    required this.modelUrl,
     required this.imageUrls,
     required this.isNetwork,
     this.lensID = '',
@@ -21,14 +22,14 @@ class ProductViewer extends StatefulWidget {
   });
 
   @override
-  State<ProductViewer> createState() => _ProductViewerState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _ProductViewerState();
 }
 
-class _ProductViewerState extends State<ProductViewer>
+class _ProductViewerState extends ConsumerState<ProductViewer>
     with SingleTickerProviderStateMixin {
   bool isModelView = false;
   bool canTryOn = false;
-  bool showSettings = false;
+  bool showSettings = true;
 
   late AnimationController _animationController;
 
@@ -56,7 +57,7 @@ class _ProductViewerState extends State<ProductViewer>
       child: Stack(
         children: [
           isModelView
-              ? _buildModelViewPlus()
+              ? GmodelView(modelUrl: widget.modelUrl!)
               : CustomGalleryImage(
                   imageItems: widget.imageUrls,
                   isNetwork: widget.isNetwork,
@@ -68,30 +69,30 @@ class _ProductViewerState extends State<ProductViewer>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                // Add IconButton to toggle both buttons visibility
-                CircleAvatar(
-                  backgroundColor: Colors.black,
-                  child: RotationTransition(
-                    turns: _animationController,
-                    child: IconButton(
-                      icon: const Icon(
-                        Icons.settings,
-                        color: AppColors.yellow,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          showSettings = !showSettings;
+                if (widget.modelUrl != null)
+                  CircleAvatar(
+                    backgroundColor: Colors.black,
+                    child: RotationTransition(
+                      turns: _animationController,
+                      child: IconButton(
+                        icon: const Icon(
+                          Icons.settings,
+                          color: AppColors.yellow,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            showSettings = !showSettings;
 
-                          if (showSettings) {
-                            _animationController.forward();
-                          } else {
-                            _animationController.reverse();
-                          }
-                        });
-                      },
+                            if (showSettings) {
+                              _animationController.forward();
+                            } else {
+                              _animationController.reverse();
+                            }
+                          });
+                        },
+                      ),
                     ),
                   ),
-                ),
                 const SizedBox(height: 8),
                 // AnimatedSwitcher for Try it virtually button
                 AnimatedSwitcher(
@@ -172,21 +173,6 @@ class _ProductViewerState extends State<ProductViewer>
           ),
         ],
       ),
-    );
-  }
-
-  ModelViewer _buildModelViewPlus() {
-    return ModelViewer(
-      src: widget.isNetwork
-          ? widget.modelUrl!
-          : 'assets/models/${widget.modelUrl}',
-      alt: 'Jewelry 3D model',
-      backgroundColor: Colors.amber.shade50,
-      cameraControls: true,
-      autoRotate: true,
-      autoRotateDelay: 3000,
-      shadowIntensity: 1,
-      exposure: 2,
     );
   }
 }

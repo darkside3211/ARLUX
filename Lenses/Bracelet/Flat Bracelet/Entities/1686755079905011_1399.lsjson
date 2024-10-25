@@ -1,0 +1,22 @@
+{
+    "1686755079905011:1399": {
+        "IResourceController": {
+            "name": "Occluder",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1701112777752176:4521",
+            "resources": [
+                "1697471842887328:147187"
+            ]
+        }
+    },
+    "1701112777752176:4521": {
+        "IResourceController": {
+            "public": {
+                "path": "Meshes/Occluder"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "1697645926221659:154398": {
+        "IResourceController": {
+            "name": "Hint",
+            "type": 0,
+            "subtype": -1,
+            "dependency": 0,
+            "hidden": false,
+            "publicId": "1701112777788210:4546",
+            "resources": [
+                "1697645926222056:154400",
+                "1697645926314585:154467"
+            ]
+        }
+    },
+    "1701112777788210:4546": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Hint"
+            }
+        }
+    }
+}

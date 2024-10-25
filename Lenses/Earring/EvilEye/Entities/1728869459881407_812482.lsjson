@@ -1,0 +1,39 @@
+{
+    "1728869459879803:812481": {
+        "IFileManager": {
+            "path": "Files/File_1728869459879803_812481"
+        }
+    },
+    "1728869459881407:812482": {
+        "IResourceController": {
+            "name": "EyeBall",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1728869459881412:812483",
+            "fileId": "1728869459879803:812481",
+            "originalId": "1728869459906123:812489",
+            "publicId": "1728869460721414:812900",
+            "expected_hash": "20b64ecbdcf7e2b82c0aa29038627025"
+        },
+        "IResourceManager": {
+            "uid": "1728869459881412:812483",
+            "name": "Files/File_1728869459879803_812481",
+            "flags": 1
+        }
+    },
+    "1728869459906123:812489": {
+        "IFileManager": {
+            "path": "Files/File_1728869459906123_812489.lsmat"
+        }
+    },
+    "1728869460721414:812900": {
+        "IResourceController": {
+            "public": {
+                "path": "../AdditionalFiles/EvilEyeEarring-Single/Materials/EyeBall.lsmat",
+                "hash": "ee31e06d1fca9433d478338bc0c20ab9"
+            }
+        }
+    }
+}

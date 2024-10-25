@@ -1,0 +1,39 @@
+{
+    "1674573633995065:4024": {
+        "IResourceController": {
+            "name": "Pink chains env",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1666166619097090:480966",
+            "fileId": "1674573633995203:4175",
+            "originalId": "1674573633995204:4176",
+            "publicId": "1728871176976668:1499023",
+            "expected_hash": "8148ccadb2d965343d570da5e0239446"
+        },
+        "IResourceManager": {
+            "uid": "1666166619097090:480966",
+            "name": "Files/File_1674573633995203_4175",
+            "flags": 1
+        }
+    },
+    "1674573633995203:4175": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995203_4175"
+        }
+    },
+    "1674573633995204:4176": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995204_4176.lsmat"
+        }
+    },
+    "1728871176976668:1499023": {
+        "IResourceController": {
+            "public": {
+                "path": "3D Resources/Materials/Pink chains env.lsmat",
+                "hash": "e8e67fec47995b06a24d82777700ac3e"
+            }
+        }
+    }
+}

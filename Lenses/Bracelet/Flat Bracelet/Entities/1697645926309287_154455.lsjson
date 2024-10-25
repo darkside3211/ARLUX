@@ -1,0 +1,80 @@
+{
+    "1697645926308216:154454": {
+        "IFileManager": {
+            "path": "Files/File_1697645926308216_154454.pvr"
+        }
+    },
+    "1697645926309287:154455": {
+        "IResourceController": {
+            "name": "Hint_Phone_Frame",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1697645926309501:154456",
+            "fileId": "1697645926308216:154454",
+            "originalId": "1697645926309782:154461",
+            "publicId": "1701112777793154:4551",
+            "expected_hash": "0096d7c3d11b095af99cec901184fc0f",
+            "additional": {
+                "originHash": "0096d7c3d11b095af99cec901184fc0f",
+                "subtype": "9"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1697645926309501:154456",
+            "name": "Files/File_1697645926308216_154454.jpg",
+            "flags": 1
+        }
+    },
+    "1697645926309501:154456": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "0826bec2c2d5fde4769e26f42fd5db4a"
+                    },
+                    "v": "1697645926614978:155580"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "40280",
+                "compressedSize": "2249",
+                "extension": "png",
+                "originalRAM": "316844",
+                "originalSize": "5827",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1697645926315482:154469"
+        }
+    },
+    "1697645926309782:154461": {
+        "IFileManager": {
+            "path": "Files/File_1697645926309782_154461.png"
+        }
+    },
+    "1697645926315482:154469": {
+        "IFileManager": {
+            "path": "Files/File_1697645926315482_154469.png"
+        }
+    },
+    "1697645926614978:155580": {
+        "IFileManager": {
+            "path": "Files/File_1697645926614978_155580.pvr"
+        }
+    },
+    "1701112777793154:4551": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Hint/Static/Hint_Phone_Frame.png",
+                "hash": "0826bec2c2d5fde4769e26f42fd5db4a"
+            }
+        }
+    }
+}

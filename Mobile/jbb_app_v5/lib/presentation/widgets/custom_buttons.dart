@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
-import 'package:jbb_app_v5/features/order/data/order_repository.dart';
-import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
-import 'package:jbb_app_v5/presentation/providers/theme_notifier.dart';
+import 'package:jbb_app_v5/presentation/widgets/bottom_sheets/product_bottom_sheet.dart';
 
 enum ButtonType { custom, cart, wishlist, theme, buy }
 
@@ -16,8 +14,15 @@ abstract class CustomButtons {
 }
 
 class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
-  final List<CheckoutItem>? checkouts;
-  const BuyElevatedButton({super.key, this.checkouts});
+  final bool isConfirm;
+  final String? customLabel;
+  final VoidCallback? customFunction;
+  const BuyElevatedButton({
+    super.key,
+    required this.isConfirm,
+    this.customLabel,
+    this.customFunction,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -27,9 +32,7 @@ class BuyElevatedButton extends ConsumerWidget implements CustomButtons {
         authState.when(
             data: (user) {
               if (user != null) {
-                if (checkouts != null) {
-                  ref.read(checkoutOrderProvider(orders: checkouts!));
-                }
+                isConfirm ? customFunction?.call() : _showBuySheet(context);
               } else {
                 ref.read(bottomNavIndexProvider.notifier).state = 2;
                 Navigator.pop(context);
@@ -71,12 +74,14 @@ class CheckoutElevatedButton extends StatelessWidget implements CustomButtons {
 
 class CartElevatedButton extends ConsumerWidget implements CustomButtons {
   final bool isConfirm;
+  final String? customLabel;
   final VoidCallback? customFunction;
 
   const CartElevatedButton({
     super.key,
     required this.isConfirm,
     this.customFunction,
+    this.customLabel,
   });
 
   @override
@@ -106,7 +111,7 @@ class CartElevatedButton extends ConsumerWidget implements CustomButtons {
       style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xff292929),
           foregroundColor: AppColors.yellow),
-      child: const Text('Add to Bag'),
+      child: Text(customLabel ?? "Add to bag"),
     );
   }
 
@@ -134,26 +139,24 @@ void _showCartSheet(BuildContext context) {
   );
 }
 
-class ThemeToggleButton extends ConsumerWidget implements CustomButtons {
-  const ThemeToggleButton({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final ThemeMode themeMode = ref.watch(themeNotifierProvider);
-    return ListTile(
-      leading: themeMode == ThemeMode.light
-          ? const Icon(Icons.brightness_2)
-          : const Icon(Icons.brightness_5),
-      title:
-          Text(themeMode == ThemeMode.light ? 'Theme(Light)' : 'Theme(Dark)'),
-      trailing: Switch(
-        value: themeMode == ThemeMode.light,
-        onChanged: (value) =>
-            ref.read(themeNotifierProvider.notifier).toggleTheme(),
-      ),
-    );
-  }
-
-  @override
-  ButtonType get type => ButtonType.theme;
+void _showBuySheet(BuildContext context) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true, // Allow the bottom sheet to take full height
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (context) {
+      return Padding(
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(context)
+              .viewInsets
+              .bottom, // Handle keyboard overlap
+        ),
+        child: ProductBottomSheet(
+            onPressed: (quantity, size) {},
+            label: 'Checkout'), // Content inside the bottom sheet
+      );
+    },
+  );
 }

@@ -1,0 +1,30 @@
+{
+    "1728869323221973:763460": {
+        "IFileManager": {
+            "path": "Files/File_1728869323221973_763460"
+        }
+    },
+    "1728869323223790:763461": {
+        "IResourceController": {
+            "name": "FacePlane",
+            "type": 2,
+            "subtype": 1,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323223803:763462",
+            "fileId": "1728869323221973:763460",
+            "originalId": "1728869323245394:763466",
+            "expected_hash": "a819b97fe6da76b2d0bba7589c7fb0e4"
+        },
+        "IResourceManager": {
+            "uid": "1728869323223803:763462",
+            "name": "Files/File_1728869323221973_763460",
+            "flags": 1
+        }
+    },
+    "1728869323245394:763466": {
+        "IFileManager": {
+            "path": "Files/File_1728869323245394_763466.lsmat"
+        }
+    }
+}

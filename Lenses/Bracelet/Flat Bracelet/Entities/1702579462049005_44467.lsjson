@@ -1,0 +1,31 @@
+{
+    "1702579462047745:44466": {
+        "IFileManager": {
+            "path": "Files/File_1702579462047745_44466.js"
+        }
+    },
+    "1702579462049005:44467": {
+        "IResourceController": {
+            "name": "Solver_101",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1702579462049017:44468",
+            "fileId": "1702579462047745:44466",
+            "expected_hash": "89aa53ccbbcb56383ef93090599a8d4b"
+        },
+        "IResourceManager": {
+            "uid": "1702579462049017:44468",
+            "name": "Files/File_1702579462047745_44466.js",
+            "flags": 1
+        }
+    },
+    "1702579462049017:44468": {
+        "ScriptModulesController": {
+            "dependent_module_names": [
+                "NewJSMathLibrary_102"
+            ]
+        }
+    }
+}

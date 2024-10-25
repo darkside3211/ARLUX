@@ -1,0 +1,48 @@
+{
+    "1728872785964246:165774": {
+        "IResourceController": {
+            "name": "HardwareClipEarring-Single",
+            "type": 18,
+            "subtype": -1,
+            "dependency": 2,
+            "hidden": false,
+            "fileId": "1728872791410428:167287",
+            "publicId": "1728872791430101:167292",
+            "expected_hash": "3c10bc39234e3c9f4a39771d5d54cf55",
+            "resources": [
+                "1728872790938964:167019",
+                "1728872790964244:167048",
+                "1728872791381267:167252"
+            ],
+            "additional": {
+                "ImportParams": {
+                    "animationCurveOptimization": "true",
+                    "convertMetersToCentimeters": "true",
+                    "importMorphTargetAnimation": "true",
+                    "importTangents": "true",
+                    "importVertexColor": "true",
+                    "recalculateTangents": "false"
+                },
+                "materialMapping": [
+                    {
+                        "k": "Gold",
+                        "v": "1728872790966992:167051"
+                    }
+                ]
+            }
+        }
+    },
+    "1728872791410428:167287": {
+        "IFileManager": {
+            "path": "Files/File_1728872791410428_167287.glb"
+        }
+    },
+    "1728872791430101:167292": {
+        "IResourceController": {
+            "public": {
+                "path": "HardwareClipEarring-Single.glb",
+                "hash": "3c10bc39234e3c9f4a39771d5d54cf55"
+            }
+        }
+    }
+}

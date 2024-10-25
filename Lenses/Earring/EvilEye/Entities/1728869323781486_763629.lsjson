@@ -1,0 +1,29 @@
+{
+    "1728869323778781:763628": {
+        "IFileManager": {
+            "path": "Files/File_1728869323778781_763628.js"
+        }
+    },
+    "1728869323781486:763629": {
+        "IResourceController": {
+            "name": "trackScreenCrop",
+            "type": 4,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": true,
+            "uid": "1728869323781516:763630",
+            "fileId": "1728869323778781:763628",
+            "expected_hash": "8daebe321cb3bae35f5ac232694168fe"
+        },
+        "IResourceManager": {
+            "uid": "1728869323781516:763630",
+            "name": "Files/File_1728869323778781_763628.js",
+            "flags": 1
+        }
+    },
+    "1728869323781516:763630": {
+        "ScriptModulesController": {
+            "dependent_module_names": []
+        }
+    }
+}

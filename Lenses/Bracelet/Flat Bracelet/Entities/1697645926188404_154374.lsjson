@@ -1,0 +1,43 @@
+{
+    "1697645926185253:154373": {
+        "IFileManager": {
+            "path": "Files/File_1697645926185253_154373"
+        }
+    },
+    "1697645926188404:154374": {
+        "IResourceController": {
+            "name": "Hint_Try_On_Hand_wave",
+            "type": 1,
+            "subtype": 5,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1697645926189813:154377",
+            "fileId": "1697645926185253:154373",
+            "originalId": "1697645926199590:154386",
+            "publicId": "1701112777789586:4548",
+            "expected_hash": "0f09e9af236b231ca85b1335b7147fae",
+            "additional": {
+                "subtype": "5"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1697645926189813:154377",
+            "name": "Files/File_1697645926185253_154373",
+            "flags": 1
+        }
+    },
+    "1697645926199590:154386": {
+        "IFileManager": {
+            "path": "Files/File_1697645926199590_154386"
+        }
+    },
+    "1701112777789586:4548": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Hint/Animated/Hint_Try_On_Hand_wave",
+                "hash": "0f09e9af236b231ca85b1335b7147fae",
+                "complexResourceHash": "be2b9918b686dc66f277d599097b48b7"
+            }
+        }
+    }
+}

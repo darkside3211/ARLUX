@@ -1,0 +1,30 @@
+{
+    "1728874968349597:17661": {
+        "IResourceController": {
+            "name": "FlatBracelet-LowPoly",
+            "type": 12,
+            "subtype": 0,
+            "dependency": 1,
+            "hidden": false,
+            "uid": "1728874968349475:17641",
+            "fileId": "1728874968375259:17689",
+            "originalId": "1728875371700654:117338",
+            "expected_hash": "e4a68cfa3665f769176eb844d5c649dd"
+        },
+        "IResourceManager": {
+            "uid": "1728874968349475:17641",
+            "name": "GltfImport_0",
+            "flags": 0
+        }
+    },
+    "1728874968375259:17689": {
+        "IFileManager": {
+            "path": "Files/File_1728874968375259_17689.oprfb"
+        }
+    },
+    "1728875371700654:117338": {
+        "IFileManager": {
+            "path": "Files/File_1728875371700654_117338.oprfb"
+        }
+    }
+}

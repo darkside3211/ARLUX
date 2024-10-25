@@ -1,0 +1,79 @@
+{
+    "1667155574306430:13017378": {
+        "Compression::IController": {
+            "compressed_files": [
+                {
+                    "k": {
+                        "settings_hash": "2049",
+                        "uncompressed_hash": "b0303fc03bbfdf0e87bdb99f7cfd108d"
+                    },
+                    "v": "1674573633995323:4266"
+                }
+            ],
+            "infos": {
+                "compressedRAM": "20000",
+                "compressedSize": "2870",
+                "extension": "png",
+                "originalRAM": "160000",
+                "originalSize": "11053",
+                "settings": {
+                    "isCompressed": "true",
+                    "level": "2",
+                    "subtype": "9",
+                    "type": "1"
+                }
+            },
+            "uncompressed_file": "1674573633995321:4265"
+        }
+    },
+    "1674573633995069:4055": {
+        "IResourceController": {
+            "name": "Earring Icon 2",
+            "type": 1,
+            "subtype": 9,
+            "dependency": 0,
+            "hidden": false,
+            "uid": "1667155574306430:13017378",
+            "fileId": "1674573633995294:4243",
+            "originalId": "1674573633995295:4244",
+            "publicId": "1674573633995406:4383",
+            "expected_hash": "2bc83b9d652e4b6d4c602501f486748d",
+            "additional": {
+                "originHash": "b0303fc03bbfdf0e87bdb99f7cfd108d"
+            }
+        },
+        "IResourceManager": {
+            "uid": "1667155574306430:13017378",
+            "name": "Files/File939.png",
+            "flags": 1
+        }
+    },
+    "1674573633995294:4243": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995294_4243.pvr"
+        }
+    },
+    "1674573633995295:4244": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995295_4244.png"
+        }
+    },
+    "1674573633995321:4265": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995321_4265.png"
+        }
+    },
+    "1674573633995323:4266": {
+        "IFileManager": {
+            "path": "Files/File_1674573633995323_4266.pvr"
+        }
+    },
+    "1674573633995406:4383": {
+        "IResourceController": {
+            "public": {
+                "path": "Textures/Icons/Earring Icon 2.png",
+                "hash": "b0303fc03bbfdf0e87bdb99f7cfd108d"
+            }
+        }
+    }
+}
