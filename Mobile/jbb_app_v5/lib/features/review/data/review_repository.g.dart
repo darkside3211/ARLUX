@@ -21,7 +21,7 @@ final reviewRepositoryProvider = AutoDisposeProvider<ReviewRepository>.internal(
 );
 
 typedef ReviewRepositoryRef = AutoDisposeProviderRef<ReviewRepository>;
-String _$addReviewHash() => r'6e78a1834baba5e13210f2d5976121d431b1cdfa';
+String _$addReviewHash() => r'fdf44db2da91274036aca85aafe0c73e58ceaada';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -58,13 +58,13 @@ class AddReviewFamily extends Family<AsyncValue<bool>> {
     required String productID,
     required String description,
     required int rating,
-    required String mediaUrl,
+    required List<XFile> images,
   }) {
     return AddReviewProvider(
       productID: productID,
       description: description,
       rating: rating,
-      mediaUrl: mediaUrl,
+      images: images,
     );
   }
 
@@ -76,7 +76,7 @@ class AddReviewFamily extends Family<AsyncValue<bool>> {
       productID: provider.productID,
       description: provider.description,
       rating: provider.rating,
-      mediaUrl: provider.mediaUrl,
+      images: provider.images,
     );
   }
 
@@ -102,14 +102,14 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
     required String productID,
     required String description,
     required int rating,
-    required String mediaUrl,
+    required List<XFile> images,
   }) : this._internal(
           (ref) => addReview(
             ref as AddReviewRef,
             productID: productID,
             description: description,
             rating: rating,
-            mediaUrl: mediaUrl,
+            images: images,
           ),
           from: addReviewProvider,
           name: r'addReviewProvider',
@@ -122,7 +122,7 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
           productID: productID,
           description: description,
           rating: rating,
-          mediaUrl: mediaUrl,
+          images: images,
         );
 
   AddReviewProvider._internal(
@@ -135,13 +135,13 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
     required this.productID,
     required this.description,
     required this.rating,
-    required this.mediaUrl,
+    required this.images,
   }) : super.internal();
 
   final String productID;
   final String description;
   final int rating;
-  final String mediaUrl;
+  final List<XFile> images;
 
   @override
   Override overrideWith(
@@ -159,7 +159,7 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
         productID: productID,
         description: description,
         rating: rating,
-        mediaUrl: mediaUrl,
+        images: images,
       ),
     );
   }
@@ -175,7 +175,7 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
         other.productID == productID &&
         other.description == description &&
         other.rating == rating &&
-        other.mediaUrl == mediaUrl;
+        other.images == images;
   }
 
   @override
@@ -184,7 +184,7 @@ class AddReviewProvider extends AutoDisposeFutureProvider<bool> {
     hash = _SystemHash.combine(hash, productID.hashCode);
     hash = _SystemHash.combine(hash, description.hashCode);
     hash = _SystemHash.combine(hash, rating.hashCode);
-    hash = _SystemHash.combine(hash, mediaUrl.hashCode);
+    hash = _SystemHash.combine(hash, images.hashCode);
 
     return _SystemHash.finish(hash);
   }
@@ -200,8 +200,8 @@ mixin AddReviewRef on AutoDisposeFutureProviderRef<bool> {
   /// The parameter `rating` of this provider.
   int get rating;
 
-  /// The parameter `mediaUrl` of this provider.
-  String get mediaUrl;
+  /// The parameter `images` of this provider.
+  List<XFile> get images;
 }
 
 class _AddReviewProviderElement extends AutoDisposeFutureProviderElement<bool>
@@ -215,7 +215,264 @@ class _AddReviewProviderElement extends AutoDisposeFutureProviderElement<bool>
   @override
   int get rating => (origin as AddReviewProvider).rating;
   @override
-  String get mediaUrl => (origin as AddReviewProvider).mediaUrl;
+  List<XFile> get images => (origin as AddReviewProvider).images;
+}
+
+String _$getReviewsHash() => r'87d6bb0d119d735dc1448fa6d08ddf100f1afc51';
+
+/// See also [getReviews].
+@ProviderFor(getReviews)
+const getReviewsProvider = GetReviewsFamily();
+
+/// See also [getReviews].
+class GetReviewsFamily extends Family<AsyncValue<List<ReviewModel>>> {
+  /// See also [getReviews].
+  const GetReviewsFamily();
+
+  /// See also [getReviews].
+  GetReviewsProvider call({
+    required String productId,
+  }) {
+    return GetReviewsProvider(
+      productId: productId,
+    );
+  }
+
+  @override
+  GetReviewsProvider getProviderOverride(
+    covariant GetReviewsProvider provider,
+  ) {
+    return call(
+      productId: provider.productId,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'getReviewsProvider';
+}
+
+/// See also [getReviews].
+class GetReviewsProvider extends AutoDisposeFutureProvider<List<ReviewModel>> {
+  /// See also [getReviews].
+  GetReviewsProvider({
+    required String productId,
+  }) : this._internal(
+          (ref) => getReviews(
+            ref as GetReviewsRef,
+            productId: productId,
+          ),
+          from: getReviewsProvider,
+          name: r'getReviewsProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$getReviewsHash,
+          dependencies: GetReviewsFamily._dependencies,
+          allTransitiveDependencies:
+              GetReviewsFamily._allTransitiveDependencies,
+          productId: productId,
+        );
+
+  GetReviewsProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.productId,
+  }) : super.internal();
+
+  final String productId;
+
+  @override
+  Override overrideWith(
+    FutureOr<List<ReviewModel>> Function(GetReviewsRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: GetReviewsProvider._internal(
+        (ref) => create(ref as GetReviewsRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        productId: productId,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeFutureProviderElement<List<ReviewModel>> createElement() {
+    return _GetReviewsProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is GetReviewsProvider && other.productId == productId;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, productId.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+mixin GetReviewsRef on AutoDisposeFutureProviderRef<List<ReviewModel>> {
+  /// The parameter `productId` of this provider.
+  String get productId;
+}
+
+class _GetReviewsProviderElement
+    extends AutoDisposeFutureProviderElement<List<ReviewModel>>
+    with GetReviewsRef {
+  _GetReviewsProviderElement(super.provider);
+
+  @override
+  String get productId => (origin as GetReviewsProvider).productId;
+}
+
+String _$removeReviewHash() => r'ed6ca9f2e4b7e8b7b8c44763565e20547ef08ec2';
+
+/// See also [removeReview].
+@ProviderFor(removeReview)
+const removeReviewProvider = RemoveReviewFamily();
+
+/// See also [removeReview].
+class RemoveReviewFamily extends Family<AsyncValue<bool>> {
+  /// See also [removeReview].
+  const RemoveReviewFamily();
+
+  /// See also [removeReview].
+  RemoveReviewProvider call({
+    required String reviewID,
+  }) {
+    return RemoveReviewProvider(
+      reviewID: reviewID,
+    );
+  }
+
+  @override
+  RemoveReviewProvider getProviderOverride(
+    covariant RemoveReviewProvider provider,
+  ) {
+    return call(
+      reviewID: provider.reviewID,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'removeReviewProvider';
+}
+
+/// See also [removeReview].
+class RemoveReviewProvider extends AutoDisposeFutureProvider<bool> {
+  /// See also [removeReview].
+  RemoveReviewProvider({
+    required String reviewID,
+  }) : this._internal(
+          (ref) => removeReview(
+            ref as RemoveReviewRef,
+            reviewID: reviewID,
+          ),
+          from: removeReviewProvider,
+          name: r'removeReviewProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$removeReviewHash,
+          dependencies: RemoveReviewFamily._dependencies,
+          allTransitiveDependencies:
+              RemoveReviewFamily._allTransitiveDependencies,
+          reviewID: reviewID,
+        );
+
+  RemoveReviewProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.reviewID,
+  }) : super.internal();
+
+  final String reviewID;
+
+  @override
+  Override overrideWith(
+    FutureOr<bool> Function(RemoveReviewRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: RemoveReviewProvider._internal(
+        (ref) => create(ref as RemoveReviewRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        reviewID: reviewID,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeFutureProviderElement<bool> createElement() {
+    return _RemoveReviewProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is RemoveReviewProvider && other.reviewID == reviewID;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, reviewID.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+mixin RemoveReviewRef on AutoDisposeFutureProviderRef<bool> {
+  /// The parameter `reviewID` of this provider.
+  String get reviewID;
+}
+
+class _RemoveReviewProviderElement
+    extends AutoDisposeFutureProviderElement<bool> with RemoveReviewRef {
+  _RemoveReviewProviderElement(super.provider);
+
+  @override
+  String get reviewID => (origin as RemoveReviewProvider).reviewID;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

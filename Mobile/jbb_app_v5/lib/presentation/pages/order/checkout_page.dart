@@ -347,9 +347,9 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
           );
         },
         error: (err, stack) {
-          return const IconedFailure(
-              message: 'You seem to be offline.',
-              displayIcon: Icon(Icons.wifi_off));
+          return IconedFailure(
+              message: err.toString(),
+              displayIcon: const Icon(Icons.wifi_off));
         },
         loading: () => const Center(
           child: CircularProgressIndicator(

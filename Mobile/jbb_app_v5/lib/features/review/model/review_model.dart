@@ -5,21 +5,23 @@ part 'review_model.g.dart';
 @JsonSerializable()
 class ReviewModel {
   final String reviewID;
-  final String productID;
-  final String userID;
+  final String productId;
+  final String userId;
+  final String username;
   final String description;
-  final int rating;
-  final String mediaUrl;
+  final String rating;
+  final List<String> mediaUrls;
   final DateTime createdAt;
   final DateTime updatedAt;
 
   ReviewModel({
     required this.reviewID,
-    required this.productID,
-    required this.userID,
+    required this.productId,
+    required this.userId,
+    required this.username,
     required this.description,
     required this.rating,
-    required this.mediaUrl,
+    required this.mediaUrls,
     required this.createdAt,
     required this.updatedAt,
   });

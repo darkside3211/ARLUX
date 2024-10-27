@@ -6,8 +6,10 @@ import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/core/utils/formats.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/features/order/model/order_model.dart';
+import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/pages/product/product_detail.dart';
+import 'package:jbb_app_v5/presentation/pages/rating/rating_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
@@ -188,23 +190,175 @@ class OrderTile extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    Widget buildProducts() {
+      return ListView.builder(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: orderModel.productItems.length,
+        itemBuilder: (context, index) {
+          final product = orderModel.productItems[index];
+          return Card(
+            child: ListTile(
+              onTap: () async {
+                showDialog(
+                  barrierDismissible: false,
+                  context: context,
+                  builder: (context) => const Center(
+                    child: CircularProgressIndicator(
+                      color: Colors.amber,
+                    ),
+                  ),
+                );
+
+                final productDetail = await ref.read(
+                    getSingleProductProvider(productId: product.productID)
+                        .future);
+
+                if (context.mounted) {
+                  Navigator.of(context, rootNavigator: true).pop();
+
+                  if (productDetail != null) {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            ProductDetail(productModel: productDetail),
+                      ),
+                    );
+                  }
+                }
+              },
+              leading: product.images != null
+                  ? CustomSingleImage(
+                      image: product.images![0],
+                      disableGestures: true,
+                      aspectRatio: 1,
+                      isNetwork: true,
+                    )
+                  : const Icon(Icons.image),
+              title: Text(
+                '${product.name} (${product.size})',
+                maxLines: 1,
+                textAlign: TextAlign.start,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+              subtitle: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      ProductPriceBuilder(price: product.amount),
+                      Text(' x${product.quantity}')
+                    ],
+                  ),
+                  if (orderModel.orderStatus == 'delivered')
+                    TextButton.icon(
+                      onPressed: () {
+                        showModalBottomSheet(
+                          isScrollControlled: true,
+                          context: context,
+                          builder: (context) => RatingBottomSheet(
+                            productId: product.productID,
+                          ),
+                        );
+                      },
+                      icon: const Text(
+                        'Rate Now',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.black),
+                      ),
+                      label: const Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                    )
+                ],
+              ),
+              isThreeLine: true,
+              trailing: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Subtotal:'),
+                  ProductPriceBuilder(price: product.amount * product.quantity),
+                ],
+              ),
+            ),
+          );
+        },
+      );
+    }
+
     return Card(
-      child: InkWell(
-        child: ListTile(
-          leading: orderModel.checkoutUrl == null
-              ? Text(orderModel.checkoutID)
-              : CartElevatedButton(
-                  isConfirm: true,
-                  customLabel: 'Pay Now',
-                  customFunction: () {
-                    LaunchCheckout(checkoutUrl: orderModel.checkoutUrl!);
-                  },
+        child: InkWell(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(formatDate(orderModel.updatedAt)),
+            gapH8,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'List Items (${orderModel.productItems.length})',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-          title: Text(orderModel.orderStatus),
-          subtitle: Text(orderModel.createdAt.toLocal().toString()),
+                Text(
+                  orderModel.orderStatus,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            const Divider(),
+            buildProducts(),
+            const Divider(),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text('Total (${orderModel.productItems.length}): '),
+                      ProductPriceBuilder(
+                          price: orderModel.productItems.fold(
+                        0.0,
+                        (previousValue, element) {
+                          return previousValue +
+                              (element.amount * element.quantity);
+                        },
+                      ))
+                    ],
+                  ),
+                  if (orderModel.checkoutUrl != null ||
+                      orderModel.orderStatus == 'toPay')
+                    CartElevatedButton(
+                      isConfirm: true,
+                      customFunction: () {
+                        if (orderModel.checkoutUrl != null) {
+                          LaunchCheckout(checkoutUrl: orderModel.checkoutUrl!);
+                        }
+                      },
+                      customLabel: 'Pay Now',
+                    ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
-    );
+    ));
   }
 }
 

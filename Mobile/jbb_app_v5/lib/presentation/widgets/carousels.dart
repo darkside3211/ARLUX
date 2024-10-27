@@ -134,6 +134,7 @@ class UserPurchasesCarousel extends ConsumerWidget implements Carousels {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final orderItems = ref.watch(orderStatusCountProvider);
+
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsetsDirectional.symmetric(horizontal: 16),
@@ -144,28 +145,67 @@ class UserPurchasesCarousel extends ConsumerWidget implements Carousels {
             title: 'All',
             icon: const Icon(Icons.all_inbox),
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const OrderPage()));
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const OrderPage(
+                        tabIndex: 0,
+                      )));
             },
           ),
           CustomIconWithCount(
             count: orderItems.toPay,
             title: 'To Pay',
             icon: const Icon(Icons.payments_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const OrderPage(
+                    tabIndex: 1,
+                  ),
+                ),
+              );
+            },
           ),
           CustomIconWithCount(
             count: orderItems.toShip,
             title: 'To Ship',
             icon: const Icon(Icons.local_shipping_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const OrderPage(
+                    tabIndex: 2,
+                  ),
+                ),
+              );
+            },
           ),
           CustomIconWithCount(
             count: orderItems.toReceive,
             title: 'To Receive',
             icon: const Icon(Icons.shopping_bag_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const OrderPage(
+                    tabIndex: 3,
+                  ),
+                ),
+              );
+            },
           ),
           CustomIconWithCount(
             count: orderItems.toRate,
-            title: 'To Rate',
+            title: 'Completed',
             icon: const Icon(Icons.rate_review_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const OrderPage(
+                    tabIndex: 4,
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),

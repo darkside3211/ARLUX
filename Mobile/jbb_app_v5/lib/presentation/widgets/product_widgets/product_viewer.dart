@@ -58,10 +58,26 @@ class _ProductViewerState extends ConsumerState<ProductViewer>
         children: [
           isModelView
               ? GmodelView(modelUrl: widget.modelUrl!)
-              : CustomGalleryImage(
-                  imageItems: widget.imageUrls,
-                  isNetwork: widget.isNetwork,
-                  aspectRatio: 1 / 1,
+              : InkWell(
+                  onTap: () {
+                    showDialog(
+                      useSafeArea: true,
+                      context: context,
+                      builder: (context) {
+                        return Center(
+                          child: CustomGalleryImage(
+                              imageItems: widget.imageUrls,
+                              isNetwork: true,
+                              aspectRatio: 9 / 16),
+                        );
+                      },
+                    );
+                  },
+                  child: CustomGalleryImage(
+                    imageItems: widget.imageUrls,
+                    isNetwork: widget.isNetwork,
+                    aspectRatio: 1 / 1,
+                  ),
                 ),
           Positioned(
             bottom: 8,

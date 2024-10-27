@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/utils/formats.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
+import 'package:jbb_app_v5/presentation/pages/rating/review_list.dart';
 import 'package:jbb_app_v5/presentation/widgets/app_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/bottom_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
@@ -24,7 +25,6 @@ class ProductDetail extends StatelessWidget {
       ),
       body: SafeArea(
           child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         padding: const EdgeInsets.symmetric(horizontal: 2.0),
         child: Column(
           children: [
@@ -80,6 +80,9 @@ class ProductDetail extends StatelessWidget {
                     productModel.description,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
+                  gapH8,
+                  Text('Updated: ${formatDate(productModel.updatedAt)}'),
+                  Text('Created: ${formatDate(productModel.createdAt)}'),
                   const Divider(height: 32),
                   Text(
                     'Reviews',
@@ -88,6 +91,8 @@ class ProductDetail extends StatelessWidget {
                         .titleLarge!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
+                  const Divider(),
+                  ReviewList(productID: productModel.id),
                   gapH8,
                   const Divider(height: Sizes.p32),
                   Text(

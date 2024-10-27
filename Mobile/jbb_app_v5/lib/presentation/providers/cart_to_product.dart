@@ -38,6 +38,7 @@ class CartToCheckout {
       name: cartModel.name,
       amount: cartModel.price.round(),
       size: cartModel.size,
+      images: cartModel.imageUrls,
       quantity: cartModel.quantity,
     );
   }

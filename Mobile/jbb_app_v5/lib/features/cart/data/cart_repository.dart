@@ -64,9 +64,9 @@ class CartRepository {
         List<CartModel> jewelries =
             json.map((item) => CartModel.fromJson(item)).toList();
 
-        await ProductLocalRepository().cacheBag(jewelries);
+        await ProductLocalRepository().cacheBag(jewelries.reversed.toList());
 
-        return jewelries;
+        return jewelries.reversed.toList();
       } else {
         ToastFailure(message: "You seem to be offline.");
         return ProductLocalRepository().getCachedBag();

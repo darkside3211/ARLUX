@@ -35,15 +35,22 @@ Map<String, dynamic> _$OrderModelToJson(OrderModel instance) =>
 
 ProductItem _$ProductItemFromJson(Map<String, dynamic> json) => ProductItem(
       productID: json['productID'] as String,
+      name: json['name'] as String,
+      images:
+          (json['images'] as List<dynamic>?)?.map((e) => e as String).toList(),
       quantity: (json['quantity'] as num).toInt(),
       size: json['size'] as String,
+      amount: (json['amount'] as num).toDouble(),
     );
 
 Map<String, dynamic> _$ProductItemToJson(ProductItem instance) =>
     <String, dynamic>{
       'productID': instance.productID,
+      'name': instance.name,
       'quantity': instance.quantity,
+      'images': instance.images,
       'size': instance.size,
+      'amount': instance.amount,
     };
 
 CheckoutItem _$CheckoutItemFromJson(Map<String, dynamic> json) => CheckoutItem(
@@ -53,6 +60,8 @@ CheckoutItem _$CheckoutItemFromJson(Map<String, dynamic> json) => CheckoutItem(
       size: json['size'] as String,
       quantity: (json['quantity'] as num).toInt(),
       currency: json['currency'] as String? ?? "PHP",
+      images:
+          (json['images'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$CheckoutItemToJson(CheckoutItem instance) =>
@@ -63,4 +72,5 @@ Map<String, dynamic> _$CheckoutItemToJson(CheckoutItem instance) =>
       'quantity': instance.quantity,
       'size': instance.size,
       'currency': instance.currency,
+      'images': instance.images,
     };

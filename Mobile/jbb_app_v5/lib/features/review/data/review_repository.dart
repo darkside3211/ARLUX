@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/features/review/model/review_model.dart';
@@ -13,22 +14,26 @@ class ReviewRepository {
     required String productID,
     required String description,
     required int rating,
-    required String mediaUrl,
+    required List<XFile> images,
     required String? token,
   }) async {
     try {
+      final FormData formData = FormData.fromMap({
+        'productId': productID,
+        'description': description,
+        'rating': rating,
+        'files': images
+            .map((image) => MultipartFile.fromFileSync(image.path,
+                contentType: DioMediaType.parse("image/jpeg")))
+            .toList(),
+      });
+
       final result = await dio.request(
         '/reviews',
-        data: {
-          'productId': productID,
-          'description': description,
-          'rating': rating,
-          'mediaUrl': mediaUrl,
-        },
+        data: formData,
         options: Options(
           headers: {
             'Authorization': 'Bearer $token',
-            'Content-Type': 'application/json',
           },
           method: 'POST',
         ),
@@ -46,10 +51,7 @@ class ReviewRepository {
   Future<List<ReviewModel>> getReviews({required String productID}) async {
     try {
       final result = await dio.request(
-        '/reviews',
-        data: {
-          'productId': productID,
-        },
+        '/reviews/$productID',
         options: Options(
           method: 'GET',
         ),
@@ -57,12 +59,34 @@ class ReviewRepository {
       if (result.statusCode == 200) {
         final json = result.data as List<dynamic>;
 
-        List<ReviewModel> jewelries =
+        List<ReviewModel> reviews =
             json.map((item) => ReviewModel.fromJson(item)).toList();
 
-        return jewelries;
+        return reviews;
       } else {
         return List.empty();
+      }
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
+
+  Future<bool> removeReview(
+      {required String reviewID, required String? token}) async {
+    try {
+      final result = await dio.request(
+        '/reviews/$reviewID',
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+          },
+          method: 'DELETE',
+        ),
+      );
+      if (result.statusCode == 200) {
+        return true;
+      } else {
+        return false;
       }
     } catch (e) {
       throw Exception(e);
@@ -81,7 +105,7 @@ Future<bool> addReview(
   required String productID,
   required String description,
   required int rating,
-  required String mediaUrl,
+  required List<XFile> images,
 }) async {
   final reviewRepository = ref.watch(reviewRepositoryProvider);
   final String? token = await ref.watch(getFirebaseTokenProvider.future);
@@ -90,13 +114,37 @@ Future<bool> addReview(
     productID: productID,
     description: description,
     rating: rating,
-    mediaUrl: mediaUrl,
+    images: images,
     token: token,
   );
 
   if (result) {
     // ignore: unused_result
-    //ref.refresh(getBagItemsProvider);
+    ref.refresh(getUserInfoProvider);
+  }
+
+  return result;
+}
+
+@riverpod
+Future<List<ReviewModel>> getReviews(GetReviewsRef ref,
+    {required String productId}) {
+  final reviewRepository = ref.watch(reviewRepositoryProvider);
+  return reviewRepository.getReviews(productID: productId);
+}
+
+@riverpod
+Future<bool> removeReview(RemoveReviewRef ref,
+    {required String reviewID}) async {
+  final reviewRepository = ref.watch(reviewRepositoryProvider);
+  final String? token = await ref.watch(getFirebaseTokenProvider.future);
+
+  final result =
+      await reviewRepository.removeReview(reviewID: reviewID, token: token);
+
+  if (result) {
+    // ignore: unused_result
+    ref.refresh(getUserInfoProvider);
   }
 
   return result;

@@ -182,7 +182,7 @@ class _AddressDialogState extends ConsumerState<AddressDialog> {
                 style: const TextStyle(color: Colors.white),
                 controller: _addressLine2Controller,
                 decoration:
-                    customInputDecoration(label: 'Address Line 2 (Optional)'),
+                    customInputDecoration(label: 'Nearest Landmark (Optional)'),
               ),
               gapH4,
 

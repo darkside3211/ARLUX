@@ -5,10 +5,14 @@ abstract class FailureWidget {}
 
 class IconedFailure extends StatelessWidget implements FailureWidget {
   final String message;
+  final String? subMessage;
   final Icon displayIcon;
 
   const IconedFailure(
-      {super.key, required this.message, required this.displayIcon});
+      {super.key,
+      required this.message,
+      required this.displayIcon,
+      this.subMessage});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +24,10 @@ class IconedFailure extends StatelessWidget implements FailureWidget {
           displayIcon,
           Text(
             message,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            subMessage ?? '',
             style: Theme.of(context).textTheme.bodyMedium,
           )
         ],

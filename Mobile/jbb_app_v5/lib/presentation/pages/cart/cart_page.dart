@@ -7,6 +7,7 @@ import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:jbb_app_v5/presentation/widgets/no_user.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_card.dart';
@@ -181,21 +182,51 @@ class _CartPageState extends ConsumerState<CartPage> {
                             side: BorderSide.none,
                             borderRadius: BorderRadius.zero,
                           )),
-                      onPressed: () {
-                        if (selectedBag.isNotEmpty) {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return CheckoutPage(
-                                  items: selectedBag,
-                                  totalPrice: totalPrice,
-                                );
-                              },
-                            ),
-                          );
-                        } else {
-                          SnackBarFailure(context,
-                              message: 'Item selections are empty.');
+                      onPressed: () async {
+                        showDialog(
+                          context: context,
+                          barrierDismissible: false,
+                          builder: (context) {
+                            return const Center(
+                              child: CircularProgressIndicator(
+                                color: Colors.amber,
+                              ),
+                            );
+                          },
+                        );
+
+                        final userInfo =
+                            await ref.read(getUserInfoProvider.future);
+
+                        if (context.mounted) {
+                          Navigator.of(context, rootNavigator: true).pop();
+                          if (userInfo.addresses.isNotEmpty &&
+                              userInfo.username != null &&
+                              userInfo.phone != null) {
+                            if (selectedBag.isNotEmpty) {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return CheckoutPage(
+                                      items: selectedBag,
+                                      totalPrice: totalPrice,
+                                    );
+                                  },
+                                ),
+                              );
+                            } else {
+                              SnackBarFailure(context,
+                                  message: 'Item selections are empty.');
+                            }
+                          } else {
+                            setState(() {
+                              ref.read(bottomNavIndexProvider.notifier).state =
+                                  2;
+                            });
+                            SnackBarFailure(context,
+                                message:
+                                    'Please provide your shipping information first.');
+                          }
                         }
                       },
                       child: Text(

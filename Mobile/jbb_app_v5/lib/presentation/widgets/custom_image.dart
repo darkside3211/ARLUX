@@ -28,6 +28,11 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
     return AspectRatio(
       aspectRatio: aspectRatio,
       child: PhotoView(
+        enablePanAlways: true,
+        enableRotation: false,
+        minScale: PhotoViewComputedScale.contained * 0.8,
+        maxScale: PhotoViewComputedScale.covered * 2,
+        strictScale: true,
         imageProvider: isNetwork
             ? NetworkImage(image)
             : isFile

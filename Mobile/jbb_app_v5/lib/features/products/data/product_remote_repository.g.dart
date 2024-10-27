@@ -373,5 +373,135 @@ class _CategorizeProductListProviderElement
   @override
   String get category => (origin as CategorizeProductListProvider).category;
 }
+
+String _$getSingleProductHash() => r'678385befc25863ecc4a856f759c7e412f38ff90';
+
+/// See also [getSingleProduct].
+@ProviderFor(getSingleProduct)
+const getSingleProductProvider = GetSingleProductFamily();
+
+/// See also [getSingleProduct].
+class GetSingleProductFamily extends Family<AsyncValue<ProductModel?>> {
+  /// See also [getSingleProduct].
+  const GetSingleProductFamily();
+
+  /// See also [getSingleProduct].
+  GetSingleProductProvider call({
+    required String productId,
+  }) {
+    return GetSingleProductProvider(
+      productId: productId,
+    );
+  }
+
+  @override
+  GetSingleProductProvider getProviderOverride(
+    covariant GetSingleProductProvider provider,
+  ) {
+    return call(
+      productId: provider.productId,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'getSingleProductProvider';
+}
+
+/// See also [getSingleProduct].
+class GetSingleProductProvider
+    extends AutoDisposeFutureProvider<ProductModel?> {
+  /// See also [getSingleProduct].
+  GetSingleProductProvider({
+    required String productId,
+  }) : this._internal(
+          (ref) => getSingleProduct(
+            ref as GetSingleProductRef,
+            productId: productId,
+          ),
+          from: getSingleProductProvider,
+          name: r'getSingleProductProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$getSingleProductHash,
+          dependencies: GetSingleProductFamily._dependencies,
+          allTransitiveDependencies:
+              GetSingleProductFamily._allTransitiveDependencies,
+          productId: productId,
+        );
+
+  GetSingleProductProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.productId,
+  }) : super.internal();
+
+  final String productId;
+
+  @override
+  Override overrideWith(
+    FutureOr<ProductModel?> Function(GetSingleProductRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: GetSingleProductProvider._internal(
+        (ref) => create(ref as GetSingleProductRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        productId: productId,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeFutureProviderElement<ProductModel?> createElement() {
+    return _GetSingleProductProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is GetSingleProductProvider && other.productId == productId;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, productId.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+mixin GetSingleProductRef on AutoDisposeFutureProviderRef<ProductModel?> {
+  /// The parameter `productId` of this provider.
+  String get productId;
+}
+
+class _GetSingleProductProviderElement
+    extends AutoDisposeFutureProviderElement<ProductModel?>
+    with GetSingleProductRef {
+  _GetSingleProductProviderElement(super.provider);
+
+  @override
+  String get productId => (origin as GetSingleProductProvider).productId;
+}
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

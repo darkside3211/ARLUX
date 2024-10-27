@@ -49,7 +49,7 @@ final getFirebaseTokenProvider = AutoDisposeFutureProvider<String?>.internal(
 );
 
 typedef GetFirebaseTokenRef = AutoDisposeFutureProviderRef<String?>;
-String _$getUserInfoHash() => r'3a46b84a5f7a823ad5fba57955cc0bc9341457fd';
+String _$getUserInfoHash() => r'73e8aa13561ad3015cd4bc54110bddb99f104f12';
 
 /// See also [getUserInfo].
 @ProviderFor(getUserInfo)

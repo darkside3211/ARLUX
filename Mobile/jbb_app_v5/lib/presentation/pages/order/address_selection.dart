@@ -103,7 +103,10 @@ class AddressExpansionTile extends StatelessWidget {
                 Icons.check_box_outline_blank,
                 color: AppColors.black,
               ),
-        title: Text(address.addressLabel, style: const TextStyle(fontWeight: FontWeight.bold),),
+        title: Text(
+          address.addressLabel,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
         subtitle: Text(
           address.line1,
           maxLines: 1,

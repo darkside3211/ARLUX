@@ -92,6 +92,22 @@ class ProductRemoteRepository {
       return List.empty();
     }
   }
+
+  Future<ProductModel?> getSingleProduct({required String productId}) async {
+    try {
+      final result = await dio.request("/products/$productId",
+          options: Options(method: "GET"));
+
+      if (result.statusCode == 200) {
+        final json = result.data;
+        return ProductModel.fromJson(json);
+      } else {
+        throw Exception("Failed to fetch Category Jewelries");
+      }
+    } catch (e) {
+      return null;
+    }
+  }
 }
 
 @riverpod
@@ -137,4 +153,12 @@ Future<List<ProductModel>> categorizeProductList(
   final productRemoteRepository = ref.watch(productRemoteRepositoryProvider);
 
   return productRemoteRepository.categorizeProductList(category: category);
+}
+
+@riverpod
+Future<ProductModel?> getSingleProduct(GetSingleProductRef ref,
+    {required String productId}) async {
+  final productRemoteRepository = ref.watch(productRemoteRepositoryProvider);
+  
+  return productRemoteRepository.getSingleProduct(productId: productId);
 }

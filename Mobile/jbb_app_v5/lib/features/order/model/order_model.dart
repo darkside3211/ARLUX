@@ -37,13 +37,19 @@ class OrderModel {
 @JsonSerializable()
 class ProductItem {
   final String productID;
+  final String name;
   final int quantity;
+  final List<String>? images;
   final String size;
+  final double amount;
 
   ProductItem({
     required this.productID,
+    required this.name,
+    this.images,
     required this.quantity,
     required this.size,
+    required this.amount,
   });
 
   // A factory constructor to create ProductItem from JSON
@@ -62,6 +68,7 @@ class CheckoutItem {
   final int quantity;
   final String size;
   final String currency;
+  final List<String>? images;
 
   const CheckoutItem({
     required this.productID,
@@ -70,6 +77,7 @@ class CheckoutItem {
     required this.size,
     required this.quantity,
     this.currency = "PHP",
+    this.images,
   });
 
   factory CheckoutItem.fromJson(Map<String, dynamic> json) =>

@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
-import 'package:jbb_app_v5/presentation/widgets/bottom_sheets/product_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_icons.dart';
 
@@ -22,7 +21,6 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final bagCount = ref.watch(bagItemCountProvider);
-    final orderCount = ref.watch(orderStatusCountProvider);
     return SizedBox(
       height: const Size.fromHeight(64).height,
       child: BottomNavigationBar(

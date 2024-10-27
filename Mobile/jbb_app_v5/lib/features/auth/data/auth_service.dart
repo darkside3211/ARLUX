@@ -8,6 +8,7 @@ import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/core/utils/failure.dart';
 import 'package:jbb_app_v5/features/auth/data/local_auth_service.dart';
 import 'package:jbb_app_v5/features/auth/model/user_model.dart';
+import 'package:jbb_app_v5/features/order/data/order_repository.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -299,7 +300,10 @@ Future<UserModel> getUserInfo(GetUserInfoRef ref) async {
 
   final user = await authService.getUserInfo(token: token);
 
-  ref.read(defaultAddressProvider.notifier).state = user.addresses[0];
+  if (user.addresses.isNotEmpty) {
+    ref.read(defaultAddressProvider.notifier).state = user.addresses[0];
+    ref.read(getOrdersProvider);
+  }
 
   return user;
 }
