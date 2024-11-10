@@ -1,5 +1,5 @@
 name: jbb_app_v5
-description: "A new Flutter project."
+description: "A Jewelry Shopping Application with 3D View and Virtual Try-on"
 publish_to: "none"
 version: 0.1.0
 
@@ -7,6 +7,7 @@ environment:
   sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
+  another_flutter_splash_screen: ^1.2.1
   badges: ^3.1.2
   cached_video_player_plus: ^3.0.3
   camerakit_flutter: ^1.0.1
@@ -39,6 +40,16 @@ dev_dependencies:
   riverpod_generator: ^2.4.0
   build_runner: ^2.4.11
   json_serializable: ^6.8.0
+  flutter_launcher_icons: "^0.14.1"
+  launcher_name: ^1.0.2
+
+flutter_launcher_icons:
+  image_path: "assets/icons/jbb_logo.png"
+  android: true
+  ios: true
+
+launcher_name:
+  default: "JBB Gold"
 
 flutter:
   uses-material-design: true

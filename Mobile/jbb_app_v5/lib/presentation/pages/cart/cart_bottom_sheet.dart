@@ -2,19 +2,131 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
+import 'package:jbb_app_v5/features/auth/model/user_model.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
+import 'package:jbb_app_v5/features/order/model/order_model.dart';
+import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
+import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 
 abstract class CartBottomSheet {}
 
+class BuyBottomSheet extends ConsumerStatefulWidget {
+  const BuyBottomSheet({super.key});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() => _BuyBottomSheetState();
+}
+
+class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
+  int _quantity = 1;
+  String _selectedSize = 'M';
+  final List<String> _sizes = ['S', 'M', 'L', 'XL'];
+
+  @override
+  Widget build(BuildContext context) {
+    final product = ref.watch(selectedProductProvider);
+
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Text(
+            "Select Quantity and Size",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+          gapH20,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Quantity",
+                style: TextStyle(fontSize: 16),
+              ),
+              gapW8,
+              Row(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.remove),
+                    onPressed: () {
+                      setState(() {
+                        if (_quantity > 1) _quantity--;
+                      });
+                    },
+                  ),
+                  Text(
+                    '$_quantity',
+                    style: const TextStyle(fontSize: 16),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.add),
+                    onPressed: () {
+                      setState(() {
+                        _quantity++;
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+          gapH20,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Size",
+                style: TextStyle(fontSize: 16),
+              ),
+              DropdownButton<String>(
+                value: _selectedSize,
+                items: _sizes.map((String size) {
+                  return DropdownMenuItem<String>(
+                    value: size,
+                    child: Text(size),
+                  );
+                }).toList(),
+                onChanged: (newSize) {
+                  setState(() {
+                    _selectedSize = newSize!;
+                  });
+                },
+              ),
+            ],
+          ),
+          gapH32,
+          CartElevatedButton(
+            isConfirm: true,
+            customBgColor: AppColors.yellow,
+            customFgColor: AppColors.black,
+            customLabel: 'Checkout',
+            customFunction: () {
+              final totalPrice = product!.price * _quantity;
+
+              final CartModel checkoutItem = ProductToCart(
+                      productModel: product,
+                      quantity: _quantity,
+                      size: _selectedSize)
+                  .getConvertedCart();
+
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => CheckoutPage(
+                      items: [checkoutItem], totalPrice: totalPrice)));
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class AddCartBottomSheet extends ConsumerStatefulWidget
     implements CartBottomSheet {
-  const AddCartBottomSheet({
-    super.key,
-  });
+  const AddCartBottomSheet({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -28,7 +140,6 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
 
   @override
   Widget build(BuildContext context) {
-    final productId = ref.watch(selectedProductIdProvider);
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -111,9 +222,11 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
               );
 
               try {
+                final productModel = ref.read(selectedProductProvider);
+
                 final isProductAdded = await ref.read(
                   addToBagProvider(
-                    productID: productId,
+                    productID: productModel!.id,
                     quantity: _quantity,
                     size: _selectedSize,
                   ).future,
@@ -141,8 +254,7 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
   }
 }
 
-class EditCartBottomSheet extends ConsumerStatefulWidget
-    implements AddCartBottomSheet {
+class EditCartBottomSheet extends ConsumerStatefulWidget {
   final CartModel cartModel;
 
   const EditCartBottomSheet({

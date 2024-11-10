@@ -47,7 +47,7 @@ class ResetPasswordPage extends ConsumerWidget {
                 height: 128,
                 width: 128,
                 child: CustomSingleImage(
-                    image: 'assets/icons/jbb_logo.jpeg',
+                    image: 'assets/icons/jbb_logo.png',
                     disableGestures: true,
                     aspectRatio: 1),
               ),

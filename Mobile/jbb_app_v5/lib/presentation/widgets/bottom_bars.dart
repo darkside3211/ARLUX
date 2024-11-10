@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
+import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
+import 'package:jbb_app_v5/features/order/model/order_model.dart';
+import 'package:jbb_app_v5/presentation/pages/cart/cart_bottom_sheet.dart';
+import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_icons.dart';
@@ -50,13 +54,11 @@ class HomeNavigationBar extends ConsumerWidget implements BottomBars {
   }
 }
 
-class ProductBuyCartBar extends StatelessWidget implements BottomBars {
-  final String productId;
-
-  const ProductBuyCartBar({super.key, required this.productId});
+class ProductBuyCartBar extends ConsumerWidget implements BottomBars {
+  const ProductBuyCartBar({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       decoration: const BoxDecoration(
           border: Border(top: BorderSide(color: AppColors.yellow, width: 2.0))),
@@ -74,13 +76,24 @@ class ProductBuyCartBar extends StatelessWidget implements BottomBars {
                   LaunchMessenger();
                 },
               ),
-              const Expanded(
+              Expanded(
                   child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  CartElevatedButton(isConfirm: true),
-                  SizedBox(width: 8.0),
-                  CartElevatedButton(isConfirm: false),
+                  CartElevatedButton(
+                    isConfirm: true,
+                    customLabel: 'Buy Now',
+                    customBgColor: AppColors.yellow,
+                    customFgColor: AppColors.black,
+                    customFunction: () {
+                      showModalBottomSheet(
+                        context: context,
+                        builder: (context) => const BuyBottomSheet(),
+                      );
+                    },
+                  ),
+                  gapW8,
+                  const CartElevatedButton(isConfirm: false),
                 ],
               ))
             ],

@@ -25,7 +25,7 @@ class HomeTopBar extends StatelessWidget implements AppBars {
       backgroundColor: const Color(0xff292929),
       iconTheme: Theme.of(context).iconTheme.copyWith(color: AppColors.yellow),
       title: Image.asset(
-        'assets/icons/jbb_logo.jpeg',
+        'assets/icons/jbb_logo.png',
         width: 120,
         height: 120,
       ),

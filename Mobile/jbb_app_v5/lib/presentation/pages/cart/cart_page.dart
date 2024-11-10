@@ -252,7 +252,7 @@ class _CartPageState extends ConsumerState<CartPage> {
                           Icons.shopping_bag_rounded,
                           color: Colors.amber,
                         ),
-                        const SizedBox(width: 16),
+                        gapW16,
                         Text(
                           "Shopping Bag",
                           style: Theme.of(context)
@@ -260,6 +260,60 @@ class _CartPageState extends ConsumerState<CartPage> {
                               .titleLarge!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
+                        const Spacer(),
+                        if (selectedBag.isNotEmpty)
+                          TextButton.icon(
+                            style: TextButton.styleFrom(
+                                foregroundColor: Colors.red),
+                            onPressed: () async {
+                              showDialog(
+                                context: context,
+                                barrierDismissible: false,
+                                builder: (context) {
+                                  return const Center(
+                                    child: CircularProgressIndicator(
+                                      color: Colors.amber,
+                                    ),
+                                  );
+                                },
+                              );
+
+                              final List<String> ids = [];
+
+                              for (var id in selectedBag) {
+                                ids.add(id.cartID);
+                              }
+
+                              final removed = await ref.read(
+                                  removeBagItemsProvider(cartIDs: ids).future);
+
+                              if (context.mounted) {
+                                Navigator.of(context, rootNavigator: true)
+                                    .pop();
+
+                                if (removed) {
+                                  setState(() {
+                                    selectedBag.clear();
+                                    isSelectAll = false;
+                                    totalPrice = 0.0;
+                                  });
+                                  SnackBarFailure(context,
+                                      message:
+                                          'Cart Items removed Successfully');
+                                } else {
+                                  setState(() {
+                                    selectedBag.clear();
+                                    isSelectAll = false;
+                                    totalPrice = 0.0;
+                                  });
+                                  SnackBarFailure(context,
+                                      message: 'An Error Occured.');
+                                }
+                              }
+                            },
+                            label: const Icon(Icons.delete_outline),
+                            icon: const Text('Delete'),
+                          ),
                       ],
                     ),
                     const Divider(),

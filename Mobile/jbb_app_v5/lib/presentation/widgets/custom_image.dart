@@ -39,8 +39,11 @@ class CustomSingleImage extends StatelessWidget implements CustomImage {
                 ? FileImage(File(image))
                 : AssetImage(image),
         disableGestures: disableGestures,
-        loadingBuilder: (context, event) =>
-            const CircularProgressIndicator(color: AppColors.yellow),
+        loadingBuilder: (context, event) => const Center(
+            child: SizedBox(
+              height: 50.0,
+              width: 50.0,
+              child: CircularProgressIndicator(color: AppColors.yellow))),
         tightMode: true,
       ),
     );
@@ -84,8 +87,8 @@ class _CustomGalleryImageState extends State<CustomGalleryImage> {
           loadingBuilder: (context, event) {
             return const Center(
               child: SizedBox(
-                width: 20.0,
-                height: 20.0,
+                width: 50.0,
+                height: 50.0,
                 child: CircularProgressIndicator(),
               ),
             );

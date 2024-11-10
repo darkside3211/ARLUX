@@ -8,6 +8,7 @@ import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/features/order/model/order_model.dart';
 import 'package:jbb_app_v5/features/products/data/product_remote_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
+import 'package:jbb_app_v5/presentation/pages/order/checkout_result.dart';
 import 'package:jbb_app_v5/presentation/pages/product/product_detail.dart';
 import 'package:jbb_app_v5/presentation/pages/rating/rating_bottom_sheet.dart';
 import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
@@ -34,12 +35,10 @@ class ProductThumbnail extends ConsumerWidget implements ProductCard {
       color: cardColor,
       child: InkWell(
         onTap: () {
-          ref.read(selectedProductIdProvider.notifier).state = productModel.id;
+          ref.read(selectedProductProvider.notifier).state = productModel;
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => ProductDetail(
-                productModel: productModel,
-              ),
+              builder: (context) => const ProductDetail(),
             ),
           );
         },
@@ -144,12 +143,10 @@ class ProductFeatureCard extends ConsumerWidget implements ProductCard {
       color: Colors.amber.shade50,
       child: InkWell(
         onTap: () {
-          ref.read(selectedProductIdProvider.notifier).state = productModel.id;
+          ref.read(selectedProductProvider.notifier).state = productModel;
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => ProductDetail(
-                productModel: productModel,
-              ),
+              builder: (context) => const ProductDetail(),
             ),
           );
         },
@@ -218,10 +215,11 @@ class OrderTile extends ConsumerWidget {
                   Navigator.of(context, rootNavigator: true).pop();
 
                   if (productDetail != null) {
+                    ref.read(selectedProductProvider.notifier).state =
+                        productDetail;
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) =>
-                            ProductDetail(productModel: productDetail),
+                        builder: (context) => const ProductDetail(),
                       ),
                     );
                   }
@@ -348,6 +346,8 @@ class OrderTile extends ConsumerWidget {
                       customFunction: () {
                         if (orderModel.checkoutUrl != null) {
                           LaunchCheckout(checkoutUrl: orderModel.checkoutUrl!);
+
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const CheckoutResult()));
                         }
                       },
                       customLabel: 'Pay Now',
@@ -424,12 +424,11 @@ class ProductTile extends ConsumerWidget {
         trailing: isDefault
             ? InkWell(
                 onTap: () {
+                  ref.read(selectedProductProvider.notifier).state =
+                      CartToProduct(cartModel: cartModel).getConvertedProduct();
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
-                    return ProductDetail(
-                      productModel: CartToProduct(cartModel: cartModel)
-                          .getConvertedProduct(),
-                    );
+                    return const ProductDetail();
                   }));
                 },
                 child: CustomSingleImage(

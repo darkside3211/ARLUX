@@ -1,28 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/utils/formats.dart';
-import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/pages/rating/review_list.dart';
+import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/app_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/bottom_bars.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_grid.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_viewer.dart';
 import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.dart';
 
-class ProductDetail extends StatelessWidget {
-  final ProductModel productModel;
-
-  const ProductDetail({super.key, required this.productModel});
+class ProductDetail extends ConsumerWidget {
+  const ProductDetail({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final productModel = ref.watch(selectedProductProvider);
     return Scaffold(
       appBar: ProductDetailTopBar(
-        productName: productModel.name,
+        productName: productModel!.name,
       ),
-      bottomNavigationBar: ProductBuyCartBar(
-        productId: productModel.id,
-      ),
+      bottomNavigationBar: const ProductBuyCartBar(),
       body: SafeArea(
           child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 2.0),

@@ -18,9 +18,11 @@ import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.d
 
 class CheckoutPage extends ConsumerStatefulWidget {
   final List<CartModel> items;
+  final CartModel? item;
   final double totalPrice;
   const CheckoutPage({
     super.key,
+    this.item,
     required this.items,
     required this.totalPrice,
   });
@@ -37,6 +39,15 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
     final address = ref.watch(defaultAddressProvider);
 
     Widget buildTiles() {
+      if (widget.item != null) {
+        return ProductTile(
+          cartModel: widget.item!,
+          isDefault: false,
+          value: true,
+          onChanged: (value) {},
+        );
+      }
+
       return ListView.builder(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
@@ -102,10 +113,15 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
                   List<CheckoutItem> orders = [];
                   List<String> cartIDs = [];
 
-                  for (var item in widget.items) {
-                    cartIDs.add(item.cartID);
-                    orders.add(
-                        CartToCheckout(cartModel: item).getConvertedItem());
+                  if (widget.item != null) {
+                    orders.add(CartToCheckout(cartModel: widget.item!)
+                        .getConvertedItem());
+                  } else {
+                    for (var item in widget.items) {
+                      cartIDs.add(item.cartID);
+                      orders.add(
+                          CartToCheckout(cartModel: item).getConvertedItem());
+                    }
                   }
 
                   final checkout = await ref.read(
@@ -115,10 +131,12 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
                   if (checkout != null) {
                     LaunchCheckout(checkoutUrl: checkout);
 
-                    final clearCheckouts = await ref
-                        .read(removeBagItemsProvider(cartIDs: cartIDs).future);
+                    if (widget.item == null) {
+                      await ref.read(
+                          removeBagItemsProvider(cartIDs: cartIDs).future);
+                    }
 
-                    if (clearCheckouts && context.mounted) {
+                    if (context.mounted) {
                       Navigator.of(context, rootNavigator: true).pop();
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
@@ -348,8 +366,7 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
         },
         error: (err, stack) {
           return IconedFailure(
-              message: err.toString(),
-              displayIcon: const Icon(Icons.wifi_off));
+              message: err.toString(), displayIcon: const Icon(Icons.wifi_off));
         },
         loading: () => const Center(
           child: CircularProgressIndicator(
