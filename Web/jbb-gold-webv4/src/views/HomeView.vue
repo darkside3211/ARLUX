@@ -20,9 +20,6 @@
             </v-col>
         </v-row>
     </v-container>
-
-    <PopularProducts :products="productStore.popularProducts" />
-
     <v-divider class="my-8"></v-divider>
     <div class="text-h6 font-weight-medium subtitle mb-6">
         Browse Collections
@@ -44,7 +41,6 @@ import { onMounted } from 'vue';
 import { useProductStore } from '@/stores/productStore';
 import ProductGrid from '@/components/ProductGrid.vue';
 import PageNotFound from './PageNotFound.vue';
-import PopularProducts from '@/components/PopularProducts.vue';
 
 import ringCategory from "@/assets/images/categories/ring_image.jpg";
 import earringCategory from "@/assets/images/categories/earring_image.jpg";

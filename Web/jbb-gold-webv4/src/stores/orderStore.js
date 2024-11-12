@@ -38,6 +38,20 @@ export const useOrderStore = defineStore("orderStore", () => {
     }
   }
 
+  async function modifyOrder(newOrder) {
+    loading.value = true;
+    error.value = null;
+    try {
+      const response = await adminService.modifyOrder(newOrder);
+      await getAllOrders();
+    } catch (error) {
+      console.error("unable to modify order: ", error);
+      throw error;
+    } finally {
+      loading.value = false;
+    }
+  }
+
   async function getUserOrders() {
     loading.value = true;
     error.value = null;
@@ -75,5 +89,6 @@ export const useOrderStore = defineStore("orderStore", () => {
     //actions
     getAllOrders,
     getUserOrders,
+    modifyOrder,
   };
 });
