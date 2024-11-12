@@ -11,8 +11,21 @@ export const productService = {
     }
   },
 
+  async getProductById(productId) {
+    try {
+      const response = await api.get(`/products/${productId}`);
+      return response.data;
+    } catch (error) {
+      console.error("Error Fetching Product:", error);
+      throw error;
+    }
+  },
+
   formatPrice(price) {
-    const number = Number(price);
-    return isNaN(number) ? "N/A" : `₱${number.toFixed(2)}`;
+    const number = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'PHP'
+    });
+    return number.format(price);
   },
 };

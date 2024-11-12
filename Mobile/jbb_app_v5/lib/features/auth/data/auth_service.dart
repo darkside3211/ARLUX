@@ -128,7 +128,6 @@ class AuthService {
 
       if (result.statusCode == 200) {
         final json = result.data;
-
         final user = UserModel.fromJson(json);
 
         await LocalAuthService().cacheUserInfo(user: user);

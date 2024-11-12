@@ -1,17 +1,19 @@
 <template>
-    <PageNotFound v-if="loading" message="..." />
-    <PageNotFound v-if="error" :message="error" />
+    <PageNotFound v-if="userStore.error" :message="userStore.error" />
     <v-container class="py-4" fluid>
         <!-- Profile Header -->
         <v-card class="mx-auto mb-4">
             <v-card-title>
                 <v-avatar size="50" class="mr-3" :image="userAvatar">
                 </v-avatar>
-                <div class="font-weight-bold">{{ userInfo.username ?? userInfo.email }}</div>
-                <strong v-if="userStore.isAdmin" class="font-italic text-subtitle-1">Administrator</strong>
+                {{ userInfo.username ?? userInfo.email }}
+                <router-link v-if="userStore.isAdmin" to="/admin">
+                    <strong class="font-italic text-subtitle-1">Administrator</strong>
+                </router-link>
+
             </v-card-title>
             <v-card-subtitle>
-                Cart Items: <strong>{{ cartItems }}</strong> | Orders: <strong>{{ orderItems }}</strong>
+                Cart Items: <strong>{{ cartItems }}</strong> | Orders: <strong>{{ orderStore.orders.length }}</strong>
             </v-card-subtitle>
             <v-card-actions>
                 <v-btn class="text-amber-darken-3" variant="outlined">
@@ -21,51 +23,52 @@
         </v-card>
 
         <!-- My Purchases Section -->
-        <v-card class="mb-4" outlined>
+        <v-card :loading="orderStore.loading" class="mb-4" outlined>
             <v-card-title class="subtitle-1 font-weight-bold">My Purchases</v-card-title>
             <v-divider></v-divider>
             <v-row class="pa-4" justify="space-around">
                 <v-col cols="2" class="text-center">
-                    <v-badge color="amber" overlap :content="orderItems" class="mb-2">
-                        <v-btn icon variant="tonal">
+                    <v-badge color="amber" overlap :content="orderStore.orders.length" class="mb-2">
+                        <v-btn icon variant="tonal" @click="selectedOrders = orderStore.orders">
                             <v-icon size="24">mdi-view-grid</v-icon>
                         </v-btn>
                     </v-badge>
                     <div>All</div>
                 </v-col>
                 <v-col cols="2" class="text-center">
-                    <v-badge color="amber" overlap content="7" class="mb-2">
-                        <v-btn icon variant='tonal'>
+                    <v-badge color="amber" overlap :content="orderStore.toPayOrders.length" class="mb-2">
+                        <v-btn icon variant='tonal' @click="selectedOrders = orderStore.toPayOrders">
                             <v-icon size="24">mdi-cash-check</v-icon>
                         </v-btn>
                     </v-badge>
                     <div>To Pay</div>
                 </v-col>
                 <v-col cols="2" class="text-center">
-                    <v-badge color="amber" overlap content="7" class="mb-2">
-                        <v-btn icon variant='tonal'>
+                    <v-badge color="amber" overlap :content="orderStore.toShipOrders.length" class="mb-2">
+                        <v-btn icon variant='tonal' @click="selectedOrders = orderStore.toShipOrders">
                             <v-icon size="24">mdi-truck</v-icon>
                         </v-btn>
                     </v-badge>
                     <div>To Ship</div>
                 </v-col>
                 <v-col cols="2" class="text-center">
-                    <v-badge color="amber" overlap content="7" class="mb-2">
-                        <v-btn icon variant='tonal'>
+                    <v-badge color="amber" overlap :content="orderStore.toReceiveOrders.length" class="mb-2">
+                        <v-btn icon variant='tonal' @click="selectedOrders = orderStore.toReceiveOrders">
                             <v-icon size="24">mdi-shopping</v-icon>
                         </v-btn>
                     </v-badge>
                     <div>To Receive</div>
                 </v-col>
                 <v-col cols="2" class="text-center">
-                    <v-badge color="amber" overlap content="7" class="mb-2">
-                        <v-btn icon variant='tonal'>
+                    <v-badge color="amber" overlap :content="orderStore.completedOrders.length" class="mb-2">
+                        <v-btn icon variant='tonal' @click="selectedOrders = orderStore.completedOrders">
                             <v-icon size="24">mdi-store-check</v-icon>
                         </v-btn>
                     </v-badge>
                     <div>Completed</div>
                 </v-col>
             </v-row>
+            <UserOrdersTable v-if="selectedOrders.length !== 0" :orders="selectedOrders" />
         </v-card>
 
         <!-- Support Section -->
@@ -120,17 +123,23 @@
 import router from '@/router';
 import { authService } from '@/services/authService';
 import { useUserStore } from '@/stores/userStore';
+import { useOrderStore } from '@/stores/orderStore';
 import PageNotFound from './PageNotFound.vue';
+import UserOrdersTable from '@/components/user/UserOrdersTable.vue';
+import { onMounted, ref } from 'vue';
 
 const userStore = useUserStore();
+const orderStore = useOrderStore();
+const selectedOrders = ref([]);
 
-const loading = userStore.loading;
-const error = userStore.error;
 const userInfo = userStore.userInfo;
 const userAvatar = userStore.user.photoURL;
 
 const cartItems = userInfo.cartItems.length;
-const orderItems = userInfo.orders.length;
+
+onMounted(() => {
+    orderStore.getUserOrders();
+})
 
 function handleSignOut() {
     authService.logout().then(() => {

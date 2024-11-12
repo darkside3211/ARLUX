@@ -10,7 +10,7 @@ class DioInstance implements NetworkCore {
   final String publicHost = 'https://jbb-back-end-m6mv.onrender.com';
 
   DioInstance() {
-    _dio.options.baseUrl = '$publicHost/api';
+    _dio.options.baseUrl = '$localHost/api';
     _dio.options.connectTimeout = const Duration(seconds: 8);
     _dio.options.receiveTimeout = const Duration(seconds: 5);
   }

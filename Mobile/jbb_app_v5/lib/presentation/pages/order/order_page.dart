@@ -90,7 +90,7 @@ class _OrderPageState extends ConsumerState<OrderPage>
                 OrderList(orders: _getFilteredOrders('toPay')),
                 OrderList(orders: _getFilteredOrders('toShip')),
                 OrderList(orders: _getFilteredOrders('toReceive')),
-                OrderList(orders: _getFilteredOrders('delivered')),
+                OrderList(orders: _getFilteredOrders('Completed')),
               ],
             );
           },

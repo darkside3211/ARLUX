@@ -22,6 +22,6 @@ defineProps({
 });
 
 function goBack() {
-    router.replace("/");
+    router.go(-1);
 }
 </script>

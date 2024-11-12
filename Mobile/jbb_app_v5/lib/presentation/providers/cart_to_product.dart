@@ -51,6 +51,7 @@ class CartToProduct {
       lensID: cartModel.lensID,
       groupID: cartModel.groupID,
       category: cartModel.category,
+      sizes: SizesModel(size: 'm', additionalAmount: 2),
       averageRating: cartModel.averageRating,
       imageUrls: cartModel.imageUrls,
       modelUrl: cartModel.modelUrl,

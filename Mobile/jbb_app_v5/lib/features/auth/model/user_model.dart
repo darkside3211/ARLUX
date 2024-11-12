@@ -1,3 +1,4 @@
+import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'user_model.g.dart';
@@ -9,6 +10,7 @@ class UserModel {
   final String? username;
   final List<AddressModel> addresses;
   final String? phone;
+  final String status;
   final List<CartItem> cartItems;
   final List<String> orders;
   final DateTime createdAt;
@@ -20,6 +22,7 @@ class UserModel {
     this.username,
     required this.addresses,
     this.phone,
+    required this.status,
     required this.cartItems,
     required this.orders,
     required this.createdAt,
@@ -73,7 +76,7 @@ class CartItem {
   final String cartID;
   final String productId;
   final int quantity;
-  final String size;
+  final SizesModel size;
 
   CartItem({
     required this.cartID,

@@ -1,48 +1,49 @@
 <template>
-    <v-card class="mx-auto" max-width="344" variant="outlined">
-        <v-img height="200px" :src="props.product.imageUrls[0]" cover></v-img>
+    <v-card @click="toDetails" class="mx-auto" max-width="344" variant="outlined">
+        <v-img height="200px" :src="props.product.imageUrls[0]" :lazy-src="logo" cover>
+            <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                    <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
+                </div>
+            </template>
+        </v-img>
 
         <v-card-title>
-            <span class="text-h6 font-weight-bold">{{ props.product.name }}</span>
+            <div class="text-subtitle-1 font-weight-bold nav-link">{{ props.product.name }}</div>
         </v-card-title>
-
-        <v-row class="ml-2" align="center">
-            <v-col cols="auto">
-                <v-rating readonly half-increments length="5" size="32" :model-value="props.product.averageRating"
-                    active-color="amber" color="amber-lighten-2" />
-            </v-col>
-            <v-col cols="auto">
-                <div>{{ props.product.averageRating.toFixed(1) }}</div>
-            </v-col>
-        </v-row>
-
         <v-card-subtitle>
-            <span class="text-h6 font-weight-bold">{{ productService.formatPrice(props.product.price) }}</span>
+            <v-rating readonly half-increments length="5" size="24" :model-value="props.product.averageRating"
+                active-color="amber">
+            </v-rating>
+
+            <span class="text-caption align-center">
+                ({{ props.product.soldCount }})
+            </span>
         </v-card-subtitle>
+        <div class="ml-4">
+            <div class="text-subtitle-1 text-yellow-darken-4 font-weight-bold">{{
+                productService.formatPrice(props.product.price)
+            }}</div>
+            <v-chip v-if="props.product.modelUrl" prepend-icon="mdi-cube-scan" class="text-uppercase" size="small"
+                label>
+                3D View
+            </v-chip>
+        </div>
 
         <v-card-actions>
-            <v-btn color="yellow-darken-4" class="font-weight-bold">View Details</v-btn>
+            <v-btn color="yellow-darken-4" class="font-weight-bold">Buy Now</v-btn>
             <v-spacer></v-spacer>
-            <v-btn :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="show = !show"></v-btn>
         </v-card-actions>
-
-        <v-expand-transition>
-            <div v-show="show">
-                <v-divider></v-divider>
-                <v-card-text class="text-subtitle-1">
-                    {{ props.product.description }}
-                </v-card-text>
-            </div>
-        </v-expand-transition>
     </v-card>
+
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue';
+import logo from "@/assets/images/jbb_logo.png";
 import { productService } from '@/services/productService';
+import { useRouter } from 'vue-router';
 
-const show = ref(false);
-
+const router = useRouter();
 const props = defineProps({
     product: {
         type: Object,
@@ -50,4 +51,14 @@ const props = defineProps({
     },
 });
 
+const toDetails = () => {
+    router.push(`/collection/${props.product.id}`);
+}
 </script>
+
+<style scoped>
+/* Base style for navigation links */
+.nav-link {
+    text-decoration: none;
+}
+</style>

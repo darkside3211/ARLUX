@@ -14,6 +14,7 @@ ProductModel _$ProductModelFromJson(Map<String, dynamic> json) => ProductModel(
       lensID: json['lensID'] as String,
       groupID: json['groupID'] as String,
       category: json['category'] as String,
+      sizes: SizesModel.fromJson(json['sizes'] as Map<String, dynamic>),
       averageRating: (json['averageRating'] as num).toDouble(),
       imageUrls:
           (json['imageUrls'] as List<dynamic>).map((e) => e as String).toList(),
@@ -36,8 +37,20 @@ Map<String, dynamic> _$ProductModelToJson(ProductModel instance) =>
       'averageRating': instance.averageRating,
       'imageUrls': instance.imageUrls,
       'modelUrl': instance.modelUrl,
+      'sizes': instance.sizes,
       'soldCount': instance.soldCount,
       'stockCount': instance.stockCount,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+SizesModel _$SizesModelFromJson(Map<String, dynamic> json) => SizesModel(
+      size: json['size'] as String,
+      additionalAmount: (json['additionalAmount'] as num).toDouble(),
+    );
+
+Map<String, dynamic> _$SizesModelToJson(SizesModel instance) =>
+    <String, dynamic>{
+      'size': instance.size,
+      'additionalAmount': instance.additionalAmount,
     };

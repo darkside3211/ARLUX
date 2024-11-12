@@ -15,7 +15,7 @@
         </v-col>
     </v-row>
     <PageNotFound v-else-if="productStore.error" :message="productStore.error" />
-    <ProductGrid v-else :products="productStore.products" />
+    <ProductGrid v-else :products="productStore.currentProducts" />
 </template>
 
 <script setup>

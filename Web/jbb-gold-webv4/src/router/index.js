@@ -5,7 +5,11 @@ import CollectionsView from "@/views/CollectionsView.vue";
 import { useUserStore } from "@/stores/userStore";
 import AccountView from "@/views/AccountView.vue";
 import AuthView from "@/views/AuthView.vue";
-import AdminView from "@/views/AdminView.vue";
+import AdminOrdersView from "@/views/admin/AdminOrdersView.vue";
+import AdminDashboardView from "@/views/admin/AdminDashboardView.vue";
+import AdminStockView from "@/views/admin/AdminStockView.vue";
+import AdminAccountsView from "@/views/admin/AdminAccountsView.vue";
+import ProductView from "@/views/ProductView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,9 +25,21 @@ const router = createRouter({
       component: CollectionsView,
     },
     {
+      path: "/collection/:id",
+      name: "productDetails",
+      component: ProductView,
+      props: true,
+    },
+    {
       path: "/account",
       name: "account",
       component: AccountView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: "/bag",
+      name: "bag",
+      component: () => import("@/views/BagView.vue"),
       meta: { requiresAuth: true },
     },
     {
@@ -34,8 +50,31 @@ const router = createRouter({
     {
       path: "/admin",
       name: "admin",
-      component: AdminView,
+      redirect: { name: "adminDashboard" },
+      component: () => import("@/views/AdminView.vue"),
       meta: { requiresAuth: true, requiresAdmin: true },
+      children: [
+        {
+          path: "#",
+          name: "adminDashboard",
+          component: AdminDashboardView,
+        },
+        {
+          path: "orders",
+          name: "adminOrders",
+          component: AdminOrdersView,
+        },
+        {
+          path: "stock",
+          name: "adminStock",
+          component: AdminStockView,
+        },
+        {
+          path: "accounts",
+          name: "adminAccounts",
+          component: AdminAccountsView,
+        },
+      ],
     },
     {
       path: "/:pathMatch(.*)*",

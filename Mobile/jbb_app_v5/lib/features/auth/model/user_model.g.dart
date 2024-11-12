@@ -14,6 +14,7 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
           .map((e) => AddressModel.fromJson(e as Map<String, dynamic>))
           .toList(),
       phone: json['phone'] as String?,
+      status: json['status'] as String,
       cartItems: (json['cartItems'] as List<dynamic>)
           .map((e) => CartItem.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -29,6 +30,7 @@ Map<String, dynamic> _$UserModelToJson(UserModel instance) => <String, dynamic>{
       'username': instance.username,
       'addresses': instance.addresses,
       'phone': instance.phone,
+      'status': instance.status,
       'cartItems': instance.cartItems,
       'orders': instance.orders,
       'createdAt': instance.createdAt.toIso8601String(),
@@ -60,7 +62,7 @@ CartItem _$CartItemFromJson(Map<String, dynamic> json) => CartItem(
       cartID: json['cartID'] as String,
       productId: json['productId'] as String,
       quantity: (json['quantity'] as num).toInt(),
-      size: json['size'] as String,
+      size: SizesModel.fromJson(json['size'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$CartItemToJson(CartItem instance) => <String, dynamic>{

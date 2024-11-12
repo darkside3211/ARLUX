@@ -14,6 +14,11 @@
         }
       }
     </script>
+    <script>
+      const model = localStorage.get("currentModel");
+
+      document.getElementById("modelViewer").setAttribute("src", model);
+    </script>
     <style>
       model-viewer {
         width: 1024px;
@@ -25,7 +30,8 @@
   </head>
   <body>
     <model-viewer
-      src="https://firebasestorage.googleapis.com/v0/b/jbb-gold.appspot.com/o/models%2FFlatBracelet.glb?alt=media&token=2a976624-62a8-4e71-8b40-b14bf7257453"
+      id="modelViewer"
+      alt="3dModel"
       camera-controls
       tone-mapping="neutral"
       shadow-intensity="1"

@@ -29,13 +29,24 @@
                         <v-icon :class="['icon-link', { 'active-icon': isActive('/search') }]">
                             mdi-magnify
                         </v-icon>
-                        <v-icon :class="['icon-link', { 'active-icon': isActive('/bag') }]" @click="navigateTo('bag')">
-                            mdi-shopping
-                        </v-icon>
-                        <v-icon :class="['icon-link', { 'active-icon': isActive('/account') }]"
+                        <v-badge color="amber" overlap :content="cartStore.carts.length || 0">
+                            <v-icon :class="['icon-link', { 'active-icon': isActive('/bag') }]"
+                                @click="navigateTo('bag')">
+                                mdi-shopping
+                            </v-icon>
+                        </v-badge>
+
+
+                        <v-btn icon :class="['icon-link', { 'active-icon': isActive('/account') }]"
                             @click="navigateTo('account')">
-                            mdi-account
-                        </v-icon>
+                            <v-avatar v-if="userStore.isAuthenticated && userStore.user.photoURL"
+                                :image="userStore.user.photoURL">
+                            </v-avatar>
+                            <v-avatar v-else icon="mdi-account"
+                                :class="['icon-link', { 'active-icon': isActive('/account') }]">
+                            </v-avatar>
+                        </v-btn>
+
                         <v-icon v-if="userStore.isAdmin" @click="toggleTheme">
                             mdi-theme-light-dark
                         </v-icon>
@@ -52,9 +63,10 @@ import logo from '@/assets/images/jbb_logo.png';
 import { useDisplay } from 'vuetify/lib/framework.mjs';
 import { useUserStore } from '@/stores/userStore';
 import { useGlobalStore } from '@/stores/globalStore';
-import SearchBar from './SearchBar.vue';
+import { useCartStore } from '@/stores/cartStore';
 
 const globalStore = useGlobalStore();
+const cartStore = useCartStore();
 const router = useRouter();
 const route = useRoute();
 const userStore = useUserStore();

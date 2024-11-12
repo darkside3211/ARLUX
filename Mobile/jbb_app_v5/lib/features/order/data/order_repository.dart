@@ -92,7 +92,6 @@ Future<String?> checkoutOrder(
     // ignore: unused_result
     ref.refresh(getOrdersProvider);
   }
-
   return order;
 }
 

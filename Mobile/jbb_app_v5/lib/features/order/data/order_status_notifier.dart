@@ -23,7 +23,7 @@ class OrderStatusCountNotifier extends StateNotifier<OrderStatusCount> {
         case 'toReceive':
           toReceiveCount++;
           break;
-        case 'delivered':
+        case 'Completed':
           toRateCount++;
           break;
       }

@@ -252,7 +252,7 @@ class OrderTile extends ConsumerWidget {
                       Text(' x${product.quantity}')
                     ],
                   ),
-                  if (orderModel.orderStatus == 'delivered')
+                  if (orderModel.orderStatus == 'Completed')
                     TextButton.icon(
                       onPressed: () {
                         showModalBottomSheet(

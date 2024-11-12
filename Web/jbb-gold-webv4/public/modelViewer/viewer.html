@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Viewer</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@^0.169.0/build/three.module.min.js"
+        }
+      }
+    </script>
+    <script
+      type="module"
+      src=" https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js "
+    ></script>
+
+    <script
+      type="module"
+      src=" https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js "
+    ></script>
+    <style>
+      model-viewer {
+        width: 100%;
+        height: 490px;
+        background-color: cornsilk;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      id="modelViewer"
+      alt="3dModel"
+      camera-controls
+      tone-mapping="neutral"
+      shadow-intensity="1"
+      exposure="0.5"
+      field-of-view="30deg"
+      shadow-softness="1"
+      environment-image="jewelry_studio.hdr"
+    >
+      <effect-composer>
+        <bloom-effect
+          radius="0.5"
+        ></bloom-effect>
+        <ssao-effect></ssao-effect>
+        <outline-effect color="black"></outline-effect>
+      </effect-composer>
+    </model-viewer>
+
+    <script>
+      const model = localStorage.getItem("currentModel");
+
+      document.getElementById("modelViewer").setAttribute("src", model);
+    </script>
+  </body>
+</html>

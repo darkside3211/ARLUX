@@ -10,7 +10,6 @@
     </div>
     <v-divider></v-divider>
 
-    <br>
     <v-container class="text-center justify-center">
         <v-row justify="center">
             <v-col v-for="category in categoryList" :key="category" cols="6" sm="3" md="3">
@@ -21,13 +20,13 @@
             </v-col>
         </v-row>
     </v-container>
-    <br>
+
+    <PopularProducts :products="productStore.popularProducts" />
+
     <v-divider class="my-8"></v-divider>
-    <br>
     <div class="text-h6 font-weight-medium subtitle mb-6">
         Browse Collections
     </div>
-    <br>
     <v-row v-if="productStore.loading">
         <v-col cols="4" v-for="n in 12">
             <v-skeleton-loader class="mx-auto border" max-width="300" type="image, article">
@@ -35,7 +34,7 @@
         </v-col>
     </v-row>
     <PageNotFound v-else-if="productStore.error" :message="productStore.error" />
-    <ProductGrid v-else :products="productStore.products" />
+    <ProductGrid v-else :products="productStore.currentProducts" />
 
 </template>
 
@@ -45,6 +44,7 @@ import { onMounted } from 'vue';
 import { useProductStore } from '@/stores/productStore';
 import ProductGrid from '@/components/ProductGrid.vue';
 import PageNotFound from './PageNotFound.vue';
+import PopularProducts from '@/components/PopularProducts.vue';
 
 import ringCategory from "@/assets/images/categories/ring_image.jpg";
 import earringCategory from "@/assets/images/categories/earring_image.jpg";

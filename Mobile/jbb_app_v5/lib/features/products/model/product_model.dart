@@ -14,6 +14,7 @@ class ProductModel {
   final double averageRating;
   final List<String> imageUrls;
   final String modelUrl;
+  final SizesModel sizes;
   final int soldCount;
   final int stockCount;
   final DateTime createdAt;
@@ -27,6 +28,7 @@ class ProductModel {
     required this.lensID,
     required this.groupID,
     required this.category,
+    required this.sizes,
     required this.averageRating,
     required this.imageUrls,
     required this.modelUrl,
@@ -42,4 +44,22 @@ class ProductModel {
 
   // Method to convert a ProductModel instance to JSON
   Map<String, dynamic> toJson() => _$ProductModelToJson(this);
+}
+
+@JsonSerializable()
+class SizesModel {
+  final String size;
+  final double additionalAmount;
+
+  SizesModel({
+      required this.size,
+      required this.additionalAmount,
+  });
+
+  // Factory constructor to create a SizesModel from a JSON map
+  factory SizesModel.fromJson(Map<String, dynamic> json) =>
+      _$SizesModelFromJson(json);
+
+  // Method to convert a SizesModel instance to JSON
+  Map<String, dynamic> toJson() => _$SizesModelToJson(this);
 }
