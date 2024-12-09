@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
-import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/features/products/model/search_product_model.dart';
 import 'package:jbb_app_v5/features/search/data/search_history_repository.dart';
@@ -21,17 +20,15 @@ class ProductRemoteRepository {
         final json = result.data as List<dynamic>;
 
         List<ProductModel> jewelries =
-            json.map((item) => ProductModel.fromJson(item)).toList();
-
-        await ProductLocalRepository().cacheProducts(jewelries);
+            json.map((item) => ProductModel.fromJson(item)).where((product) => product.stockCount > 0).toList();
 
         return jewelries;
       } else {
-        return ProductLocalRepository().getCachedProducts();
+        return [];
       }
     } catch (e) {
       log(e.toString());
-      return ProductLocalRepository().getCachedProducts();
+      return [];
     }
   }
 

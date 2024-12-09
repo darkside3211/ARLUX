@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
-import 'package:jbb_app_v5/features/auth/model/user_model.dart';
+import 'package:jbb_app_v5/core/utils/formats.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
-import 'package:jbb_app_v5/features/order/model/order_model.dart';
-import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
-import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
+import 'package:jbb_app_v5/features/products/model/product_model.dart';
+import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
+import 'package:jbb_app_v5/presentation/widgets/product_widgets/product_widget.dart';
 
 abstract class CartBottomSheet {}
 
@@ -23,12 +23,29 @@ class BuyBottomSheet extends ConsumerStatefulWidget {
 
 class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
   int _quantity = 1;
-  String _selectedSize = 'M';
-  final List<String> _sizes = ['S', 'M', 'L', 'XL'];
+  SizesModel? _selectedSize;
+  double _subTotalPrice = 0.0;
+  ProductModel? productModel;
+
+  @override
+  void initState() {
+    productModel = ref.read(selectedProductProvider);
+    _selectedSize = productModel!.sizes[0];
+    setSubTotalPrice();
+    super.initState();
+  }
+
+  void setSubTotalPrice() {
+    double additional = _selectedSize!.additionalAmount;
+    double basePrice = productModel!.price;
+
+    _subTotalPrice = (basePrice + additional) * _quantity;
+  }
 
   @override
   Widget build(BuildContext context) {
-    final product = ref.watch(selectedProductProvider);
+    // Ensure sizes are fetched from the ProductModel
+    final List<SizesModel> availableSizes = productModel?.sizes ?? [];
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
@@ -55,6 +72,8 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
                     onPressed: () {
                       setState(() {
                         if (_quantity > 1) _quantity--;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -67,6 +86,8 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
                     onPressed: () {
                       setState(() {
                         _quantity++;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -82,20 +103,50 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
                 "Size",
                 style: TextStyle(fontSize: 16),
               ),
-              DropdownButton<String>(
+              DropdownButton<SizesModel>(
                 value: _selectedSize,
-                items: _sizes.map((String size) {
-                  return DropdownMenuItem<String>(
+                items: availableSizes.map((SizesModel size) {
+                  return DropdownMenuItem<SizesModel>(
                     value: size,
-                    child: Text(size),
+                    child: Text(size.size), // Display the size name
                   );
                 }).toList(),
                 onChanged: (newSize) {
                   setState(() {
                     _selectedSize = newSize!;
+
+                    setSubTotalPrice();
                   });
                 },
               ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Additional Amount",
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                "+${currencyFormat(value: _selectedSize?.additionalAmount ?? 0.0)}",
+                style: const TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          gapH32,
+          const Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "SubTotal",
+                style: TextStyle(fontSize: 16),
+              ),
+              ProductPriceBuilder(
+                price: _subTotalPrice,
+                textStyle: const TextStyle(fontSize: 24),
+              )
             ],
           ),
           gapH32,
@@ -103,19 +154,51 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
             isConfirm: true,
             customBgColor: AppColors.yellow,
             customFgColor: AppColors.black,
-            customLabel: 'Checkout',
-            customFunction: () {
-              final totalPrice = product!.price * _quantity;
+            customLabel: "Checkout",
+            customFunction: () async {
+              ref.read(bottomNavIndexProvider.notifier).state = 1;
+              if (_selectedSize == null) {
+                SnackBarFailure(context, message: "Please select a size.");
+                return;
+              }
+              showDialog(
+                context: context,
+                barrierDismissible: false,
+                builder: (context) => const Center(
+                    child: CircularProgressIndicator(
+                  color: Colors.amber,
+                )),
+              );
+              try {
+                final isProductAdded = await ref.read(
+                  addToBagProvider(
+                    productID: productModel!.id,
+                    quantity: _quantity,
+                    size: _selectedSize!, // Use the selected size
+                  ).future,
+                );
+                // ignore: use_build_context_synchronously
+                Navigator.of(context, rootNavigator: true).pop();
 
-              final CartModel checkoutItem = ProductToCart(
-                      productModel: product,
-                      quantity: _quantity,
-                      size: _selectedSize)
-                  .getConvertedCart();
-
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => CheckoutPage(
-                      items: [checkoutItem], totalPrice: totalPrice)));
+                if (isProductAdded && context.mounted) { 
+                  Navigator.pop(context);
+                  SnackBarFailure(context,
+                      message: "Successfully added to bag!");
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {  
+                          return HomeScreen();
+                        },
+                      ));
+                } else {
+                  // ignore: use_build_context_synchronously
+                  SnackBarFailure(context, message: "Failed to add to bag.");
+                }
+              } catch (e) {
+                // ignore: use_build_context_synchronously
+                SnackBarFailure(context, message: "Error to add to bag.");
+              }
             },
           ),
         ],
@@ -135,11 +218,30 @@ class AddCartBottomSheet extends ConsumerStatefulWidget
 
 class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
   int _quantity = 1;
-  String _selectedSize = 'M';
-  final List<String> _sizes = ['S', 'M', 'L', 'XL'];
+  SizesModel? _selectedSize;
+  double _subTotalPrice = 0.0;
+  ProductModel? productModel;
+
+  @override
+  void initState() {
+    productModel = ref.read(selectedProductProvider);
+    _selectedSize = productModel!.sizes[0];
+    setSubTotalPrice();
+    super.initState();
+  }
+
+  void setSubTotalPrice() {
+    double additional = _selectedSize!.additionalAmount;
+    double basePrice = productModel!.price;
+
+    _subTotalPrice = (basePrice + additional) * _quantity;
+  }
 
   @override
   Widget build(BuildContext context) {
+    // Ensure sizes are fetched from the ProductModel
+    final List<SizesModel> availableSizes = productModel?.sizes ?? [];
+
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -165,6 +267,8 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
                     onPressed: () {
                       setState(() {
                         if (_quantity > 1) _quantity--;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -177,6 +281,8 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
                     onPressed: () {
                       setState(() {
                         _quantity++;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -192,26 +298,60 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
                 "Size",
                 style: TextStyle(fontSize: 16),
               ),
-              DropdownButton<String>(
+              DropdownButton<SizesModel>(
                 value: _selectedSize,
-                items: _sizes.map((String size) {
-                  return DropdownMenuItem<String>(
+                items: availableSizes.map((SizesModel size) {
+                  return DropdownMenuItem<SizesModel>(
                     value: size,
-                    child: Text(size),
+                    child: Text(size.size), // Display the size name
                   );
                 }).toList(),
                 onChanged: (newSize) {
                   setState(() {
                     _selectedSize = newSize!;
+
+                    setSubTotalPrice();
                   });
                 },
               ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Additional Amount",
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                "+${currencyFormat(value: _selectedSize?.additionalAmount ?? 0.0)}",
+                style: const TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          gapH32,
+          const Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "SubTotal",
+                style: TextStyle(fontSize: 16),
+              ),
+              ProductPriceBuilder(
+                price: _subTotalPrice,
+                textStyle: const TextStyle(fontSize: 24),
+              )
             ],
           ),
           gapH32,
           CartElevatedButton(
             isConfirm: true,
             customFunction: () async {
+              if (_selectedSize == null) {
+                SnackBarFailure(context, message: "Please select a size.");
+                return;
+              }
               showDialog(
                 context: context,
                 barrierDismissible: false,
@@ -220,15 +360,12 @@ class _AddCartBottomSheetState extends ConsumerState<AddCartBottomSheet> {
                   color: Colors.amber,
                 )),
               );
-
               try {
-                final productModel = ref.read(selectedProductProvider);
-
                 final isProductAdded = await ref.read(
                   addToBagProvider(
                     productID: productModel!.id,
                     quantity: _quantity,
-                    size: _selectedSize,
+                    size: _selectedSize!, // Use the selected size
                   ).future,
                 );
                 // ignore: use_build_context_synchronously
@@ -269,14 +406,29 @@ class EditCartBottomSheet extends ConsumerStatefulWidget {
 
 class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
   int _quantity = 1;
-  String _selectedSize = 'M';
-  final List<String> _sizes = ['S', 'M', 'L', 'XL'];
+  SizesModel? _selectedSize;
+  double _subTotalPrice = 0.0;
 
   @override
   void initState() {
     super.initState();
+
+    // Ensure sizes list is not empty
+    if (widget.cartModel.sizes.isNotEmpty) {
+      _selectedSize = widget.cartModel.sizes.firstWhere(
+        (size) => size.size == widget.cartModel.size.size,
+        orElse: () => widget.cartModel.sizes.first,
+      );
+    }
     _quantity = widget.cartModel.quantity;
-    _selectedSize = widget.cartModel.size;
+    setSubTotalPrice();
+  }
+
+  void setSubTotalPrice() {
+    double additional = _selectedSize!.additionalAmount;
+    double basePrice = widget.cartModel.price;
+
+    _subTotalPrice = (basePrice + additional) * _quantity;
   }
 
   @override
@@ -306,6 +458,8 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
                     onPressed: () {
                       setState(() {
                         if (_quantity > 1) _quantity--;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -318,6 +472,8 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
                     onPressed: () {
                       setState(() {
                         _quantity++;
+
+                        setSubTotalPrice();
                       });
                     },
                   ),
@@ -333,20 +489,50 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
                 "Size",
                 style: TextStyle(fontSize: 16),
               ),
-              DropdownButton<String>(
+              DropdownButton<SizesModel>(
                 value: _selectedSize,
-                items: _sizes.map((String size) {
-                  return DropdownMenuItem<String>(
+                items: widget.cartModel.sizes.map((SizesModel size) {
+                  return DropdownMenuItem<SizesModel>(
                     value: size,
-                    child: Text(size),
+                    child: Text(size.size), // Display the size name
                   );
                 }).toList(),
                 onChanged: (newSize) {
                   setState(() {
                     _selectedSize = newSize!;
+
+                    setSubTotalPrice();
                   });
                 },
               ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Additional Amount",
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                "+${currencyFormat(value: _selectedSize?.additionalAmount ?? 0.0)}",
+                style: const TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          gapH32,
+          const Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "SubTotal",
+                style: TextStyle(fontSize: 16),
+              ),
+              ProductPriceBuilder(
+                price: _subTotalPrice,
+                textStyle: const TextStyle(fontSize: 24),
+              )
             ],
           ),
           gapH32,
@@ -375,24 +561,29 @@ class _EditCartBottomSheetState extends ConsumerState<EditCartBottomSheet> {
                       Navigator.pop(context);
                     }
                   } else {
-                    final isProductModified = await ref.read(
-                      editBagItemProvider(
-                        cartID: widget.cartModel.cartID,
-                        newQuantity: _quantity,
-                        newSize: _selectedSize,
-                      ).future,
-                    );
-
-                    // ignore: use_build_context_synchronously
-                    Navigator.of(context, rootNavigator: true).pop();
-
-                    if (isProductModified && context.mounted) {
-                      Navigator.pop(context);
-                      SnackBarFailure(context,
-                          message: "Successfully modified!");
-                    } else {
+                    bool isProductModified = false;
+                    try {
+                      isProductModified = await ref.read(
+                        editBagItemProvider(
+                          cartID: widget.cartModel.cartID,
+                          newQuantity: _quantity,
+                          newSize: _selectedSize!,
+                        ).future,
+                      );
+                    } catch (e) {
+                      isProductModified = false;
+                    } finally {
                       // ignore: use_build_context_synchronously
-                      SnackBarFailure(context, message: "Failed to modify.");
+                      Navigator.of(context, rootNavigator: true).pop();
+
+                      if (isProductModified && context.mounted) {
+                        Navigator.pop(context);
+                        SnackBarFailure(context,
+                            message: "Successfully modified!");
+                      } else {
+                        // ignore: use_build_context_synchronously
+                        SnackBarFailure(context, message: "No items modified.");
+                      }
                     }
                   }
                 },

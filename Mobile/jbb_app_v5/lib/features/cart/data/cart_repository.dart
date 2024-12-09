@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
-import 'package:jbb_app_v5/features/products/data/product_local_repository.dart';
+import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -14,7 +14,7 @@ class CartRepository {
 
   Future<bool> addToBag({
     required String productID,
-    required String size,
+    required SizesModel size,
     required int quantity,
     required String? token,
   }) async {
@@ -64,22 +64,21 @@ class CartRepository {
         List<CartModel> jewelries =
             json.map((item) => CartModel.fromJson(item)).toList();
 
-        await ProductLocalRepository().cacheBag(jewelries.reversed.toList());
-
         return jewelries.reversed.toList();
-      } else {
+      } 
+      else {
         ToastFailure(message: "You seem to be offline.");
-        return ProductLocalRepository().getCachedBag();
+        return [];
       }
     } catch (e) {
       ToastFailure(message: "You seem to be offline.");
-      return ProductLocalRepository().getCachedBag();
+      return [];
     }
   }
 
   Future<bool> editBagItem({
     required String cartID,
-    required String newSize,
+    required SizesModel newSize,
     required int newQuantity,
     required String? token,
   }) async {
@@ -147,7 +146,7 @@ CartRepository cartRepository(CartRepositoryRef ref) {
 Future<bool> addToBag(
   AddToBagRef ref, {
   required String productID,
-  required String size,
+  required SizesModel size,
   required int quantity,
 }) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);
@@ -206,7 +205,7 @@ Future<bool> removeBagItems(RemoveBagItemsRef ref,
 Future<bool> editBagItem(
   EditBagItemRef ref, {
   required String cartID,
-  required String newSize,
+  required SizesModel newSize,
   required int newQuantity,
 }) async {
   final CartRepository cartRepository = ref.watch(cartRepositoryProvider);

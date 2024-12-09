@@ -178,7 +178,7 @@ class AuthService {
     User? user = FirebaseAuth.instance.currentUser;
 
     if (user != null) {
-      return await user.getIdToken();
+      return await user.getIdToken(true);
     }
 
     return null;

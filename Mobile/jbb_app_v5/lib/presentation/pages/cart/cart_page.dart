@@ -105,13 +105,13 @@ class _CartPageState extends ConsumerState<CartPage> {
                         if (value == true) {
                           setState(() {
                             totalPrice +=
-                                item[index].price * item[index].quantity;
+                                (item[index].price + item[index].size.additionalAmount ) * item[index].quantity;
                             selectedBag.add(item[index]);
                           });
                         } else {
                           setState(() {
                             totalPrice -=
-                                item[index].price * item[index].quantity;
+                                (item[index].price + item[index].size.additionalAmount ) * item[index].quantity;
                             selectedBag.remove(item[index]);
                           });
                         }

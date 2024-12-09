@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/network/network_core.dart';
+import 'package:jbb_app_v5/core/utils/formats.dart';
 import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
@@ -37,6 +38,7 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
     final GlobalKey<ScaffoldState> key = GlobalKey();
     final user = ref.watch(getUserInfoProvider);
     final address = ref.watch(defaultAddressProvider);
+    final double convinenceFee = widget.totalPrice * 0.025;
 
     Widget buildTiles() {
       if (widget.item != null) {
@@ -87,8 +89,8 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text('Total'),
-                  ProductPriceBuilder(price: widget.totalPrice),
+                  const Text('Total Payment'),
+                  ProductPriceBuilder(price: widget.totalPrice + convinenceFee),
                 ],
               ),
               gapW16,
@@ -344,7 +346,27 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Total Payment',
+                            'Convenience Fee',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall!
+                                .copyWith(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            currencyFormat(value: convinenceFee),
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall!
+                                .copyWith(fontStyle: FontStyle.italic),
+                          ),
+                        ],
+                      ),
+                      gapH8,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'SubTotal',
                             style: Theme.of(context)
                                 .textTheme
                                 .bodySmall!

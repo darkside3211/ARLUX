@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
@@ -233,14 +234,26 @@ class OrderTile extends ConsumerWidget {
                       isNetwork: true,
                     )
                   : const Icon(Icons.image),
-              title: Text(
-                '${product.name} (${product.size})',
-                maxLines: 1,
-                textAlign: TextAlign.start,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    product.name,
+                    maxLines: 1,
+                    textAlign: TextAlign.start,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  Text(
+                    "Size: ${product.size}",
+                    textAlign: TextAlign.start,
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
               ),
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -328,15 +341,31 @@ class OrderTile extends ConsumerWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text('Total (${orderModel.productItems.length}): '),
-                      ProductPriceBuilder(
-                          price: orderModel.productItems.fold(
-                        0.0,
-                        (previousValue, element) {
-                          return previousValue +
-                              (element.amount * element.quantity);
-                        },
-                      ))
+                      if (orderModel.deliveryAmount > 0)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Text('Delivery Amount: '),
+                            ProductPriceBuilder(
+                                price: orderModel.deliveryAmount)
+                          ],
+                        ),
+                      const Spacer(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text('Total (${orderModel.productItems.length}): '),
+                          ProductPriceBuilder(
+                              price: orderModel.productItems.fold(
+                                    0.0,
+                                    (previousValue, element) {
+                                      return previousValue +
+                                          (element.amount * element.quantity);
+                                    },
+                                  ) +
+                                  orderModel.deliveryAmount)
+                        ],
+                      ),
                     ],
                   ),
                   if (orderModel.checkoutUrl != null ||
@@ -347,11 +376,28 @@ class OrderTile extends ConsumerWidget {
                         if (orderModel.checkoutUrl != null) {
                           LaunchCheckout(checkoutUrl: orderModel.checkoutUrl!);
 
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const CheckoutResult()));
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const CheckoutResult()));
                         }
                       },
                       customLabel: 'Pay Now',
                     ),
+                  if (orderModel.referenceNumber != "pending")
+                    Row(
+                      children: [
+                        const Text("Tracking Number: "),
+                        TextButton(
+                          onPressed: () async {
+                            await Clipboard.setData(ClipboardData(
+                                text: orderModel.referenceNumber));
+                            LaunchLBCTracking();
+                          },
+                          child: Text(orderModel.referenceNumber),
+                        ),
+                      ],
+                    )
                 ],
               ),
             ),
@@ -379,9 +425,12 @@ class ProductTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     double totalPrice = cartModel.price;
+
     if (cartModel.quantity > 0) {
-      totalPrice = cartModel.quantity * cartModel.price;
+      totalPrice = (cartModel.price + cartModel.size.additionalAmount) *
+          cartModel.quantity;
     }
+
     return Card(
       child: ListTile(
         isThreeLine: isDefault,

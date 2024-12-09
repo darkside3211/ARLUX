@@ -20,10 +20,13 @@ CartModel _$CartModelFromJson(Map<String, dynamic> json) => CartModel(
       modelUrl: json['modelUrl'] as String,
       soldCount: (json['soldCount'] as num).toInt(),
       stockCount: (json['stockCount'] as num).toInt(),
+      sizes: (json['sizes'] as List<dynamic>)
+          .map((e) => SizesModel.fromJson(e as Map<String, dynamic>))
+          .toList(),
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
       cartID: json['cartID'] as String,
-      size: json['size'] as String,
+      size: SizesModel.fromJson(json['size'] as Map<String, dynamic>),
       quantity: (json['quantity'] as num).toInt(),
     );
 
@@ -40,6 +43,7 @@ Map<String, dynamic> _$CartModelToJson(CartModel instance) => <String, dynamic>{
       'modelUrl': instance.modelUrl,
       'soldCount': instance.soldCount,
       'stockCount': instance.stockCount,
+      'sizes': instance.sizes,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'cartID': instance.cartID,

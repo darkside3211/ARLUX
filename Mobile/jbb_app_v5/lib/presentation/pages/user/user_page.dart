@@ -58,7 +58,7 @@ class _UserPageState extends ConsumerState<UserPage> {
                     ),
                     contentPadding: const EdgeInsets.all(8.0),
                     title: Text(
-                      user.username ?? user.firebaseUid,
+                      user.username ?? user.email,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(

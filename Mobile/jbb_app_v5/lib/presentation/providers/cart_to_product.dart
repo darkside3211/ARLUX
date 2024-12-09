@@ -4,14 +4,14 @@ import 'package:jbb_app_v5/features/products/model/product_model.dart';
 
 class ProductToCart {
   final String cartId;
-  final String size;
+  final SizesModel size;
   final int quantity;
   final ProductModel productModel;
 
   ProductToCart(
       {required this.productModel,
-      this.cartId = '',
-      this.size = '',
+      required this.cartId,
+      required this.size,
       this.quantity = 0});
 
   CartModel getConvertedCart() {
@@ -27,6 +27,7 @@ class ProductToCart {
       imageUrls: productModel.imageUrls,
       modelUrl: productModel.modelUrl,
       soldCount: productModel.soldCount,
+      sizes: productModel.sizes,
       stockCount: productModel.stockCount,
       createdAt: productModel.createdAt,
       updatedAt: productModel.updatedAt,
@@ -51,7 +52,7 @@ class CartToProduct {
       lensID: cartModel.lensID,
       groupID: cartModel.groupID,
       category: cartModel.category,
-      sizes: SizesModel(size: 'm', additionalAmount: 2),
+      sizes: [],
       averageRating: cartModel.averageRating,
       imageUrls: cartModel.imageUrls,
       modelUrl: cartModel.modelUrl,
@@ -67,13 +68,16 @@ class CartToCheckout {
   final CartModel cartModel;
 
   CartToCheckout({required this.cartModel});
-
+  
   CheckoutItem getConvertedItem() {
+    double finalPrice = cartModel.price + cartModel.size.additionalAmount;
+    double totalPrice = finalPrice + (finalPrice * 0.025);
+    
     return CheckoutItem(
       productID: cartModel.id,
       name: cartModel.name,
-      amount: cartModel.price.round(),
-      size: cartModel.size,
+      amount: totalPrice.round(),
+      size: cartModel.size.size,
       images: cartModel.imageUrls,
       quantity: cartModel.quantity,
     );

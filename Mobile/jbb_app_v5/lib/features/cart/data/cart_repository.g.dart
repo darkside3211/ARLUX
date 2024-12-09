@@ -21,7 +21,7 @@ final cartRepositoryProvider = AutoDisposeProvider<CartRepository>.internal(
 );
 
 typedef CartRepositoryRef = AutoDisposeProviderRef<CartRepository>;
-String _$addToBagHash() => r'dc22f343a982fe39cdd072e63d146f0065ac3c5d';
+String _$addToBagHash() => r'c7d785419ffbfae3a7ccecc542f73b41d97e7af2';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -56,7 +56,7 @@ class AddToBagFamily extends Family<AsyncValue<bool>> {
   /// See also [addToBag].
   AddToBagProvider call({
     required String productID,
-    required String size,
+    required SizesModel size,
     required int quantity,
   }) {
     return AddToBagProvider(
@@ -97,7 +97,7 @@ class AddToBagProvider extends AutoDisposeFutureProvider<bool> {
   /// See also [addToBag].
   AddToBagProvider({
     required String productID,
-    required String size,
+    required SizesModel size,
     required int quantity,
   }) : this._internal(
           (ref) => addToBag(
@@ -132,7 +132,7 @@ class AddToBagProvider extends AutoDisposeFutureProvider<bool> {
   }) : super.internal();
 
   final String productID;
-  final String size;
+  final SizesModel size;
   final int quantity;
 
   @override
@@ -184,7 +184,7 @@ mixin AddToBagRef on AutoDisposeFutureProviderRef<bool> {
   String get productID;
 
   /// The parameter `size` of this provider.
-  String get size;
+  SizesModel get size;
 
   /// The parameter `quantity` of this provider.
   int get quantity;
@@ -197,7 +197,7 @@ class _AddToBagProviderElement extends AutoDisposeFutureProviderElement<bool>
   @override
   String get productID => (origin as AddToBagProvider).productID;
   @override
-  String get size => (origin as AddToBagProvider).size;
+  SizesModel get size => (origin as AddToBagProvider).size;
   @override
   int get quantity => (origin as AddToBagProvider).quantity;
 }
@@ -344,7 +344,7 @@ class _RemoveBagItemsProviderElement
   List<String> get cartIDs => (origin as RemoveBagItemsProvider).cartIDs;
 }
 
-String _$editBagItemHash() => r'b8fbf0d76c2a442fe5abde4fed8f342cebe27bf2';
+String _$editBagItemHash() => r'fadeaaa7e50e01053786b49047545009156085bd';
 
 /// See also [editBagItem].
 @ProviderFor(editBagItem)
@@ -358,7 +358,7 @@ class EditBagItemFamily extends Family<AsyncValue<bool>> {
   /// See also [editBagItem].
   EditBagItemProvider call({
     required String cartID,
-    required String newSize,
+    required SizesModel newSize,
     required int newQuantity,
   }) {
     return EditBagItemProvider(
@@ -399,7 +399,7 @@ class EditBagItemProvider extends AutoDisposeFutureProvider<bool> {
   /// See also [editBagItem].
   EditBagItemProvider({
     required String cartID,
-    required String newSize,
+    required SizesModel newSize,
     required int newQuantity,
   }) : this._internal(
           (ref) => editBagItem(
@@ -435,7 +435,7 @@ class EditBagItemProvider extends AutoDisposeFutureProvider<bool> {
   }) : super.internal();
 
   final String cartID;
-  final String newSize;
+  final SizesModel newSize;
   final int newQuantity;
 
   @override
@@ -487,7 +487,7 @@ mixin EditBagItemRef on AutoDisposeFutureProviderRef<bool> {
   String get cartID;
 
   /// The parameter `newSize` of this provider.
-  String get newSize;
+  SizesModel get newSize;
 
   /// The parameter `newQuantity` of this provider.
   int get newQuantity;
@@ -500,7 +500,7 @@ class _EditBagItemProviderElement extends AutoDisposeFutureProviderElement<bool>
   @override
   String get cartID => (origin as EditBagItemProvider).cartID;
   @override
-  String get newSize => (origin as EditBagItemProvider).newSize;
+  SizesModel get newSize => (origin as EditBagItemProvider).newSize;
   @override
   int get newQuantity => (origin as EditBagItemProvider).newQuantity;
 }

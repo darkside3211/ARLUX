@@ -10,7 +10,7 @@ class UserModel {
   final String? username;
   final List<AddressModel> addresses;
   final String? phone;
-  final String status;
+  final String? status;
   final List<CartItem> cartItems;
   final List<String> orders;
   final DateTime createdAt;

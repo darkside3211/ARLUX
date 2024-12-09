@@ -54,7 +54,6 @@ class LaunchCheckout implements NetworkCore {
 
 class LaunchLBCTracking implements NetworkCore {
   final String trackUrl = 'https://www.lbcexpress.com/track/';
-
   LaunchLBCTracking() {
     launchLBCTracking();
   }

@@ -14,7 +14,7 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
           .map((e) => AddressModel.fromJson(e as Map<String, dynamic>))
           .toList(),
       phone: json['phone'] as String?,
-      status: json['status'] as String,
+      status: json['status'] as String?,
       cartItems: (json['cartItems'] as List<dynamic>)
           .map((e) => CartItem.fromJson(e as Map<String, dynamic>))
           .toList(),

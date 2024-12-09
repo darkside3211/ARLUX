@@ -14,7 +14,7 @@ class ProductModel {
   final double averageRating;
   final List<String> imageUrls;
   final String modelUrl;
-  final SizesModel sizes;
+  final List<SizesModel> sizes;
   final int soldCount;
   final int stockCount;
   final DateTime createdAt;
@@ -50,10 +50,12 @@ class ProductModel {
 class SizesModel {
   final String size;
   final double additionalAmount;
+  final int quantity;
 
   SizesModel({
       required this.size,
       required this.additionalAmount,
+      required this.quantity,
   });
 
   // Factory constructor to create a SizesModel from a JSON map

@@ -164,7 +164,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
               controller: _passwordController,
               style: const TextStyle(color: Colors.white),
               keyboardType: TextInputType.visiblePassword,
-              decoration: customInputDecoration(label: 'passwword'),
+              decoration: customInputDecoration(label: 'password'),
             ),
             gapH24,
             RichText(

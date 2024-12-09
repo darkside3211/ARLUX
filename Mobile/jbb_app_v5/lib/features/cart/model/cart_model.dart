@@ -1,3 +1,4 @@
+import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'cart_model.g.dart';
@@ -16,10 +17,11 @@ class CartModel {
   final String modelUrl;
   final int soldCount;
   final int stockCount;
+  final List<SizesModel> sizes;
   final DateTime createdAt;
   final DateTime updatedAt;
   final String cartID;
-  final String size;
+  final SizesModel size;
   final int quantity;
 
   CartModel({
@@ -35,6 +37,7 @@ class CartModel {
     required this.modelUrl,
     required this.soldCount,
     required this.stockCount,
+    required this.sizes,
     required this.createdAt,
     required this.updatedAt,
     required this.cartID,
