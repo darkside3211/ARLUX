@@ -3,10 +3,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jbb_app_v5/core/constants/app_colors.dart';
 import 'package:jbb_app_v5/core/constants/app_sizes.dart';
 import 'package:jbb_app_v5/core/utils/formats.dart';
+import 'package:jbb_app_v5/features/auth/data/auth_service.dart';
+import 'package:jbb_app_v5/features/auth/model/user_model.dart';
 import 'package:jbb_app_v5/features/cart/data/cart_repository.dart';
 import 'package:jbb_app_v5/features/cart/model/cart_model.dart';
 import 'package:jbb_app_v5/features/products/model/product_model.dart';
 import 'package:jbb_app_v5/presentation/pages/home/home_screen.dart';
+import 'package:jbb_app_v5/presentation/pages/order/checkout_page.dart';
+import 'package:jbb_app_v5/presentation/providers/cart_to_product.dart';
 import 'package:jbb_app_v5/presentation/providers/state_providers.dart';
 import 'package:jbb_app_v5/presentation/widgets/custom_buttons.dart';
 import 'package:jbb_app_v5/presentation/widgets/failure_widget.dart';
@@ -154,9 +158,8 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
             isConfirm: true,
             customBgColor: AppColors.yellow,
             customFgColor: AppColors.black,
-            customLabel: "Checkout",
+            customLabel: 'Checkout',
             customFunction: () async {
-              ref.read(bottomNavIndexProvider.notifier).state = 1;
               if (_selectedSize == null) {
                 SnackBarFailure(context, message: "Please select a size.");
                 return;
@@ -170,34 +173,42 @@ class _BuyBottomSheetState extends ConsumerState<BuyBottomSheet> {
                 )),
               );
               try {
-                final isProductAdded = await ref.read(
-                  addToBagProvider(
-                    productID: productModel!.id,
-                    quantity: _quantity,
-                    size: _selectedSize!, // Use the selected size
-                  ).future,
+                final userInfo = await ref.read(
+                  getUserInfoProvider.future,
                 );
                 // ignore: use_build_context_synchronously
                 Navigator.of(context, rootNavigator: true).pop();
 
-                if (isProductAdded && context.mounted) { 
+                if (userInfo.addresses.isNotEmpty &&
+                    userInfo.phone != null &&
+                    context.mounted) {
                   Navigator.pop(context);
-                  SnackBarFailure(context,
-                      message: "Successfully added to bag!");
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {  
-                          return HomeScreen();
-                        },
-                      ));
+
+                  final CartModel checkoutItem = ProductToCart(
+                          productModel: productModel!,
+                          cartId: "",
+                          quantity: _quantity,
+                          size: _selectedSize!)
+                      .getConvertedCart();
+
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => CheckoutPage(
+                          items: [checkoutItem], totalPrice: _subTotalPrice)));
                 } else {
+                  ref.read(bottomNavIndexProvider.notifier).state = 2;
                   // ignore: use_build_context_synchronously
-                  SnackBarFailure(context, message: "Failed to add to bag.");
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen();
+                    },
+                  ));
+                  // ignore: use_build_context_synchronously
+                  SnackBarFailure(context,
+                      message: "Please provide shipping information first.");
                 }
               } catch (e) {
                 // ignore: use_build_context_synchronously
-                SnackBarFailure(context, message: "Error to add to bag.");
+                SnackBarFailure(context, message: "You seem to be offline");
               }
             },
           ),

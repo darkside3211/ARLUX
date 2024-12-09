@@ -31,7 +31,6 @@ class _CartPageState extends ConsumerState<CartPage> {
   Widget build(BuildContext context) {
     final authState = ref.watch(authStateProvider);
     final bagItems = ref.watch(getBagItemsProvider);
-
     void toggleSelectAll(List<CartModel> items) {
       setState(() {
         if (isSelectAll) {
@@ -104,14 +103,16 @@ class _CartPageState extends ConsumerState<CartPage> {
                       onChanged: (value) {
                         if (value == true) {
                           setState(() {
-                            totalPrice +=
-                                (item[index].price + item[index].size.additionalAmount ) * item[index].quantity;
+                            totalPrice += (item[index].price +
+                                    item[index].size.additionalAmount) *
+                                item[index].quantity;
                             selectedBag.add(item[index]);
                           });
                         } else {
                           setState(() {
-                            totalPrice -=
-                                (item[index].price + item[index].size.additionalAmount ) * item[index].quantity;
+                            totalPrice -= (item[index].price +
+                                    item[index].size.additionalAmount) *
+                                item[index].quantity;
                             selectedBag.remove(item[index]);
                           });
                         }

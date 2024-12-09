@@ -30,4 +30,14 @@ class LocalAuthService {
       throw Exception(e);
     }
   }
+
+  Future clearCache() async {
+    try {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+
+      await prefs.clear();
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
 }

@@ -84,6 +84,7 @@ class AuthService {
   }
 
   Future<void> signout() async {
+    LocalAuthService().clearCache();
     await _auth.signOut();
   }
 
